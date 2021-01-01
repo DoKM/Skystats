@@ -1,0 +1,1983 @@
+﻿{
+	"pets":{
+		"BEE": {
+			"texture": "http://textures.minecraft.net/texture/7e941987e825a24ea7baafab9819344b6c247c75c54a691987cd296bc163c263",
+			"type": "FARMING",
+			"lore" : {
+				"base": [
+					"§8Farming Pet",
+					"", 
+					"§7Strength: §a+$25 (+5)$",
+					"§7Speed: §a+$10$", 
+					"§7Intelligence: §a+$50$"
+				],
+
+				"stage1": [
+					"§6Hive", 
+					"§7§7Gain §b+$~2|5|8.9|13.9|18.8~ (_1_1_1.1_1.1_1.2)$✎ Intelligence §7and",
+					"§7§c+$~3|6|8|12|15~ (_1_1_1.1_1.1_1.1)$❁ Strength §7for each", 
+					"§7nearby bee.",
+					"§8Max 15 bees"
+				],
+
+				"stage2": [
+					"§6Busy Buzz Buzz", 
+					"§7§7Has §a$~50|50|50|100|100~$% §7chance for",
+					"§7flowers to drop an extra one"
+				],
+
+				"stage3": [
+					"§6Weaponized Honey",
+					"§7§7Gain §a$19.8 (+5.2)$% §7of received", 
+					"§7damage as §6❤ Absorption"
+				]
+			}
+		},
+
+		"ELEPHANT": {
+			"texture": "http://textures.minecraft.net/texture/7071a76f669db5ed6d32b48bb2dba55d5317d7f45225cb3267ec435cfa514",
+			"type": "FARMING",
+			"lore" : {
+				"base": [
+					"§8Farming Pet", 
+					"", 
+					"§7Health: §a+$100$", 
+					"§7Intelligence: §a+$75$"
+				],
+
+				"stage1": [
+					"§6Stomp", 
+					"§7§7Gain §a$20$❈ Defense §7for every", 
+					"§f100 ✦ Speed"
+				],
+
+				"stage2": [
+					"§6Walking Fortress",
+					"§7§7Gain §c$1$❤ Health §7for every", 
+					"§a10 ❈ Defense"
+				],
+
+				"stage3": [
+					 "§6Trunk Efficiency",
+					 "§7§7Grants a §a$50$% §7chance to get",
+					 "§7double crops while farming"
+				]
+			}
+		},
+
+		"PIG":{
+			"texture": "http://textures.minecraft.net/texture/621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4",
+			"type": "FARMING",
+			"lore" : {
+				"base": [
+					"§8Farming Mount",
+					"", 
+					"§7Speed: §a+$25$"
+				],
+
+				"stage1": [
+					"§6Ridable", 
+					"§7§7Right-click your summoned pet",
+					"§7to ride it!",
+					"", 
+					"§6Run", 
+					"§7§7Increases the speed of your",
+					"§7mount by §a$50$%"
+				],
+
+				"stage2": [
+					"§6Sprint", 
+					"§7§7While holding an Enchanted",
+					"§7Carrot on a Stick, increase the",
+					"§7speed of your mount by §a$50$%"
+				],
+
+				"stage3": [
+					 "§6Trample",
+					 "§7§7While on your private island,",
+					 "§7break all crops your pig rides",
+					 "§7over"
+				]
+			}
+		},
+
+		"RABBIT": {
+			"texture": "http://textures.minecraft.net/texture/117bffc1972acd7f3b4a8f43b5b6c7534695b8fd62677e0306b2831574b",
+			"type": "FARMING",
+			"lore" : {
+				"base": [
+					"§8Farming Pet",
+					"", 
+					"§7Health: §a+$100$",
+					"§7Speed: §a+$20$"
+				],
+
+				"stage1": [
+					"§6Happy Feet",
+					"§7§7Jump potions also give §a+$50$", 
+					"§a§7speed"
+				],
+
+				"stage2": [
+					"§6Farming Exp Boost",
+					"§7§7§7Boosts your Farming exp by", 
+					"§7§a$30$%§7"
+				],
+
+				"stage3": [
+					 "§6Efficient Farming",
+					 "§7§7Farming minions work §a$30$%", 
+					 "§a§7faster while on your island"
+				]
+			}
+		},
+
+		"CHICKEN": {
+			"texture": "http://textures.minecraft.net/texture/7f37d524c3eed171ce149887ea1dee4ed399904727d521865688ece3bac75e",
+			"type": "FARMING",
+			"lore" : {
+				"base": [
+					"§8Farming Pet", 
+					"",
+					"§7Health: §a+$200$"
+				],
+
+				"stage1": [
+					"§6Light Feet", 
+					"§7§7§7Reduces fall damage by §a$50$%"
+				],
+
+				"stage2": [
+					"§6Eggstra", 
+					"§7§7Killing chickens has a §a$100$%",
+					"§a§7chance to drop an egg"
+				],
+
+				"stage3": [
+					 "§6Mighty Chickens", 
+					 "§7§7Chicken minions work §a$30$%", 
+					 "§a§7faster while on your island"
+				]
+			}
+		},
+
+		"BAT": {
+			"texture": "http://textures.minecraft.net/texture/382fc3f71b41769376a9e92fe3adbaac3772b999b219c9d6b4680ba9983e527",
+			"type": "MINING",
+			"lore" : {
+				"base": [
+					"§8Mining Pet", 
+					"",
+					"§7Speed: §a+$5$", 
+					"§7Intelligence: §a+$100$",
+					"§7Sea Creature Chance: §a+$5$"
+				],
+
+				"stage1": [
+					"§6Candy Lover",
+					"§7§7Increases drop chance of",
+					"§7candies from mobs by §a$20$%"
+				],
+
+				"stage2": [
+					"§6Nightmare", 
+					"§7§7§7During night, gain §a$30$ §b✎",
+					"§bIntelligence§7, §a$50$ §f✦", 
+					"§fSpeed§7, and night vision"
+				],
+
+				"stage3": [
+					 "§6Wings of Steel", 
+					 "§7§7Deals §a+50% §7damage to", 
+					 "§7§6Spooky §7enemies during the",
+					 "§7§6Spooky Festival"
+				],
+				"stage4": [
+					"§6Sonar", 
+					"§7§7+§a$25$% §7chance to fish up",
+					"§7spooky sea creatures"
+				]
+			}
+		},
+
+		"ENDERMITE": {
+			"texture": "http://textures.minecraft.net/texture/5a1a0831aa03afb4212adcbb24e5dfaa7f476a1173fce259ef75a85855",
+			"type": "MINING",
+			"lore" : {
+				"base": [
+					"§8Mining Pet", 
+					"",
+					"§7Intelligence: §a+$100$"
+				],
+
+				"stage1": [
+					"§6More Stonks", 
+					"§7§7Gain more exp orbs for",
+					"§7breaking end stone and gain a", 
+					"§a+$50$% §7chance to get an extra",
+					"§7block dropped"
+				],
+
+				"stage2": [
+					"§6Pearl Muncher", 
+					"§7§7Upon picking up an ender",
+					"§7pearl, consume it and gain §a$5 (+5)$",
+					"§a§6coins"
+				],
+
+				"stage3": [
+					"§6Pearl Powered", 
+					"§7§7Upon consuming an ender pearl,",
+					"§7gain §a+$39.6 (+10.4)$ §7speed for 10", 
+					"§7seconds"
+				]
+			}
+		},
+		"ROCK": {
+			"texture": "http://textures.minecraft.net/texture/cb2b5d48e57577563aca31735519cb622219bc058b1f34648b67b8e71bc0fa",
+			"type": "MINING",
+			"lore" : {
+				"base": [
+					"§8Mining Mount", 
+					"", 
+					"§7True Defense: §a+$10$", 
+					"§7Defense: §a+$200$"
+				],
+
+				"stage1": [
+					"§6Ridable",
+					"§7§7Right-click your summoned pet",
+					"§7to ride it!",
+					"",
+					"§6Sailing Stone", 
+					"§7§7Sneak to move your rock to", 
+					"§7your location (15s cooldown)"
+				],
+
+				"stage2": [
+					"§6Fortify", 
+					"§7§7While sitting on your rock,",
+					"§7gain §a+$~20|20|20|25|25~$% §7 defense"
+				],
+
+				"stage3": [
+					"§6Steady Ground",
+					"§7§7While sitting on your rock,", 
+					"§7gain §a+$30$% §7 damage"
+				]
+			}
+		},
+		"SILVERFISH": {
+			"texture": "http://textures.minecraft.net/texture/da91dab8391af5fda54acd2c0b18fbd819b865e1a8f1d623813fa761e924540",
+			"type": "MINING",
+			"lore" : {
+				"base": [
+					"§8Mining Pet",
+					"", 
+					"§7Health: §a+$20$", 
+					"§7Defense: §a+$100$"
+				],
+
+				"stage1": [
+					"§6True Defense Boost",
+					"§7§7§7Boosts your §f❂ True",
+					"§fDefense§7 by §a$~5|10|10|15|15~$"
+				],
+
+				"stage2": [
+					"§6Mining Exp Boost",
+					"§7§7§7Boosts your Mining exp by",
+					"§7§a$~25|25|25|30|30~$%§7"
+				],
+
+				"stage3": [
+					"§6Dexterity",
+					"§7§7Gives permanent haste III"
+				]
+			}
+		},
+		"WITHER_SKELETON": {
+			"texture": "http://textures.minecraft.net/texture/f5ec964645a8efac76be2f160d7c9956362f32b6517390c59c3085034f050cff",
+			"type": "MINING",
+			"lore" : {
+				"base": [
+					"§8Mining Pet", 
+					"", 
+					"§7Crit Chance: §a+$5$", 
+					"§7Strength: §a+$25$", 
+					"§7Defense: §a+$25$", 
+					"§7Crit Damage: §a+$25$",
+					"§7Intelligence: §a+$25$"
+				],
+
+				"stage1": [
+					"§6Stronger Bones", 
+					"§7§7Take §a$30$% §7less damage from",
+					"§7skeletons"
+				],
+
+				"stage2": [
+					"§6Wither Blood",
+					"§7§7Deal §a$50$% §7more damage to", 
+					"§7wither mobs"
+				],
+
+				"stage3": [
+					"§6Death's Touch",
+					"§7§7Upon hitting an enemy inflict",
+					"§7the wither effect for §a$200$%", 
+					"§a§7damage over 3 seconds", 
+					"§8Does not stack"
+				]
+			}
+		},
+		"BLACK_CAT": {
+			"texture": "http://textures.minecraft.net/texture/e4b45cbaa19fe3d68c856cd3846c03b5f59de81a480eec921ab4fa3cd81317",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Intelligence: §a+$100$", 
+					"§7Speed: §a+$25$"
+				],
+
+				"stage1": [
+					"§6Hunter", 
+					"§7§7Increases your speed and speed", 
+					"§7cap by §a+$100$"
+				],
+
+				"stage2": [
+					"§6Omen", 
+					"§7§7Grants §a$15$ §7§d♣ Pet Luck"
+				],
+
+				"stage3": [
+					"§6Supernatural", 
+					"§7§7Grants §a$15$ §7§b✯ Magic Find"
+				]
+			}
+		},
+		"BLAZE": {
+			"texture": "http://lh3.googleusercontent.com/PMbX8z0Ygolwu8jyFQKlYFnvjEMnh4OkVmbAdYwsopzyRDzXKDaYloA6PoqbIUxZ0Sh244BHvh8j0NmwVfe2",
+			"type": "COMBAT",
+			"disable_second_layer": true,
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"",
+					"§7Intelligence: §a+$100$",
+					"§7Defense: §a+$20 (+10)$"
+				],
+
+				"stage1": [
+					"§6Nether Embodiment", 
+					"§7§7Increases all stats by §a$20$%", 
+					"§a§7while on the Blazing Fortress"
+				],
+
+				"stage2": [
+					"§6Bling Armor", 
+					"§7§7Upgrades §cBlaze Armor §7stats", 
+					"§7and ability by §a$40$%"
+				],
+
+				"stage3": [
+					"§6Fusion-Style Potato", 
+					"§7§7Double effects of hot potato", 
+					"§7books"
+				]
+			}
+		},
+		"ENDER_DRAGON": {
+			"texture": "http://textures.minecraft.net/texture/aec3ff563290b13ff3bcc36898af7eaa988b6cc18dc254147f58374afe9b21b9",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"",
+					"§7Strength: §a+$50$", 
+					"§7Crit Damage: §a+$50$",
+					"§7Crit Chance: §a+$10$"
+				],
+
+				"stage1": [
+					"§6End Strike", 
+					"§7§7Deal §a$25$% §7more damage to", 
+					"§7end mobs"
+				],
+
+				"stage2": [
+					"§6One With The Dragon", 
+					"§7§7Buffs the Aspect of the", 
+					"§7Dragons sword by §a$50$ §c❁ Damage", 
+					"§c§7and §a$30$ §c❁ Strength"
+				],
+
+				"stage3": [
+					"§6Superior", 
+					"§7§7Increases all stats by §a$10$%"
+				]
+			}
+		},
+		"ENDERMAN": {
+			"texture": "http://textures.minecraft.net/texture/6eab75eaa5c9f2c43a0d23cfdce35f4df632e9815001850377385f7b2f039ce1",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"",
+					"§7Crit Damage: §a+$75$"
+				],
+
+				"stage1": [
+					"§6Enderian", 
+					"§7§7Take §a$30$% §7less damage from",
+					"§7end monsters"
+				],
+
+				"stage2": [
+					"§6Teleport Savvy", 
+					"§7§7Buffs the Aspect of the End", 
+					"§7ability granting §a$50$ §7weapon", 
+					"§7damage for 5s on use"
+				],
+
+				"stage3": [
+					"§6Zealot Madness", 
+					"§7§7Increases your odds to find a", 
+					"§7special Zealot by §a$25$%"
+				]
+			}
+		},
+		"GHOUL": {
+			"texture": "http://textures.minecraft.net/texture/87934565bf522f6f4726cdfe127137be11d37c310db34d8c70253392b5ff5b",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Health: §a+$100$", 
+					"§7Intelligence: §a+$75$",
+					"§7Ferocity: §a+$5$"
+				],
+
+				"stage1": [
+					"§6Amplified Healing", 
+					"§7§7Increases all healing by §a$25$%"
+				],
+
+				"stage2": [
+					"§6Zombie Arm", 
+					"§7§7Increases the health and range", 
+					"§7of the Zombie sword by §a$50$%"
+				],
+
+				"stage3": [
+					"§6Reaper Soul", 
+					"§7§7Increases the health and",
+					"§7lifespan of the Reaper Scythe"
+				]
+			}
+		},
+		"GOLEM": {
+			"texture": "http://textures.minecraft.net/texture/89091d79ea0f59ef7ef94d7bba6e5f17f2f7d4572c44f90f76c4819a714",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Health: §a+$150$", 
+					"§7Strength: §a+$50$"
+				],
+
+				"stage1": [
+					"§6Last Stand", 
+					"§7§7While less than 15% HP, deal", 
+					"§7§a$30$% §7more damage"
+				],
+
+				"stage2": [
+					"§6Ricochet", 
+					"§7§7Your iron plating causes §a$25$%", 
+					"§a§7of attacks to ricochet and hit", 
+					"§7the attacker"
+				],
+
+				"stage3": [
+					"§6Toss", 
+					"§7§7Every 5 hits, throw the enemy", 
+					"§7up into the air and deal §a$297 (+203)$%",
+					"§a§7damage (10s cooldown)"
+				]
+			}
+		},
+		"GRIFFIN": {
+			"texture": "http://textures.minecraft.net/texture/4c27e3cb52a64968e60c861ef1ab84e0a0cb5f07be103ac78da67761731f00c8",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Crit Chance: §a+$10$", 
+					"§7Strength: §a+$25$",
+					"§7Magic Find: §a+$10$", 
+					"§7Crit Damage: §a+$50$", 
+					"§7Intelligence: §a+$10$",
+					"",
+					"§6Odyssey", 
+					"§7§7§2Mythological creatures §7you", 
+					"§7find and burrows you dig scale", 
+					"§7in §cdifficulty §7and §6rewards", 
+					"§6§7based on your equipped", 
+					"§7Griffin's rarity."
+				],
+
+				"stage1": [
+					"§6Legendary Constitution", 
+					"§7§7Permanent §cRegeneration VII", 
+					"§c§7and §4Strength VIII§7."
+				],
+
+				"stage2": [
+					"§6Perpetual Empathy", 
+					"§7Heal nearby players for", 
+					"§7§a$20$% §7of the final damage", 
+					"§7you receive.", 
+					"§8Excludes other griffins."
+				],
+
+				"stage3": [
+					"§6King of Kings", 
+					"§7§7Gain §c+$14 (+1)$% §c❁ Strength", 
+					"§c§7when above §c85% §7health."
+				]
+			}
+		},
+		"GUARDIAN": {
+			"texture": "http://textures.minecraft.net/texture/221025434045bda7025b3e514b316a4b770c6faa4ba9adb4be3809526db77f9d",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Defense: §a+$50$", 
+					"§7Intelligence: §a+$100$"
+				],
+
+				"stage1": [
+					"§6Lazerbeam",
+					"§7§7Zaps your enemies for §b$~1.8|4.8|9.8|14.8|19.8~ (_0.2_0.2_0.2_0.2_0.2)$x", 
+					"§b§7your §b✎ Intelligence §7every", 
+					"§7§a3s"
+				],
+
+				"stage2": [
+					"§6Enchanting Exp Boost",
+					"§7§7§7Boosts your Enchanting exp",
+					"§7by §a$~25|25|25|30|30~$%§7"
+				],
+
+				"stage3": [
+					"§6Mana Pool", 
+					"§7§7Regenerate §b$30$% §7extra mana,", 
+					"§7doubled when near or in water"
+				]
+			}
+		},
+		"HORSE": {
+			"texture": "http://textures.minecraft.net/texture/36fcd3ec3bc84bafb4123ea479471f9d2f42d8fb9c5f11cf5f4e0d93226",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Mount", 
+					"",
+					"§7Speed: §a$25$", 
+					"§7Intelligence: §a$50$"
+				],
+
+				"stage1": [
+					"§6Ridable", 
+					"§7§7Right-click your summoned pet", 
+					"§7to ride it!"
+				],
+
+				"stage2": [
+					"§6Run", 
+					"§7§7Increases the speed of your", 
+					"§7mount by §a$120$%"
+				],
+
+				"stage3": [
+					"§6Ride Into Battle",
+					"§7§7While riding your horse, gain", 
+					"§a+$25$% §7 bow damage"
+				]
+			}
+		},
+		"HOUND": {
+			"texture": "http://textures.minecraft.net/texture/b7c8bef6beb77e29af8627ecdc38d86aa2fea7ccd163dc73c00f9f258f9a1457",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"",
+					"§7Strength: §a+$40$",
+					"§7Bonus Attack Speed: §a+$15$",
+					"§7Ferocity: §a+$5$"
+				],
+
+				"stage1": [
+					"§6Scavenger", 
+					"§7§7Gain §a+$4.9 (+0.1)$ §7coins per monster",
+					"§7kill"
+				],
+
+				"stage2": [
+					"§6Finder", 
+					"§7§7Increases the chance for", 
+					"§7monsters to drop their armor by", 
+					"§7§a$10$%"
+				],
+
+				"stage3": [
+					"§6Fury Claws", 
+					"§7§7Grants §a$10$% §7§e⚔ Bonus",
+					"§eAttack Speed"
+				]
+			}
+		},
+		"JERRY": {
+			"texture": "http://textures.minecraft.net/texture/822d8e751c8f2fd4c8942c44bdb2f5ca4d8ae8e575ed3eb34c18a86e93b",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Intelligence: §a-$100$"
+				],
+
+				"stage1": [
+					"§6Jerry", 
+					"§7§7Gain §a50% §7chance to deal", 
+					"§7your regular damage"
+				],
+
+				"stage2": [
+					"§6Jerry", 
+					"§7§7Gain §a100% §7chance to", 
+					"§7receive a normal amount of drops", 
+					"§7from mobs"
+				],
+
+				"stage3": [
+					"§6Jerry", 
+					"§7§7Actually adds §c$10$ damage §7to", 
+					"§7the Aspect of the Jerry"
+				]
+			}
+		},
+		"MAGMA_CUBE": {
+			"texture": "http://textures.minecraft.net/texture/38957d5023c937c4c41aa2412d43410bda23cf79a9f6ab36b76fef2d7c429",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Health: §a+$50$", 
+					"§7Strength: §a+$20$", 
+					"§7Defense: §a+$33$"
+				],
+
+				"stage1": [
+					"§6Slimy Minions", 
+					"§7§7Slime minions work §a$30$%",
+					"§a§7faster while on your island"
+				],
+
+				"stage2": [
+					"§6Salt Blade",
+					"§7§7Deal §a$25$% §7more damage to", 
+					"§7slimes"
+				],
+
+				"stage3": [
+					"§6Hot Ember",
+					"§7§7Buffs the stats of Ember Armor",
+					"§7by §a$100$%"
+				]
+			}
+		},
+		"PHOENIX": {
+			"texture": "http://textures.minecraft.net/texture/23aaf7b1a778949696cb99d4f04ad1aa518ceee256c72e5ed65bfa5c2d88d9e",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"",
+					"§7Strength: §a+$50 (+10)$", 
+					"§7Intelligence: §a+$100 (+50)$"
+				],
+
+				"stage1": [
+					"§6Rekindle", 
+					"§7§7Before death, become §eimmune", 
+					"§e§7and gain §c$20 (+10)$ §c❁ Strength", 
+					"§c§7for §a$2 (+2)$ §7seconds", 
+					"§83 minutes cooldown"
+				],
+
+				"stage2": [
+					"§6Fourth Flare", 
+					"§7§7On 4th melee strike, §6ignite", 
+					"§6§7mobs, dealing §c$13.9 (+1.1)$x §7your §9☠", 
+					"§9Crit Damage §7each second for", 
+					"§7§a$4 (+2)$ §7seconds"
+				],
+
+				"stage3": [
+					"§6Magic Bird",
+					"§7§7You may always fly on your",
+					"§7private island", 
+					"", 
+					"§6Eternal Coins", 
+					"§7§7Don't lose coins from death."
+				]
+			}
+		},
+		"PIGMAN": {
+			"texture": "http://textures.minecraft.net/texture/63d9cb6513f2072e5d4e426d70a5557bc398554c880d4e7b7ec8ef4945eb02f2",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Strength: §a+$50$", 
+					"§7Defense: §a+$50$",
+					"§7Ferocity: §a+$5$"
+				],
+
+				"stage1": [
+					"§6Bacon Farmer", 
+					"§7§7Pig minions work §a$30$% §7faster", 
+					"§7while on your island"
+				],
+
+				"stage2": [
+					"§6Pork Master", 
+					"§7§7Buffs the Pigman sword by §a$40$", 
+					"§a§c❁ Damage §7and §a$25$ §c❁", 
+					"§cStrength"
+				],
+
+				"stage3": [
+					"§6Giant Slayer", 
+					"§7§7Deal §a$25$% §7extra damage to", 
+					"§7monsters level 100 and up"
+				]
+			}
+		},
+		"SKELETON_HORSE": {
+			"texture": "http://textures.minecraft.net/texture/47effce35132c86ff72bcae77dfbb1d22587e94df3cbc2570ed17cf8973a",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Mount", 
+					"", 
+					"§7Run around town on your scary,", 
+					"§7yet trusty, steed!", 
+					"", 
+					"§7Speed: §a+$50$", 
+					"§7Intelligence: §a+$100$"
+				],
+
+				"stage1": [
+					"§6Ridable", 
+					"§7§7Right-click your summoned pet",
+					"§7to ride it!"
+				],
+
+				"stage2": [
+					"§6Run", 
+					"§7§7Increases the speed of your",
+					"§7mount by §a$150$%"
+				],
+
+				"stage3": [
+					"§6Ride Into Battle", 
+					"§7§7While riding your horse, gain",
+					"§a+$40$% §7 bow damage"
+				]
+			}
+		},
+		"SKELETON": {
+			"texture": "http://textures.minecraft.net/texture/fca445749251bdd898fb83f667844e38a1dff79a1529f79a42447a0599310ea4",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Crit Damage: §a+$30$",
+					"§7Crit Chance: §a+$15$"
+				],
+
+				"stage1": [
+					"§6Bone Arrows", 
+					"§7§7Increase arrow damage by", 
+					"§7§a$20$%§7 which is tripled while", 
+					"§7in dungeons"
+				],
+
+				"stage2": [
+					"§6Combo", 
+					"§7§7Gain a combo stack for every", 
+					"§7bow hit granting §a+3 §c❁",
+					"§cStrength§7. Max §a$~10|10|10|20|20~$ §7stacks,", 
+					"§7stacks disappear after 8", 
+					"§7seconds."
+				],
+
+				"stage3": [
+					"§6Skeletal Defense", 
+					"§7§7Your skeleton shoots an arrow", 
+					"§7dealing §a60x §7your §9☠ Crit",
+					"§9Damage §7when a mob gets close", 
+					"§7to you (15s cooldown)"
+				]
+			}
+		},
+		"SNOWMAN": {
+			"texture": "http://textures.minecraft.net/texture/11136616d8c4a87a54ce78a97b551610c2b2c8f6d410bc38b858f974b113b208",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"", 
+					"§7Fight alongside your pet", 
+					"§7Snowman!", 
+					"", 
+					"§7Strength: §a+$25$", 
+					"§7Damage: §a+$25$", 
+					"§7Crit Damage: §a+$25$"
+				],
+
+				"stage1": [
+					"§6Blizzard",
+					"§7§7Slow all enemies within §a$4 (+4)$",
+					"§a§7blocks"
+				],
+
+				"stage2": [
+					"§6Frostbite",
+					"§7§7Your freezing aura slows enemy", 
+					"§7attacks causing you to take", 
+					"§7§a$15$% §7reduced damage"
+				],
+
+				"stage3": [
+					"§6Snow Cannon", 
+					"§7§7Your snowman fires a snowball", 
+					"§7dealing §a5x§7 your §c❁ Strength",
+					"§c§7when a mob gets close to you",
+					"§7(1s cooldown)"
+				]
+			}
+		},
+		"SPIDER": {
+			"texture": "http://textures.minecraft.net/texture/cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"", 
+					"§7Crit Chance: §a+$10$",
+					"§7Strength: §a+$10$"
+				],
+
+				"stage1": [
+					"§6One With The Spider",
+					"§7§7Gain §a$10$ §c❁ Strength §7for",
+					"§7every nearby spider", 
+					"§8Max 10 spiders"
+				],
+
+				"stage2": [
+					"§6Web-weaver", 
+					"§7§7Upon hitting a monster it", 
+					"§7becomes slowed by §a$40$%"
+				],
+
+				"stage3": [
+					"§6Spider Whisperer", 
+					"§7§7Spider and tarantula minions", 
+					"§7work §a$30$% §7faster while on",
+					"§7your island"
+				]
+			}
+		},
+		"SPIRIT": {
+			"texture": "http://textures.minecraft.net/texture/8d9ccc670677d0cebaad4058d6aaf9acfab09abea5d86379a059902f2fe22655",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"", 
+					"§7Speed: §a+$29$",
+					"§7Intelligence: §a+$100$"
+				],
+
+				"stage1": [
+					"§6Spirit Assistance",
+					"§7§7Spawns and assists you when", 
+					"§7you are ghost in Dungeons."
+				],
+
+				"stage2": [
+					"§6Spirit Leap",
+					"§7§7Grants a §a10% §7chance for",
+					"§7mini-bosses in dungeons to drop",
+					"§7§b5 §7Spirit Leap Pearls."
+				],
+
+				"stage3": [
+					"§6Spirit Cooldowns",
+					"§7§7Reduces the cooldown of your",
+					"§7ghost abilities in dungeons by",
+					"§7§a$44.5 (+5.5)$%§7."
+				]
+			}
+		},
+		"TARANTULA": {
+			"texture": "http://textures.minecraft.net/texture/8300986ed0a04ea79904f6ae53f49ed3a0ff5b1df62bba622ecbd3777f156df8",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"", 
+					"§7Crit Chance: §a+$10$", 
+					"§7Strength: §a+$10$", 
+					"§7Crit Damage: §a+$30$"
+				],
+
+				"stage1": [
+					"§6Webbed Cells",
+					"§7§7Anti-healing is §a$30$% §7less", 
+					"§7effective against you"
+				],
+
+				"stage2": [
+					"§6Eight Legs", 
+					"§7§7Decreases the mana cost of", 
+					"§7Spider, Tarantula and Thorn's", 
+					"§7boots by §a$50$%"
+				],
+
+				"stage3": [
+					 "§6Arachnid Slayer",
+					 "§7§7Gain §a+$40$% §7more combat xp", 
+					 "§7from spiders"
+				]
+			}
+		},
+		"TIGER": {
+			"texture": "http://textures.minecraft.net/texture/fc42638744922b5fcf62cd9bf27eeab91b2e72d6c70e86cc5aa3883993e9d84",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"",
+					"§7Crit Chance: §a+$5$", 
+					"§7Strength: §a+$10 (+5)$", 
+					"§7Crit Damage: §a+$50$",
+					"§7Ferocity: §a+$10$"
+				],
+
+				"stage1": [
+					"§6Merciless Swipe", 
+					"§7§7Gain §c+$100$% §c⫽ Ferocity."
+				],
+
+				"stage2": [
+					"§6Hemorrhage", 
+					"§7§7Melee attacks reduce healing", 
+					"§7by §6$55$% §7for §a10s"
+				],
+
+				"stage3": [
+					 "§6Apex Predator",
+					 "§7§7Deal §c+$20$% §7damage against",
+					 "§7targets with no other mobs", 
+					 "§7within §a15 §7blocks"
+				]
+			}
+		},
+		"TURTLE": {
+			"texture": "http://textures.minecraft.net/texture/212b58c841b394863dbcc54de1c2ad2648af8f03e648988c1f9cef0bc20ee23c",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"", 
+					"§7Health: §a+$50$", 
+					"§7Defense: §a+$100$"
+				],
+
+				"stage1": [
+					"§6Turtle Tactics", 
+					"§7§7Gain §a+$20$% §a❈ Defense"
+				],
+
+				"stage2": [
+					"§6Genius Amniote", 
+					"§7§7Gain §a+$50$❈ Defense §7and", 
+					"§7regen §c+$25$❤ §7per second when", 
+					"§7near or in water"
+				],
+
+				"stage3": [
+					 "§6Unflippable", 
+					 "§7§7Gain §aimmunity §7to knockback"
+				]
+			}
+		},
+		"WOLF": {
+			"texture": "http://textures.minecraft.net/texture/dc3dd984bb659849bd52994046964c22725f717e986b12d548fd169367d494",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet", 
+					"",
+					"§7Health: §a+$50$",
+					"§7Speed: §a+$20$", 
+					"§7True Defense: §a+$10$", 
+					"§7Crit Damage: §a+$10$"
+				],
+
+				"stage1": [
+					"§6Alpha Dog", 
+					"§7§7Take §a$30$% §7less damage from",
+					"§7wolves"
+				],
+
+				"stage2": [
+					"§6Pack Leader", 
+					"§7§7Gain §a$15$ §9☠ Crit Damage", 
+					"§9§7for every nearby wolf monsters", 
+					"§8Max 10 wolves"
+				],
+
+				"stage3": [
+					 "§6Combat Exp Boost", 
+					 "§7§7§7Boosts your Combat exp by", 
+					 "§7§a$30$%§7"
+				]
+			}
+		},
+		"ZOMBIE": {
+			"texture": "http://textures.minecraft.net/texture/56fc854bb84cf4b7697297973e02b79bc10698460b51a639c60e5e417734e11",
+			"type": "COMBAT",
+			"lore" : {
+				"base": [
+					"§8Combat Pet",
+					"",
+					"§7Health: §a+$100$",
+					"§7Crit Damage: §a$30$"
+				],
+
+				"stage1": [
+					"§6Chomp", 
+					"§7§7Gain §a+$25$ §7hp per zombie", 
+					"§7kill"
+				],
+
+				"stage2": [
+					"§6Rotten Blade", 
+					"§7§7Deal §a$20$% §7more damage to", 
+					"§7zombies"
+				],
+
+				"stage3": [
+					"§6Living Dead", 
+					"§7§7Increases the defense of all", 
+					"§7undead armor sets by §a$25$%"
+				]
+			}
+		},
+		"GIRAFFE": {
+			"texture": "http://textures.minecraft.net/texture/176b4e390f2ecdb8a78dc611789ca0af1e7e09229319c3a7aa8209b63b9",
+			"type": "FORAGING",
+			"lore" : {
+				"base": [
+					"§8Foraging Pet",
+					"",
+					"§7Health: §a+$100$", 
+					"§7Crit Chance: §a+$5$"
+				],
+
+				"stage1": [
+					"§6Good Heart", 
+					"§7§7Regen §c$25$ ❤ §7per second"
+				],
+
+				"stage2": [
+					"§6Higher Ground", 
+					"§7§7Grants §c+$50$❁ Strength §7and", 
+					"§7§9+$60$☠ Crit Damage §7when mid", 
+					"§7air or jumping"
+				],
+
+				"stage3": [
+					"§6Long Neck", 
+					"§7§7See enemies from afar and gain", 
+					"§7§a$25$% §7dodge chance"
+				]
+			}
+		},
+		"LION": {
+			"texture": "http://textures.minecraft.net/texture/38ff473bd52b4db2c06f1ac87fe1367bce7574fac330ffac7956229f82efba1",
+			"type": "FORAGING",
+			"lore" : {
+				"base": [
+					"§8Foraging Pet", 
+					"",
+					"§7Strength: §a+$50$", 
+					"§7Speed: §a+$25$", 
+					"§7Crit Damage: §a+$15$"
+				],
+
+				"stage1": [
+					"§6Primal Force", 
+					"§7§7Adds §a§c+$20$❁ Damage §7to your", 
+					"§7weapons"
+				],
+
+				"stage2": [
+					"§6First Pounce", 
+					"§7§7Increases damage dealt by", 
+					"§7§a$50$% §7on your first hit on a", 
+					"§7mob"
+				],
+
+				"stage3": [
+					"§6King of the Jungle", 
+					"§7§7Deal §c+$30$% §c❁ Damage", 
+					"§c§7against mobs below level §a80"
+				]
+			}
+		},
+		"MONKEY": {
+			"texture": "http://textures.minecraft.net/texture/13cf8db84807c471d7c6922302261ac1b5a179f96d1191156ecf3e1b1d3ca",
+			"type": "FORAGING",
+			"lore" : {
+				"base": [
+					"§8Foraging Pet", 
+					"",
+					"§7Intelligence: §a+$50$", 
+					"§7Speed: §a+$20$"
+				],
+
+				"stage1": [
+					"§6Treeborn", 
+					"§7§7Increase double drop rates for", 
+					"§7logs by §a$60$%"
+				],
+
+				"stage2": [
+					"§6Vine Swing", 
+					"§7§7Gain §a+$100$ §f✦ Speed §7while", 
+					"§7in The Park"
+				],
+
+				"stage3": [
+					"§6Evolved Axes", 
+					"§7§7Reduce the cooldown of Jungle", 
+					"§7Axe and Treecapitator by §a$50$%"
+				]
+			}
+		},
+		"OCELOT": {
+			"texture": "http://textures.minecraft.net/texture/5657cd5c2989ff97570fec4ddcdc6926a68a3393250c1be1f0b114a1db1",
+			"type": "FORAGING",
+			"lore" : {
+				"base": [
+					"§8Foraging Pet", 
+					"",
+					"§7Speed: §a+$50$",
+					"§7Ferocity: §a+$10$"
+				],
+
+				"stage1": [
+					"§6Foraging Exp Boost", 
+					"§7§7§7Boosts your Foraging exp by", 
+					"§7§a$30$%§7"
+				],
+
+				"stage2": [
+					"§6Tree Hugger", 
+					"§7§7Foraging minions work §a$30$%", 
+					"§a§7faster while on your island"
+				],
+
+				"stage3": [
+					"§6Tree Essence", 
+					"§7§7Gain a §a$30$% §7chance to get", 
+					"§7exp from breaking a log"
+				]
+			}
+		},
+		"BABY_YETI": {
+			"texture": "http://textures.minecraft.net/texture/ab126814fc3fa846dad934c349628a7a1de5b415021a03ef4211d62514d5",
+			"type": "FISHING",
+			"lore" : {
+				"base": [
+					"§8Fishing Pet", 
+					"",
+					"§7Strength: §a+$40$", 
+					"§7Intelligence: §a+$75$"
+				],
+
+				"stage1": [
+					"§6Cold Breeze", 
+					"§7§7Gives §a$50$ §c❁ Strength", 
+					"§c§7and §9☠ Crit Damage §7when", 
+					"§7near snow"
+				],
+
+				"stage2": [
+					"§6Ice Shields", 
+					"§7§7Gain §a$100$% §7of your strength", 
+					"§7as §a❈ Defense"
+				],
+
+				"stage3": [
+					"§6Yeti Fury", 
+					"§7§7Buff the Yeti sword by §a$100$", 
+					"§a§7§c❁ Damage §7and §b✎", 
+					"§bIntelligence"
+				]
+			}
+		},
+		"BLUE_WHALE": {
+			"texture": "http://textures.minecraft.net/texture/dab779bbccc849f88273d844e8ca2f3a67a1699cb216c0a11b44326ce2cc20",
+			"type": "FISHING",
+			"lore" : {
+				"base": [
+					"§8Fishing Pet",
+					"",
+					"§7Health: §a+$200$", 
+					"§7Defense: §a+$25$"
+				],
+
+				"stage1": [
+					"§6Ingest", 
+					"§7§7All potions heal §c+$250$❤"
+				],
+
+				"stage2": [
+					"§6Bulk", 
+					"§7§7Gain §a$3$§a❈ Defense §7per", 
+					"§7§c$30|30|30|25|20$ Max §c❤ Health"
+				],
+
+				"stage3": [
+					"§6Archimedes", 
+					"§7§7Gain §c+$20$% Max §c❤ Health"
+				]
+			}
+		},
+		"DOLPHIN": {
+			"texture": "http://textures.minecraft.net/texture/cefe7d803a45aa2af1993df2544a28df849a762663719bfefc58bf389ab7f5",
+			"type": "FISHING",
+			"lore" : {
+				"base": [
+					"§8Fishing Pet", 
+					"",
+					"§7Sea Creature Chance: §a+$5$", 
+					"§7Intelligence: §a+$100$"
+				],
+
+				"stage1": [
+					"§6Pod Tactics", 
+					"§7§7Increases your fishing speed", 
+					"§7by §a$~3|4|4|5|5~$% §7for each player within", 
+					"§710 blocks up to §a$15|20|20|25|25$%"
+				],
+
+				"stage2": [
+					"§6Echolocation", 
+					"§7§7Increases sea creatures catch", 
+					"§7chance by §a$~7|7|7|10|10~$%"
+				],
+
+				"stage3": [
+					"§6Splash Surprise", 
+					"§7§7Stun sea creatures for §a5s", 
+					"§a§7after fishing them up"
+				]
+			}
+		},
+		"FLYING_FISH": {
+			"texture": "http://textures.minecraft.net/texture/40cd71fbbbbb66c7baf7881f415c64fa84f6504958a57ccdb8589252647ea",
+			"type": "FISHING",
+			"lore" : {
+				"base": [
+					"§8Fishing Pet", 
+					"",
+					"§7Strength: §a+$50$",
+					"§7Defense: §a+$50$"
+				],
+
+				"stage1": [
+					"§6Quick Reel", 
+					"§7§7Increases fishing speed by", 
+					"§7§a$~30|30|30|40|40~$%"
+				],
+
+				"stage2": [
+					"§6Water Bender", 
+					"§7§7Gives §a$50$ §c❁ Strength §7and", 
+					"§7§a❈ Defense §7when near water"
+				],
+
+				"stage3": [
+					"§6Deep Sea Diver", 
+					"§7§7Increases the stats of Diver", 
+					"§7Armor by §a$30$%"
+				]
+			}
+		},
+		"MEGALODON": {
+			"texture": "http://textures.minecraft.net/texture/a94ae433b301c7fb7c68cba625b0bd36b0b14190f20e34a7c8ee0d9de06d53b9",
+			"type": "FISHING",
+			"lore" : {
+				"base": [
+					"§8Fishing Pet",
+					"",
+					"§7Strength: §a+$50$", 
+					"§7Magic Find: §a+$10$",
+					"§7Ferocity: §a+$5$"
+				],
+
+				"stage1": [
+					"§6Blood Scent", 
+					"§7§7Deal up to §c+$25$% §c❁ Damage", 
+					"§c§7based on the enemy's missing", "§7health"
+				],
+
+				"stage2": [
+					"§6Enhanced Scales", 
+					"§7§7Increases the stats of Shark", 
+					"§7Armor by §a$20$%"
+				],
+
+				"stage3": [
+					"§6Feeding Frenzy", 
+					"§7§7On kill gain §c$50$❁ Damage", 
+					"§c§7and §f✦ Speed §7for 5 seconds"
+				]
+			}
+		},
+		"SQUID": {
+			"texture": "http://textures.minecraft.net/texture/01433be242366af126da434b8735df1eb5b3cb2cede39145974e9c483607bac",
+			"type": "FISHING",
+			"lore" : {
+				"base": [
+					"§8Fishing Pet",
+					"",
+					"§7Health: §a+50", 
+					"§7Intelligence: §a+50"
+				],
+
+				"stage1": [
+					"§6More Ink", 
+					"§7§7Gain a §a$~50|75|75|100|100~$% §7chance to get",
+					"§7double drops from squids"
+				],
+
+				"stage2": [
+					"§6Ink Specialty", 
+					"§7§7Buffs the Ink Wand by §a$40$ §c❁", 
+					"§cDamage §7and §a$20$ §c❁ Strength"
+				],
+
+				"stage3": [
+					"§6Fishing Exp Boost", 
+					"§7§7§7Boosts your Fishing exp by", 
+					"§7§a$30$%§7"
+				]
+			}
+		},
+		"JELLYFISH": {
+			"texture": "http://textures.minecraft.net/texture/913f086ccb56323f238ba3489ff2a1a34c0fdceeafc483acff0e5488cfd6c2f1",
+			"type": "ALCHEMY",
+			"lore" : {
+				"base": [
+					"§8Alchemy Pet", 
+					"",
+					"§7Health: §a+$200$"
+				],
+
+				"stage1": [
+					"§6Radiant Regeneration", 
+					"§7§7While in dungeons, increases", 
+					"§7your base health regen by §a$100$%", 
+					"§a§7and heals players within 8", 
+					"§7blocks by up to 10hp/s"
+				],
+
+				"stage2": [
+					"§6Hungry Healer", 
+					"§7§7While in dungeons, for every", 
+					"§71000 you heal teammates apply", 
+					"§7the §aenchanted golden apple", 
+					"§a§7effect to all players within", 
+					"§710 blocks (10s cooldown)"
+				],
+
+				"stage3": [
+					"§6Powerful Potions", 
+					"§7§7While in dungeons, increase", 
+					"§7the effectiveness of Instant", 
+					"§7Health and Mana splash potions", 
+					"§7by §a$50$%"
+				]
+			}
+		},
+		"PARROT": {
+			"texture": "http://textures.minecraft.net/texture/5df4b3401a4d06ad66ac8b5c4d189618ae617f9c143071c8ac39a563cf4e4208",
+			"type": "ALCHEMY",
+			"lore" : {
+				"base": [
+					"§8Alchemy Pet", 
+					"",
+					"§7Intelligence: §a+$100$", 
+					"§7Crit Damage: §a+$10$"
+				],
+
+				"stage1": [
+					"§6Flamboyant", 
+					"§7§7Adds §a$~15|15|15|15|20~$ §7levels to",
+					"§7intimidation accessories"
+				],
+
+				"stage2": [
+					"§6Repeat", 
+					"§7§7Boosts potions duration by", 
+					"§7§a$34.7 (+5.3)$%"
+				],
+
+				"stage3": [
+					"§6Bird Discourse", 
+					"§7§7Gives §c+$24.8 (+5.2)$❁ Strength §7to", 
+					"§7players within §a20 §7blocks", 
+					"§8Doesn't stack"
+				]
+			}
+		},
+		"SHEEP": {
+			"texture": "http://textures.minecraft.net/texture/64e22a46047d272e89a1cfa13e9734b7e12827e235c2012c1a95962874da0",
+			"type": "ALCHEMY",
+			"lore" : {
+				"base": [
+					"§8Alchemy Pet", 
+					"",
+					"§7Ability Damage: §a+$50$", 
+					"§7Intelligence: §a+$100$"
+				],
+
+				"stage1": [
+					"§6Mana Saver", 
+					"§7§7§7Reduces the mana cost of", 
+					"§7abilities by §a$~10|10|10|20|20~$%"
+				],
+
+				"stage2": [
+					"§6Overheal",
+					"§7§7Gives a §a$10$% §7shield after",
+					"§7not taking damage for 10s"
+				],
+
+				"stage3": [
+					"§6Dungeon Wizard", 
+					"§7§7Increases your total mana by", 
+					"§7§a$25$% §7while in dungeons"
+				]
+			}
+		}
+	},
+	"held_items": {
+		"PET_ITEM_VAMPIRE_FANG": {
+			"boost_tier": true,
+			"lore":[
+				"§6Held Item: §6Vampire Fang", 
+				"§7§7Upgrades a Bat pet from", 
+				"§7§6Legendary §7to §dMythic", 
+				"§d§7adding a bonus perk and", 
+				"§7bonus stats!"
+			]
+		},
+		"CROCHET_TIGER_PLUSHIE":{
+			"bonus": {
+				"bonus_attack_speed": 35
+			},
+			"lore": [
+				"§6Held Item: §5Crochet Tiger Plushie", 
+				"§7§7Increases §e⚔ Bonus", 
+				"§eAttack Speed §7by §a35."
+			]
+		},
+		"DWARF_TURTLE_SHELMET": {
+			"lore": [
+				 "§6Held Item: §9Dwarf Turtle Shelmet", 
+				 "§7§7Makes the pet's owner", 
+				 "§7immune to knockback."
+			]
+		},
+		"WASHED_UP_SOUVENIR": {
+			"bonus": {
+				"sea_creature_chance": 5
+			},
+			"lore": [
+				 "§6Held Item: §6Washed-up Souvenir", 
+				 "§7§7Increases §3α Sea", 
+				 "§3Creature Chance §7by §a5."
+			]
+		},
+		"MINOS_RELIC": {
+			"bonus": {
+				"ability_damage": "33.33%",
+				"damage": "33.33%",
+				"health": "33.33%",
+				"defense": "33.33%",
+				"strength": "33.33%",
+				"speed": "33.33%",
+				"crit_damage": "33.33%",
+				"crit_chance": "33.33%",
+				"bonus_attack_speed": "33.33%",
+				"intelligence": "33.33%",
+				"sea_creature_chance": "33.33%",
+				"magic_find": "33.33%",
+				"pet_luck": "33.33%",
+				"ferocity": "33.33%"
+			},
+			"lore": [
+				 "§6Held Item: §5Minos Relic", 
+				 "§7§7Increases all pet stats by", 
+				 "§7§a33.3%§7."
+			]
+		},
+		"ANTIQUE_REMEDIES": {
+			"bonus": {
+				"strength": "80%"
+			},
+			"lore": [
+				 "§6Held Item: §5Antique Remedies", 
+				 "§7§7Increases the pet's §c❁", 
+				 "§cStrength §7by §a80%"
+			]
+		},
+		"PET_ITEM_TEXTBOOK": {
+			"bonus": {
+				"intelligence": "100%"
+			},
+			"lore": [
+				 "§6Held Item: §6Textbook",
+				 "§7§7Increases the pet's §b✎", 
+				 "§bIntelligence §7by §a100%"
+			]
+		},
+		"SADDLE": {
+			"lore": [
+				 "§6Held Item: §aSaddle",
+				 "§7§7Increases horse speed by",
+				 "§7§a50% §7and jump boost by", 
+				 "§7§a100%"
+			]
+		},
+		"PET_ITEM_TIER_BOOST": {
+			"boost_tier": true,
+			"lore": [
+				 "§6Held Item: §6Tier Boost",
+				 "§7§7Boosts the §ararity §7of", 
+				 "§7your pet by 1 tier!"
+			]
+		},
+		"PET_ITEM_EXP_SHARE": {
+			"lore": [
+				 "§6Held Item: §5Exp Share",
+				 "§7§7While unequipped this pet",
+				 "§7gains §a25% §7of the", 
+				 "§7equipped pet's xp, this is", 
+				 "§7split between all pets",
+				 "§7holding the item."
+			]
+		},
+		"PET_ITEM_LUCKY_CLOVER": {
+			"bonus": {
+				"magic_find": 7
+			},
+			"lore": [
+				 "§6Held Item: §5Lucky Clover",
+				 "§7§7Increases §b✯ Magic Find", 
+				 "§b§7by §a7."
+			]
+		},
+		"PET_ITEM_BUBBLEGUM": {
+			"lore": [
+				 "§6Held Item: §9Bubblegum",
+				 "§7§7Your pet fuses its power", 
+				 "§7with placed §aOrbs §7to", 
+				 "§7give them §a2x §7duration."
+			]
+		},
+		"PET_ITEM_FARMING_SKILL_BOOST_COMMON": {
+			"lore": [
+				 "§6Held Item: §fFarming Exp Boost", 
+				 "§7§7Gives §a+20% §7pet exp", 
+				 "§7for Farming."
+			]
+		},
+		"PET_ITEM_FARMING_SKILL_BOOST_UNCOMMON": {
+			"lore": [
+				 "§6Held Item: §aFarming Exp Boost", 
+				 "§7§7Gives §a+20% §7pet exp", 
+				 "§7for Farming."
+			]
+		},
+		"PET_ITEM_FARMING_SKILL_BOOST_RARE": {
+			"lore": [
+				 "§6Held Item: §9Farming Exp Boost",
+				 "§7§7Gives §a+40% §7pet exp",
+				 "§7for Farming."
+			]
+		},
+		"PET_ITEM_FARMING_SKILL_BOOST_EPIC": {
+			"lore": [
+				 "§6Held Item: §5Farming Exp Boost",
+				 "§7§7Gives §a+50% §7pet exp",
+				 "§7for Farming."
+			]
+		},
+		"PET_ITEM_COMBAT_SKILL_BOOST_COMMON": {
+			"lore": [
+				 "§6Held Item: §fCombat Exp Boost", 
+				 "§7§7Gives §a+20% §7pet exp", 
+				 "§7for Combat."
+			]
+		},
+		"PET_ITEM_COMBAT_SKILL_BOOST_UNCOMMON": {
+			"lore": [
+				 "§6Held Item: §aCombat Exp Boost", 
+				 "§7§7Gives §a+30% §7pet exp", 
+				 "§7for Combat."
+			]
+		},
+		"PET_ITEM_COMBAT_SKILL_BOOST_RARE": {
+			"lore": [
+				 "§6Held Item: §9Combat Exp Boost",
+				 "§7§7Gives §a+40% §7pet exp",
+				 "§7for Combat."
+			]
+		},
+		"PET_ITEM_COMBAT_SKILL_BOOST_EPIC": {
+			"lore": [
+				 "§6Held Item: §5Combat Exp Boost",
+				 "§7§7Gives §a+50% §7pet exp",
+				 "§7for Combat."
+			]
+		},
+		"PET_ITEM_FORAGING_SKILL_BOOST_COMMON": {
+			"lore": [
+				 "§6Held Item: §fForaging Exp Boost", 
+				 "§7§7Gives §a+20% §7pet exp", 
+				 "§7for Foraging."
+			]
+		},
+		"PET_ITEM_FORAGING_SKILL_BOOST_UNCOMMON": {
+			"lore": [
+				 "§6Held Item: §aForaging Exp Boost", 
+				 "§7§7Gives §a+30% §7pet exp", 
+				 "§7for Foraging."
+			]
+		},
+		"PET_ITEM_FORAGING_SKILL_BOOST_RARE": {
+			"lore": [
+				 "§6Held Item: §9Foraging Exp Boost",
+				 "§7§7Gives §a+40% §7pet exp",
+				 "§7for Foraging."
+			]
+		},
+		"PET_ITEM_FORAGING_SKILL_BOOST_EPIC": {
+			"lore": [
+				 "§6Held Item: §5Foraging Exp Boost",
+				 "§7§7Gives §a+50% §7pet exp",
+				 "§7for Foraging."
+			]
+		},
+		"PET_ITEM_FISHING_SKILL_BOOST_COMMON": {
+			"lore": [
+				 "§6Held Item: §fFishing Exp Boost", 
+				 "§7§7Gives §a+20% §7pet exp", 
+				 "§7for Fishing."
+			]
+		},
+		"PET_ITEM_FISHING_SKILL_BOOST_UNCOMMON": {
+			"lore": [
+				 "§6Held Item: §aFishing Exp Boost", 
+				 "§7§7Gives §a+30% §7pet exp", 
+				 "§7for Fishing."
+			]
+		},
+		"PET_ITEM_FISHING_SKILL_BOOST_RARE": {
+			"lore": [
+				 "§6Held Item: §9Fishing Exp Boost",
+				 "§7§7Gives §a+40% §7pet exp",
+				 "§7for Fishing."
+			]
+		},
+		"PET_ITEM_FISHING_SKILL_BOOST_EPIC": {
+			"lore": [
+				 "§6Held Item: §5Fishing Exp Boost",
+				 "§7§7Gives §a+50% §7pet exp",
+				 "§7for Fishing."
+			]
+		},
+		"PET_ITEM_MINING_SKILL_BOOST_COMMON": {
+			"lore": [
+				 "§6Held Item: §fMining Exp Boost", 
+				 "§7§7Gives §a+20% §7pet exp", 
+				 "§7for Mining."
+			]
+		},
+		"PET_ITEM_MINING_SKILL_BOOST_UNCOMMON": {
+			"lore": [
+				 "§6Held Item: §aMining Exp Boost", 
+				 "§7§7Gives §a+30% §7pet exp", 
+				 "§7for Mining."
+			]
+		},
+		"PET_ITEM_MINING_SKILL_BOOST_RARE": {
+			"lore": [
+				 "§6Held Item: §9Mining Exp Boost",
+				 "§7§7Gives §a+40% §7pet exp",
+				 "§7for Mining."
+			]
+		},
+		"PET_ITEM_MINING_SKILL_BOOST_EPIC": {
+			"lore": [
+				 "§6Held Item: §5Mining Exp Boost",
+				 "§7§7Gives §a+50% §7pet exp",
+				 "§7for Mining."
+			]
+		},
+		"PET_ITEM_BIG_TEETH_COMMON": {
+			"bonus": {
+				"crit_chance": 5
+			},
+			"lore": [
+				"§6Held Item: §fBig Teeth",
+				"§7§7Increases §9☣ Crit Chance §7by", 
+				"§7§a5"
+			]
+		},
+		"PET_ITEM_IRON_CLAWS_COMMON": {
+			"bonus": {
+				"crit_damage": "40%",
+				"crit_chance": "40%"
+			},
+			"lore": [
+				"§6Held Item: §fIron Claws",
+				"§7§7Increases the pet's §9☠ Crit", 
+				"§9Damage §7by §a40% §7and §9☣ Crit", 
+				"§9Chance §7by §a40%"
+			]
+		},
+		"PET_ITEM_HARDENED_SCALES_UNCOMMON": {
+			"bonus": {
+				"defense": 25
+			},
+			"lore": [
+				"§6Held Item: §aHardened Scales",
+				"§7§7Increases §a❈ Defense §7by", 
+				"§7§a25"
+			]
+		},
+		"PET_ITEM_SHARPENED_CLAWS_UNCOMMON": {
+			"bonus": {
+				"crit_damage": 15
+			},
+			"lore": [
+				 "§6Held Item: §aSharpened Claws", 
+				 "§7§7Increases §9☠ Crit Damage §7by", 
+				 "§7§a15"
+			]
+		},
+		"PET_ITEM_ALL_SKILLS_BOOST_COMMON": {
+			"lore": [
+				 "§6Held Item: §fAll Skills Exp Boost", 
+				 "§7§7Gives §a+10% §7pet exp for all",
+				 "§7skills"
+			]
+		},
+		"ALL_SKILLS_SUPER_BOOST": {
+			"lore": [
+				 "§6Held Item: §fAll Skills Exp Super-Boost", 
+				 "§7§7Gives §a+20% §7pet exp for all",
+				 "§7skills"
+			]
+		},
+		"GOLD_CLAWS": {
+			"bonus": {
+				"crit_damage": "50%",
+				"crit_chance": "50%"
+			},
+			"lore": [
+				 "§6Held Item: §aGold Claws", 
+				 "§7§7Increases the pet's §9☠ Crit", 
+				 "§9Damage §7by §a50% §7and §9☣ Crit", 
+				 "§9Chance §7by §a50%"
+			]
+		},
+		"REINFORCED_SCALES": {
+			"bonus": {
+				"defense": 40
+			},
+			"lore": [
+				 "§6Held Item: §9Reinforced Scales", 
+				 "§7§7Increases §a❈ Defense §7by", 
+				 "§7§a40"
+			]
+		},
+		"BIGGER_TEETH": {
+			"bonus": {
+				"crit_chance": 10
+			},
+			"lore": [
+				 "§6Held Item: §aBigger Teeth", 
+				 "§7§7Increases §9☣ Crit Chance §7by", 
+				 "§7§a10"
+			]
+		},
+		"SERRATED_CLAWS": {
+			"bonus": {
+				"crit_damage": 25
+			},
+			"lore": [
+				 "§6Held Item: §9Serrated Claws", 
+				 "§7§7Increases §9☠ Crit Damage §7by", 
+				 "§7§a25"
+			]
+		},
+		"PET_ITEM_SPOOKY_CUPCAKE": {
+			"bonus": {
+				"strength": 30,
+				"speed": 20
+			},
+			"lore": [
+				"§6Held Item: §aSpooky Cupcake", 
+				"§7§7Increases §c❁ Strength",
+				"§c§7by §a30 §7and §f✦ Speed", 
+				"§f§7by §a20."
+			]
+		}
+	},
+	"skins":{
+		"TIGER_TWILIGHT": {
+			"texture": "http://textures.minecraft.net/texture/896211dc599368dbd9056c0116ab61063991db793be93066a858eb4e9ce56438",
+			"name": "Twilight"
+		},
+		"RABBIT": {
+			"texture": "http://textures.minecraft.net/texture/a34631d940fddb689ddef6a3b352c50220c460dba05cd18dc83192b59dc647f8",
+			"name": "Pretty"
+		},
+		"SHEEP_PINK":{
+			"texture": "http://textures.minecraft.net/texture/afa7747684dcb96192d90342cea62742ec363da07cb5e6e25eecec888cd2076",
+			"name": "Pink"
+		}, 
+		"SHEEP_BLACK": {
+			"texture": "http://textures.minecraft.net/texture/aa9dcda642a807cd2daa4aa6be87cef96e08a8c8f5cec2657dda4266c6a884c2",
+			"name": "Black"
+		},
+		"SHEEP_LIGHT_GREEN": {
+			"texture": "http://textures.minecraft.net/texture/cf183ec2fe58faa43e568419b7a0dc446ece4ea0be52ec784c94e1d74b75939d",
+			"name": "Light Green"
+		},
+		"SHEEP_LIGHT_BLUE":{
+			"texture": "http://textures.minecraft.net/texture/722220de1a863bc5d9b9e7a6a3b03214c9f3d698ed3fe0d28220f3b93b7685c5",
+			"name": "Light Blue"
+		}, 
+		"SHEEP_WHITE": {
+			"texture": "http://textures.minecraft.net/texture/b92a1a5c325f25f7438a0abb4f86ba6cf75552d02c7349a7292981459b31d2f7",
+			"name": "White"
+		},
+		"SHEEP_PURPLE": {
+			"texture": "http://textures.minecraft.net/texture/99a88cf7dd33063587c6b540e6130abc5d07f1a65c47573ab3c1ad3ccec8857f",
+			"name": "Purple"
+		},
+		"ENDERMAN": {
+			"texture": "http://textures.minecraft.net/texture/ea84cc8818c293484fdaafc8fa2f0bf39e55733a247d68023df2c6c6b9b671d0",
+			"name": "Spooky"
+		},
+		"GUARDIAN":{
+			"texture": "http://textures.minecraft.net/texture/37cc76e7af29f5f3fbfd6ece794160811eff96f753459fa61d7ad176a064e3c5",
+			"name": "Watcher"
+		}, 
+		"ROCK_COOL":{
+			"texture": "http://textures.minecraft.net/texture/fefcdbb7d95502acc1ae35a32a40ce4dec8f4c9f0da26c9d9fe7c2c3eb748f6",
+			"name": "Cool"
+		}, 
+		"ROCK_DERP":{
+			"texture": "http://textures.minecraft.net/texture/c4f89fbd12c209f7f26c1f34a1bd7f47635814759c09688dd212b205c73a8c02",
+			"name": "Derpy"
+		}, 
+		"ROCK_EMBARRASSED":{
+			"texture": "http://textures.minecraft.net/texture/27ff34992e66599e8529008be3fb577cb0ab545294253e25a0cc988e416c849",
+			"name": "Embarrassed"
+		}, 
+		"ROCK_SMILE": {
+			"texture": "http://textures.minecraft.net/texture/713c8b2916a275db4c1762cf5f13d7b95b91d60baf5164a447d6efa7704cf11b",
+			"name": "Smiling"
+		},
+		"ROCK_LAUGH":{
+			"texture": "http://textures.minecraft.net/texture/8cc1ef513d5f616675242174acde7b9d6259a47c4fe8f6e4b6e20920319d7073",
+			"name": "Laughing"
+		}, 
+		"ROCK_THINKING":{
+			"texture": "http://textures.minecraft.net/texture/dd2f781f03c365bbc5dd1e7186ab38dc69465e836c9fe066a9a844f34a4da92",
+			"name": "Thinking"
+		}, 
+		"WITHER":{
+			"texture":"http://textures.minecraft.net/texture/224c2d14a0219af5ccfcaa36e8a333e271724ed61276611f9529e16c10273a0d",
+			"name": "Dark"
+		},
+		"SILVERFISH":{
+			"texture":"http://textures.minecraft.net/texture/d8552ff591042c4a38f8ba0626784ae28c4545a97d423fd9037c341035593273",
+			"name": "Fortified"
+		},
+		"ELEPHANT_ORANGE":{
+			"texture":"http://textures.minecraft.net/texture/554a34a80c474206d3700b8fced6b44fab0b0ed0b05c1293ff0c5d86eda251d1",
+			"name": "Orange"
+		},
+		"ELEPHANT_BLUE":{
+			"texture":"http://textures.minecraft.net/texture/4b62969c005815d0409136380febc5ac468aaba9bda4db80954fa5426ee0a323",
+			"name": "Blue"
+		},
+		"ELEPHANT_PINK":{
+			"texture":"http://textures.minecraft.net/texture/570eef474ec0e56cc34c2307eaa39f024612f8cd7248e7d5b14169ebd307c742",
+			"name": "Pink"
+		},
+		"YETI_GROWN_UP":{
+			"texture":"http://textures.minecraft.net/texture/f5f29a975529276d916fc67998833c11ee178ff21e5941afdfb0fa7010f8374e",
+			"name": "Grown-up"
+		},
+		"JERRY_RED_ELF":{
+			"texture":"http://textures.minecraft.net/texture/1d82f9c36e824c1e37963a849bf5abd76d3b349125023504af58369086089ee9",
+			"name": "Red Elf"
+		},
+		"JERRY_GREEN_ELF":{
+			"texture":"http://textures.minecraft.net/texture/4ec5455f43426ca1874b5c7b4a492ec3722a502f8b9599e758e133fed8b3c1e4",
+			"name": "Green Elf"
+		}
+	}
+}

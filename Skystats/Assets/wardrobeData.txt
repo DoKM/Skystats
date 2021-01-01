@@ -1,0 +1,2628 @@
+TAG_Compound: 1 entries {
+  TAG_List("i"): 72 entries {
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 298
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 2 entries {
+          TAG_Compound: 2 entries {
+            TAG_Short("lvl"): 3
+            TAG_Short("id"): 5
+          }
+          TAG_Compound: 2 entries {
+            TAG_Short("lvl"): 1
+            TAG_Short("id"): 6
+          }
+        }
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 29 entries {
+            TAG_String: "§7Strength: §c+8 §9(Renowned +8)"
+            TAG_String: "§7Crit Chance: §c+8% §9(Renowned +8%)"
+            TAG_String: "§7Crit Damage: §c+8% §9(Renowned +8%)"
+            TAG_String: "§7Bonus Attack Speed: §c+3% §9(Renowned +3%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+137 HP §e(+40 HP) §9(Renowned +6 HP)"
+            TAG_String: "§7Defense: §a+45 §e(+20) §9(Renowned +6)"
+            TAG_String: "§7Speed: §a+11 §9(Renowned +1)"
+            TAG_String: "§7Intelligence: §a+7 §9(Renowned +8)"
+            TAG_String: ""
+            TAG_String: "§9Aqua Affinity I"
+            TAG_String: "§7Increases your underwater mining"
+            TAG_String: "§7rate."
+            TAG_String: "§9Growth VI"
+            TAG_String: "§7Grants §a+90 §c❤ Health§7."
+            TAG_String: "§9Protection VI"
+            TAG_String: "§7Grants §a+18 §a❈ Defense§7."
+            TAG_String: "§9Respiration III"
+            TAG_String: "§7Extends your underwater"
+            TAG_String: "§7breathing time by §a45s§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Fairy's Outfit"
+            TAG_String: "§7Gain §c1❤ §7per Fairy Soul."
+            TAG_String: "§7You found: §d0 Fairy Souls"
+            TAG_String: ""
+            TAG_String: "§9Renowned Bonus"
+            TAG_String: "§7Increases all stats by §a+1%§7."
+            TAG_String: ""
+            TAG_String: "§5§l§ka§r §5§l§5§lEPIC HELMET §5§l§ka"
+          }
+          TAG_Int("color"): 16764159
+          TAG_String("Name"): "§5Renowned Fairy's Fedora"
+        }
+        TAG_Compound("ExtraAttributes"): 10 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "255:204:255"
+          TAG_String("modifier"): "renowned"
+          TAG_String("originTag"): "UNKNOWN"
+          TAG_String("id"): "FAIRY_HELMET"
+          TAG_Compound("enchantments"): 4 entries {
+            TAG_Int("protection"): 6
+            TAG_Int("growth"): 6
+            TAG_Int("respiration"): 3
+            TAG_Int("aqua_affinity"): 1
+          }
+          TAG_String("uuid"): "8a3aac3c-37e5-48e0-9d5c-103e23b0f75e"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "9/15/20 9:46 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "bafabf7d-16e6-32fb-9720-812419bacc73"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzkwMTE2ZGE1MTRhNzNkZGQ5Mjk1NDkxODUyYWRjNTg4MDA3ZjJhY2Q3ZGUyNjk3ODhhMjEyOGQ4ZTRhNzY0YiJ9fX0="
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 24 entries {
+            TAG_String: "§7Strength: §c+10 §9(Fierce +10)"
+            TAG_String: "§7Crit Chance: §c+6% §9(Fierce +6%)"
+            TAG_String: "§7Crit Damage: §c+18% §9(Fierce +18%)"
+            TAG_String: "§7Sea Creature Chance: §c+2.5%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+195 HP"
+            TAG_String: "§7Defense: §a+135"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absorb"
+            TAG_String: "§7§9Doubles§7 your §a❈ Defense§7"
+            TAG_String: "§7while in water."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Reflect"
+            TAG_String: "§7§7Your sharp scales reflect"
+            TAG_String: "§7§915% §7of damage onto the"
+            TAG_String: "§7attacker."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aFishing Skill 24"
+            TAG_String: "§6§lLEGENDARY HELMET"
+          }
+          TAG_String("Name"): "§6Fierce Shark Scale Helmet"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("modifier"): "fierce"
+          TAG_String("originTag"): "SHARK_SCALE_HELMET"
+          TAG_String("id"): "SHARK_SCALE_HELMET"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("protection"): 5
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "b38438ab-9cb8-4667-a2dd-cc75655c3cac"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "10/24/20 11:53 AM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "bafabf7d-16e6-32fb-9720-812419bacc73"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzkwMTE2ZGE1MTRhNzNkZGQ5Mjk1NDkxODUyYWRjNTg4MDA3ZjJhY2Q3ZGUyNjk3ODhhMjEyOGQ4ZTRhNzY0YiJ9fX0="
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 31 entries {
+            TAG_String: "§7Strength: §c+10 §9(Renowned +10)"
+            TAG_String: "§7Crit Chance: §c+10% §9(Renowned +10%)"
+            TAG_String: "§7Crit Damage: §c+10% §9(Renowned +10%)"
+            TAG_String: "§7Bonus Attack Speed: §c+4% §9(Renowned +4%)"
+            TAG_String: "§7Sea Creature Chance: §c+2.5%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+128 HP §9(Renowned +8 HP)"
+            TAG_String: "§7Defense: §a+128 §9(Renowned +8)"
+            TAG_String: "§7Speed: §a+1 §9(Renowned +1)"
+            TAG_String: "§7Intelligence: §a+10 §9(Renowned +10)"
+            TAG_String: ""
+            TAG_String: "§9§d§lLegion V"
+            TAG_String: "§7Increases all your player stats"
+            TAG_String: "§7except Health by §e0.35% §7per"
+            TAG_String: "§7player within §b30 §7blocks of"
+            TAG_String: "§7you, up to §c20 §7players."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absorb"
+            TAG_String: "§7§9Doubles§7 your §a❈ Defense§7"
+            TAG_String: "§7while in water."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Reflect"
+            TAG_String: "§7§7Your sharp scales reflect"
+            TAG_String: "§7§915% §7of damage onto the"
+            TAG_String: "§7attacker."
+            TAG_String: ""
+            TAG_String: "§9Renowned Bonus"
+            TAG_String: "§7Increases all stats by §a+1%§7."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aFishing Skill 24"
+            TAG_String: "§6§lLEGENDARY HELMET"
+          }
+          TAG_String("Name"): "§6Renowned Shark Scale Helmet"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("modifier"): "renowned"
+          TAG_String("originTag"): "SHARK_SCALE_HELMET"
+          TAG_String("id"): "SHARK_SCALE_HELMET"
+          TAG_Compound("enchantments"): 1 entries {
+            TAG_Int("ultimate_legion"): 5
+          }
+          TAG_String("uuid"): "79bcf720-7fbb-4d7c-8c7d-9495ec65214b"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "9/8/20 3:22 PM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "27508566-a773-3516-8903-9e405064893e"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI4NTk1MGZkNjc4NThlNzZjNDM5YjBiNWI4N2M2OWE2YzUyYTRkZjkzNmUyMjRkODQzYjE0YzIyNTY1OTQ5ZSJ9fX0="
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 19 entries {
+            TAG_String: "§7Strength: §c+8 §9(Fierce +8)"
+            TAG_String: "§7Crit Chance: §c+5% §9(Fierce +5%)"
+            TAG_String: "§7Crit Damage: §c+14% §9(Fierce +14%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+575 HP"
+            TAG_String: "§7Defense: §a-1,000,000"
+            TAG_String: "§7Intelligence: §a+125"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absolute Unit"
+            TAG_String: "§c+50❤ §7per §c1% Crit Damage"
+            TAG_String: "§7Regain §c2% §7of §cmax ❤ §7when hit. §8(1s cd)"
+            TAG_String: "§7Receive §a-20% §7damage from wolves."
+            TAG_String: "§7Your crit damage is §950% §7less effective."
+            TAG_String: ""
+            TAG_String: "§7§4☠ §cRequires §5Wolf Slayer 4"
+            TAG_String: "§5§lEPIC HELMET"
+          }
+          TAG_String("Name"): "§5Fierce Mastiff Crown"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("modifier"): "fierce"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "MASTIFF_HELMET"
+          TAG_Compound("enchantments"): 1 entries {
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "757ddbea-55d9-468e-8d9b-5bcea9ef9cd0"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "6/5/20 2:37 PM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "16b91b55-02b7-3315-bd9a-7da8467e4a96"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "ewogICJ0aW1lc3RhbXAiIDogMTYwNTYyMzI0OTc5MywKICAicHJvZmlsZUlkIiA6ICIwNjEzY2I1Y2QxYjg0M2JjYjI4OTk1NWU4N2QzMGEyYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJicmVhZGxvYWZzcyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yYmJiMmZhN2E2Y2EwODcyODBlYTBjYjU2NGI0MWVmMWFlNDA0YTE5ZjdhODEyOGQzZDI4YzUxOWE4NWUwNjNmIgogICAgfQogIH0KfQ"
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 28 entries {
+            TAG_String: "§7Gear Score: §d768"
+            TAG_String: "§7Strength: §c+75 §9(Ancient +35)"
+            TAG_String: "§7Crit Chance: §c+15% §9(Ancient +15%)"
+            TAG_String: "§7Crit Damage: §c+30%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+302 HP §e(+40 HP) §9(Ancient +7 HP)"
+            TAG_String: "§7Defense: §a+142 §e(+20) §9(Ancient +7)"
+            TAG_String: "§7Intelligence: §a+55 §9(Ancient +25)"
+            TAG_String: ""
+            TAG_String: "§9Growth V, §9Protection V"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Witherborn"
+            TAG_String: "§7Spawns a wither minion every"
+            TAG_String: "§7§e30 §7seconds up to a maximum"
+            TAG_String: "§7§a1 §7wither. Your withers will"
+            TAG_String: "§7travel to and explode on nearby"
+            TAG_String: "§7enemies."
+            TAG_String: ""
+            TAG_String: "§7Reduces the damage you take"
+            TAG_String: "§7from withers by §c10%§7."
+            TAG_String: ""
+            TAG_String: "§9Ancient Bonus"
+            TAG_String: "§7Grants §a+1 §9☠ Crit Damage"
+            TAG_String: "§9§7per §cCatacombs §7level."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aCatacombs Floor VII"
+            TAG_String: "§aCompletion"
+            TAG_String: "§d§l§ka§r §d§l§d§lMYTHIC DUNGEON HELMET §d§l§ka"
+          }
+          TAG_String("Name"): "§dAncient Necron's Helmet §6✪§6✪§6✪§6✪§6✪"
+        }
+        TAG_Compound("ExtraAttributes"): 10 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("modifier"): "ancient"
+          TAG_Int("dungeon_item_level"): 5
+          TAG_String("originTag"): "POWER_WITHER_HELMET"
+          TAG_String("id"): "POWER_WITHER_HELMET"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("growth"): 5
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "f1281629-50cb-4d90-8232-feeab445c617"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "11/20/20 3:37 PM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "2d2463b0-fba2-3136-8211-519da8e903c5"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ0NDc1NmUwYjRlY2U4ZDc0NjI5NmEzZDVlMjk3ZTE0MTVmNGJhMTc2NDdmZmUyMjgzODUzODNkMTYxYTkifX19"
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 9 entries {
+            TAG_String: "§7Defense: §a+111"
+            TAG_String: ""
+            TAG_String: "§6Item Ability: Rejuvenate"
+            TAG_String: "§7While wearing, drains §a5"
+            TAG_String: "§a§7health per second from all"
+            TAG_String: "§7monsters within §e8 §7blocks."
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§9§lRARE HELMET"
+          }
+          TAG_String("Name"): "§9Vampire Mask"
+        }
+        TAG_Compound("ExtraAttributes"): 4 entries {
+          TAG_String("originTag"): "EVENT_REWARD"
+          TAG_String("id"): "VAMPIRE_MASK"
+          TAG_String("uuid"): "7eff192f-84cf-4a5d-9d14-5e1c563dc09d"
+          TAG_String("timestamp"): "11/6/20 12:40 PM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 298
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 17 entries {
+            TAG_String: "§7Strength: §c+8 §9(Mythic +8)"
+            TAG_String: "§7Crit Chance: §c+4% §9(Mythic +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+8 HP §9(Mythic +8 HP)"
+            TAG_String: "§7Defense: §a+28 §9(Mythic +8)"
+            TAG_String: "§7Speed: §a+2 §9(Mythic +2)"
+            TAG_String: "§7Intelligence: §a+105 §9(Mythic +40)"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Refraction"
+            TAG_String: "§7The stats of this armor change"
+            TAG_String: "§7from §a0§7 to §a200%§7 depending"
+            TAG_String: "§7on the current light level."
+            TAG_String: ""
+            TAG_String: "§7Current Light Level"
+            TAG_String: "§c0§8 (0%)"
+            TAG_String: ""
+            TAG_String: "§5§lEPIC HELMET"
+          }
+          TAG_Int("color"): 6497149
+          TAG_String("Name"): "§5Mythic Crystal Helmet"
+        }
+        TAG_Compound("ExtraAttributes"): 6 entries {
+          TAG_String("color"): "99:35:125"
+          TAG_String("modifier"): "mythic"
+          TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+          TAG_String("id"): "CRYSTAL_HELMET"
+          TAG_String("uuid"): "1e4b019a-f997-4af1-bf8c-74da20e771aa"
+          TAG_String("timestamp"): "12/28/19 2:49 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "cafa124e-da06-3b1a-b38e-f89824dcf2ab"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTI1ZTYxMjE5NzFlOTFjNTQxNWY2MTdlMTcxMTQ5OTBhMTQ2YTc0NmRkOTUyZDQxNzZlMjU3NjQxODNlZiJ9fX0="
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 11 entries {
+            TAG_String: "§7Defense: §a+70"
+            TAG_String: "§7Speed: §a+10"
+            TAG_String: ""
+            TAG_String: "§7Each piece of this armor grants"
+            TAG_String: "§7the ability to §9automatically"
+            TAG_String: "§9mine §a2 §7extra nearby blocks"
+            TAG_String: "§7while mining (very short"
+            TAG_String: "§7cooldown)."
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§5§lEPIC HELMET"
+          }
+          TAG_String("Name"): "§5Mineral Helmet"
+        }
+        TAG_Compound("ExtraAttributes"): 4 entries {
+          TAG_String("originTag"): "MINERAL_HELMET"
+          TAG_String("id"): "MINERAL_HELMET"
+          TAG_String("uuid"): "584e315c-ae6d-46c4-893e-1d7fac3a7f9d"
+          TAG_String("timestamp"): "12/21/20 6:19 PM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 26 entries {
+            TAG_String: "§7Strength: §c+8 §9(Renowned +8)"
+            TAG_String: "§7Crit Chance: §c+8% §9(Renowned +8%)"
+            TAG_String: "§7Crit Damage: §c+8% §9(Renowned +8%)"
+            TAG_String: "§7Bonus Attack Speed: §c+3% §9(Renowned +3%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+137 HP §e(+40 HP) §9(Renowned +6 HP)"
+            TAG_String: "§7Defense: §a+45 §e(+20) §9(Renowned +6)"
+            TAG_String: "§7Speed: §a+11 §9(Renowned +1)"
+            TAG_String: "§7Intelligence: §a+7 §9(Renowned +8)"
+            TAG_String: "§7True Defense: §a+5"
+            TAG_String: ""
+            TAG_String: "§9Growth VI"
+            TAG_String: "§7Grants §a+90 §c❤ Health§7."
+            TAG_String: "§9Protection VI"
+            TAG_String: "§7Grants §a+18 §a❈ Defense§7."
+            TAG_String: "§9True Protection I"
+            TAG_String: "§7Grants §f+5❂ True Defense§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Fairy's Outfit"
+            TAG_String: "§7Gain §c1❤ §7per Fairy Soul."
+            TAG_String: "§7You found: §d0 Fairy Souls"
+            TAG_String: ""
+            TAG_String: "§9Renowned Bonus"
+            TAG_String: "§7Increases all stats by §a+1%§7."
+            TAG_String: ""
+            TAG_String: "§5§l§ka§r §5§l§5§lEPIC CHESTPLATE §5§l§ka"
+          }
+          TAG_Int("color"): 15060223
+          TAG_String("Name"): "§5Renowned Fairy's Polo"
+        }
+        TAG_Compound("ExtraAttributes"): 10 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "229:204:255"
+          TAG_String("modifier"): "renowned"
+          TAG_String("originTag"): "UNKNOWN"
+          TAG_String("id"): "FAIRY_CHESTPLATE"
+          TAG_Compound("enchantments"): 3 entries {
+            TAG_Int("true_protection"): 1
+            TAG_Int("growth"): 6
+            TAG_Int("protection"): 6
+          }
+          TAG_String("uuid"): "5077575c-32c0-4259-947d-85199398b178"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "10/3/20 4:15 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 24 entries {
+            TAG_String: "§7Strength: §c+10 §9(Fierce +10)"
+            TAG_String: "§7Crit Chance: §c+6% §9(Fierce +6%)"
+            TAG_String: "§7Crit Damage: §c+18% §9(Fierce +18%)"
+            TAG_String: "§7Sea Creature Chance: §c+2.5%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+250 HP"
+            TAG_String: "§7Defense: §a+190"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absorb"
+            TAG_String: "§7§9Doubles§7 your §a❈ Defense§7"
+            TAG_String: "§7while in water."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Reflect"
+            TAG_String: "§7§7Your sharp scales reflect"
+            TAG_String: "§7§915% §7of damage onto the"
+            TAG_String: "§7attacker."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aFishing Skill 24"
+            TAG_String: "§6§lLEGENDARY CHESTPLATE"
+          }
+          TAG_Int("color"): 16768081
+          TAG_String("Name"): "§6Fierce Shark Scale Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 8 entries {
+          TAG_String("color"): "255:220:81"
+          TAG_String("modifier"): "fierce"
+          TAG_String("originTag"): "SHARK_SCALE_CHESTPLATE"
+          TAG_String("id"): "SHARK_SCALE_CHESTPLATE"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("protection"): 5
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "38a361e8-9d46-446f-beba-87c74874e34f"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "6/16/20 3:15 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 31 entries {
+            TAG_String: "§7Strength: §c+10 §9(Renowned +10)"
+            TAG_String: "§7Crit Chance: §c+10% §9(Renowned +10%)"
+            TAG_String: "§7Crit Damage: §c+10% §9(Renowned +10%)"
+            TAG_String: "§7Bonus Attack Speed: §c+4% §9(Renowned +4%)"
+            TAG_String: "§7Sea Creature Chance: §c+2.5%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+183 HP §9(Renowned +8 HP)"
+            TAG_String: "§7Defense: §a+183 §9(Renowned +8)"
+            TAG_String: "§7Speed: §a+1 §9(Renowned +1)"
+            TAG_String: "§7Intelligence: §a+10 §9(Renowned +10)"
+            TAG_String: ""
+            TAG_String: "§9§d§lLegion V"
+            TAG_String: "§7Increases all your player stats"
+            TAG_String: "§7except Health by §e0.35% §7per"
+            TAG_String: "§7player within §b30 §7blocks of"
+            TAG_String: "§7you, up to §c20 §7players."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absorb"
+            TAG_String: "§7§9Doubles§7 your §a❈ Defense§7"
+            TAG_String: "§7while in water."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Reflect"
+            TAG_String: "§7§7Your sharp scales reflect"
+            TAG_String: "§7§915% §7of damage onto the"
+            TAG_String: "§7attacker."
+            TAG_String: ""
+            TAG_String: "§9Renowned Bonus"
+            TAG_String: "§7Increases all stats by §a+1%§7."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aFishing Skill 24"
+            TAG_String: "§6§lLEGENDARY CHESTPLATE"
+          }
+          TAG_Int("color"): 16577535
+          TAG_String("Name"): "§6Renowned Shark Scale Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 8 entries {
+          TAG_String("color"): "252:243:255"
+          TAG_String("modifier"): "renowned"
+          TAG_String("originTag"): "SHARK_SCALE_CHESTPLATE"
+          TAG_String("id"): "SHARK_SCALE_CHESTPLATE"
+          TAG_Compound("enchantments"): 1 entries {
+            TAG_Int("ultimate_legion"): 5
+          }
+          TAG_String("uuid"): "dc59a0a6-c58b-4f6f-a689-ca4be1abdcff"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "9/8/20 3:22 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 315
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 18 entries {
+            TAG_String: "§7Strength: §c+8 §9(Fierce +8)"
+            TAG_String: "§7Crit Chance: §c+5% §9(Fierce +5%)"
+            TAG_String: "§7Crit Damage: §c+14% §9(Fierce +14%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+575 HP"
+            TAG_String: "§7Defense: §a-1,000,000"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absolute Unit"
+            TAG_String: "§c+50❤ §7per §c1% Crit Damage"
+            TAG_String: "§7Regain §c2% §7of §cmax ❤ §7when hit. §8(1s cd)"
+            TAG_String: "§7Receive §a-20% §7damage from wolves."
+            TAG_String: "§7Your crit damage is §950% §7less effective."
+            TAG_String: ""
+            TAG_String: "§7§4☠ §cRequires §5Wolf Slayer 4"
+            TAG_String: "§5§lEPIC CHESTPLATE"
+          }
+          TAG_String("Name"): "§5Fierce Mastiff Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("modifier"): "fierce"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "MASTIFF_CHESTPLATE"
+          TAG_Compound("enchantments"): 1 entries {
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "d97b00a1-26a3-4290-9fcf-a8a8cd7b2384"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "6/5/20 2:37 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 29 entries {
+            TAG_String: "§7Gear Score: §d918"
+            TAG_String: "§7Strength: §c+75 §9(Ancient +35)"
+            TAG_String: "§7Crit Chance: §c+15% §9(Ancient +15%)"
+            TAG_String: "§7Crit Damage: §c+30%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+382 HP §e(+40 HP) §9(Ancient +7 HP)"
+            TAG_String: "§7Defense: §a+182 §e(+20) §9(Ancient +7)"
+            TAG_String: "§7Intelligence: §a+35 §9(Ancient +25)"
+            TAG_String: ""
+            TAG_String: "§9§d§lWisdom V, §9Growth V"
+            TAG_String: "§9Protection V"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Witherborn"
+            TAG_String: "§7Spawns a wither minion every"
+            TAG_String: "§7§e30 §7seconds up to a maximum"
+            TAG_String: "§7§a1 §7wither. Your withers will"
+            TAG_String: "§7travel to and explode on nearby"
+            TAG_String: "§7enemies."
+            TAG_String: ""
+            TAG_String: "§7Reduces the damage you take"
+            TAG_String: "§7from withers by §c10%§7."
+            TAG_String: ""
+            TAG_String: "§9Ancient Bonus"
+            TAG_String: "§7Grants §a+1 §9☠ Crit Damage"
+            TAG_String: "§9§7per §cCatacombs §7level."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aCatacombs Floor VII"
+            TAG_String: "§aCompletion"
+            TAG_String: "§d§l§ka§r §d§l§d§lMYTHIC DUNGEON CHESTPLATE §d§l§ka"
+          }
+          TAG_Int("color"): 15155516
+          TAG_String("Name"): "§dAncient Necron's Chestplate §6✪§6✪§6✪§6✪§6✪"
+        }
+        TAG_Compound("ExtraAttributes"): 11 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "231:65:60"
+          TAG_String("modifier"): "ancient"
+          TAG_Int("dungeon_item_level"): 5
+          TAG_String("originTag"): "POWER_WITHER_CHESTPLATE"
+          TAG_String("id"): "POWER_WITHER_CHESTPLATE"
+          TAG_Compound("enchantments"): 3 entries {
+            TAG_Int("ultimate_wisdom"): 5
+            TAG_Int("protection"): 5
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "a9d028bf-4a0e-41e3-b969-aaf4e19fb3d9"
+          TAG_Int("anvil_uses"): 2
+          TAG_String("timestamp"): "11/26/20 3:00 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 30 entries {
+            TAG_String: "§7Health: §a+90 HP §9(Wise +15 HP)"
+            TAG_String: "§7Defense: §a+30"
+            TAG_String: "§7Speed: §a+2 §9(Wise +2)"
+            TAG_String: "§7Intelligence: §a+125 §9(Wise +125)"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Thorns III"
+            TAG_String: "§7Grants a §a50% §7chance to"
+            TAG_String: "§7rebound §a9% §7of damage dealt"
+            TAG_String: "§7back at the attacker."
+            TAG_String: ""
+            TAG_String: "§7This armor piece grants §a2x"
+            TAG_String: "§a§7item stats during the night or"
+            TAG_String: "§7§a3x §7during the §6Spooky"
+            TAG_String: "§6Festival§7! Additionally, it"
+            TAG_String: "§7gives a §a+5% §7chance to get"
+            TAG_String: "§7Candy from mobs during the"
+            TAG_String: "§7event."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Bat Powers Activate!"
+            TAG_String: "§7Upgrades your grappling hook and"
+            TAG_String: "§7turns you into a true vigilante!"
+            TAG_String: "§7Grants a §a+5% §7chance to find"
+            TAG_String: "§7rare Candy."
+            TAG_String: ""
+            TAG_String: "§7§8§oYou are the hero this world"
+            TAG_String: "§8§oneeds."
+            TAG_String: ""
+            TAG_String: "§6§lLEGENDARY CHESTPLATE"
+          }
+          TAG_Int("color"): 0
+          TAG_String("Name"): "§6Wise Bat Person Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("color"): "0:0:0"
+          TAG_String("modifier"): "wise"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "BAT_PERSON_CHESTPLATE"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("thorns"): 3
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "37b68f24-ad18-413c-a90c-9097a8f9ad18"
+          TAG_String("timestamp"): "10/31/19 10:26 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 17 entries {
+            TAG_String: "§7Strength: §c+8 §9(Mythic +8)"
+            TAG_String: "§7Crit Chance: §c+4% §9(Mythic +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+8 HP §9(Mythic +8 HP)"
+            TAG_String: "§7Defense: §a+43 §9(Mythic +8)"
+            TAG_String: "§7Speed: §a+2 §9(Mythic +2)"
+            TAG_String: "§7Intelligence: §a+160 §9(Mythic +40)"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Refraction"
+            TAG_String: "§7The stats of this armor change"
+            TAG_String: "§7from §a0§7 to §a200%§7 depending"
+            TAG_String: "§7on the current light level."
+            TAG_String: ""
+            TAG_String: "§7Current Light Level"
+            TAG_String: "§c0§8 (0%)"
+            TAG_String: ""
+            TAG_String: "§5§lEPIC CHESTPLATE"
+          }
+          TAG_Int("color"): 6497149
+          TAG_String("Name"): "§5Mythic Crystal Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 6 entries {
+          TAG_String("color"): "99:35:125"
+          TAG_String("modifier"): "mythic"
+          TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+          TAG_String("id"): "CRYSTAL_CHESTPLATE"
+          TAG_String("uuid"): "b4883c3f-b838-4287-a87f-c569e6969bc0"
+          TAG_String("timestamp"): "12/28/19 2:49 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 11 entries {
+            TAG_String: "§7Defense: §a+125"
+            TAG_String: "§7Speed: §a+15"
+            TAG_String: ""
+            TAG_String: "§7Each piece of this armor grants"
+            TAG_String: "§7the ability to §9automatically"
+            TAG_String: "§9mine §a2 §7extra nearby blocks"
+            TAG_String: "§7while mining (very short"
+            TAG_String: "§7cooldown)."
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§5§lEPIC CHESTPLATE"
+          }
+          TAG_Int("color"): 13428223
+          TAG_String("Name"): "§5Mineral Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 5 entries {
+          TAG_String("color"): "204:229:255"
+          TAG_String("originTag"): "MINERAL_CHESTPLATE"
+          TAG_String("id"): "MINERAL_CHESTPLATE"
+          TAG_String("uuid"): "e9012e1c-5441-464d-a0c3-f10055408bf5"
+          TAG_String("timestamp"): "12/21/20 7:43 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 23 entries {
+            TAG_String: "§7Strength: §c+8 §9(Renowned +8)"
+            TAG_String: "§7Crit Chance: §c+8% §9(Renowned +8%)"
+            TAG_String: "§7Crit Damage: §c+8% §9(Renowned +8%)"
+            TAG_String: "§7Bonus Attack Speed: §c+3% §9(Renowned +3%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+137 HP §e(+40 HP) §9(Renowned +6 HP)"
+            TAG_String: "§7Defense: §a+45 §e(+20) §9(Renowned +6)"
+            TAG_String: "§7Speed: §a+11 §9(Renowned +1)"
+            TAG_String: "§7Intelligence: §a+7 §9(Renowned +8)"
+            TAG_String: ""
+            TAG_String: "§9Growth VI"
+            TAG_String: "§7Grants §a+90 §c❤ Health§7."
+            TAG_String: "§9Protection VI"
+            TAG_String: "§7Grants §a+18 §a❈ Defense§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Fairy's Outfit"
+            TAG_String: "§7Gain §c1❤ §7per Fairy Soul."
+            TAG_String: "§7You found: §d0 Fairy Souls"
+            TAG_String: ""
+            TAG_String: "§9Renowned Bonus"
+            TAG_String: "§7Increases all stats by §a+1%§7."
+            TAG_String: ""
+            TAG_String: "§5§l§ka§r §5§l§5§lEPIC LEGGINGS §5§l§ka"
+          }
+          TAG_Int("color"): 13408767
+          TAG_String("Name"): "§5Renowned Fairy's Trousers"
+        }
+        TAG_Compound("ExtraAttributes"): 10 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "204:153:255"
+          TAG_String("modifier"): "renowned"
+          TAG_String("originTag"): "UNKNOWN"
+          TAG_String("id"): "FAIRY_LEGGINGS"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("growth"): 6
+            TAG_Int("protection"): 6
+          }
+          TAG_String("uuid"): "f3cf0a2f-e430-4e53-8ef4-170a17a47bb6"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "9/15/20 8:56 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 19 entries {
+            TAG_String: "§7Strength: §c+10 §9(Fierce +10)"
+            TAG_String: "§7Crit Chance: §c+6% §9(Fierce +6%)"
+            TAG_String: "§7Crit Damage: §c+18% §9(Fierce +18%)"
+            TAG_String: "§7Sea Creature Chance: §c+2.5%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+150 HP"
+            TAG_String: "§7Defense: §a+150"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absorb"
+            TAG_String: "§7§9Doubles§7 your §a❈ Defense§7"
+            TAG_String: "§7while in water."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Reflect"
+            TAG_String: "§7§7Your sharp scales reflect"
+            TAG_String: "§7§915% §7of damage onto the"
+            TAG_String: "§7attacker."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aFishing Skill 24"
+            TAG_String: "§6§lLEGENDARY LEGGINGS"
+          }
+          TAG_Int("color"): 16768081
+          TAG_String("Name"): "§6Fierce Shark Scale Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 6 entries {
+          TAG_String("color"): "255:220:81"
+          TAG_String("modifier"): "fierce"
+          TAG_String("originTag"): "SHARK_SCALE_LEGGINGS"
+          TAG_String("id"): "SHARK_SCALE_LEGGINGS"
+          TAG_String("uuid"): "dc5c935b-b84f-4134-b7e1-c26456432835"
+          TAG_String("timestamp"): "7/23/20 3:52 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 31 entries {
+            TAG_String: "§7Strength: §c+10 §9(Renowned +10)"
+            TAG_String: "§7Crit Chance: §c+10% §9(Renowned +10%)"
+            TAG_String: "§7Crit Damage: §c+10% §9(Renowned +10%)"
+            TAG_String: "§7Bonus Attack Speed: §c+4% §9(Renowned +4%)"
+            TAG_String: "§7Sea Creature Chance: §c+2.5%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+158 HP §9(Renowned +8 HP)"
+            TAG_String: "§7Defense: §a+158 §9(Renowned +8)"
+            TAG_String: "§7Speed: §a+1 §9(Renowned +1)"
+            TAG_String: "§7Intelligence: §a+10 §9(Renowned +10)"
+            TAG_String: ""
+            TAG_String: "§9§d§lLegion V"
+            TAG_String: "§7Increases all your player stats"
+            TAG_String: "§7except Health by §e0.35% §7per"
+            TAG_String: "§7player within §b30 §7blocks of"
+            TAG_String: "§7you, up to §c20 §7players."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absorb"
+            TAG_String: "§7§9Doubles§7 your §a❈ Defense§7"
+            TAG_String: "§7while in water."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Reflect"
+            TAG_String: "§7§7Your sharp scales reflect"
+            TAG_String: "§7§915% §7of damage onto the"
+            TAG_String: "§7attacker."
+            TAG_String: ""
+            TAG_String: "§9Renowned Bonus"
+            TAG_String: "§7Increases all stats by §a+1%§7."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aFishing Skill 24"
+            TAG_String: "§6§lLEGENDARY LEGGINGS"
+          }
+          TAG_Int("color"): 16577535
+          TAG_String("Name"): "§6Renowned Shark Scale Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 8 entries {
+          TAG_String("color"): "252:243:255"
+          TAG_String("modifier"): "renowned"
+          TAG_String("originTag"): "SHARK_SCALE_LEGGINGS"
+          TAG_String("id"): "SHARK_SCALE_LEGGINGS"
+          TAG_Compound("enchantments"): 1 entries {
+            TAG_Int("ultimate_legion"): 5
+          }
+          TAG_String("uuid"): "ba419023-036b-467b-9bd2-fa89dcf0497e"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "9/8/20 3:21 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 312
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 18 entries {
+            TAG_String: "§7Strength: §c+8 §9(Fierce +8)"
+            TAG_String: "§7Crit Chance: §c+5% §9(Fierce +5%)"
+            TAG_String: "§7Crit Damage: §c+14% §9(Fierce +14%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+575 HP"
+            TAG_String: "§7Defense: §a-1,000,000"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absolute Unit"
+            TAG_String: "§c+50❤ §7per §c1% Crit Damage"
+            TAG_String: "§7Regain §c2% §7of §cmax ❤ §7when hit. §8(1s cd)"
+            TAG_String: "§7Receive §a-20% §7damage from wolves."
+            TAG_String: "§7Your crit damage is §950% §7less effective."
+            TAG_String: ""
+            TAG_String: "§7§4☠ §cRequires §5Wolf Slayer 4"
+            TAG_String: "§5§lEPIC LEGGINGS"
+          }
+          TAG_String("Name"): "§5Fierce Mastiff Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("modifier"): "fierce"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "MASTIFF_LEGGINGS"
+          TAG_Compound("enchantments"): 1 entries {
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "e3f8b46c-2eb0-4bfe-accd-08ca3ac9ade0"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "6/5/20 2:37 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 29 entries {
+            TAG_String: "§7Gear Score: §d858"
+            TAG_String: "§7Strength: §c+75 §9(Ancient +35)"
+            TAG_String: "§7Crit Chance: §c+15% §9(Ancient +15%)"
+            TAG_String: "§7Crit Damage: §c+30%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+352 HP §e(+40 HP) §9(Ancient +7 HP)"
+            TAG_String: "§7Defense: §a+167 §e(+20) §9(Ancient +7)"
+            TAG_String: "§7Intelligence: §a+35 §9(Ancient +25)"
+            TAG_String: ""
+            TAG_String: "§9§d§lWisdom V, §9Growth V"
+            TAG_String: "§9Protection V"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Witherborn"
+            TAG_String: "§7Spawns a wither minion every"
+            TAG_String: "§7§e30 §7seconds up to a maximum"
+            TAG_String: "§7§a1 §7wither. Your withers will"
+            TAG_String: "§7travel to and explode on nearby"
+            TAG_String: "§7enemies."
+            TAG_String: ""
+            TAG_String: "§7Reduces the damage you take"
+            TAG_String: "§7from withers by §c10%§7."
+            TAG_String: ""
+            TAG_String: "§9Ancient Bonus"
+            TAG_String: "§7Grants §a+1 §9☠ Crit Damage"
+            TAG_String: "§9§7per §cCatacombs §7level."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aCatacombs Floor VII"
+            TAG_String: "§aCompletion"
+            TAG_String: "§d§l§ka§r §d§l§d§lMYTHIC DUNGEON LEGGINGS §d§l§ka"
+          }
+          TAG_Int("color"): 15162428
+          TAG_String("Name"): "§dAncient Necron's Leggings §6✪§6✪§6✪§6✪§6✪"
+        }
+        TAG_Compound("ExtraAttributes"): 11 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "231:92:60"
+          TAG_String("modifier"): "ancient"
+          TAG_Int("dungeon_item_level"): 5
+          TAG_String("originTag"): "POWER_WITHER_LEGGINGS"
+          TAG_String("id"): "POWER_WITHER_LEGGINGS"
+          TAG_Compound("enchantments"): 3 entries {
+            TAG_Int("ultimate_wisdom"): 5
+            TAG_Int("protection"): 5
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "5c62ee54-2ac9-4f2b-8a25-61ef72e4711b"
+          TAG_Int("anvil_uses"): 2
+          TAG_String("timestamp"): "11/21/20 5:27 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 30 entries {
+            TAG_String: "§7Health: §a+90 HP §9(Wise +15 HP)"
+            TAG_String: "§7Defense: §a+25"
+            TAG_String: "§7Speed: §a+2 §9(Wise +2)"
+            TAG_String: "§7Intelligence: §a+125 §9(Wise +125)"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Thorns III"
+            TAG_String: "§7Grants a §a50% §7chance to"
+            TAG_String: "§7rebound §a9% §7of damage dealt"
+            TAG_String: "§7back at the attacker."
+            TAG_String: ""
+            TAG_String: "§7This armor piece grants §a2x"
+            TAG_String: "§a§7item stats during the night or"
+            TAG_String: "§7§a3x §7during the §6Spooky"
+            TAG_String: "§6Festival§7! Additionally, it"
+            TAG_String: "§7gives a §a+5% §7chance to get"
+            TAG_String: "§7Candy from mobs during the"
+            TAG_String: "§7event."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Bat Powers Activate!"
+            TAG_String: "§7Upgrades your grappling hook and"
+            TAG_String: "§7turns you into a true vigilante!"
+            TAG_String: "§7Grants a §a+5% §7chance to find"
+            TAG_String: "§7rare Candy."
+            TAG_String: ""
+            TAG_String: "§7§8§oYou are the hero this world"
+            TAG_String: "§8§oneeds."
+            TAG_String: ""
+            TAG_String: "§6§lLEGENDARY LEGGINGS"
+          }
+          TAG_Int("color"): 0
+          TAG_String("Name"): "§6Wise Bat Person Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("color"): "0:0:0"
+          TAG_String("modifier"): "wise"
+          TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+          TAG_String("id"): "BAT_PERSON_LEGGINGS"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("thorns"): 3
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "c70094ab-30ac-4348-8bd6-f4d48c39b725"
+          TAG_String("timestamp"): "10/31/19 10:35 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 17 entries {
+            TAG_String: "§7Strength: §c+8 §9(Mythic +8)"
+            TAG_String: "§7Crit Chance: §c+4% §9(Mythic +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+8 HP §9(Mythic +8 HP)"
+            TAG_String: "§7Defense: §a+38 §9(Mythic +8)"
+            TAG_String: "§7Speed: §a+2 §9(Mythic +2)"
+            TAG_String: "§7Intelligence: §a+140 §9(Mythic +40)"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Refraction"
+            TAG_String: "§7The stats of this armor change"
+            TAG_String: "§7from §a0§7 to §a200%§7 depending"
+            TAG_String: "§7on the current light level."
+            TAG_String: ""
+            TAG_String: "§7Current Light Level"
+            TAG_String: "§c0§8 (0%)"
+            TAG_String: ""
+            TAG_String: "§5§lEPIC LEGGINGS"
+          }
+          TAG_Int("color"): 6497149
+          TAG_String("Name"): "§5Mythic Crystal Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 6 entries {
+          TAG_String("color"): "99:35:125"
+          TAG_String("modifier"): "mythic"
+          TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+          TAG_String("id"): "CRYSTAL_LEGGINGS"
+          TAG_String("uuid"): "d77434a0-0654-4a48-bb47-d1e6fee3098a"
+          TAG_String("timestamp"): "12/28/19 2:49 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 11 entries {
+            TAG_String: "§7Defense: §a+125"
+            TAG_String: "§7Speed: §a+15"
+            TAG_String: ""
+            TAG_String: "§7Each piece of this armor grants"
+            TAG_String: "§7the ability to §9automatically"
+            TAG_String: "§9mine §a2 §7extra nearby blocks"
+            TAG_String: "§7while mining (very short"
+            TAG_String: "§7cooldown)."
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§5§lEPIC LEGGINGS"
+          }
+          TAG_Int("color"): 13428223
+          TAG_String("Name"): "§5Mineral Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 5 entries {
+          TAG_String("color"): "204:229:255"
+          TAG_String("originTag"): "MINERAL_LEGGINGS"
+          TAG_String("id"): "MINERAL_LEGGINGS"
+          TAG_String("uuid"): "49e8106f-e800-4028-b785-3ce56c6adf4d"
+          TAG_String("timestamp"): "11/15/20 6:01 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 1 entries {
+          TAG_Compound: 2 entries {
+            TAG_Short("lvl"): 3
+            TAG_Short("id"): 8
+          }
+        }
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 33 entries {
+            TAG_String: "§7Strength: §c+8 §9(Renowned +8)"
+            TAG_String: "§7Crit Chance: §c+8% §9(Renowned +8%)"
+            TAG_String: "§7Crit Damage: §c+8% §9(Renowned +8%)"
+            TAG_String: "§7Bonus Attack Speed: §c+3% §9(Renowned +3%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+137 HP §e(+40 HP) §9(Renowned +6 HP)"
+            TAG_String: "§7Defense: §a+45 §e(+20) §9(Renowned +6)"
+            TAG_String: "§7Speed: §a+17 §9(Renowned +1)"
+            TAG_String: "§7Intelligence: §a+7 §9(Renowned +8)"
+            TAG_String: ""
+            TAG_String: "§9Depth Strider III"
+            TAG_String: "§7Reduces how much you are slowed"
+            TAG_String: "§7in the water by §a100%§7."
+            TAG_String: "§9Feather Falling X"
+            TAG_String: "§7Increases how high you can fall"
+            TAG_String: "§7before taking fall damage by"
+            TAG_String: "§7§a10§7 and reduces fall damage"
+            TAG_String: "§7by §a50%§7."
+            TAG_String: "§9Growth VI"
+            TAG_String: "§7Grants §a+90 §c❤ Health§7."
+            TAG_String: "§9Protection VI"
+            TAG_String: "§7Grants §a+18 §a❈ Defense§7."
+            TAG_String: "§9Sugar Rush III"
+            TAG_String: "§7Grants §a+6 §f✦ Speed§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Fairy's Outfit"
+            TAG_String: "§7Gain §c1❤ §7per Fairy Soul."
+            TAG_String: "§7You found: §d0 Fairy Souls"
+            TAG_String: ""
+            TAG_String: "§9Renowned Bonus"
+            TAG_String: "§7Increases all stats by §a+1%§7."
+            TAG_String: ""
+            TAG_String: "§5§l§ka§r §5§l§5§lEPIC BOOTS §5§l§ka"
+          }
+          TAG_Int("color"): 11691775
+          TAG_String("Name"): "§5Renowned Fairy's Galoshes"
+        }
+        TAG_Compound("ExtraAttributes"): 10 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "178:102:255"
+          TAG_String("modifier"): "renowned"
+          TAG_String("originTag"): "UNKNOWN"
+          TAG_String("id"): "FAIRY_BOOTS"
+          TAG_Compound("enchantments"): 5 entries {
+            TAG_Int("depth_strider"): 3
+            TAG_Int("sugar_rush"): 3
+            TAG_Int("feather_falling"): 10
+            TAG_Int("growth"): 6
+            TAG_Int("protection"): 6
+          }
+          TAG_String("uuid"): "9ebc17e9-8321-4d7f-99ea-31072754fef7"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "9/15/20 9:52 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 1 entries {
+          TAG_Compound: 2 entries {
+            TAG_Short("lvl"): 3
+            TAG_Short("id"): 8
+          }
+        }
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 32 entries {
+            TAG_String: "§7Strength: §c+10 §9(Fierce +10)"
+            TAG_String: "§7Crit Chance: §c+6% §9(Fierce +6%)"
+            TAG_String: "§7Crit Damage: §c+18% §9(Fierce +18%)"
+            TAG_String: "§7Sea Creature Chance: §c+2.5%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+175 HP"
+            TAG_String: "§7Defense: §a+115"
+            TAG_String: ""
+            TAG_String: "§9Depth Strider III"
+            TAG_String: "§7Reduces how much you are slowed"
+            TAG_String: "§7in the water by §a100%§7."
+            TAG_String: "§9Feather Falling V"
+            TAG_String: "§7Increases how high you can fall"
+            TAG_String: "§7before taking fall damage by"
+            TAG_String: "§7§a5§7 and reduces fall damage by"
+            TAG_String: "§7§a25%§7."
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absorb"
+            TAG_String: "§7§9Doubles§7 your §a❈ Defense§7"
+            TAG_String: "§7while in water."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Reflect"
+            TAG_String: "§7§7Your sharp scales reflect"
+            TAG_String: "§7§915% §7of damage onto the"
+            TAG_String: "§7attacker."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aFishing Skill 24"
+            TAG_String: "§6§lLEGENDARY BOOTS"
+          }
+          TAG_Int("color"): 16768081
+          TAG_String("Name"): "§6Fierce Shark Scale Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 8 entries {
+          TAG_String("color"): "255:220:81"
+          TAG_String("modifier"): "fierce"
+          TAG_String("originTag"): "SHARK_SCALE_BOOTS"
+          TAG_String("id"): "SHARK_SCALE_BOOTS"
+          TAG_Compound("enchantments"): 4 entries {
+            TAG_Int("depth_strider"): 3
+            TAG_Int("feather_falling"): 5
+            TAG_Int("growth"): 5
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "6b66af5b-f4c0-4d13-a78c-5633e6f8629e"
+          TAG_Int("anvil_uses"): 2
+          TAG_String("timestamp"): "9/11/20 12:27 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 1 entries {
+          TAG_Compound: 2 entries {
+            TAG_Short("lvl"): 3
+            TAG_Short("id"): 8
+          }
+        }
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 34 entries {
+            TAG_String: "§7Strength: §c+10 §9(Renowned +10)"
+            TAG_String: "§7Crit Chance: §c+10% §9(Renowned +10%)"
+            TAG_String: "§7Crit Damage: §c+10% §9(Renowned +10%)"
+            TAG_String: "§7Bonus Attack Speed: §c+4% §9(Renowned +4%)"
+            TAG_String: "§7Sea Creature Chance: §c+2.5%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+148 HP §e(+40 HP) §9(Renowned +8 HP)"
+            TAG_String: "§7Defense: §a+128 §e(+20) §9(Renowned +8)"
+            TAG_String: "§7Speed: §a+1 §9(Renowned +1)"
+            TAG_String: "§7Intelligence: §a+10 §9(Renowned +10)"
+            TAG_String: ""
+            TAG_String: "§9§d§lLegion V"
+            TAG_String: "§7Increases all your player stats"
+            TAG_String: "§7except Health by §e0.35% §7per"
+            TAG_String: "§7player within §b30 §7blocks of"
+            TAG_String: "§7you, up to §c20 §7players."
+            TAG_String: "§9Depth Strider III"
+            TAG_String: "§7Reduces how much you are slowed"
+            TAG_String: "§7in the water by §a100%§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absorb"
+            TAG_String: "§7§9Doubles§7 your §a❈ Defense§7"
+            TAG_String: "§7while in water."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Reflect"
+            TAG_String: "§7§7Your sharp scales reflect"
+            TAG_String: "§7§915% §7of damage onto the"
+            TAG_String: "§7attacker."
+            TAG_String: ""
+            TAG_String: "§9Renowned Bonus"
+            TAG_String: "§7Increases all stats by §a+1%§7."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aFishing Skill 24"
+            TAG_String: "§6§lLEGENDARY BOOTS"
+          }
+          TAG_Int("color"): 16577535
+          TAG_String("Name"): "§6Renowned Shark Scale Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 9 entries {
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "252:243:255"
+          TAG_String("modifier"): "renowned"
+          TAG_String("originTag"): "SHARK_SCALE_BOOTS"
+          TAG_String("id"): "SHARK_SCALE_BOOTS"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("depth_strider"): 3
+            TAG_Int("ultimate_legion"): 5
+          }
+          TAG_String("uuid"): "14ee99ce-120a-4f5b-9220-52581d916a4f"
+          TAG_Int("anvil_uses"): 2
+          TAG_String("timestamp"): "9/8/20 3:22 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 313
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 1 entries {
+          TAG_Compound: 2 entries {
+            TAG_Short("lvl"): 3
+            TAG_Short("id"): 8
+          }
+        }
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 22 entries {
+            TAG_String: "§7Strength: §c+8 §9(Fierce +8)"
+            TAG_String: "§7Crit Chance: §c+5% §9(Fierce +5%)"
+            TAG_String: "§7Crit Damage: §c+14% §9(Fierce +14%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+575 HP"
+            TAG_String: "§7Defense: §a-1,000,000"
+            TAG_String: "§7Intelligence: §a+25"
+            TAG_String: ""
+            TAG_String: "§9Depth Strider III"
+            TAG_String: "§7Reduces how much you are slowed"
+            TAG_String: "§7in the water by §a100%§7."
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Absolute Unit"
+            TAG_String: "§c+50❤ §7per §c1% Crit Damage"
+            TAG_String: "§7Regain §c2% §7of §cmax ❤ §7when hit. §8(1s cd)"
+            TAG_String: "§7Receive §a-20% §7damage from wolves."
+            TAG_String: "§7Your crit damage is §950% §7less effective."
+            TAG_String: ""
+            TAG_String: "§7§4☠ §cRequires §5Wolf Slayer 4"
+            TAG_String: "§5§lEPIC BOOTS"
+          }
+          TAG_String("Name"): "§5Fierce Mastiff Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("modifier"): "fierce"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "MASTIFF_BOOTS"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("depth_strider"): 3
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "6ff9bffe-2dd4-44cb-9992-270a3eef72d3"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "6/5/20 2:37 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 29 entries {
+            TAG_String: "§7Gear Score: §d693"
+            TAG_String: "§7Strength: §c+75 §9(Ancient +35)"
+            TAG_String: "§7Crit Chance: §c+15% §9(Ancient +15%)"
+            TAG_String: "§7Crit Damage: §c+30%"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+267 HP §e(+40 HP) §9(Ancient +7 HP)"
+            TAG_String: "§7Defense: §a+127 §e(+20) §9(Ancient +7)"
+            TAG_String: "§7Intelligence: §a+35 §9(Ancient +25)"
+            TAG_String: ""
+            TAG_String: "§9§d§lWisdom V, §9Growth V"
+            TAG_String: "§9Protection V"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Witherborn"
+            TAG_String: "§7Spawns a wither minion every"
+            TAG_String: "§7§e30 §7seconds up to a maximum"
+            TAG_String: "§7§a1 §7wither. Your withers will"
+            TAG_String: "§7travel to and explode on nearby"
+            TAG_String: "§7enemies."
+            TAG_String: ""
+            TAG_String: "§7Reduces the damage you take"
+            TAG_String: "§7from withers by §c10%§7."
+            TAG_String: ""
+            TAG_String: "§9Ancient Bonus"
+            TAG_String: "§7Grants §a+1 §9☠ Crit Damage"
+            TAG_String: "§9§7per §cCatacombs §7level."
+            TAG_String: ""
+            TAG_String: "§7§4❣ §cRequires §aCatacombs Floor VII"
+            TAG_String: "§aCompletion"
+            TAG_String: "§d§l§ka§r §d§l§d§lMYTHIC DUNGEON BOOTS §d§l§ka"
+          }
+          TAG_Int("color"): 15167036
+          TAG_String("Name"): "§dAncient Necron's Boots §6✪§6✪§6✪§6✪§6✪"
+        }
+        TAG_Compound("ExtraAttributes"): 11 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "231:110:60"
+          TAG_String("modifier"): "ancient"
+          TAG_Int("dungeon_item_level"): 5
+          TAG_String("originTag"): "POWER_WITHER_BOOTS"
+          TAG_String("id"): "POWER_WITHER_BOOTS"
+          TAG_Compound("enchantments"): 3 entries {
+            TAG_Int("ultimate_wisdom"): 5
+            TAG_Int("protection"): 5
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "d4410f1d-b513-460b-bc88-a6977b015227"
+          TAG_Int("anvil_uses"): 2
+          TAG_String("timestamp"): "11/20/20 10:50 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 30 entries {
+            TAG_String: "§7Health: §a+90 HP §9(Wise +15 HP)"
+            TAG_String: "§7Defense: §a+15"
+            TAG_String: "§7Speed: §a+2 §9(Wise +2)"
+            TAG_String: "§7Intelligence: §a+125 §9(Wise +125)"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Thorns III"
+            TAG_String: "§7Grants a §a50% §7chance to"
+            TAG_String: "§7rebound §a9% §7of damage dealt"
+            TAG_String: "§7back at the attacker."
+            TAG_String: ""
+            TAG_String: "§7This armor piece grants §a2x"
+            TAG_String: "§a§7item stats during the night or"
+            TAG_String: "§7§a3x §7during the §6Spooky"
+            TAG_String: "§6Festival§7! Additionally, it"
+            TAG_String: "§7gives a §a+5% §7chance to get"
+            TAG_String: "§7Candy from mobs during the"
+            TAG_String: "§7event."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Bat Powers Activate!"
+            TAG_String: "§7Upgrades your grappling hook and"
+            TAG_String: "§7turns you into a true vigilante!"
+            TAG_String: "§7Grants a §a+5% §7chance to find"
+            TAG_String: "§7rare Candy."
+            TAG_String: ""
+            TAG_String: "§7§8§oYou are the hero this world"
+            TAG_String: "§8§oneeds."
+            TAG_String: ""
+            TAG_String: "§6§lLEGENDARY BOOTS"
+          }
+          TAG_Int("color"): 0
+          TAG_String("Name"): "§6Wise Bat Person Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("color"): "0:0:0"
+          TAG_String("modifier"): "wise"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "BAT_PERSON_BOOTS"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("thorns"): 3
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "7523437c-87cf-4745-b7ce-2b37c4c2fefa"
+          TAG_String("timestamp"): "10/31/19 10:26 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 17 entries {
+            TAG_String: "§7Strength: §c+8 §9(Mythic +8)"
+            TAG_String: "§7Crit Chance: §c+4% §9(Mythic +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+8 HP §9(Mythic +8 HP)"
+            TAG_String: "§7Defense: §a+23 §9(Mythic +8)"
+            TAG_String: "§7Speed: §a+2 §9(Mythic +2)"
+            TAG_String: "§7Intelligence: §a+100 §9(Mythic +40)"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Refraction"
+            TAG_String: "§7The stats of this armor change"
+            TAG_String: "§7from §a0§7 to §a200%§7 depending"
+            TAG_String: "§7on the current light level."
+            TAG_String: ""
+            TAG_String: "§7Current Light Level"
+            TAG_String: "§c0§8 (0%)"
+            TAG_String: ""
+            TAG_String: "§5§lEPIC BOOTS"
+          }
+          TAG_Int("color"): 6497149
+          TAG_String("Name"): "§5Mythic Crystal Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 6 entries {
+          TAG_String("color"): "99:35:125"
+          TAG_String("modifier"): "mythic"
+          TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+          TAG_String("id"): "CRYSTAL_BOOTS"
+          TAG_String("uuid"): "85e0e93b-3aea-436b-a1a2-3d4f575921eb"
+          TAG_String("timestamp"): "1/19/20 5:18 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 11 entries {
+            TAG_String: "§7Defense: §a+70"
+            TAG_String: "§7Speed: §a+10"
+            TAG_String: ""
+            TAG_String: "§7Each piece of this armor grants"
+            TAG_String: "§7the ability to §9automatically"
+            TAG_String: "§9mine §a2 §7extra nearby blocks"
+            TAG_String: "§7while mining (very short"
+            TAG_String: "§7cooldown)."
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§5§lEPIC BOOTS"
+          }
+          TAG_Int("color"): 13428223
+          TAG_String("Name"): "§5Mineral Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 5 entries {
+          TAG_String("color"): "204:229:255"
+          TAG_String("originTag"): "MINERAL_BOOTS"
+          TAG_String("id"): "MINERAL_BOOTS"
+          TAG_String("uuid"): "b6c8b1ad-b203-4a0e-8dc3-6237e094c340"
+          TAG_String("timestamp"): "12/21/20 7:43 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 298
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 13 entries {
+            TAG_String: "§7Crit Chance: §c+2% §9(Light +2%)"
+            TAG_String: "§7Crit Damage: §c+4% §9(Light +4%)"
+            TAG_String: "§7Bonus Attack Speed: §c+4% §9(Light +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+15 HP §9(Light +15 HP)"
+            TAG_String: "§7Defense: §a+74 §9(Light +4)"
+            TAG_String: "§7Speed: §a+19 §9(Light +4)"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Bonus Speed"
+            TAG_String: "§7Increases §f✦ Speed §7by"
+            TAG_String: "§7§a+20§7."
+            TAG_String: ""
+            TAG_String: "§5§lEPIC HELMET"
+          }
+          TAG_Int("color"): 14744823
+          TAG_String("Name"): "§5Light Speedster Helmet"
+        }
+        TAG_Compound("ExtraAttributes"): 6 entries {
+          TAG_String("color"): "224:252:247"
+          TAG_String("modifier"): "light"
+          TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+          TAG_String("id"): "SPEEDSTER_HELMET"
+          TAG_String("uuid"): "4a10ec00-4195-4b1a-8c23-2aba9d7ba6c0"
+          TAG_String("timestamp"): "4/13/20 9:31 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 298
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 16 entries {
+            TAG_String: "§7Health: §a+70 HP"
+            TAG_String: "§7Defense: §a+65"
+            TAG_String: ""
+            TAG_String: "§7Gain §a+50❈ Defense §7against animals."
+            TAG_String: "§7Gain §f+5❂ True Defense §7aswell."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: §cArmor of the Pack"
+            TAG_String: "§7Gain §c+35❁ Strength §7and"
+            TAG_String: "§7§a+80❈ Defense §7for each"
+            TAG_String: "§7§cArmor of the Pack §7wearers"
+            TAG_String: "§7within §a30 §7blocks."
+            TAG_String: "§8Max of 3 players"
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§7§4☠ §cRequires §5Wolf Slayer 6"
+            TAG_String: "§5§lEPIC HELMET"
+          }
+          TAG_Int("color"): 16777215
+          TAG_String("Name"): "§5Helmet of the Pack"
+        }
+        TAG_Compound("ExtraAttributes"): 5 entries {
+          TAG_String("color"): "255:255:255"
+          TAG_String("originTag"): "QUICK_CRAFTING"
+          TAG_String("id"): "HELMET_OF_THE_PACK"
+          TAG_String("uuid"): "6be00192-be58-41c0-b618-dfc419fa59dd"
+          TAG_String("timestamp"): "12/27/20 1:17 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "68fdf966-47cb-328e-a195-c6f154127cd9"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2EwZTgxZWQwN2RmYjAyNDRkNTZmNGQ1ZjJiMzc1NTNlYzAyNmZiNDc5NmYwZmIwYzU3YThlYjI2NDk4M2UxZTAifX19"
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 14 entries {
+            TAG_String: "§7Health: §a+70 HP"
+            TAG_String: "§7Defense: §a+110"
+            TAG_String: "§7Speed: §a+20"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Young Blood"
+            TAG_String: "§7Gain §a+70§7 Walk Speed while"
+            TAG_String: "§7you are above §a50%§7 HP."
+            TAG_String: "§8+100 Walk Speed Cap"
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§7§4❣ §cRequires §aCombat Skill 16"
+            TAG_String: "§7§4❣ §cRequires §aCatacombs Level 25"
+            TAG_String: "§a§cwhile in Catacombs"
+            TAG_String: "§6§lLEGENDARY HELMET"
+          }
+          TAG_String("Name"): "§6Young Dragon Helmet"
+        }
+        TAG_Compound("ExtraAttributes"): 4 entries {
+          TAG_String("originTag"): "QUICK_CRAFTING"
+          TAG_String("id"): "YOUNG_DRAGON_HELMET"
+          TAG_String("uuid"): "aac83430-c5dc-448e-b105-58131e2ce942"
+          TAG_String("timestamp"): "11/6/20 1:13 PM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "f4d7f301-cd28-353c-8027-8c617257b861"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "eyJ0aW1lc3RhbXAiOjE1NjgwMzY3MjYwNjYsInByb2ZpbGVJZCI6IjQxZDNhYmMyZDc0OTQwMGM5MDkwZDU0MzRkMDM4MzFiIiwicHJvZmlsZU5hbWUiOiJNZWdha2xvb24iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFmYzAxODQ0NzNmZTg4MmQyODk1Y2U3Y2JjODE5N2JkNDBmZjcwYmYxMGQzNzQ1ZGU5N2I2YzJhOWM1ZmM3OGYifX19"
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 25 entries {
+            TAG_String: "§7Health: §a+225 HP"
+            TAG_String: "§7Defense: §a+115"
+            TAG_String: "§7Intelligence: §a+220 §9(Necrotic +120)"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: ""
+            TAG_String: "§6Item Ability: Disgusting Healing"
+            TAG_String: "§7While wearing:"
+            TAG_String: "§7- 2x healing from all sources"
+            TAG_String: "§7- 2x Zombies from Reaper Scythe"
+            TAG_String: "§7§7- Allows you to store and"
+            TAG_String: "§7summon an additional §e2"
+            TAG_String: "§e§7souls in their"
+            TAG_String: "§7necromancer weapon."
+            TAG_String: "§7- §7Upgrades Zombie Armor"
+            TAG_String: "§7effect to trigger on all"
+            TAG_String: "§7hits"
+            TAG_String: ""
+            TAG_String: "§7§4☠ §cRequires §5Zombie Slayer 7"
+            TAG_String: "§7§4❣ §cRequires §aCatacombs Level 33"
+            TAG_String: "§a§cwhile in Catacombs"
+            TAG_String: "§5§lEPIC HELMET"
+          }
+          TAG_String("Name"): "§5Necrotic Reaper Mask"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("modifier"): "necrotic"
+          TAG_String("originTag"): "REAPER_MASK"
+          TAG_String("id"): "REAPER_MASK"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("protection"): 5
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "c9203d05-c5bd-4a20-90c5-3b539f79ce58"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "10/18/19 3:43 AM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "564f289a-f6ef-31a7-83d2-bce309d814f8"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2QxMTE5NjQzY2VjZmJlMDA0MTQxYTFlYTQwNjJmODMxNWNhNzhlNTAzOTU4YWM1MDUwNWU4NTkyYzQ0YTYwMSJ9fX0="
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 29 entries {
+            TAG_String: "§7Strength: §c+5 §9(Godly +5)"
+            TAG_String: "§7Crit Damage: §c+4% §9(Godly +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+70 HP"
+            TAG_String: "§7Defense: §a+45"
+            TAG_String: "§7Intelligence: §a+2 §9(Godly +2)"
+            TAG_String: ""
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: "§9Thorns III"
+            TAG_String: "§7Grants a §a50% §7chance to"
+            TAG_String: "§7rebound §a9% §7of damage dealt"
+            TAG_String: "§7back at the attacker."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Cold Thumb"
+            TAG_String: "§7Allows the wearer to shoot"
+            TAG_String: "§7unlimited snowballs when using"
+            TAG_String: "§7§9Frosty the Snow Cannon§7."
+            TAG_String: ""
+            TAG_String: "§7Each piece grants a §a5% §7bonus"
+            TAG_String: "§7gift chance for every present"
+            TAG_String: "§7you earn from the §cGift Attack"
+            TAG_String: "§c§7minigame!"
+            TAG_String: ""
+            TAG_String: "§7All stats of this armor piece"
+            TAG_String: "§7are doubled while on the Winter"
+            TAG_String: "§7Island!"
+            TAG_String: ""
+            TAG_String: "§5§lEPIC HELMET"
+          }
+          TAG_String("Name"): "§5Godly Snow Suit Helmet"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("color"): "255:255:255"
+          TAG_String("modifier"): "godly"
+          TAG_String("originTag"): "UNKNOWN"
+          TAG_String("id"): "SNOW_SUIT_HELMET"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("thorns"): 3
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "b97a9125-6f86-438b-a6cb-b205fb6a6ed9"
+          TAG_String("timestamp"): "12/19/19 7:43 AM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 13 entries {
+            TAG_String: "§7Crit Chance: §c+2% §9(Light +2%)"
+            TAG_String: "§7Crit Damage: §c+4% §9(Light +4%)"
+            TAG_String: "§7Bonus Attack Speed: §c+4% §9(Light +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+15 HP §9(Light +15 HP)"
+            TAG_String: "§7Defense: §a+124 §9(Light +4)"
+            TAG_String: "§7Speed: §a+19 §9(Light +4)"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Bonus Speed"
+            TAG_String: "§7Increases §f✦ Speed §7by"
+            TAG_String: "§7§a+20§7."
+            TAG_String: ""
+            TAG_String: "§5§lEPIC CHESTPLATE"
+          }
+          TAG_Int("color"): 14744823
+          TAG_String("Name"): "§5Light Speedster Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 6 entries {
+          TAG_String("color"): "224:252:247"
+          TAG_String("modifier"): "light"
+          TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+          TAG_String("id"): "SPEEDSTER_CHESTPLATE"
+          TAG_String("uuid"): "18a68c8f-156d-478b-81eb-57ce18cc2352"
+          TAG_String("timestamp"): "4/13/20 9:31 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 16 entries {
+            TAG_String: "§7Health: §a+100 HP"
+            TAG_String: "§7Defense: §a+95"
+            TAG_String: ""
+            TAG_String: "§7Gain §a+75❈ Defense §7against animals."
+            TAG_String: "§7Gain §f+5❂ True Defense §7aswell."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: §cArmor of the Pack"
+            TAG_String: "§7Gain §c+35❁ Strength §7and"
+            TAG_String: "§7§a+80❈ Defense §7for each"
+            TAG_String: "§7§cArmor of the Pack §7wearers"
+            TAG_String: "§7within §a30 §7blocks."
+            TAG_String: "§8Max of 3 players"
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§7§4☠ §cRequires §5Wolf Slayer 6"
+            TAG_String: "§5§lEPIC CHESTPLATE"
+          }
+          TAG_Int("color"): 16711680
+          TAG_String("Name"): "§5Chestplate of the Pack"
+        }
+        TAG_Compound("ExtraAttributes"): 5 entries {
+          TAG_String("color"): "255:0:0"
+          TAG_String("originTag"): "QUICK_CRAFTING"
+          TAG_String("id"): "CHESTPLATE_OF_THE_PACK"
+          TAG_String("uuid"): "82e2a151-af07-455c-a035-0426faf2b219"
+          TAG_String("timestamp"): "12/27/20 1:17 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 311
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 27 entries {
+            TAG_String: "§7Strength: §c+6 §9(Pure +6)"
+            TAG_String: "§7Crit Chance: §c+8% §9(Pure +8%)"
+            TAG_String: "§7Crit Damage: §c+6% §9(Pure +6%)"
+            TAG_String: "§7Bonus Attack Speed: §c+3% §9(Pure +3%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+301 HP §e(+40 HP) §9(Pure +6 HP)"
+            TAG_String: "§7Defense: §a+111 §e(+20) §9(Pure +6)"
+            TAG_String: "§7Speed: §a+1 §9(Pure +1)"
+            TAG_String: "§7Intelligence: §a+6 §9(Pure +6)"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Trolling The Reaper"
+            TAG_String: "§7Healing Wands heal §a+50%§7."
+            TAG_String: "§7Gain §a+100❈ §7against Zombies."
+            TAG_String: ""
+            TAG_String: "§6Piece Bonus: Zombie Bulwark"
+            TAG_String: "§7Kill Zombies to accumulate"
+            TAG_String: "§7defense against them."
+            TAG_String: "§7Piece Bonus: §a+310❈"
+            TAG_String: "§7Next Upgrade: §a+315❈ §8(§a310,064§7/§c500,000§8)"
+            TAG_String: ""
+            TAG_String: "§7§4☠ §cRequires §5Zombie Slayer 4"
+            TAG_String: "§5§lEPIC CHESTPLATE"
+          }
+          TAG_String("Name"): "§5Pure Revenant Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 10 entries {
+          TAG_Int("zombie_kills"): 310064
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("hotPotatoBonus"): "DEFENSE=20;HEALTH=40;"
+          TAG_String("modifier"): "pure"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "REVENANT_CHESTPLATE"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("growth"): 5
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "27c18ee1-f605-4176-b9ef-d215e4a39c81"
+          TAG_Int("anvil_uses"): 12
+          TAG_String("timestamp"): "10/11/19 9:15 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 14 entries {
+            TAG_String: "§7Health: §a+120 HP"
+            TAG_String: "§7Defense: §a+160"
+            TAG_String: "§7Speed: §a+20"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Young Blood"
+            TAG_String: "§7Gain §a+70§7 Walk Speed while"
+            TAG_String: "§7you are above §a50%§7 HP."
+            TAG_String: "§8+100 Walk Speed Cap"
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§7§4❣ §cRequires §aCombat Skill 16"
+            TAG_String: "§7§4❣ §cRequires §aCatacombs Level 25"
+            TAG_String: "§a§cwhile in Catacombs"
+            TAG_String: "§6§lLEGENDARY CHESTPLATE"
+          }
+          TAG_Int("color"): 14542064
+          TAG_String("Name"): "§6Young Dragon Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 5 entries {
+          TAG_String("color"): "221:228:240"
+          TAG_String("originTag"): "QUICK_CRAFTING"
+          TAG_String("id"): "YOUNG_DRAGON_CHESTPLATE"
+          TAG_String("uuid"): "df7d1539-efef-469d-a809-0bbcd12dbb0a"
+          TAG_String("timestamp"): "11/6/20 1:13 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 13 entries {
+            TAG_String: "§7Defense: §a+250"
+            TAG_String: ""
+            TAG_String: "§7While worn, gain §a+1 §f✦"
+            TAG_String: "§fSpeed§7 for every §a20§7 pieces"
+            TAG_String: "§7of Obsidian in your inventory!"
+            TAG_String: ""
+            TAG_String: "§7Bonus Speed: §a0"
+            TAG_String: ""
+            TAG_String: "§7Immune to Wither effect."
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§7§4❣ §cRequires §aCombat Skill 14"
+            TAG_String: "§5§lEPIC CHESTPLATE"
+          }
+          TAG_Int("color"): 0
+          TAG_String("Name"): "§5Obsidian Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 5 entries {
+          TAG_String("color"): "0:0:0"
+          TAG_String("originTag"): "UNKNOWN"
+          TAG_String("id"): "OBSIDIAN_CHESTPLATE"
+          TAG_String("uuid"): "5f0157e9-640f-45d3-aef5-4e2908b0ee0f"
+          TAG_String("timestamp"): "11/5/20 9:48 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 29 entries {
+            TAG_String: "§7Strength: §c+5 §9(Godly +5)"
+            TAG_String: "§7Crit Damage: §c+4% §9(Godly +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+100 HP"
+            TAG_String: "§7Defense: §a+55"
+            TAG_String: "§7Intelligence: §a+2 §9(Godly +2)"
+            TAG_String: ""
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: "§9Thorns III"
+            TAG_String: "§7Grants a §a50% §7chance to"
+            TAG_String: "§7rebound §a9% §7of damage dealt"
+            TAG_String: "§7back at the attacker."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Cold Thumb"
+            TAG_String: "§7Allows the wearer to shoot"
+            TAG_String: "§7unlimited snowballs when using"
+            TAG_String: "§7§9Frosty the Snow Cannon§7."
+            TAG_String: ""
+            TAG_String: "§7Each piece grants a §a5% §7bonus"
+            TAG_String: "§7gift chance for every present"
+            TAG_String: "§7you earn from the §cGift Attack"
+            TAG_String: "§c§7minigame!"
+            TAG_String: ""
+            TAG_String: "§7All stats of this armor piece"
+            TAG_String: "§7are doubled while on the Winter"
+            TAG_String: "§7Island!"
+            TAG_String: ""
+            TAG_String: "§5§lEPIC CHESTPLATE"
+          }
+          TAG_Int("color"): 16777215
+          TAG_String("Name"): "§5Godly Snow Suit Chestplate"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("color"): "255:255:255"
+          TAG_String("modifier"): "godly"
+          TAG_String("originTag"): "UNKNOWN"
+          TAG_String("id"): "SNOW_SUIT_CHESTPLATE"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("thorns"): 3
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "e0a69fcf-137c-435f-9fac-46c42d922696"
+          TAG_String("timestamp"): "12/19/19 7:26 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 13 entries {
+            TAG_String: "§7Crit Chance: §c+2% §9(Light +2%)"
+            TAG_String: "§7Crit Damage: §c+4% §9(Light +4%)"
+            TAG_String: "§7Bonus Attack Speed: §c+4% §9(Light +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+15 HP §9(Light +15 HP)"
+            TAG_String: "§7Defense: §a+99 §9(Light +4)"
+            TAG_String: "§7Speed: §a+19 §9(Light +4)"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Bonus Speed"
+            TAG_String: "§7Increases §f✦ Speed §7by"
+            TAG_String: "§7§a+20§7."
+            TAG_String: ""
+            TAG_String: "§5§lEPIC LEGGINGS"
+          }
+          TAG_Int("color"): 14744823
+          TAG_String("Name"): "§5Light Speedster Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 6 entries {
+          TAG_String("color"): "224:252:247"
+          TAG_String("modifier"): "light"
+          TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+          TAG_String("id"): "SPEEDSTER_LEGGINGS"
+          TAG_String("uuid"): "a69b1dab-ae14-4728-b4f6-9a73ebd6a3d0"
+          TAG_String("timestamp"): "4/13/20 9:31 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 308
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 16 entries {
+            TAG_String: "§7Health: §a+80 HP"
+            TAG_String: "§7Defense: §a+75"
+            TAG_String: ""
+            TAG_String: "§7Gain §a+50❈ Defense §7against animals."
+            TAG_String: "§7Gain §f+5❂ True Defense §7aswell."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: §cArmor of the Pack"
+            TAG_String: "§7Gain §c+35❁ Strength §7and"
+            TAG_String: "§7§a+80❈ Defense §7for each"
+            TAG_String: "§7§cArmor of the Pack §7wearers"
+            TAG_String: "§7within §a30 §7blocks."
+            TAG_String: "§8Max of 3 players"
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§7§4☠ §cRequires §5Wolf Slayer 6"
+            TAG_String: "§5§lEPIC LEGGINGS"
+          }
+          TAG_String("Name"): "§5Leggings of the Pack"
+        }
+        TAG_Compound("ExtraAttributes"): 4 entries {
+          TAG_String("originTag"): "QUICK_CRAFTING"
+          TAG_String("id"): "LEGGINGS_OF_THE_PACK"
+          TAG_String("uuid"): "abf55452-ae6f-4ffc-bf45-475535867495"
+          TAG_String("timestamp"): "12/27/20 1:17 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 312
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 27 entries {
+            TAG_String: "§7Strength: §c+6 §9(Pure +6)"
+            TAG_String: "§7Crit Chance: §c+8% §9(Pure +8%)"
+            TAG_String: "§7Crit Damage: §c+6% §9(Pure +6%)"
+            TAG_String: "§7Bonus Attack Speed: §c+3% §9(Pure +3%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+241 HP §e(+40 HP) §9(Pure +6 HP)"
+            TAG_String: "§7Defense: §a+91 §e(+20) §9(Pure +6)"
+            TAG_String: "§7Speed: §a+1 §9(Pure +1)"
+            TAG_String: "§7Intelligence: §a+6 §9(Pure +6)"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Trolling The Reaper"
+            TAG_String: "§7Healing Wands heal §a+50%§7."
+            TAG_String: "§7Gain §a+100❈ §7against Zombies."
+            TAG_String: ""
+            TAG_String: "§6Piece Bonus: Zombie Bulwark"
+            TAG_String: "§7Kill Zombies to accumulate"
+            TAG_String: "§7defense against them."
+            TAG_String: "§7Piece Bonus: §a+310❈"
+            TAG_String: "§7Next Upgrade: §a+315❈ §8(§a312,533§7/§c500,000§8)"
+            TAG_String: ""
+            TAG_String: "§7§4☠ §cRequires §5Zombie Slayer 4"
+            TAG_String: "§5§lEPIC LEGGINGS"
+          }
+          TAG_String("Name"): "§5Pure Revenant Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 10 entries {
+          TAG_Int("zombie_kills"): 312533
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("hotPotatoBonus"): "DEFENSE=20;HEALTH=40;"
+          TAG_String("modifier"): "pure"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "REVENANT_LEGGINGS"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("growth"): 5
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "f538f136-3386-4421-a87d-59a2bf1166fc"
+          TAG_Int("anvil_uses"): 12
+          TAG_String("timestamp"): "10/11/19 8:55 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 14 entries {
+            TAG_String: "§7Health: §a+100 HP"
+            TAG_String: "§7Defense: §a+140"
+            TAG_String: "§7Speed: §a+20"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Young Blood"
+            TAG_String: "§7Gain §a+70§7 Walk Speed while"
+            TAG_String: "§7you are above §a50%§7 HP."
+            TAG_String: "§8+100 Walk Speed Cap"
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§7§4❣ §cRequires §aCombat Skill 16"
+            TAG_String: "§7§4❣ §cRequires §aCatacombs Level 25"
+            TAG_String: "§a§cwhile in Catacombs"
+            TAG_String: "§6§lLEGENDARY LEGGINGS"
+          }
+          TAG_Int("color"): 14542064
+          TAG_String("Name"): "§6Young Dragon Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 5 entries {
+          TAG_String("color"): "221:228:240"
+          TAG_String("originTag"): "QUICK_CRAFTING"
+          TAG_String("id"): "YOUNG_DRAGON_LEGGINGS"
+          TAG_String("uuid"): "003e9e0c-cff4-4115-b249-b1556a94d3f7"
+          TAG_String("timestamp"): "11/6/20 1:13 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 29 entries {
+            TAG_String: "§7Strength: §c+5 §9(Godly +5)"
+            TAG_String: "§7Crit Damage: §c+4% §9(Godly +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+75 HP"
+            TAG_String: "§7Defense: §a+45"
+            TAG_String: "§7Intelligence: §a+2 §9(Godly +2)"
+            TAG_String: ""
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: "§9Thorns III"
+            TAG_String: "§7Grants a §a50% §7chance to"
+            TAG_String: "§7rebound §a9% §7of damage dealt"
+            TAG_String: "§7back at the attacker."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Cold Thumb"
+            TAG_String: "§7Allows the wearer to shoot"
+            TAG_String: "§7unlimited snowballs when using"
+            TAG_String: "§7§9Frosty the Snow Cannon§7."
+            TAG_String: ""
+            TAG_String: "§7Each piece grants a §a5% §7bonus"
+            TAG_String: "§7gift chance for every present"
+            TAG_String: "§7you earn from the §cGift Attack"
+            TAG_String: "§c§7minigame!"
+            TAG_String: ""
+            TAG_String: "§7All stats of this armor piece"
+            TAG_String: "§7are doubled while on the Winter"
+            TAG_String: "§7Island!"
+            TAG_String: ""
+            TAG_String: "§5§lEPIC LEGGINGS"
+          }
+          TAG_Int("color"): 16777215
+          TAG_String("Name"): "§5Godly Snow Suit Leggings"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("color"): "255:255:255"
+          TAG_String("modifier"): "godly"
+          TAG_String("originTag"): "UNKNOWN"
+          TAG_String("id"): "SNOW_SUIT_LEGGINGS"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("thorns"): 3
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "c55b187f-1f84-4652-b2b2-a5cdc9f8e5c5"
+          TAG_String("timestamp"): "12/19/19 7:38 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 13 entries {
+            TAG_String: "§7Crit Chance: §c+2% §9(Light +2%)"
+            TAG_String: "§7Crit Damage: §c+4% §9(Light +4%)"
+            TAG_String: "§7Bonus Attack Speed: §c+4% §9(Light +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+15 HP §9(Light +15 HP)"
+            TAG_String: "§7Defense: §a+69 §9(Light +4)"
+            TAG_String: "§7Speed: §a+19 §9(Light +4)"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Bonus Speed"
+            TAG_String: "§7Increases §f✦ Speed §7by"
+            TAG_String: "§7§a+20§7."
+            TAG_String: ""
+            TAG_String: "§5§lEPIC BOOTS"
+          }
+          TAG_Int("color"): 14744823
+          TAG_String("Name"): "§5Light Speedster Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 6 entries {
+          TAG_String("color"): "224:252:247"
+          TAG_String("modifier"): "light"
+          TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+          TAG_String("id"): "SPEEDSTER_BOOTS"
+          TAG_String("uuid"): "4e497702-7dbc-4f9b-ae72-922734e69ff8"
+          TAG_String("timestamp"): "4/13/20 9:31 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 309
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 16 entries {
+            TAG_String: "§7Health: §a+50 HP"
+            TAG_String: "§7Defense: §a+45"
+            TAG_String: ""
+            TAG_String: "§7Gain §a+50❈ Defense §7against animals."
+            TAG_String: "§7Gain §f+5❂ True Defense §7aswell."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: §cArmor of the Pack"
+            TAG_String: "§7Gain §c+35❁ Strength §7and"
+            TAG_String: "§7§a+80❈ Defense §7for each"
+            TAG_String: "§7§cArmor of the Pack §7wearers"
+            TAG_String: "§7within §a30 §7blocks."
+            TAG_String: "§8Max of 3 players"
+            TAG_String: ""
+            TAG_String: "§7§8This item can be reforged!"
+            TAG_String: "§7§4☠ §cRequires §5Wolf Slayer 6"
+            TAG_String: "§5§lEPIC BOOTS"
+          }
+          TAG_String("Name"): "§5Boots of the Pack"
+        }
+        TAG_Compound("ExtraAttributes"): 4 entries {
+          TAG_String("originTag"): "QUICK_CRAFTING"
+          TAG_String("id"): "BOOTS_OF_THE_PACK"
+          TAG_String("uuid"): "bea1e61a-1f29-4d97-a481-1c0b3e7cd466"
+          TAG_String("timestamp"): "12/27/20 1:17 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 313
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 30 entries {
+            TAG_String: "§7Strength: §c+6 §9(Pure +6)"
+            TAG_String: "§7Crit Chance: §c+8% §9(Pure +8%)"
+            TAG_String: "§7Crit Damage: §c+6% §9(Pure +6%)"
+            TAG_String: "§7Bonus Attack Speed: §c+3% §9(Pure +3%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+221 HP §e(+40 HP) §9(Pure +6 HP)"
+            TAG_String: "§7Defense: §a+71 §e(+20) §9(Pure +6)"
+            TAG_String: "§7Speed: §a+1 §9(Pure +1)"
+            TAG_String: "§7Intelligence: §a+6 §9(Pure +6)"
+            TAG_String: ""
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: ""
+            TAG_String: "§d◆ §cR§6a§ei§an§bb§9o§dw§9 Rune III"
+            TAG_String: "§8Requires level 20"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Trolling The Reaper"
+            TAG_String: "§7Healing Wands heal §a+50%§7."
+            TAG_String: "§7Gain §a+100❈ §7against Zombies."
+            TAG_String: ""
+            TAG_String: "§6Piece Bonus: Zombie Bulwark"
+            TAG_String: "§7Kill Zombies to accumulate"
+            TAG_String: "§7defense against them."
+            TAG_String: "§7Piece Bonus: §a+310❈"
+            TAG_String: "§7Next Upgrade: §a+315❈ §8(§a312,450§7/§c500,000§8)"
+            TAG_String: ""
+            TAG_String: "§7§4☠ §cRequires §5Zombie Slayer 4"
+            TAG_String: "§5§lEPIC BOOTS"
+          }
+          TAG_String("Name"): "§5Pure Revenant Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 11 entries {
+          TAG_Int("zombie_kills"): 312450
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("hotPotatoBonus"): "DEFENSE=20;HEALTH=40;"
+          TAG_Compound("runes"): 1 entries {
+            TAG_Int("RAINBOW"): 3
+          }
+          TAG_String("modifier"): "pure"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "REVENANT_BOOTS"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("protection"): 5
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "a0f5bb04-f9d0-4b8f-af44-17c19b40486c"
+          TAG_Int("anvil_uses"): 12
+          TAG_String("timestamp"): "10/11/19 9:28 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 29 entries {
+            TAG_String: "§7Strength: §c+5 §9(Godly +5)"
+            TAG_String: "§7Crit Damage: §c+4% §9(Godly +4%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+65 HP"
+            TAG_String: "§7Defense: §a+40"
+            TAG_String: "§7Intelligence: §a+2 §9(Godly +2)"
+            TAG_String: ""
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: "§9Thorns III"
+            TAG_String: "§7Grants a §a50% §7chance to"
+            TAG_String: "§7rebound §a9% §7of damage dealt"
+            TAG_String: "§7back at the attacker."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Cold Thumb"
+            TAG_String: "§7Allows the wearer to shoot"
+            TAG_String: "§7unlimited snowballs when using"
+            TAG_String: "§7§9Frosty the Snow Cannon§7."
+            TAG_String: ""
+            TAG_String: "§7Each piece grants a §a5% §7bonus"
+            TAG_String: "§7gift chance for every present"
+            TAG_String: "§7you earn from the §cGift Attack"
+            TAG_String: "§c§7minigame!"
+            TAG_String: ""
+            TAG_String: "§7All stats of this armor piece"
+            TAG_String: "§7are doubled while on the Winter"
+            TAG_String: "§7Island!"
+            TAG_String: ""
+            TAG_String: "§5§lEPIC BOOTS"
+          }
+          TAG_Int("color"): 16777215
+          TAG_String("Name"): "§5Godly Snow Suit Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 7 entries {
+          TAG_String("color"): "255:255:255"
+          TAG_String("modifier"): "godly"
+          TAG_String("originTag"): "UNKNOWN"
+          TAG_String("id"): "SNOW_SUIT_BOOTS"
+          TAG_Compound("enchantments"): 2 entries {
+            TAG_Int("thorns"): 3
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "f1c7ec98-ed59-4261-b4c1-53c01efb1e6c"
+          TAG_String("timestamp"): "12/19/19 7:38 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 0 entries {}
+    TAG_Compound: 0 entries {}
+  }
+}

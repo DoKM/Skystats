@@ -1,0 +1,264 @@
+TAG_Compound: 1 entries {
+  TAG_List("i"): 4 entries {
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 301
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 1 entries {
+          TAG_Compound: 2 entries {
+            TAG_Short("lvl"): 3
+            TAG_Short("id"): 8
+          }
+        }
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 39 entries {
+            TAG_String: "§7Strength: §c+8 §9(Fierce +8)"
+            TAG_String: "§7Crit Chance: §c+5% §9(Fierce +5%)"
+            TAG_String: "§7Crit Damage: §c+14% §9(Fierce +14%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+145 HP"
+            TAG_String: "§7Defense: §a+115"
+            TAG_String: "§7Speed: §a+5"
+            TAG_String: "§7Intelligence: §a+50"
+            TAG_String: ""
+            TAG_String: "§9Depth Strider III"
+            TAG_String: "§7Reduces how much you are slowed"
+            TAG_String: "§7in the water by §a100%§7."
+            TAG_String: "§9Feather Falling X"
+            TAG_String: "§7Increases how high you can fall"
+            TAG_String: "§7before taking fall damage by"
+            TAG_String: "§7§a10§7 and reduces fall damage"
+            TAG_String: "§7by §a50%§7."
+            TAG_String: "§9Growth V"
+            TAG_String: "§7Grants §a+75 §c❤ Health§7."
+            TAG_String: "§9Protection V"
+            TAG_String: "§7Grants §a+15 §a❈ Defense§7."
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Octodexterity"
+            TAG_String: "§7Every 4th strike, deal §cdouble"
+            TAG_String: "§cdamage §7and apply Venom"
+            TAG_String: "§7reducing healing by §240% §7for"
+            TAG_String: "§7§b4 §7seconds."
+            TAG_String: ""
+            TAG_String: "§6Piece Bonus: Spider Bulwark"
+            TAG_String: "§7Kill Spiders to accumulate"
+            TAG_String: "§7defense against them."
+            TAG_String: "§7Piece Bonus: §a+180❈"
+            TAG_String: "§7Next Upgrade: §a+200❈ §8(§a7,682§7/§c10,000§8)"
+            TAG_String: ""
+            TAG_String: "§6Item Ability: Double Jump"
+            TAG_String: "§7Allows you to double jump!"
+            TAG_String: "§8Mana Cost: §340"
+            TAG_String: ""
+            TAG_String: "§5§lEPIC BOOTS"
+          }
+          TAG_Int("color"): 0
+          TAG_String("Name"): "§5Fierce Tarantula Boots"
+        }
+        TAG_Compound("ExtraAttributes"): 9 entries {
+          TAG_String("color"): "0:0:0"
+          TAG_String("modifier"): "fierce"
+          TAG_String("originTag"): "CRAFTING_GRID_COLLECT"
+          TAG_String("id"): "TARANTULA_BOOTS"
+          TAG_Compound("enchantments"): 4 entries {
+            TAG_Int("depth_strider"): 3
+            TAG_Int("feather_falling"): 10
+            TAG_Int("growth"): 5
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "ea29e557-ea4c-4812-98c6-dd6231906f9f"
+          TAG_Int("anvil_uses"): 2
+          TAG_String("timestamp"): "4/22/20 7:45 PM"
+          TAG_Int("spider_kills"): 7682
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 300
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 27 entries {
+            TAG_String: "§7Gear Score: §d903 §8(3624)"
+            TAG_String: "§7Strength: §c+35 §9(Ancient +35) §8(+146.65)"
+            TAG_String: "§7Crit Chance: §c+15% §9(Ancient +15%) §8(+22.5%)"
+            TAG_String: "§7Crit Damage: §c+37% §9(Ancient +37%) §8(+155.03%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+352 HP §e(+40 HP) §9(Ancient +7 HP) §8(+1,474.88 HP)"
+            TAG_String: "§7Defense: §a+147 §e(+20) §9(Ancient +7) §8(+615.93)"
+            TAG_String: "§7Intelligence: §a+275 §9(Ancient +25) §8(+1,152.25)"
+            TAG_String: ""
+            TAG_String: "§9§d§lWisdom V, §9Growth V"
+            TAG_String: "§9Protection V, §9Rejuvenate V"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Witherborn"
+            TAG_String: "§7Spawns a wither minion every"
+            TAG_String: "§7§e30 §7seconds up to a maximum"
+            TAG_String: "§7§a1 §7wither. Your withers will"
+            TAG_String: "§7travel to and explode on nearby"
+            TAG_String: "§7enemies."
+            TAG_String: ""
+            TAG_String: "§7Reduces the damage you take"
+            TAG_String: "§7from withers by §c10%§7."
+            TAG_String: ""
+            TAG_String: "§9Ancient Bonus"
+            TAG_String: "§7Grants §a+1 §9☠ Crit Damage"
+            TAG_String: "§9§7per §cCatacombs §7level."
+            TAG_String: ""
+            TAG_String: "§d§l§ka§r §d§l§d§lMYTHIC DUNGEON LEGGINGS §d§l§ka"
+          }
+          TAG_Int("color"): 1550532
+          TAG_String("Name"): "§dAncient Storm's Leggings §6✪§6✪§6✪§6✪§6✪"
+        }
+        TAG_Compound("ExtraAttributes"): 11 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "23:168:196"
+          TAG_String("modifier"): "ancient"
+          TAG_Int("dungeon_item_level"): 5
+          TAG_String("originTag"): "WISE_WITHER_LEGGINGS"
+          TAG_String("id"): "WISE_WITHER_LEGGINGS"
+          TAG_Compound("enchantments"): 4 entries {
+            TAG_Int("ultimate_wisdom"): 5
+            TAG_Int("rejuvenate"): 5
+            TAG_Int("protection"): 5
+            TAG_Int("growth"): 5
+          }
+          TAG_String("uuid"): "d53b65a8-1015-40b4-b0cc-2ec934baa1dc"
+          TAG_Int("anvil_uses"): 1
+          TAG_String("timestamp"): "11/23/20 6:22 PM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 299
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 4 entries {
+        TAG_Byte("Unbreakable"): 1
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("display"): 3 entries {
+          TAG_List("Lore"): 29 entries {
+            TAG_String: "§7Gear Score: §d966 §8(3879)"
+            TAG_String: "§7Strength: §c+35 §9(Ancient +35) §8(+146.65)"
+            TAG_String: "§7Crit Chance: §c+15% §9(Ancient +15%) §8(+22.5%)"
+            TAG_String: "§7Crit Damage: §c+37% §9(Ancient +37%) §8(+155.03%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+382 HP §e(+40 HP) §9(Ancient +7 HP) §8(+1,600.58 HP)"
+            TAG_String: "§7Defense: §a+162 §e(+20) §9(Ancient +7) §8(+678.78)"
+            TAG_String: "§7Intelligence: §a+275 §9(Ancient +25) §8(+1,152.25)"
+            TAG_String: "§7True Defense: §a+5 §8(+7.5)"
+            TAG_String: ""
+            TAG_String: "§9§d§lWisdom V, §9Growth V"
+            TAG_String: "§9Protection V, §9Rejuvenate V"
+            TAG_String: "§9True Protection I"
+            TAG_String: ""
+            TAG_String: "§6Full Set Bonus: Witherborn"
+            TAG_String: "§7Spawns a wither minion every"
+            TAG_String: "§7§e30 §7seconds up to a maximum"
+            TAG_String: "§7§a1 §7wither. Your withers will"
+            TAG_String: "§7travel to and explode on nearby"
+            TAG_String: "§7enemies."
+            TAG_String: ""
+            TAG_String: "§7Reduces the damage you take"
+            TAG_String: "§7from withers by §c10%§7."
+            TAG_String: ""
+            TAG_String: "§9Ancient Bonus"
+            TAG_String: "§7Grants §a+1 §9☠ Crit Damage"
+            TAG_String: "§9§7per §cCatacombs §7level."
+            TAG_String: ""
+            TAG_String: "§d§l§ka§r §d§l§d§lMYTHIC DUNGEON CHESTPLATE §d§l§ka"
+          }
+          TAG_Int("color"): 1545156
+          TAG_String("Name"): "§dAncient Storm's Chestplate §6✪§6✪§6✪§6✪§6✪"
+        }
+        TAG_Compound("ExtraAttributes"): 10 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("color"): "23:147:196"
+          TAG_String("modifier"): "ancient"
+          TAG_Int("dungeon_item_level"): 5
+          TAG_String("originTag"): "WISE_WITHER_CHESTPLATE"
+          TAG_String("id"): "WISE_WITHER_CHESTPLATE"
+          TAG_Compound("enchantments"): 5 entries {
+            TAG_Int("ultimate_wisdom"): 5
+            TAG_Int("true_protection"): 1
+            TAG_Int("rejuvenate"): 5
+            TAG_Int("growth"): 5
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "7d10337c-309b-426a-967a-b870a9d16d06"
+          TAG_String("timestamp"): "12/9/20 3:43 AM"
+        }
+      }
+      TAG_Short("Damage"): 0
+    }
+    TAG_Compound: 4 entries {
+      TAG_Short("id"): 397
+      TAG_Byte("Count"): 1
+      TAG_Compound("tag"): 5 entries {
+        TAG_List("ench"): 0 entries {}
+        TAG_Int("HideFlags"): 254
+        TAG_Compound("SkullOwner"): 2 entries {
+          TAG_String("Id"): "a4baabfd-565a-33f1-a52b-b120cb7c749b"
+          TAG_Compound("Properties"): 1 entries {
+            TAG_List("textures"): 1 entries {
+              TAG_Compound: 1 entries {
+                TAG_String("Value"): "ewogICJ0aW1lc3RhbXAiIDogMTYwNTU0MzM0MTg4MSwKICAicHJvZmlsZUlkIiA6ICJiMGQ0YjI4YmMxZDc0ODg5YWYwZTg2NjFjZWU5NmFhYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNaW5lU2tpbl9vcmciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdjZWI4ZjA3NThlMmQ4YWM0OWRlNmY5Nzc2MDNjN2JmYzIzZmQ4MmE4NTc0ODEwYTQ1ZjVlOTdjNjQzNmQ3OSIKICAgIH0KICB9Cn0="
+              }
+            }
+          }
+        }
+        TAG_Compound("display"): 2 entries {
+          TAG_List("Lore"): 21 entries {
+            TAG_String: "§7Gear Score: §d505 §8(1858)"
+            TAG_String: "§7Strength: §c+25 §9(Ancient +25) §8(+104.75)"
+            TAG_String: "§7Crit Chance: §c+12% §9(Ancient +12%) §8(+18%)"
+            TAG_String: "§7Crit Damage: §c+37% §9(Ancient +37%) §8(+155.03%)"
+            TAG_String: ""
+            TAG_String: "§7Health: §a+122 HP §e(+40 HP) §9(Ancient +7 HP) §8(+511.18 HP)"
+            TAG_String: "§7Defense: §a+42 §e(+20) §9(Ancient +7) §8(+175.98)"
+            TAG_String: "§7Intelligence: §a+320 §9(Ancient +20) §8(+1,340.8)"
+            TAG_String: ""
+            TAG_String: "§9§d§lWisdom V, §9Growth V"
+            TAG_String: "§9Protection V, §9Rejuvenate V"
+            TAG_String: ""
+            TAG_String: "§7Your abilities deal §c+70%"
+            TAG_String: "§c§7damage to undead monsters."
+            TAG_String: ""
+            TAG_String: "§9Ancient Bonus"
+            TAG_String: "§7Grants §a+1 §9☠ Crit Damage"
+            TAG_String: "§9§7per §cCatacombs §7level."
+            TAG_String: ""
+            TAG_String: "§aPerfect 52500 / 52500"
+            TAG_String: "§6§l§ka§r §6§l§6§lLEGENDARY DUNGEON HELMET §6§l§ka"
+          }
+          TAG_String("Name"): "§6Ancient Wither Goggles §6✪§6✪§6✪§6✪§6✪"
+        }
+        TAG_Compound("ExtraAttributes"): 10 entries {
+          TAG_Int("rarity_upgrades"): 1
+          TAG_Int("hot_potato_count"): 10
+          TAG_String("modifier"): "ancient"
+          TAG_Int("dungeon_item_level"): 5
+          TAG_String("originTag"): "SHOP_PURCHASE"
+          TAG_String("id"): "WITHER_GOGGLES"
+          TAG_Int("shop_dungeon_floor_completion_required"): 6
+          TAG_Compound("enchantments"): 4 entries {
+            TAG_Int("ultimate_wisdom"): 5
+            TAG_Int("rejuvenate"): 5
+            TAG_Int("growth"): 5
+            TAG_Int("protection"): 5
+          }
+          TAG_String("uuid"): "4496c158-df06-4e83-a3fb-9bcb0aaad7ed"
+          TAG_String("timestamp"): "11/18/20 1:27 AM"
+        }
+      }
+      TAG_Short("Damage"): 3
+    }
+  }
+}

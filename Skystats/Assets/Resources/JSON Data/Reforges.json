@@ -1,0 +1,1970 @@
+﻿{
+  "Reforges": [
+    {
+      "Name": "Bizarre",
+      "Stats": [
+        {
+          "Name": "Health",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 2
+            }
+          ]
+        },
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 7
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": -1
+            },
+            {
+              "Rarity": 7,
+              "Amount": -2
+            },
+            {
+              "Rarity": 6,
+              "Amount": -2
+            },
+            {
+              "Rarity": 5,
+              "Amount": -3
+            },
+            {
+              "Rarity": 4,
+              "Amount": -5
+            },
+            {
+              "Rarity": 3,
+              "Amount": -7
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 6
+            },
+            {
+              "Rarity": 7,
+              "Amount": 8
+            },
+            {
+              "Rarity": 6,
+              "Amount": 10
+            },
+            {
+              "Rarity": 5,
+              "Amount": 14
+            },
+            {
+              "Rarity": 4,
+              "Amount": 20
+            },
+            {
+              "Rarity": 3,
+              "Amount": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Itchy",
+      "Stats": [
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 3
+            },
+            {
+              "Rarity": 3,
+              "Amount": 4
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 3
+            },
+            {
+              "Rarity": 7,
+              "Amount": 4
+            },
+            {
+              "Rarity": 6,
+              "Amount": 5
+            },
+            {
+              "Rarity": 5,
+              "Amount": 7
+            },
+            {
+              "Rarity": 4,
+              "Amount": 10
+            },
+            {
+              "Rarity": 3,
+              "Amount": 15
+            }
+          ]
+        },
+        {
+          "Name": "Bonus Attack Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 0
+            },
+            {
+              "Rarity": 7,
+              "Amount": 0
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Ominous",
+      "Stats": [
+        {
+          "Name": "Health",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 4
+            },
+            {
+              "Rarity": 3,
+              "Amount": 5
+            }
+          ]
+        },
+        {
+          "Name": "Defense",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 3
+            },
+            {
+              "Rarity": 3,
+              "Amount": 5
+            }
+          ]
+        },
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 3
+            },
+            {
+              "Rarity": 3,
+              "Amount": 4
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 0
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 4
+            },
+            {
+              "Rarity": 3,
+              "Amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Pleasant",
+      "Stats": [
+        {
+          "Name": "Defense",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 4
+            },
+            {
+              "Rarity": 7,
+              "Amount": 5
+            },
+            {
+              "Rarity": 6,
+              "Amount": 7
+            },
+            {
+              "Rarity": 5,
+              "Amount": 10
+            },
+            {
+              "Rarity": 4,
+              "Amount": 15
+            },
+            {
+              "Rarity": 3,
+              "Amount": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Pretty",
+      "Stats": [
+        {
+          "Name": "Health",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 3
+            },
+            {
+              "Rarity": 3,
+              "Amount": 4
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 3
+            },
+            {
+              "Rarity": 7,
+              "Amount": 4
+            },
+            {
+              "Rarity": 6,
+              "Amount": 6
+            },
+            {
+              "Rarity": 5,
+              "Amount": 9
+            },
+            {
+              "Rarity": 4,
+              "Amount": 13
+            },
+            {
+              "Rarity": 3,
+              "Amount": 18
+            }
+          ]
+        },
+        {
+          "Name": "Bonus Attack Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 0
+            },
+            {
+              "Rarity": 7,
+              "Amount": 0
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        },
+        {
+          "Name": "Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 0
+            },
+            {
+              "Rarity": 7,
+              "Amount": 0
+            },
+            {
+              "Rarity": 6,
+              "Amount": 0
+            },
+            {
+              "Rarity": 5,
+              "Amount": 0
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Shiny",
+      "Stats": [
+        {
+          "Name": "Health",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 4
+            },
+            {
+              "Rarity": 7,
+              "Amount": 5
+            },
+            {
+              "Rarity": 6,
+              "Amount": 7
+            },
+            {
+              "Rarity": 5,
+              "Amount": 10
+            },
+            {
+              "Rarity": 4,
+              "Amount": 15
+            },
+            {
+              "Rarity": 3,
+              "Amount": 20
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Simple",
+      "Stats": [
+        {
+          "Name": "Health",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        },
+        {
+          "Name": "Defense",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 2
+            }
+          ]
+        },
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        },
+        {
+          "Name": "Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Strange",
+      "Stats": [
+        {
+          "Name": "Defense",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 0
+            },
+            {
+              "Rarity": 7,
+              "Amount": 3
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": -1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 0
+            }
+          ]
+        },
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 2
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": -1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 0
+            },
+            {
+              "Rarity": 3,
+              "Amount": 4
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 0
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 7
+            },
+            {
+              "Rarity": 3,
+              "Amount": 9
+            }
+          ]
+        },
+        {
+          "Name": "Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 0
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 0
+            },
+            {
+              "Rarity": 4,
+              "Amount": 3
+            },
+            {
+              "Rarity": 3,
+              "Amount": 3
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": -1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 0
+            },
+            {
+              "Rarity": 4,
+              "Amount": 8
+            },
+            {
+              "Rarity": 3,
+              "Amount": 11
+            }
+          ]
+        },
+        {
+          "Name": "Bonus Attack Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": -1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 0
+            },
+            {
+              "Rarity": 5,
+              "Amount": 4
+            },
+            {
+              "Rarity": 4,
+              "Amount": 0
+            },
+            {
+              "Rarity": 3,
+              "Amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Vivid",
+      "Stats": [
+        {
+          "Name": "Health",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 3
+            },
+            {
+              "Rarity": 5,
+              "Amount": 4
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 6
+            }
+          ]
+        },
+        {
+          "Name": "Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 3
+            },
+            {
+              "Rarity": 5,
+              "Amount": 4
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Godly",
+      "Stats": [
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 3
+            },
+            {
+              "Rarity": 5,
+              "Amount": 5
+            },
+            {
+              "Rarity": 4,
+              "Amount": 7
+            },
+            {
+              "Rarity": 3,
+              "Amount": 10
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 2
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 3
+            },
+            {
+              "Rarity": 5,
+              "Amount": 4
+            },
+            {
+              "Rarity": 4,
+              "Amount": 6
+            },
+            {
+              "Rarity": 3,
+              "Amount": 8
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 4
+            },
+            {
+              "Rarity": 3,
+              "Amount": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Demonic",
+      "Stats": [
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 7
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 5
+            },
+            {
+              "Rarity": 7,
+              "Amount": 7
+            },
+            {
+              "Rarity": 6,
+              "Amount": 9
+            },
+            {
+              "Rarity": 5,
+              "Amount": 12
+            },
+            {
+              "Rarity": 4,
+              "Amount": 15
+            },
+            {
+              "Rarity": 3,
+              "Amount": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Forceful",
+      "Stats": [
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 4
+            },
+            {
+              "Rarity": 7,
+              "Amount": 5
+            },
+            {
+              "Rarity": 6,
+              "Amount": 7
+            },
+            {
+              "Rarity": 5,
+              "Amount": 10
+            },
+            {
+              "Rarity": 4,
+              "Amount": 15
+            },
+            {
+              "Rarity": 3,
+              "Amount": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Hurtful",
+      "Stats": [
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 4
+            },
+            {
+              "Rarity": 7,
+              "Amount": 5
+            },
+            {
+              "Rarity": 6,
+              "Amount": 7
+            },
+            {
+              "Rarity": 5,
+              "Amount": 10
+            },
+            {
+              "Rarity": 4,
+              "Amount": 15
+            },
+            {
+              "Rarity": 3,
+              "Amount": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Keen",
+      "Stats": [
+        {
+          "Name": "Health",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 3
+            },
+            {
+              "Rarity": 5,
+              "Amount": 4
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 7
+            }
+          ]
+        },
+        {
+          "Name": "Defense",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 3
+            },
+            {
+              "Rarity": 5,
+              "Amount": 4
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 7
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Strong",
+      "Stats": [
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 3
+            },
+            {
+              "Rarity": 5,
+              "Amount": 5
+            },
+            {
+              "Rarity": 4,
+              "Amount": 8
+            },
+            {
+              "Rarity": 3,
+              "Amount": 12
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 3
+            },
+            {
+              "Rarity": 5,
+              "Amount": 5
+            },
+            {
+              "Rarity": 4,
+              "Amount": 8
+            },
+            {
+              "Rarity": 3,
+              "Amount": 12
+            }
+          ]
+        },
+        {
+          "Name": "Defense",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 0
+            },
+            {
+              "Rarity": 7,
+              "Amount": 0
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 3
+            },
+            {
+              "Rarity": 3,
+              "Amount": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Superior",
+      "Stats": [
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 2
+            },
+            {
+              "Rarity": 7,
+              "Amount": 3
+            },
+            {
+              "Rarity": 6,
+              "Amount": 4
+            },
+            {
+              "Rarity": 5,
+              "Amount": 5
+            },
+            {
+              "Rarity": 4,
+              "Amount": 7
+            },
+            {
+              "Rarity": 3,
+              "Amount": 10
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 2
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 3
+            },
+            {
+              "Rarity": 3,
+              "Amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Unpleasant",
+      "Stats": [
+        {
+          "Name": "Crit Chance",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 2
+            },
+            {
+              "Rarity": 3,
+              "Amount": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Zealous",
+      "Stats": [
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 7
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 7
+            }
+          ]
+        },
+        {
+          "Name": "Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 0
+            },
+            {
+              "Rarity": 7,
+              "Amount": 0
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 2
+            }
+          ]
+        },
+        {
+          "Name": "Intelligence",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 2
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 3
+            },
+            {
+              "Rarity": 4,
+              "Amount": 5
+            },
+            {
+              "Rarity": 3,
+              "Amount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Silky",
+      "Stats": [
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 5
+            },
+            {
+              "Rarity": 7,
+              "Amount": 6
+            },
+            {
+              "Rarity": 6,
+              "Amount": 8
+            },
+            {
+              "Rarity": 5,
+              "Amount": 10
+            },
+            {
+              "Rarity": 4,
+              "Amount": 15
+            },
+            {
+              "Rarity": 3,
+              "Amount": 20
+            }
+          ]
+        }
+      ]
+    },
+    { 
+      "Name": "Bloody",
+      "Stats": [
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 3
+            },
+            {
+              "Rarity": 3,
+              "Amount": 4
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 3
+            },
+            {
+              "Rarity": 7,
+              "Amount": 4
+            },
+            {
+              "Rarity": 6,
+              "Amount": 5
+            },
+            {
+              "Rarity": 5,
+              "Amount": 6
+            },
+            {
+              "Rarity": 4,
+              "Amount": 9
+            },
+            {
+              "Rarity": 3,
+              "Amount": 14
+            }
+          ]
+        },
+        {
+          "Name": "Bonus Attack Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 2
+            },
+            {
+              "Rarity": 3,
+              "Amount": 2
+            }
+          ]
+        },
+        {
+          "Name": "Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 1
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Shaded",
+      "Stats": [
+        {
+          "Name": "Strength",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 2
+            },
+            {
+              "Rarity": 7,
+              "Amount": 3
+            },
+            {
+              "Rarity": 6,
+              "Amount": 4
+            },
+            {
+              "Rarity": 5,
+              "Amount": 5
+            },
+            {
+              "Rarity": 4,
+              "Amount": 6
+            },
+            {
+              "Rarity": 3,
+              "Amount": 8
+            }
+          ]
+        },
+        {
+          "Name": "Crit Damage",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 3
+            },
+            {
+              "Rarity": 7,
+              "Amount": 4
+            },
+            {
+              "Rarity": 6,
+              "Amount": 5
+            },
+            {
+              "Rarity": 5,
+              "Amount": 6
+            },
+            {
+              "Rarity": 4,
+              "Amount": 9
+            },
+            {
+              "Rarity": 3,
+              "Amount": 14
+            }
+          ]
+        },
+        {
+          "Name": "Crit Chance",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 0
+            },
+            {
+              "Rarity": 7,
+              "Amount": 0
+            },
+            {
+              "Rarity": 6,
+              "Amount": 0
+            },
+            {
+              "Rarity": 5,
+              "Amount": 0
+            },
+            {
+              "Rarity": 4,
+              "Amount": 1
+            },
+            {
+              "Rarity": 3,
+              "Amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Sweet",
+      "Stats": [
+        {
+          "Name": "Health",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 2
+            },
+            {
+              "Rarity": 7,
+              "Amount": 3
+            },
+            {
+              "Rarity": 6,
+              "Amount": 4
+            },
+            {
+              "Rarity": 5,
+              "Amount": 6
+            },
+            {
+              "Rarity": 4,
+              "Amount": 8
+            },
+            {
+              "Rarity": 3,
+              "Amount": 16
+            }
+          ]
+        },
+        {
+          "Name": "Defense",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 2
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 3
+            },
+            {
+              "Rarity": 3,
+              "Amount": 4
+            }
+          ]
+        },
+        {
+          "Name": "Speed",
+          "Stats": [
+            {
+              "Rarity": 8,
+              "Amount": 1
+            },
+            {
+              "Rarity": 7,
+              "Amount": 1
+            },
+            {
+              "Rarity": 6,
+              "Amount": 1
+            },
+            {
+              "Rarity": 5,
+              "Amount": 2
+            },
+            {
+              "Rarity": 4,
+              "Amount": 2
+            },
+            {
+              "Rarity": 3,
+              "Amount": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

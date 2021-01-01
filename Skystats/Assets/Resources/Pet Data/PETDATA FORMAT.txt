@@ -1,0 +1,9 @@
+// The link to the pet's texture is the endpoint "texture" in /sba dev nbt data.
+// There are three different stages to pets; from common to rare (stage 1), rare to epic (stage 2) and legendary (stage 3)
+// The stats are from a pet that is already level 100. Each stat that is influenced by the pet's level is inbetween dollar signs ($)
+ 
+$abs:(20,0)$	=> 20
+$lvl:(50,0)$	=> 0,5 - 50
+
+$abs:(15,0)(25,0)(25,0)(35,0)(40,0)$	=> 15 or 25 etc.
+$lvl:(15,0)(20,0)(25,0)(30,0)(35,0)$	=> 0.15 - 15 or 0.2 - 20 etc.

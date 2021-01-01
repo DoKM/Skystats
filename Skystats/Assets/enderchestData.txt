@@ -1,0 +1,1678 @@
+TAG_List("i"): 135 entries {
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "f1e3c520-3f66-38f0-a110-70e3c183df38"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0aW1lc3RhbXAiOjE1NjgyMTMwNTE0MjYsInByb2ZpbGVJZCI6IjgyYzYwNmM1YzY1MjRiNzk4YjkxYTEyZDNhNjE2OTc3IiwicHJvZmlsZU5hbWUiOiJOb3ROb3RvcmlvdXNOZW1vIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82MmYzYjNhMDU0ODFjZGU3NzI0MDAwNWMwZGRjZWUxYzA2OWU1NTA0YTYyY2UwOTc3ODc5ZjU1YTM5Mzk2MTQ2In19fQ"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 5 entries {
+          TAG_String: "§7A special portable bag with"
+          TAG_String: "§7§a36§7 slots which can hold any"
+          TAG_String: "§7item within."
+          TAG_String: ""
+          TAG_String: "§5§lEPIC"
+        }
+        TAG_String("Name"): "§5Greater Backpack"
+      }
+      TAG_Compound("ExtraAttributes"): 6 entries {
+        TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+        TAG_String("id"): "GREATER_BACKPACK"
+        TAG_String("backpack_color"): "DEFAULT"
+        TAG_String("uuid"): "e37419fd-8aca-4035-9cab-e22d5d5678ac"
+        TAG_Byte_Array("greater_backpack_data"): [5765 bytes]
+        TAG_String("timestamp"): "7/8/20 12:50 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "81cd3a9b-2fba-36bf-980c-de190fbc4a95"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkxYTcwZjUyM2UzYjk3Mjg0M2I2MzhjN2I0NTk3Yjk4NzAyODQ5ODM0NzU3MzAyOWM3NDc1MTY3YTMyNDdhNzUifX19"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 5 entries {
+          TAG_String: "§7A special portable bag with"
+          TAG_String: "§7§a36§7 slots which can hold any"
+          TAG_String: "§7item within."
+          TAG_String: ""
+          TAG_String: "§5§lEPIC"
+        }
+        TAG_String("Name"): "§5Greater Backpack"
+      }
+      TAG_Compound("ExtraAttributes"): 5 entries {
+        TAG_String("id"): "GREATER_BACKPACK"
+        TAG_String("backpack_color"): "PINK"
+        TAG_String("uuid"): "b70a846e-83fa-4744-8151-2fe3511e4fa9"
+        TAG_Byte_Array("greater_backpack_data"): [4707 bytes]
+        TAG_String("timestamp"): "12/2/19 1:52 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "0d84fe21-7fb5-3b72-a60e-bb19b6a58379"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY3YTAxNWJmYmQ2NTA3NTBiMmY1MjIzNTQ2ODdlMDUzNTQ0M2RmZTY3Y2U4MzIwMmE4Yjc2ZWRjZTQyZTYxMTQifX19"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 5 entries {
+          TAG_String: "§7A special portable bag with"
+          TAG_String: "§7§a27§7 slots which can hold any"
+          TAG_String: "§7item within."
+          TAG_String: ""
+          TAG_String: "§5§lEPIC"
+        }
+        TAG_String("Name"): "§5Large Backpack"
+      }
+      TAG_Compound("ExtraAttributes"): 5 entries {
+        TAG_Byte_Array("large_backpack_data"): [329 bytes]
+        TAG_String("id"): "LARGE_BACKPACK"
+        TAG_String("backpack_color"): "LIGHT_GREY"
+        TAG_String("uuid"): "03cc8ed0-397a-4c80-a162-bde072939b8d"
+        TAG_String("timestamp"): "1/25/20 1:05 PM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "ea3ee289-11c8-32b4-8913-c98703b1ab1c"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjViNmJlYWM1NzM2NWNhZjQ2ZjAzN2YzZDJhM2E0NTdmNmNhZmU2NDc1N2JhZjE0ZTg5OTNjZDJkYTE4Y2ZmNyJ9fX0K"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 15 entries {
+          TAG_String: "§8Reforge Stone"
+          TAG_String: ""
+          TAG_String: "§7Can be used in a Reforge Anvil"
+          TAG_String: "§7or with the Dungeon Blacksmith"
+          TAG_String: "§7to apply the §9Necrotic"
+          TAG_String: "§9§7reforge to armor."
+          TAG_String: ""
+          TAG_String: "§7§8§oRewarded to every"
+          TAG_String: "§8§oNecromancer who passes the final"
+          TAG_String: "§8§oexam."
+          TAG_String: ""
+          TAG_String: "§7Requires §aMining Skill Level"
+          TAG_String: "§aXIX§7!"
+          TAG_String: ""
+          TAG_String: "§9§lRARE REFORGE STONE"
+        }
+        TAG_String("Name"): "§9Necromancer's Brooch"
+      }
+      TAG_Compound("ExtraAttributes"): 4 entries {
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "NECROMANCER_BROOCH"
+        TAG_String("uuid"): "de05fcf7-531f-4af0-9d75-2871e1b2a3f7"
+        TAG_String("timestamp"): "9/20/20 4:31 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "ea3ee289-11c8-32b4-8913-c98703b1ab1c"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjViNmJlYWM1NzM2NWNhZjQ2ZjAzN2YzZDJhM2E0NTdmNmNhZmU2NDc1N2JhZjE0ZTg5OTNjZDJkYTE4Y2ZmNyJ9fX0K"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 15 entries {
+          TAG_String: "§8Reforge Stone"
+          TAG_String: ""
+          TAG_String: "§7Can be used in a Reforge Anvil"
+          TAG_String: "§7or with the Dungeon Blacksmith"
+          TAG_String: "§7to apply the §9Necrotic"
+          TAG_String: "§9§7reforge to armor."
+          TAG_String: ""
+          TAG_String: "§7§8§oRewarded to every"
+          TAG_String: "§8§oNecromancer who passes the final"
+          TAG_String: "§8§oexam."
+          TAG_String: ""
+          TAG_String: "§7Requires §aMining Skill Level"
+          TAG_String: "§aXIX§7!"
+          TAG_String: ""
+          TAG_String: "§9§lRARE REFORGE STONE"
+        }
+        TAG_String("Name"): "§9Necromancer's Brooch"
+      }
+      TAG_Compound("ExtraAttributes"): 4 entries {
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "NECROMANCER_BROOCH"
+        TAG_String("uuid"): "ecefd327-3494-463d-9efa-ee75d770888d"
+        TAG_String("timestamp"): "9/12/20 11:28 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "ea3ee289-11c8-32b4-8913-c98703b1ab1c"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjViNmJlYWM1NzM2NWNhZjQ2ZjAzN2YzZDJhM2E0NTdmNmNhZmU2NDc1N2JhZjE0ZTg5OTNjZDJkYTE4Y2ZmNyJ9fX0K"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 15 entries {
+          TAG_String: "§8Reforge Stone"
+          TAG_String: ""
+          TAG_String: "§7Can be used in a Reforge Anvil"
+          TAG_String: "§7or with the Dungeon Blacksmith"
+          TAG_String: "§7to apply the §9Necrotic"
+          TAG_String: "§9§7reforge to armor."
+          TAG_String: ""
+          TAG_String: "§7§8§oRewarded to every"
+          TAG_String: "§8§oNecromancer who passes the final"
+          TAG_String: "§8§oexam."
+          TAG_String: ""
+          TAG_String: "§7Requires §aMining Skill Level"
+          TAG_String: "§aXIX§7!"
+          TAG_String: ""
+          TAG_String: "§9§lRARE REFORGE STONE"
+        }
+        TAG_String("Name"): "§9Necromancer's Brooch"
+      }
+      TAG_Compound("ExtraAttributes"): 4 entries {
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "NECROMANCER_BROOCH"
+        TAG_String("uuid"): "6f3b81f6-042b-439f-a0b0-b3aabfc57812"
+        TAG_String("timestamp"): "7/9/20 9:11 PM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 368
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 8 entries {
+          TAG_String: "§6Item Ability: Spirit Leap §e§lRIGHT CLICK"
+          TAG_String: "§7Allows you to teleport to any"
+          TAG_String: "§7teammate!"
+          TAG_String: "§8Cooldown: §a5s"
+          TAG_String: ""
+          TAG_String: "§cDungeons only!"
+          TAG_String: ""
+          TAG_String: "§9§lRARE DUNGEON ITEM"
+        }
+        TAG_String("Name"): "§9Spirit Leap"
+      }
+      TAG_Compound("ExtraAttributes"): 1 entries {
+        TAG_String("id"): "SPIRIT_LEAP"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 298
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 3 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 3 entries {
+        TAG_List("Lore"): 20 entries {
+          TAG_String: "§7Gear Score: §d443"
+          TAG_String: "§7Crit Chance: §c+3%"
+          TAG_String: "§7Crit Damage: §c+30%"
+          TAG_String: ""
+          TAG_String: "§7Health: §a+107 HP"
+          TAG_String: "§7Defense: §a+145 §9(Reinforced +80)"
+          TAG_String: ""
+          TAG_String: "§9Growth V, §9Protection V"
+          TAG_String: "§9Thorns III"
+          TAG_String: ""
+          TAG_String: "§7Increase the damage you deal"
+          TAG_String: "§7with arrows by §c5%§7."
+          TAG_String: ""
+          TAG_String: "§6Full Set Bonus: Skeleton Soldier"
+          TAG_String: "§7Increase the damage you deal"
+          TAG_String: "§7with arrows by an extra §c25%§7."
+          TAG_String: ""
+          TAG_String: "§aPerfect 52491 / 52500"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 9"
+          TAG_String: "§6§lLEGENDARY DUNGEON HELMET"
+        }
+        TAG_Int("color"): 16759819
+        TAG_String("Name"): "§6Reinforced Skeleton Soldier Helmet §6✪§6✪§6✪§6✪§6✪"
+      }
+      TAG_Compound("ExtraAttributes"): 11 entries {
+        TAG_String("color"): "255:188:11"
+        TAG_Int("baseStatBoostPercentage"): 50
+        TAG_String("modifier"): "reinforced"
+        TAG_Int("dungeon_item_level"): 5
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_Int("item_durability"): 52491
+        TAG_String("id"): "SKELETON_SOLDIER_HELMET"
+        TAG_Compound("enchantments"): 3 entries {
+          TAG_Int("thorns"): 3
+          TAG_Int("protection"): 5
+          TAG_Int("growth"): 5
+        }
+        TAG_String("uuid"): "8e6ea921-f4c3-4814-8bed-fade28c74b3c"
+        TAG_Int("item_tier"): 4
+        TAG_String("timestamp"): "8/26/20 1:17 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "5a27db2d-dcfe-38b5-8868-b1f536da5f0c"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0aW1lc3RhbXAiOjE1NzQ0MTkzMTAxNjQsInByb2ZpbGVJZCI6Ijc1MTQ0NDgxOTFlNjQ1NDY4Yzk3MzlhNmUzOTU3YmViIiwicHJvZmlsZU5hbWUiOiJUaGFua3NNb2phbmciLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzEyNzE2ZWNiZjViOGRhMDBiMDVmMzE2ZWM2YWY2MWU4YmQwMjgwNWIyMWViOGU0NDAxNTE0NjhkYzY1NjU0OWMifX19"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 20 entries {
+          TAG_String: "§7Gear Score: §d395"
+          TAG_String: "§7Health: §a+100 HP"
+          TAG_String: "§7Defense: §a+100"
+          TAG_String: "§7Intelligence: §a+190 §9(Necrotic +90)"
+          TAG_String: ""
+          TAG_String: "§6Item Ability: Clownin' Around"
+          TAG_String: "§7Instead of dying, gain damage"
+          TAG_String: "§7immunity and §a+20 §c❁ Strength"
+          TAG_String: "§c§7for §a3s §7and fully replenish"
+          TAG_String: "§7your health. The cooldown and"
+          TAG_String: "§7Strength bonus you receive"
+          TAG_String: "§7improve based on your"
+          TAG_String: "§7§aDungeoneering Skill §7level."
+          TAG_String: "§7This ability only works while in"
+          TAG_String: "§7§cThe Catacombs§7!"
+          TAG_String: "§8Cooldown: §a360s"
+          TAG_String: ""
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Floor I"
+          TAG_String: "§aCompletion"
+          TAG_String: "§9§lRARE DUNGEON HELMET"
+        }
+        TAG_String("Name"): "§9Necrotic Bonzo's Mask §6✪§6✪§6✪§6✪§6✪"
+      }
+      TAG_Compound("ExtraAttributes"): 6 entries {
+        TAG_String("modifier"): "necrotic"
+        TAG_Int("dungeon_item_level"): 5
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "BONZO_MASK"
+        TAG_String("uuid"): "b5a1b020-315d-4101-b398-066df76db545"
+        TAG_String("timestamp"): "7/15/20 4:03 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "300ee59e-e866-3fc4-b370-5c1f1063c731"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y3NDBlODA5ODc3NjRmMmUxYzc0NTA0OWY0OTY1ZDFkODI1Mjk3OWY1NDZiNGQ1OWQ3MzZkZTJiZTI5YjU0NzAifX19"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 5 entries {
+          TAG_String: "§7A special portable bag with"
+          TAG_String: "§7§a36§7 slots which can hold any"
+          TAG_String: "§7item within."
+          TAG_String: ""
+          TAG_String: "§5§lEPIC"
+        }
+        TAG_String("Name"): "§5Greater Backpack"
+      }
+      TAG_Compound("ExtraAttributes"): 5 entries {
+        TAG_String("id"): "GREATER_BACKPACK"
+        TAG_String("backpack_color"): "LIGHT_GREY"
+        TAG_String("uuid"): "764f3226-48f2-4501-82ea-99f74980b12f"
+        TAG_Byte_Array("greater_backpack_data"): [2033 bytes]
+        TAG_String("timestamp"): "12/30/19 11:40 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "3957c740-06a0-3278-94b3-edde9def17ef"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NkYTJhNWIyNDdjMWQwYjJhMWU3MGE4OTQxN2YwMDNiYjZjNDRmZjczODhhYzJmY2MzZjQ3MDBlNTZiMjI5NWYifX19"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 5 entries {
+          TAG_String: "§7A special portable bag with"
+          TAG_String: "§7§a36§7 slots which can hold any"
+          TAG_String: "§7item within."
+          TAG_String: ""
+          TAG_String: "§5§lEPIC"
+        }
+        TAG_String("Name"): "§5Greater Backpack"
+      }
+      TAG_Compound("ExtraAttributes"): 5 entries {
+        TAG_String("id"): "GREATER_BACKPACK"
+        TAG_String("backpack_color"): "ORANGE"
+        TAG_String("uuid"): "0c55e4c7-0b55-4842-857e-354833893250"
+        TAG_Byte_Array("greater_backpack_data"): [3689 bytes]
+        TAG_String("timestamp"): "12/10/19 8:56 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "efd1a208-55e7-3f94-84ed-1aa246760cee"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "ewogICJ0aW1lc3RhbXAiIDogMTU5NTg2MjAyNjE5OSwKICAicHJvZmlsZUlkIiA6ICI0ZWQ4MjMzNzFhMmU0YmI3YTVlYWJmY2ZmZGE4NDk1NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJGaXJlYnlyZDg4IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzhkOWNjYzY3MDY3N2QwY2ViYWFkNDA1OGQ2YWFmOWFjZmFiMDlhYmVhNWQ4NjM3OWEwNTk5MDJmMmZlMjI2NTUiCiAgICB9CiAgfQp9"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 18 entries {
+          TAG_String: "§8Combat Pet"
+          TAG_String: ""
+          TAG_String: "§7Speed: §a+3"
+          TAG_String: "§7Intelligence: §a+12"
+          TAG_String: ""
+          TAG_String: "§6Spirit Assistance"
+          TAG_String: "§7§7Spawns and assists you when"
+          TAG_String: "§7you are ghost in Dungeons."
+          TAG_String: ""
+          TAG_String: "§6Spirit Leap"
+          TAG_String: "§7§7Grants a §a10% §7chance for"
+          TAG_String: "§7mini-bosses in dungeons to drop"
+          TAG_String: "§7§b5 §7Spirit Leap Pearls."
+          TAG_String: ""
+          TAG_String: "§7§eRight-click to add this pet to"
+          TAG_String: "§eyour pet menu!"
+          TAG_String: ""
+          TAG_String: "§5§lEPIC"
+        }
+        TAG_String("Name"): "§7[Lvl 12] §5Spirit"
+      }
+      TAG_Compound("ExtraAttributes"): 5 entries {
+        TAG_String("petInfo"): "{"type":"SPIRIT","active":false,"exp":8701.739219840007,"tier":"EPIC","hideInfo":false,"candyUsed":0,"uuid":"67159b26-6d1d-4b89-acc2-724924cece61"}"
+        TAG_String("originTag"): "PET_MENU"
+        TAG_String("id"): "PET"
+        TAG_String("uuid"): "67159b26-6d1d-4b89-acc2-724924cece61"
+        TAG_String("timestamp"): "9/19/20 4:44 PM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 353
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 2 entries {
+          TAG_String: "§8Brewing Ingredient"
+          TAG_String: "§a§lUNCOMMON"
+        }
+        TAG_String("Name"): "§aEnchanted Sugar"
+      }
+      TAG_Compound("ExtraAttributes"): 1 entries {
+        TAG_String("id"): "ENCHANTED_SUGAR"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 5 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "f4cc2be6-9951-3ab4-8912-f0408f176e55"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UwMjY3NzA1M2RjNTQyNDVkYWM0YjM5OWQxNGFhZTIxZWU3MWEwMTBiZDljMzM2YzhlY2VlMWEwZGJlOGY1OGIifX19"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 11 entries {
+          TAG_String: "§8Requires level 1"
+          TAG_String: "§8Weapons"
+          TAG_String: ""
+          TAG_String: "§7Create a blood effect when you"
+          TAG_String: "§7kill mobs!"
+          TAG_String: ""
+          TAG_String: "§7Apply this rune to weapons or"
+          TAG_String: "§7fuse two together at the Runic"
+          TAG_String: "§7Pedestal!"
+          TAG_String: ""
+          TAG_String: "§f§lCOMMON COSMETIC"
+        }
+        TAG_String("Name"): "§c◆ Blood Rune I"
+      }
+      TAG_Compound("ExtraAttributes"): 2 entries {
+        TAG_Compound("runes"): 1 entries {
+          TAG_Int("BLOOD_2"): 1
+        }
+        TAG_String("id"): "RUNE"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 299
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 3 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 3 entries {
+        TAG_List("Lore"): 20 entries {
+          TAG_String: "§7Gear Score: §d526"
+          TAG_String: "§7Crit Chance: §c+3%"
+          TAG_String: "§7Crit Damage: §c+32%"
+          TAG_String: ""
+          TAG_String: "§7Health: §a+126 HP"
+          TAG_String: "§7Defense: §a+176 §9(Reinforced +80)"
+          TAG_String: ""
+          TAG_String: "§9Growth V, §9Protection V"
+          TAG_String: "§9Thorns III"
+          TAG_String: ""
+          TAG_String: "§7Increase the damage you deal"
+          TAG_String: "§7with arrows by §c5%§7."
+          TAG_String: ""
+          TAG_String: "§6Full Set Bonus: Skeleton Soldier"
+          TAG_String: "§7Increase the damage you deal"
+          TAG_String: "§7with arrows by an extra §c25%§7."
+          TAG_String: ""
+          TAG_String: "§aPerfect 52491 / 52500"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 9"
+          TAG_String: "§6§lLEGENDARY DUNGEON CHESTPLATE"
+        }
+        TAG_Int("color"): 16759819
+        TAG_String("Name"): "§6Reinforced Skeleton Soldier Chestplate §6✪§6✪§6✪§6✪§6✪"
+      }
+      TAG_Compound("ExtraAttributes"): 11 entries {
+        TAG_String("color"): "255:188:11"
+        TAG_Int("baseStatBoostPercentage"): 50
+        TAG_String("modifier"): "reinforced"
+        TAG_Int("dungeon_item_level"): 5
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_Int("item_durability"): 52491
+        TAG_String("id"): "SKELETON_SOLDIER_CHESTPLATE"
+        TAG_Compound("enchantments"): 3 entries {
+          TAG_Int("thorns"): 3
+          TAG_Int("protection"): 5
+          TAG_Int("growth"): 5
+        }
+        TAG_String("uuid"): "3485f43c-8224-4d13-a54b-b803fdd67830"
+        TAG_Int("item_tier"): 4
+        TAG_String("timestamp"): "8/27/20 9:50 AM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 299
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 3 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 3 entries {
+        TAG_List("Lore"): 16 entries {
+          TAG_String: "§7Gear Score: §d480"
+          TAG_String: "§7Health: §a+139 HP"
+          TAG_String: "§7Defense: §a+135"
+          TAG_String: "§7Intelligence: §a+120 §9(Necrotic +120)"
+          TAG_String: ""
+          TAG_String: "§9Growth V, §9Protection V"
+          TAG_String: "§9Thorns III"
+          TAG_String: ""
+          TAG_String: "§6Full Set Bonus: §cShoal"
+          TAG_String: "§7Gain §a+30❈ Defense §7for each"
+          TAG_String: "§7§cZombie Soldier Set §7within"
+          TAG_String: "§7§a30 §7blocks."
+          TAG_String: ""
+          TAG_String: "§aPerfect 52408 / 52500"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 9"
+          TAG_String: "§5§lEPIC DUNGEON CHESTPLATE"
+        }
+        TAG_Int("color"): 13664000
+        TAG_String("Name"): "§5Necrotic Zombie Soldier Chestplate §6✪§6✪§6✪§6✪§6✪"
+      }
+      TAG_Compound("ExtraAttributes"): 11 entries {
+        TAG_String("color"): "208:127:0"
+        TAG_Int("baseStatBoostPercentage"): 22
+        TAG_String("modifier"): "necrotic"
+        TAG_Int("dungeon_item_level"): 5
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_Int("item_durability"): 52408
+        TAG_String("id"): "ZOMBIE_SOLDIER_CHESTPLATE"
+        TAG_Compound("enchantments"): 3 entries {
+          TAG_Int("thorns"): 3
+          TAG_Int("protection"): 5
+          TAG_Int("growth"): 5
+        }
+        TAG_String("uuid"): "956c9ac3-e59e-4208-b9e3-53dff1d0c608"
+        TAG_Int("item_tier"): 3
+        TAG_String("timestamp"): "7/15/20 12:07 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 300
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 3 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 3 entries {
+        TAG_List("Lore"): 20 entries {
+          TAG_String: "§7Gear Score: §d458"
+          TAG_String: "§7Crit Chance: §c+3%"
+          TAG_String: "§7Crit Damage: §c+26%"
+          TAG_String: ""
+          TAG_String: "§7Health: §a+111 HP"
+          TAG_String: "§7Defense: §a+152 §9(Reinforced +80)"
+          TAG_String: ""
+          TAG_String: "§9Growth V, §9Protection V"
+          TAG_String: "§9Thorns III"
+          TAG_String: ""
+          TAG_String: "§7Increase the damage you deal"
+          TAG_String: "§7with arrows by §c5%§7."
+          TAG_String: ""
+          TAG_String: "§6Full Set Bonus: Skeleton Soldier"
+          TAG_String: "§7Increase the damage you deal"
+          TAG_String: "§7with arrows by an extra §c25%§7."
+          TAG_String: ""
+          TAG_String: "§aPerfect 52491 / 52500"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 9"
+          TAG_String: "§6§lLEGENDARY DUNGEON LEGGINGS"
+        }
+        TAG_Int("color"): 16759819
+        TAG_String("Name"): "§6Reinforced Skeleton Soldier Leggings §6✪§6✪§6✪§6✪§6✪"
+      }
+      TAG_Compound("ExtraAttributes"): 11 entries {
+        TAG_String("color"): "255:188:11"
+        TAG_Int("baseStatBoostPercentage"): 50
+        TAG_String("modifier"): "reinforced"
+        TAG_Int("dungeon_item_level"): 5
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_Int("item_durability"): 52491
+        TAG_String("id"): "SKELETON_SOLDIER_LEGGINGS"
+        TAG_Compound("enchantments"): 3 entries {
+          TAG_Int("thorns"): 3
+          TAG_Int("protection"): 5
+          TAG_Int("growth"): 5
+        }
+        TAG_String("uuid"): "08c2a040-d8bc-42a4-9032-a9ee87f4142b"
+        TAG_Int("item_tier"): 1
+        TAG_String("timestamp"): "8/27/20 7:15 AM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 300
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 3 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 3 entries {
+        TAG_List("Lore"): 16 entries {
+          TAG_String: "§7Gear Score: §d474"
+          TAG_String: "§7Health: §a+133 HP"
+          TAG_String: "§7Defense: §a+135"
+          TAG_String: "§7Intelligence: §a+120 §9(Necrotic +120)"
+          TAG_String: ""
+          TAG_String: "§9Growth V, §9Protection V"
+          TAG_String: "§9Thorns III"
+          TAG_String: ""
+          TAG_String: "§6Full Set Bonus: §cShoal"
+          TAG_String: "§7Gain §a+30❈ Defense §7for each"
+          TAG_String: "§7§cZombie Soldier Set §7within"
+          TAG_String: "§7§a30 §7blocks."
+          TAG_String: ""
+          TAG_String: "§aPerfect 52408 / 52500"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 9"
+          TAG_String: "§5§lEPIC DUNGEON LEGGINGS"
+        }
+        TAG_Int("color"): 13664000
+        TAG_String("Name"): "§5Necrotic Zombie Soldier Leggings §6✪§6✪§6✪§6✪§6✪"
+      }
+      TAG_Compound("ExtraAttributes"): 11 entries {
+        TAG_String("color"): "208:127:0"
+        TAG_Int("baseStatBoostPercentage"): 40
+        TAG_String("modifier"): "necrotic"
+        TAG_Int("dungeon_item_level"): 5
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_Int("item_durability"): 52408
+        TAG_String("id"): "ZOMBIE_SOLDIER_LEGGINGS"
+        TAG_Compound("enchantments"): 3 entries {
+          TAG_Int("thorns"): 3
+          TAG_Int("protection"): 5
+          TAG_Int("growth"): 5
+        }
+        TAG_String("uuid"): "671b69ad-794e-4926-9495-df2c68a63cff"
+        TAG_Int("item_tier"): 3
+        TAG_String("timestamp"): "7/12/20 5:17 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "39efcd99-3e0a-3781-b335-a9996d618227"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQwOTQyNTkyMCwKICAicHJvZmlsZUlkIiA6ICJhMmY4MzQ1OTVjODk0YTI3YWRkMzA0OTcxNmNhOTEwYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJiUHVuY2giLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVlNzVlYWU4NjliZjBjMjk4ZWU0ODc5MGE2MmMyZDYxNDA3OTBiZDQ4MWIxZGU4OWI3NjhkNTJmMjhjNzRhOSIKICAgIH0KICB9Cn0="
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 19 entries {
+          TAG_String: "§7Gear Score: §d45"
+          TAG_String: "§7Strength: §c+5"
+          TAG_String: ""
+          TAG_String: "§7Health: §a+20 HP"
+          TAG_String: "§7Defense: §a+10"
+          TAG_String: ""
+          TAG_String: "§7Obtained from killing §cBonzo"
+          TAG_String: "§c§7in §cThe Catacombs §7lots of"
+          TAG_String: "§7times. Grants §a2x §7stats on"
+          TAG_String: "§7§cThe Catacombs Floor I§7."
+          TAG_String: ""
+          TAG_String: "§7§8Involved in the dark arts due"
+          TAG_String: "§8to his parents' insistence."
+          TAG_String: "§8Originally worked as a Circus"
+          TAG_String: "§8clown."
+          TAG_String: ""
+          TAG_String: "§7§8This item can be reforged!"
+          TAG_String: "§aPerfect 700000 / 700000"
+          TAG_String: "§c§lSPECIAL DUNGEON HELMET"
+        }
+        TAG_String("Name"): "§cGolden Bonzo Head"
+      }
+      TAG_Compound("ExtraAttributes"): 4 entries {
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "GOLD_BONZO_HEAD"
+        TAG_String("uuid"): "d872b886-63c7-4579-bec8-1feba8fa5d6d"
+        TAG_String("timestamp"): "9/21/20 8:40 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "9b5fcb03-447d-32ed-9292-793a9dc16312"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQxMDAxNTI3NCwKICAicHJvZmlsZUlkIiA6ICJhMmY4MzQ1OTVjODk0YTI3YWRkMzA0OTcxNmNhOTEwYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJiUHVuY2giLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhjYTAzZDc4ZDE1N2RmMzRlOGM0Mjg4MWZmNTdlYTg5ODE4MzY3ZTQwZTI4OGRhN2Y4YjQxY2NhNWMxZDQwNiIKICAgIH0KICB9Cn0="
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 20 entries {
+          TAG_String: "§7Gear Score: §d90"
+          TAG_String: "§7Strength: §c+10"
+          TAG_String: ""
+          TAG_String: "§7Health: §a+40 HP"
+          TAG_String: "§7Defense: §a+20"
+          TAG_String: ""
+          TAG_String: "§7Obtained from killing §cThe"
+          TAG_String: "§cProfessor §7in §cThe Catacombs"
+          TAG_String: "§c§7lots of times. Grants §a2x"
+          TAG_String: "§a§7stats on §cThe Catacombs Floor"
+          TAG_String: "§cIII§7."
+          TAG_String: ""
+          TAG_String: "§7§8Despite his great technique,"
+          TAG_String: "§8he failed the Masters exam three"
+          TAG_String: "§8times. Works from 8 to 5. Cares"
+          TAG_String: "§8about his students."
+          TAG_String: ""
+          TAG_String: "§7§8This item can be reforged!"
+          TAG_String: "§aPerfect 700000 / 700000"
+          TAG_String: "§c§lSPECIAL DUNGEON HELMET"
+        }
+        TAG_String("Name"): "§cGolden Professor Head"
+      }
+      TAG_Compound("ExtraAttributes"): 4 entries {
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "GOLD_PROFESSOR_HEAD"
+        TAG_String("uuid"): "2e8f627e-6012-4cd5-992b-503bd1fb0887"
+        TAG_String("timestamp"): "9/21/20 8:40 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 301
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 1 entries {
+        TAG_Compound: 2 entries {
+          TAG_Short("lvl"): 3
+          TAG_Short("id"): 8
+        }
+      }
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 3 entries {
+        TAG_List("Lore"): 21 entries {
+          TAG_String: "§7Gear Score: §d425"
+          TAG_String: "§7Crit Chance: §c+3%"
+          TAG_String: "§7Crit Damage: §c+30%"
+          TAG_String: ""
+          TAG_String: "§7Health: §a+99 HP"
+          TAG_String: "§7Defense: §a+134 §9(Reinforced +80)"
+          TAG_String: ""
+          TAG_String: "§9Depth Strider III, §9Feather Falling V"
+          TAG_String: "§9Growth V, §9Protection V"
+          TAG_String: "§9Thorns III"
+          TAG_String: ""
+          TAG_String: "§7Increase the damage you deal"
+          TAG_String: "§7with arrows by §c5%§7."
+          TAG_String: ""
+          TAG_String: "§6Full Set Bonus: Skeleton Soldier"
+          TAG_String: "§7Increase the damage you deal"
+          TAG_String: "§7with arrows by an extra §c25%§7."
+          TAG_String: ""
+          TAG_String: "§aPerfect 52491 / 52500"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 9"
+          TAG_String: "§6§lLEGENDARY DUNGEON BOOTS"
+        }
+        TAG_Int("color"): 16759819
+        TAG_String("Name"): "§6Reinforced Skeleton Soldier Boots §6✪§6✪§6✪§6✪§6✪"
+      }
+      TAG_Compound("ExtraAttributes"): 11 entries {
+        TAG_String("color"): "255:188:11"
+        TAG_Int("baseStatBoostPercentage"): 50
+        TAG_String("modifier"): "reinforced"
+        TAG_Int("dungeon_item_level"): 5
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_Int("item_durability"): 52491
+        TAG_String("id"): "SKELETON_SOLDIER_BOOTS"
+        TAG_Compound("enchantments"): 5 entries {
+          TAG_Int("depth_strider"): 3
+          TAG_Int("thorns"): 3
+          TAG_Int("feather_falling"): 5
+          TAG_Int("protection"): 5
+          TAG_Int("growth"): 5
+        }
+        TAG_String("uuid"): "63842d8e-bf57-4dc4-8c43-d9cc85dbff11"
+        TAG_Int("item_tier"): 3
+        TAG_String("timestamp"): "8/27/20 9:46 AM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 301
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 1 entries {
+        TAG_Compound: 2 entries {
+          TAG_Short("lvl"): 3
+          TAG_Short("id"): 8
+        }
+      }
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 3 entries {
+        TAG_List("Lore"): 17 entries {
+          TAG_String: "§7Gear Score: §d327"
+          TAG_String: "§7Health: §a+102 HP"
+          TAG_String: "§7Defense: §a+71"
+          TAG_String: "§7Intelligence: §a+120 §9(Necrotic +120)"
+          TAG_String: ""
+          TAG_String: "§9Depth Strider III, §9Feather Falling V"
+          TAG_String: "§9Growth V, §9Protection V"
+          TAG_String: "§9Thorns III"
+          TAG_String: ""
+          TAG_String: "§6Full Set Bonus: §cShoal"
+          TAG_String: "§7Gain §a+30❈ Defense §7for each"
+          TAG_String: "§7§cZombie Soldier Set §7within"
+          TAG_String: "§7§a30 §7blocks."
+          TAG_String: ""
+          TAG_String: "§aPerfect 52408 / 52500"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 9"
+          TAG_String: "§5§lEPIC DUNGEON BOOTS"
+        }
+        TAG_Int("color"): 13664000
+        TAG_String("Name"): "§5Necrotic Zombie Soldier Boots §6✪§6✪§6✪§6✪§6✪"
+      }
+      TAG_Compound("ExtraAttributes"): 11 entries {
+        TAG_String("color"): "208:127:0"
+        TAG_Int("baseStatBoostPercentage"): 27
+        TAG_String("modifier"): "necrotic"
+        TAG_Int("dungeon_item_level"): 5
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_Int("item_durability"): 52408
+        TAG_String("id"): "ZOMBIE_SOLDIER_BOOTS"
+        TAG_Compound("enchantments"): 5 entries {
+          TAG_Int("depth_strider"): 3
+          TAG_Int("thorns"): 3
+          TAG_Int("feather_falling"): 5
+          TAG_Int("protection"): 5
+          TAG_Int("growth"): 5
+        }
+        TAG_String("uuid"): "dd8d2f25-b8df-41e9-a330-2a380c5474ee"
+        TAG_Int("item_tier"): 3
+        TAG_String("timestamp"): "7/11/20 5:13 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "bc1b6d0a-7755-353e-84fd-eff092a9cfe4"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTk4ZGY0MmY0NzdmMjEzZmY1ZTlkN2ZhNWE0Y2M0YTY5ZjIwZDljZWYyYjkwYzRhZTRmMjliZDE3Mjg3YjUifX19"
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 11 entries {
+          TAG_String: "§7Strength: §c+2 §9(Demonic +2)"
+          TAG_String: ""
+          TAG_String: "§7Intelligence: §a+7 §9(Demonic +7)"
+          TAG_String: ""
+          TAG_String: "§7Saves your coins from death."
+          TAG_String: "§7Only when in player inventory."
+          TAG_String: "§cFragile!"
+          TAG_String: ""
+          TAG_String: "§8Triggers when losing 20k+ coins."
+          TAG_String: ""
+          TAG_String: "§a§lUNCOMMON ACCESSORY"
+        }
+        TAG_String("Name"): "§aDemonic Piggy Bank"
+      }
+      TAG_Compound("ExtraAttributes"): 5 entries {
+        TAG_String("modifier"): "demonic"
+        TAG_String("originTag"): "PIGGY_BANK"
+        TAG_String("id"): "PIGGY_BANK"
+        TAG_String("uuid"): "053b4033-0712-4f53-ae75-3e8f26a93999"
+        TAG_String("timestamp"): "8/31/19 1:23 PM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 280
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 8 entries {
+          TAG_String: "§6Item Ability: Big Heal §e§lRIGHT CLICK"
+          TAG_String: "§7Heal §c40❤§7/s for 7s."
+          TAG_String: "§7§8Wand heals don't stack."
+          TAG_String: "§8Mana Cost: §3100"
+          TAG_String: "§8Cooldown: §a1s"
+          TAG_String: ""
+          TAG_String: "§7§4☠ §cRequires §5Zombie Slayer 6"
+          TAG_String: "§5§lEPIC WAND"
+        }
+        TAG_String("Name"): "§5Wand of Restoration"
+      }
+      TAG_Compound("ExtraAttributes"): 4 entries {
+        TAG_String("originTag"): "QUICK_CRAFTING"
+        TAG_String("id"): "WAND_OF_RESTORATION"
+        TAG_String("uuid"): "f2df2076-8728-4b34-9e88-fca4a087e10b"
+        TAG_String("timestamp"): "4/19/20 1:13 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 283
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 5 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Byte("Unbreakable"): 1
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 17 entries {
+          TAG_String: "§7Damage: §c+120"
+          TAG_String: "§7Strength: §c+80"
+          TAG_String: ""
+          TAG_String: "§9§d§lUltimate Wise I"
+          TAG_String: "§7Reduces the ability mana cost of"
+          TAG_String: "§7this item by §a10%§7."
+          TAG_String: ""
+          TAG_String: "§6Item Ability: Extreme Focus §e§lRIGHT CLICK"
+          TAG_String: "§7Consumes all your remaining mana"
+          TAG_String: "§7to grant Damage Resistance for"
+          TAG_String: "§7§a5§7 seconds and extra damage"
+          TAG_String: "§7on your next hit (within 5"
+          TAG_String: "§7seconds) depending on how much"
+          TAG_String: "§7mana was consumed!"
+          TAG_String: ""
+          TAG_String: "§7§8This item can be reforged!"
+          TAG_String: "§5§lEPIC SWORD"
+        }
+        TAG_String("Name"): "§5End Stone Sword"
+      }
+      TAG_Compound("ExtraAttributes"): 6 entries {
+        TAG_String("originTag"): "QUICK_CRAFTING"
+        TAG_String("id"): "END_STONE_SWORD"
+        TAG_Compound("enchantments"): 1 entries {
+          TAG_Int("ultimate_wise"): 1
+        }
+        TAG_String("uuid"): "7e7494c8-b204-4df3-bd6c-82a1a17ff824"
+        TAG_Int("anvil_uses"): 1
+        TAG_String("timestamp"): "7/28/20 10:22 AM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 261
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 5 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Byte("Unbreakable"): 1
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 25 entries {
+          TAG_String: "§7Damage: §c+100"
+          TAG_String: "§7Strength: §c+38 §9(Unreal +18)"
+          TAG_String: "§7Crit Chance: §c+11% §9(Unreal +11%)"
+          TAG_String: "§7Crit Damage: §c+32% §9(Unreal +32%)"
+          TAG_String: ""
+          TAG_String: "§9Cubism V"
+          TAG_String: "§7Increases damage dealt to"
+          TAG_String: "§7§7Slimes§7, §7Magma Cubes§7, and"
+          TAG_String: "§7§7Creepers§7 by §a50%§7."
+          TAG_String: "§9Infinite Quiver V"
+          TAG_String: "§7Saves arrows §a50%§7 of the time"
+          TAG_String: "§7when you fire your bow."
+          TAG_String: "§9Power V"
+          TAG_String: "§7Increases bow damage by §a40%§7."
+          TAG_String: "§9Snipe III"
+          TAG_String: "§7Arrows deal §a+3% §7damage for"
+          TAG_String: "§7every §a10 §7blocks travelled."
+          TAG_String: ""
+          TAG_String: "§6Item Ability: Explosive Shot"
+          TAG_String: "§7Creates an explosion on impact!"
+          TAG_String: "§7Every Monster caught in this"
+          TAG_String: "§7explosion takes the full damage"
+          TAG_String: "§7of the weapon!"
+          TAG_String: ""
+          TAG_String: "§5§lEPIC BOW"
+        }
+        TAG_String("Name"): "§5Unreal Explosive Bow"
+      }
+      TAG_Compound("ExtraAttributes"): 7 entries {
+        TAG_String("modifier"): "unreal"
+        TAG_String("originTag"): "QUICK_CRAFTING"
+        TAG_String("id"): "EXPLOSIVE_BOW"
+        TAG_Compound("enchantments"): 4 entries {
+          TAG_Int("infinite_quiver"): 5
+          TAG_Int("power"): 5
+          TAG_Int("snipe"): 3
+          TAG_Int("cubism"): 5
+        }
+        TAG_String("uuid"): "93d8343a-156f-4a03-8530-774a7bcd26c4"
+        TAG_Int("anvil_uses"): 1
+        TAG_String("timestamp"): "6/7/20 3:31 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 267
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 23 entries {
+          TAG_String: "§7Gear Score: §d387"
+          TAG_String: "§7Damage: §c+90"
+          TAG_String: "§7Strength: §c+59 §9(Legendary +18)"
+          TAG_String: "§7Crit Chance: §c+12% §9(Legendary +12%)"
+          TAG_String: "§7Crit Damage: §c+72% §9(Legendary +22%)"
+          TAG_String: "§7Bonus Attack Speed: §c+7% §9(Legendary +7%)"
+          TAG_String: ""
+          TAG_String: "§7Intelligence: §a+168 §9(Legendary +18)"
+          TAG_String: ""
+          TAG_String: "§9Critical V, §9Experience III"
+          TAG_String: "§9First Strike IV, §9Life Steal III"
+          TAG_String: "§9Looting III, §9Luck V"
+          TAG_String: "§9Scavenger V, §9Sharpness V"
+          TAG_String: "§9Vampirism V"
+          TAG_String: ""
+          TAG_String: "§6Item Ability: Dreadlord §e§lRIGHT CLICK"
+          TAG_String: "§7Shoot a skull that deals §a750§7"
+          TAG_String: "§7damage."
+          TAG_String: "§8Mana Cost: §340"
+          TAG_String: ""
+          TAG_String: "§aPerfect 35000 / 35000"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 5"
+          TAG_String: "§5§lEPIC DUNGEON SWORD"
+        }
+        TAG_String("Name"): "§5Legendary Dreadlord Sword"
+      }
+      TAG_Compound("ExtraAttributes"): 8 entries {
+        TAG_Int("baseStatBoostPercentage"): 50
+        TAG_String("modifier"): "legendary"
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "CRYPT_DREADLORD_SWORD"
+        TAG_Compound("enchantments"): 9 entries {
+          TAG_Int("luck"): 5
+          TAG_Int("first_strike"): 4
+          TAG_Int("critical"): 5
+          TAG_Int("looting"): 3
+          TAG_Int("sharpness"): 5
+          TAG_Int("scavenger"): 5
+          TAG_Int("experience"): 3
+          TAG_Int("vampirism"): 5
+          TAG_Int("life_steal"): 3
+        }
+        TAG_String("uuid"): "3f8b16e1-4e90-4a24-af17-33feef996a4f"
+        TAG_Int("item_tier"): 3
+        TAG_String("timestamp"): "7/22/20 3:25 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 268
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 5 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Byte("Unbreakable"): 1
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 26 entries {
+          TAG_String: "§7Damage: §c+70 §e(+20)"
+          TAG_String: "§7Strength: §c+127 §e(+20) §6(+100) §9(Spicy +7)"
+          TAG_String: "§7Crit Chance: §c+21% §9(Spicy +1%)"
+          TAG_String: "§7Crit Damage: §c+110% §9(Spicy +60%)"
+          TAG_String: "§7Bonus Attack Speed: §c+7% §9(Spicy +7%)"
+          TAG_String: ""
+          TAG_String: "§9Critical V, §9Cubism V"
+          TAG_String: "§9Ender Slayer V, §9Execute V"
+          TAG_String: "§9Experience III, §9First Strike IV"
+          TAG_String: "§9Giant Killer V, §9Impaling III"
+          TAG_String: "§9Lethality V, §9Life Steal III"
+          TAG_String: "§9Looting III, §9Luck V"
+          TAG_String: "§9Scavenger III, §9Sharpness V"
+          TAG_String: "§9Telekinesis I, §9Vampirism V"
+          TAG_String: ""
+          TAG_String: "§d◆ Hearts Rune III"
+          TAG_String: "§8Requires level 10"
+          TAG_String: ""
+          TAG_String: "§7§7Gains §c+15 Damage §7for"
+          TAG_String: "§7each Combat collection of"
+          TAG_String: "§7Tier VII and over of its"
+          TAG_String: "§7wearer."
+          TAG_String: ""
+          TAG_String: "§7Your Collections: §e0§7/§e10"
+          TAG_String: ""
+          TAG_String: "§5§lEPIC SWORD"
+        }
+        TAG_String("Name"): "§5Spicy Thick Tactician's Sword"
+      }
+      TAG_Compound("ExtraAttributes"): 11 entries {
+        TAG_Int("hot_potato_count"): 10
+        TAG_String("hotPotatoBonus"): "STRENGTH=20;DAMAGE=20;"
+        TAG_Compound("runes"): 1 entries {
+          TAG_Int("HEARTS"): 3
+        }
+        TAG_String("modifier"): "spicy"
+        TAG_String("originTag"): "SHOP_PURCHASE"
+        TAG_Int("wood_singularity_count"): 1
+        TAG_String("id"): "TACTICIAN_SWORD"
+        TAG_Compound("enchantments"): 16 entries {
+          TAG_Int("impaling"): 3
+          TAG_Int("luck"): 5
+          TAG_Int("critical"): 5
+          TAG_Int("looting"): 3
+          TAG_Int("ender_slayer"): 5
+          TAG_Int("scavenger"): 3
+          TAG_Int("telekinesis"): 1
+          TAG_Int("experience"): 3
+          TAG_Int("vampirism"): 5
+          TAG_Int("execute"): 5
+          TAG_Int("life_steal"): 3
+          TAG_Int("giant_killer"): 5
+          TAG_Int("first_strike"): 4
+          TAG_Int("sharpness"): 5
+          TAG_Int("cubism"): 5
+          TAG_Int("lethality"): 5
+        }
+        TAG_String("uuid"): "f00e477b-21f5-4181-9611-369f208f6377"
+        TAG_Int("anvil_uses"): 15
+        TAG_String("timestamp"): "4/19/20 12:44 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 283
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Byte("Unbreakable"): 1
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 14 entries {
+          TAG_String: "§7Damage: §c+20"
+          TAG_String: "§7Crit Chance: §c+10% §9(Odd +10%)"
+          TAG_String: "§7Crit Damage: §c+5% §9(Odd +5%)"
+          TAG_String: ""
+          TAG_String: "§7Intelligence: §a-5 §9(Odd -5)"
+          TAG_String: ""
+          TAG_String: "§6Item Ability: Speed Boost §e§lRIGHT CLICK"
+          TAG_String: "§7Increases your movement §f✦"
+          TAG_String: "§fSpeed §7by §a+20 §7for §a30"
+          TAG_String: "§a§7seconds."
+          TAG_String: "§8Mana Cost: §350"
+          TAG_String: "§8Half speed if already active."
+          TAG_String: ""
+          TAG_String: "§f§lCOMMON SWORD"
+        }
+        TAG_String("Name"): "§fOdd Rogue Sword"
+      }
+      TAG_Compound("ExtraAttributes"): 5 entries {
+        TAG_String("modifier"): "odd_sword"
+        TAG_String("originTag"): "REWARD_PSYCHIC"
+        TAG_String("id"): "ROGUE_SWORD"
+        TAG_String("uuid"): "0d64514e-124a-4263-8eb4-6565e48ffb69"
+        TAG_String("timestamp"): "8/21/19 5:24 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 397
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("SkullOwner"): 2 entries {
+        TAG_String("Id"): "906876f2-55d9-3965-9e57-f5732c765617"
+        TAG_Compound("Properties"): 1 entries {
+          TAG_List("textures"): 1 entries {
+            TAG_Compound: 1 entries {
+              TAG_String("Value"): "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTUwZjcxMmU4NzdkZmQ5MTBjOTdmMzgxOWEyMDBhMDVkNDllZTZiODNiNTkyNjg2ZTA5OWI5ZWNkNDQzZjIyOCJ9fX0="
+            }
+          }
+        }
+      }
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 8 entries {
+          TAG_String: "§7Picking up Candy will place it"
+          TAG_String: "§7directly into this bag! Your"
+          TAG_String: "§7Candy inventory is shared across"
+          TAG_String: "§7your profile - opening any Trick"
+          TAG_String: "§7or Treat Bag will display your"
+          TAG_String: "§7Candy inventory."
+          TAG_String: ""
+          TAG_String: "§a§lUNCOMMON"
+        }
+        TAG_String("Name"): "§aTrick or Treat Bag"
+      }
+      TAG_Compound("ExtraAttributes"): 4 entries {
+        TAG_String("originTag"): "SHOP_PURCHASE"
+        TAG_String("id"): "TRICK_OR_TREAT_BAG"
+        TAG_String("uuid"): "cc85a87a-bfc7-40b8-a21d-031ec3d5e742"
+        TAG_String("timestamp"): "12/2/19 11:36 AM"
+      }
+    }
+    TAG_Short("Damage"): 3
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 340
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 6 entries {
+          TAG_String: "§7Combine this Book in an Anvil"
+          TAG_String: "§7with a weapon or armor piece to"
+          TAG_String: "§7gain a small but permanent stat"
+          TAG_String: "§7boost!"
+          TAG_String: ""
+          TAG_String: "§5§lEPIC"
+        }
+        TAG_String("Name"): "§5Hot Potato Book"
+      }
+      TAG_Compound("ExtraAttributes"): 4 entries {
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "HOT_POTATO_BOOK"
+        TAG_String("uuid"): "c38fa9c9-9ee0-40c1-89fd-f91d9a565e4c"
+        TAG_String("timestamp"): "7/7/20 6:05 PM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 373
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("CustomPotionEffects"): 1 entries {
+        TAG_Compound: 4 entries {
+          TAG_Byte("Ambient"): 0
+          TAG_Int("Duration"): 20
+          TAG_Byte("Id"): 22
+          TAG_Byte("Amplifier"): 2
+        }
+      }
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 6 entries {
+          TAG_String: ""
+          TAG_String: "§aAlchemy XP Boost III §f(46:04)"
+          TAG_String: "§7Earn §a20% §7more Alchemy"
+          TAG_String: "§7experience."
+          TAG_String: ""
+          TAG_String: "§a§lUNCOMMON"
+        }
+        TAG_String("Name"): "§aAlchemy XP Boost III Potion"
+      }
+      TAG_Compound("ExtraAttributes"): 10 entries {
+        TAG_Int("potion_level"): 3
+        TAG_Byte("enhanced"): 1
+        TAG_String("potion"): "alchemy_xp_boost"
+        TAG_List("effects"): 1 entries {
+          TAG_Compound: 4 entries {
+            TAG_Int("level"): 3
+            TAG_String("effect"): "alchemy_xp_boost"
+            TAG_Int("duration_ticks"): 55296
+            TAG_Compound("modifiers"): 0 entries {}
+          }
+        }
+        TAG_String("potion_type"): "POTION"
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "POTION"
+        TAG_String("uuid"): "13727398-448d-4812-87f6-0830d3f001db"
+        TAG_Byte("extended"): 1
+        TAG_String("timestamp"): "12/27/19 6:37 AM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 267
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 23 entries {
+          TAG_String: "§7Gear Score: §d366"
+          TAG_String: "§7Damage: §c+129"
+          TAG_String: "§7Strength: §c+48"
+          TAG_String: "§7Crit Chance: §c+16% §9(Sharp +14%)"
+          TAG_String: "§7Crit Damage: §c+55% §9(Sharp +40%)"
+          TAG_String: ""
+          TAG_String: "§9Execute V, §9Experience III"
+          TAG_String: "§9First Strike IV, §9Giant Killer V"
+          TAG_String: "§9Life Steal III, §9Looting III"
+          TAG_String: "§9Luck V, §9Scavenger V"
+          TAG_String: "§9Sharpness V, §9Vampirism V"
+          TAG_String: ""
+          TAG_String: "§6Item Ability: Shadowstep §e§lRIGHT CLICK"
+          TAG_String: "§7Teleport behind the enemy you"
+          TAG_String: "§7are looking at, gaining §c+25❁"
+          TAG_String: "§cStrength§7 for §a10§7 seconds."
+          TAG_String: "§7Max range of 20 blocks. Cooldown"
+          TAG_String: "§7resets on kills."
+          TAG_String: "§8Cooldown: §a60s"
+          TAG_String: ""
+          TAG_String: "§aPerfect 35000 / 35000"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 20"
+          TAG_String: "§9§lRARE DUNGEON SWORD"
+        }
+        TAG_String("Name"): "§9Sharp Silent Death"
+      }
+      TAG_Compound("ExtraAttributes"): 8 entries {
+        TAG_Int("baseStatBoostPercentage"): 28
+        TAG_String("modifier"): "sharp"
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_String("id"): "SILENT_DEATH"
+        TAG_Compound("enchantments"): 10 entries {
+          TAG_Int("luck"): 5
+          TAG_Int("first_strike"): 4
+          TAG_Int("looting"): 3
+          TAG_Int("sharpness"): 5
+          TAG_Int("scavenger"): 5
+          TAG_Int("experience"): 3
+          TAG_Int("vampirism"): 5
+          TAG_Int("execute"): 5
+          TAG_Int("life_steal"): 3
+          TAG_Int("giant_killer"): 5
+        }
+        TAG_String("uuid"): "93294d53-a33e-48f9-8a5f-a6ba7fbee774"
+        TAG_Int("item_tier"): 3
+        TAG_String("timestamp"): "7/19/20 9:26 AM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 267
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_Byte("Unbreakable"): 1
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 14 entries {
+          TAG_String: "§7Damage: §c+80"
+          TAG_String: "§7Strength: §c+127 §9(Demonic +2)"
+          TAG_String: ""
+          TAG_String: "§7Defense: §a+25"
+          TAG_String: "§7Intelligence: §a+9 §9(Demonic +9)"
+          TAG_String: ""
+          TAG_String: "§6Item Ability: Iron Punch §e§lRIGHT CLICK"
+          TAG_String: "§7Punch the ground, damaging"
+          TAG_String: "§7enemies in a hexagon around you"
+          TAG_String: "§7for §a250§7 base Magic Damage."
+          TAG_String: "§8Mana Cost: §370"
+          TAG_String: "§8Cooldown: §a3s"
+          TAG_String: ""
+          TAG_String: "§9§lRARE SWORD"
+        }
+        TAG_String("Name"): "§9Demonic Golem Sword"
+      }
+      TAG_Compound("ExtraAttributes"): 5 entries {
+        TAG_String("modifier"): "demonic"
+        TAG_String("originTag"): "CRAFTING_GRID_SHIFT"
+        TAG_String("id"): "GOLEM_SWORD"
+        TAG_String("uuid"): "2469cd21-2a01-466d-9680-b676c67f25ea"
+        TAG_String("timestamp"): "5/8/20 11:25 AM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 369
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 16 entries {
+          TAG_String: "§7Damage: §c+80"
+          TAG_String: "§7Strength: §c+35"
+          TAG_String: "§7Crit Chance: §c+7% §9(Rich +7%)"
+          TAG_String: "§7Crit Damage: §c+7% §9(Rich +7%)"
+          TAG_String: ""
+          TAG_String: "§7Intelligence: §a+65 §9(Rich +15)"
+          TAG_String: ""
+          TAG_String: "§6Item Ability: Fire Blast §e§lRIGHT CLICK"
+          TAG_String: "§7Shoot 3 Fireballs which deal"
+          TAG_String: "§7§c30§7 damage in rapid"
+          TAG_String: "§7succession in front of you!"
+          TAG_String: "§8Mana Cost: §3150"
+          TAG_String: "§8Cooldown: §a30s"
+          TAG_String: ""
+          TAG_String: "§7§4❣ §cRequires §aCombat Skill 8"
+          TAG_String: "§5§lEPIC SWORD"
+        }
+        TAG_String("Name"): "§5Rich Ember Rod"
+      }
+      TAG_Compound("ExtraAttributes"): 7 entries {
+        TAG_String("bossId"): "7cf3ccd5-7f93-4416-a8fa-5d4664102faf"
+        TAG_String("spawnedFor"): "ad093090-0426-4786-b17b-adf13913120e"
+        TAG_String("modifier"): "rich_sword"
+        TAG_String("originTag"): "BOSS_DROP"
+        TAG_String("id"): "EMBER_ROD"
+        TAG_String("uuid"): "dea85a43-1bb3-4b7b-9480-f1aefc24672d"
+        TAG_String("timestamp"): "1/11/20 10:35 AM"
+      }
+    }
+    TAG_Short("Damage"): 0
+  }
+  TAG_Compound: 4 entries {
+    TAG_Short("id"): 267
+    TAG_Byte("Count"): 1
+    TAG_Compound("tag"): 4 entries {
+      TAG_List("ench"): 0 entries {}
+      TAG_Int("HideFlags"): 254
+      TAG_Compound("display"): 2 entries {
+        TAG_List("Lore"): 19 entries {
+          TAG_String: "§7Gear Score: §d459"
+          TAG_String: "§7Damage: §c+69"
+          TAG_String: "§7Strength: §c+35"
+          TAG_String: "§7Crit Chance: §c+14% §9(Sharp +14%)"
+          TAG_String: "§7Crit Damage: §c+40% §9(Sharp +40%)"
+          TAG_String: "§7Bonus Attack Speed: §c+100%"
+          TAG_String: ""
+          TAG_String: "§9Execute V, §9Experience III"
+          TAG_String: "§9First Strike IV, §9Looting III"
+          TAG_String: "§9Luck V, §9Scavenger V"
+          TAG_String: "§9Sharpness V, §9Vampirism V"
+          TAG_String: ""
+          TAG_String: "§6Item Ability: Love Tap"
+          TAG_String: "§7Heals you for §c+10❤ Health"
+          TAG_String: "§c§7when you hit an entity!"
+          TAG_String: ""
+          TAG_String: "§aPerfect 34421 / 35000"
+          TAG_String: "§7§4❣ §cRequires §aCatacombs Level 5"
+          TAG_String: "§9§lRARE DUNGEON SWORD"
+        }
+        TAG_String("Name"): "§9Sharp Zombie Soldier Cutlass §6✪§6✪§6✪§6✪§6✪"
+      }
+      TAG_Compound("ExtraAttributes"): 10 entries {
+        TAG_Int("baseStatBoostPercentage"): 14
+        TAG_String("modifier"): "sharp"
+        TAG_Int("dungeon_item_level"): 5
+        TAG_String("originTag"): "UNKNOWN"
+        TAG_Int("item_durability"): 34421
+        TAG_String("id"): "ZOMBIE_SOLDIER_CUTLASS"
+        TAG_Compound("enchantments"): 8 entries {
+          TAG_Int("luck"): 5
+          TAG_Int("first_strike"): 4
+          TAG_Int("looting"): 3
+          TAG_Int("sharpness"): 5
+          TAG_Int("scavenger"): 5
+          TAG_Int("experience"): 3
+          TAG_Int("vampirism"): 5
+          TAG_Int("execute"): 5
+        }
+        TAG_String("uuid"): "3528181d-5bba-41bd-a6ea-34df43a8729e"
+        TAG_Int("item_tier"): 3
+        TAG_String("timestamp"): "7/8/20 4:18 PM"
+      }
+    }
+    TAG_Short("Damage"): 4
+  }
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+  TAG_Compound: 0 entries {}
+}

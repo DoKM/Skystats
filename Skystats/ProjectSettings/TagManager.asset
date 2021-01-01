@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Skills
+  - Armor
+  - Profile Holder
+  - Inventory
+  - Talisman
+  - 64
+  - 32
+  - slim
+  - TooltipCanvas
+  - Hotbar
+  - BestTalisman
+  - Arrow
+  - Stat
+  - DontDestroy
+  - Dungeons
+  - Main Row
+  - Tab parent
+  - Input
+  - Main Menu
+  - Selected Profile
+  - API Disabled
+  - Information List
+  - Inventory Tab
+  - Talisman Tab
+  - Extra Information
+  - BpPreview
+  - Quick Pet
+  - Customization Menu
+  - Content
+  - Quick Weapon
+  - CritHit
+  - NormalHit
+  - Enderchest
+  - Enderchest Tab
+  - Tooltip
+  - ActivePet
+  - ActiveWeapon
+  - Weapons
+  - Pets
+  - Load
+  - ArmorSlot
+  - FavoriteParent
+  - ErrorHolder
+  - EnderchestPageCounter
+  - Auctions
+  - Wardrobe
+  - OpenBackpackPreview
+  - BackpackTab
+  - Potions
+  - Quiver
+  - Vault
+  - Fishies
+  - Quiver Tab
+  - Vault Tab
+  - Fishies Tab
+  - Potions Tab
+  - Candy Tab
+  - Candy
+  - OptimizedAccessories
+  - KeyInput
+  - BackgroundMask
+  - Aps
+  - Dps
+  - Slayers
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Transparent
+  - Rest UI
+  - Overlay
+  - Tooltip
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Blur
+    uniqueID: 895014111
+    locked: 0

@@ -1,0 +1,306 @@
+﻿{
+	"bane_of_arthropods":{
+		"maxLevel": 6,
+		"formattedName": "Bane of Arthropods"
+	},
+	"cleave":{
+		"maxLevel": 5,
+		"formattedName": "Cleave"
+	},
+	"critical":{
+		"maxLevel": 6,
+		"formattedName": "Critical"
+	},
+	"cubism":{
+		"maxLevel": 5,
+		"formattedName": "Cubism"
+	},
+	"dragon_hunter":{
+		"maxLevel": 5,
+		"formattedName": "Dragon Hunter"
+	},
+	"ender_slayer":{
+		"maxLevel": 6,
+		"formattedName": "Ender Slayer"
+	},
+	"execute":{
+		"maxLevel": 5,
+		"formattedName": "Execute"
+	},
+	"experience":{
+		"maxLevel": 4,
+		"formattedName": "Experience"
+	},
+	"first_strike":{
+		"maxLevel": 4,
+		"formattedName": "First Strike"
+	},
+	"giant_killer":{
+		"maxLevel": 7,
+		"formattedName": "Giant Killer"
+	},
+	"impaling":{
+		"maxLevel": 3,
+		"formattedName": "Impaling"
+	},
+	"knockback":{
+		"maxLevel": 2,
+		"formattedName": "Knockback"
+	},
+	"lethality":{
+		"maxLevel": 6,
+		"formattedName": "Lethality"
+	},
+	"life_steal":{
+		"maxLevel": 4,
+		"formattedName": "Life Steal"
+	},
+	"looting":{
+		"maxLevel": 4,
+		"formattedName": "Looting"
+	},
+	"luck":{
+		"maxLevel": 6,
+		"formattedName": "Luck"
+	},
+	"scavenger":{
+		"maxLevel": 5,
+		"formattedName": "Scavenger"
+	},
+	"sharpness":{
+		"maxLevel": 7,
+		"formattedName": "Sharpness"
+	},
+	"smite":{
+		"maxLevel": 7,
+		"formattedName": "Smite"
+	},
+	"telekinesis":{
+		"maxLevel": 1,
+		"formattedName": "Telekinesis"
+	},
+	"thunderlord":{
+		"maxLevel": 6,
+		"formattedName": "Thunderlord"
+	},
+	"vampirism":{
+		"maxLevel": 6,
+		"formattedName": "Vampirism"
+	},
+	"venomous":{
+		"maxLevel": 5,
+		"formattedName": "Venomous"
+	},
+	"fire_aspect":{
+		"maxLevel": 2,
+		"formattedName": "Fire Aspect"
+	},
+	"aiming":{
+		"maxLevel": 5,
+		"formattedName": "Aiming"
+	},
+	"flame":{
+		"maxLevel": 1,
+		"formattedName": "Flame"
+	},
+	"infinite_quiver":{
+		"maxLevel": 10,
+		"formattedName": "Infinite Quiver"
+	},
+	"piercing":{
+		"maxLevel": 1,
+		"formattedName": "Piercing"
+	},
+	"overload":{
+		"maxLevel": 5,
+		"formattedName": "Overload"
+	},
+	"power":{
+		"maxLevel": 7,
+		"formattedName": "Power"
+	},
+	"punch":{
+		"maxLevel": 2,
+		"formattedName": "Punch"
+	},
+	"snipe":{
+		"maxLevel": 3,
+		"formattedName": "Snipe"
+	},
+	"aqua_affinity":{
+		"maxLevel": 1,
+		"formattedName": "Aqua Affinity"
+	},
+	"blast_protection":{
+		"maxLevel": 5,
+		"formattedName": "Blast Protection"
+	},
+	"depth_strider":{
+		"maxLevel": 3,
+		"formattedName": "Depth Strider"
+	},
+	"feather_falling":{
+		"maxLevel": 10,
+		"formattedName": "Feather Falling"
+	},
+	"fire_protection":{
+		"maxLevel": 5,
+		"formattedName": "Fire Protection"
+	},
+	"frost_walker":{
+		"maxLevel": 2,
+		"formattedName": "Frost Walker"
+	},
+	"growth":{
+		"maxLevel": 7,
+		"formattedName": "Growth"
+	},
+	"projectile_protection":{
+		"maxLevel": 5,
+		"formattedName": "Projectile Protection"
+	},
+	"protection":{
+		"maxLevel": 7,
+		"formattedName": "Protection"
+	},
+	"rejuvenate":{
+		"maxLevel": 5,
+		"formattedName": "Rejuvenate"
+	},
+	"respiration":{
+		"maxLevel": 3,
+		"formattedName": "Respiration"
+	},
+	"thorns":{
+		"maxLevel": 3,
+		"formattedName": "Thorns"
+	},
+	"true_protection":{
+		"maxLevel": 1,
+		"formattedName": "True Protection"
+	},
+	"sugar_rush":{
+		"maxLevel": 3,
+		"formattedName": "Sugar Rush"
+	},
+	"efficiency":{
+		"maxLevel": 6,
+		"formattedName": "Efficiency"
+	},
+	"fortune":{
+		"maxLevel": 3,
+		"formattedName": "Fortune"
+	},
+	"harvesting":{
+		"maxLevel": 5,
+		"formattedName": "Harvesting"
+	},
+	"rainbow":{
+		"maxLevel": 1,
+		"formattedName": "Rainbow"
+	},
+	"replenish":{
+		"maxLevel": 1,
+		"formattedName": "Replenish"
+	},
+	"silk_touch":{
+		"maxLevel": 1,
+		"formattedName": "Silk Touch"
+	},
+	"smelting_touch":{
+		"maxLevel": 1,
+		"formattedName": "Smelting Touch"
+	},
+	"angler":{
+		"maxLevel": 6,
+		"formattedName": "Angler"
+	},
+	"blessing":{
+		"maxLevel": 5,
+		"formattedName": "Blessing"
+	},
+	"caster":{
+		"maxLevel": 6,
+		"formattedName": "Caster"
+	},
+	"expertise":{
+		"maxLevel": 10,
+		"formattedName": "Expertise"
+	},
+	"frail":{
+		"maxLevel": 6,
+		"formattedName": "Frail"
+	},
+	"luck_of_the_sea":{
+		"maxLevel": 6,
+		"formattedName": "Luck of the Sea"
+	},
+	"lure":{
+		"maxLevel": 6,
+		"formattedName": "Lure"
+	},
+	"magnet":{
+		"maxLevel": 6,
+		"formattedName": "Magnet"
+	},
+	"spiked_hook":{
+		"maxLevel": 6,
+		"formattedName": "Spiked Hook"
+	},
+	"compact":{
+		"maxLevel": 10,
+		"formattedName": "Compact"
+	},
+	"vicious":{
+		"maxLevel": 5,
+		"formattedName": "Vicious"
+	},
+	"big_brain":{
+		"maxLevel": 5,
+		"formattedName": "Big Brain"
+	},
+	"counter_strike":{
+		"maxLevel": 5,
+		"formattedName": "Counter-Strike"
+	},
+	"turbo_wheat":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Wheat"
+	},
+	"turbo_carrot":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Carrot"
+	},
+	"turbo_potato":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Potato"
+	},
+	"turbo_pumpkin":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Pumpkin"
+	},
+	"turbo_melon":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Melon"
+	},
+	"turbo_mushroom":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Mushroom"
+	},
+	"turbo_cane":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Cane"
+	},
+	"turbo_coco":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Coco"
+	},
+	"turbo_cacti":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Cacti"
+	},
+	"turbo_warts":{
+		"maxLevel": 5,
+		"formattedName": "Turbo-Warts"
+	}
+}

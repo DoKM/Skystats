@@ -60,7 +60,7 @@ public class ModuleDragger : UIBehaviour, IDragHandler, IBeginDragHandler, IEndD
             Global.UpdateCanvasElement(windowToDrag);
     }
 
-	public void OnDrag(PointerEventData eventData)
+	public virtual void OnDrag(PointerEventData eventData)
     {
         if (RectTransformUtility.ScreenPointToLocalPointInRectangle(windowToDrag.parent as RectTransform, eventData.position, eventData.pressEventCamera, out Vector2 result))
         {
@@ -82,7 +82,7 @@ public class ModuleDragger : UIBehaviour, IDragHandler, IBeginDragHandler, IEndD
         currentPos = windowToDrag.anchoredPosition;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
+    public virtual void OnEndDrag(PointerEventData eventData)
     {
         mh.UpdateModule(windowToDrag);
     }

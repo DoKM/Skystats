@@ -110,13 +110,9 @@ public class Main : MonoBehaviour
     private void GetParents()
     {
         dungeonsParent = GameObject.FindGameObjectWithTag("Dungeons").transform;
-        activePetParent = GameObject.FindGameObjectWithTag("ActivePet").transform;
         weaponParent = GameObject.FindGameObjectWithTag("Weapons").transform;
-        petParent = GameObject.FindGameObjectWithTag("Pets").transform;
         profileHolder = GameObject.FindGameObjectWithTag("Profile Holder");
         favoriteParent = GameObject.FindGameObjectWithTag("FavoriteParent").transform;
-        wardrobeParent = GameObject.FindGameObjectWithTag("Wardrobe").transform;
-        slayerParent = GameObject.FindGameObjectWithTag("Slayers").transform;
         input = GameObject.FindGameObjectWithTag("Input");
         //openBpPreviewHolder = GameObject.FindGameObjectWithTag("OpenBackpackPreview").transform;
 

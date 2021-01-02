@@ -6,6 +6,8 @@ using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UI.Michsky.UI.ModernUIPack;
 
 public class PageHandler : MonoBehaviour
 {
@@ -24,6 +26,7 @@ public class PageHandler : MonoBehaviour
 
     public int activePageIndex = 0;
     public RectTransform page;
+    public List<Button> buttonsDisableSinglePage;
 
 	private void Awake()
 	{
@@ -41,6 +44,33 @@ public class PageHandler : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Alpha1))
                 SwitchPage(0);
         }
+
+        if (pages.Count == 1)
+            foreach (var button in buttonsDisableSinglePage)
+                DisableButton(button, false);
+        else if (pages.Count > 1)
+            foreach (var button in buttonsDisableSinglePage)
+                DisableButton(button, true);
+
+        if (buttonsDisableSinglePage.Any(x => x.gameObject.name == "Remove"))
+		{
+            var button = buttonsDisableSinglePage.First(x => x.gameObject.name == "Remove");
+            var interactable = activePage != pages[0];
+
+            DisableButton(button, interactable);
+        }
+    }
+
+    private void DisableButton (Button button, bool interactable)
+	{
+        button.interactable = interactable;
+
+        var newGrad = interactable == true ? GradientType.uiColor : GradientType.disabledColor;
+        button.transform.GetChild(0).GetComponent<StaticGradient>().enabledGradient = newGrad;
+
+        var newIconAlpha = interactable == true ? 1 : 0;
+        var icon = button.transform.GetChild(1).GetComponent<Image>();
+        icon.color = new Color(icon.color.r, icon.color.g, icon.color.b, newIconAlpha);
     }
 
 	[Button]
@@ -143,6 +173,13 @@ public class PageHandler : MonoBehaviour
         {
             if (dirs[i].Attributes.HasFlag(FileAttributes.Directory))
                 pages.Add(dirs[i].Name);
+        }
+
+        // Defaults
+        if (pages.Count == 0)
+		{
+            pages.Add("page 1");
+            pages.Add("page 2");
         }
 
         for (int i = 0; i < pages.Count; i++)

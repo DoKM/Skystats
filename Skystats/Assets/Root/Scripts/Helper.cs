@@ -864,6 +864,16 @@ namespace Helper
 
     public static class Global
     {
+        public static string GetArmorName (string originalName)
+		{
+            if (Regex.IsMatch(originalName, "(HELMET|FEDORA|HAT)")) return "HELMET";
+            if (Regex.IsMatch(originalName, "(CHESTPLATE|JACKET|POLO|TUNIC)")) return "CHESTPLATE";
+            if (Regex.IsMatch(originalName, "(LEGGINGS|PANTS|TROUSERS)")) return "LEGGINGS";
+            if (Regex.IsMatch(originalName, "(BOOTS|OXFORDS|GALOSHES|SANDALS)")) return "BOOTS";
+
+            return null;
+        }
+
         public static string ReadFileFromPath (DirectoryInfo path, string dirName)
 		{
             var result = "";

@@ -3,6 +3,8 @@ using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class PageHandler : MonoBehaviour
@@ -16,6 +18,7 @@ public class PageHandler : MonoBehaviour
     }
     #endregion
 
+    public TMP_Text pageNumber;
     public RectTransform activePage;
     public List<RectTransform> pages;
 
@@ -27,7 +30,20 @@ public class PageHandler : MonoBehaviour
         LoadPages();
 	}
 
-    [Button]
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+		{
+            if (Input.GetKeyDown(KeyCode.X))
+                NextPage();
+            else if (Input.GetKeyDown(KeyCode.Z))
+                PreviousPage();
+            else if (Input.GetKeyDown(KeyCode.Alpha1))
+                SwitchPage(0);
+        }
+    }
+
+	[Button]
     public void DeletePage ()
 	{
         if (pages.Contains(page))
@@ -38,6 +54,13 @@ public class PageHandler : MonoBehaviour
 		}
     }
 
+    public void DeleteCurrentPage ()
+	{
+        page = activePage;
+        DeletePage();
+        PreviousPage();
+    }
+
     [Button]
     public void AddPage()
     {
@@ -45,6 +68,8 @@ public class PageHandler : MonoBehaviour
         newPage.GetComponent<Canvas>().worldCamera = Camera.main;
         pages.Add(newPage.transform as RectTransform);
         newPage.name = GetNewPageName();
+
+        SwitchPage(pages.Count - 1);
     }
 
     private string GetNewPageName ()
@@ -55,7 +80,7 @@ public class PageHandler : MonoBehaviour
 		{
             if (!pages[i].name.Contains((i + 1).ToString()))
 			{
-                value += (i + 1);
+                value += i + 1;
                 break;
             }
 		}
@@ -91,16 +116,17 @@ public class PageHandler : MonoBehaviour
 
 	public void SwitchPage (int pageIndex)
 	{
-        pages.Clear();
-		for (int i = 0; i < transform.childCount; i++)
-            pages.Add(transform.GetChild(i) as RectTransform);
-
 		foreach (var page in pages)
             page.gameObject.SetActive(page.GetSiblingIndex() == pageIndex);
 
         activePageIndex = pageIndex;
         activePage = pages[activePageIndex];
-	}
+
+        activePage.ForceUpdateRectTransforms();
+        activePage.GetComponent<ModuleHandler>().UpdateModules();
+
+        pageNumber.text = (activePageIndex + 1).ToString();
+    }
 
     public void SwitchPage ()
 	{

@@ -114,9 +114,9 @@ public class Slot : MonoBehaviour
 
     private void InstantiateLeatherArmor()
     {
-        var armorPieceMatch = Regex.Match(currentHoldingItem.Name.ToUpper(), "(BOOTS|LEGGINGS|CHESTPLATE|HELMET|OXFORDS|JACKET|PANTS|FEDORA|POLO|TROUSERS|GALOSHES)");
-        var armorPieceName = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(armorPieceMatch.Value);
-        var armorPiece = Resources.Load<GameObject>("Prefabs/Slot/Armor/" + armorPieceName);
+        var correctName = Global.GetArmorName(currentHoldingItem.Name.ToUpper());
+        var armorPieceMatch = Regex.Match(correctName, "(BOOTS|LEGGINGS|CHESTPLATE|HELMET)");
+        var armorPiece = Resources.Load<GameObject>("Prefabs/Slot/Armor/" + Global.ToTitleCase(armorPieceMatch.Value));
 
         InstantiateImage(armorPiece, currentHoldingItem.LeatherArmorColor);
     }

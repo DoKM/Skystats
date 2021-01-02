@@ -543,9 +543,7 @@ public class Main : MonoBehaviour
 
         Global.SelectProfiles(selectedProfile, profiles, selectedProfileGradient);
         yield return StartCoroutine(IE_ReloadData(profileID));
-        Debug.Log("Done: IE_StartReload");
         load.SetTrigger("Stop Load");
-        ErrorHandler.Instance.Push(new Error { ErrorCode = 0, ErrorHeader = "Done", ErrorMessage = $"Completed entire reload." });
     }
 
     public void Refresh(string profile)
@@ -629,9 +627,7 @@ public class Main : MonoBehaviour
             yield return StartCoroutine(FillProfile(currentProfile, profileData));
             if (Stats.Instance != null)
                 Stats.Instance.currentProfile = currentProfile;
-            ErrorHandler.Instance.Push(new Error { ErrorCode = 0, ErrorHeader = "Start", ErrorMessage = $"Starting instantiation of modules." });
             OnLoadProfile?.Invoke(this, new OnLoadProfileEventArgs { profile = currentProfile });
-            ErrorHandler.Instance.Push(new Error { ErrorCode = 0, ErrorHeader = "Done", ErrorMessage = $"Completed instantiating modules." });
             TalismanOptimizer.Instance.accessories = currentProfile.AccessoryData;
         }
         else
@@ -643,23 +639,18 @@ public class Main : MonoBehaviour
     public IEnumerator FillProfile(Profile profile, JSONNode profileData)
     {
         profile = GetBankingData(profile, profileData);
-        yield return null;
         profile = GetInventoryData(profile, profileData);
         profile = GetWardrobeData(profile, profileData);
         profile = GetEquippedArmorData(profile, profileData);
         profile = MergeWardrobeEquippedArmor(profile);
-        yield return null;
         profile = GetAccesoryData(profile, profileData);
         profile = GetEnderchestData(profile, profileData);
         profile = GetPetData(profile, profileData);
-        yield return null;
         profile = GetDungeonSkillData(profile, profileData);
         profile = GetSkillData(profile, profileData);
         profile = GetSlayerData(profile, profileData);
-        yield return null;
         profile = GetFairyData(profile, profileData);
         profile = GetVaultData(profile, profileData);
-        yield return null;
 
         profile.QuiverData = Items.GetDataModule(profile, profileData, "quiver");
         profile.PotionData = Items.GetDataModule(profile, profileData, "potion_bag");
@@ -670,7 +661,6 @@ public class Main : MonoBehaviour
 
         PlayerStats.ProcessStats(profile);
         profile = GetBestWeapon(profile);
-        ErrorHandler.Instance.Push(new Error { ErrorCode = 0, ErrorHeader = "Done", ErrorMessage = $"Completed getting profile data." });
     }
 
     public Profile GetBankingData(Profile originalProfile, JSONNode profileData)

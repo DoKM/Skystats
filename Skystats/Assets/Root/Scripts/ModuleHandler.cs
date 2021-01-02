@@ -86,6 +86,13 @@ public class ModuleHandler : MonoBehaviour
 		SaveModules();
 	}
 
+	public void UpdateModules ()
+	{
+		foreach (var module in modules)
+			for (int i = 0; i < 4; i++)
+				Global.UpdateCanvasElement(module);
+	}
+
 	[Button]
 	public void UpdatePositions ()
 	{

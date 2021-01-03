@@ -72,7 +72,7 @@ public class ModuleDragger : UIBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     public float Round (float orig)
 	{
-        return ((int)Mathf.Round(orig / 10f)) * 10;
+        return ((int)Mathf.Round(orig / PageHandler.Instance.gridSize)) * PageHandler.Instance.gridSize;
     }
 
     public virtual void OnBeginDrag(PointerEventData eventData)
@@ -104,7 +104,7 @@ public class ModuleDragger : UIBehaviour, IDragHandler, IBeginDragHandler, IEndD
         var newPos = new Vector2(Mathf.Clamp(position.x, area.xMin + (size.x * windowToDrag.pivot.x), area.xMax - (size.x * (1f - windowToDrag.pivot.x))),
             Mathf.Clamp(position.y, area.yMin + (size.y * windowToDrag.pivot.y), area.yMax - (size.y * (1f - windowToDrag.pivot.y))));
 
-        return mh.round ? new Vector2(Round(newPos.x), Round(newPos.y)) : new Vector2(newPos.x, newPos.y);
+        return PageHandler.Instance.snapping ? new Vector2(Round(newPos.x), Round(newPos.y)) : new Vector2(newPos.x, newPos.y);
     }
 
     public void LoadPosition(Vector3 newPos, bool minimized)

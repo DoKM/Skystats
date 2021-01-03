@@ -17,7 +17,7 @@ public class ArmorModule : MonoBehaviour
 
     public void InstantiateModule (object sender, OnLoadProfileEventArgs e)
 	{
-        bool off = !objParent.gameObject.activeSelf;
+        bool off = objParent != null && !objParent.gameObject.activeSelf;
         if (off)
             objParent.gameObject.SetActive(true);
 

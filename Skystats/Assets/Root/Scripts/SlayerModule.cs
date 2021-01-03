@@ -11,7 +11,7 @@ public class SlayerModule : MonoBehaviour
 {
     public Transform parent, title;
 
-    private void Start()
+	private void Start()
     {
         Main.Instance.OnLoadProfile += InstantiateModule;
 

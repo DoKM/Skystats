@@ -11,12 +11,7 @@ public class Enderchest : MonoBehaviour
     public int selectedPage = 0;
 
     public Transform enderchestParent;
-    private TMP_Text pageCounter;
-
-    private void Start()
-    {
-        pageCounter = GameObject.FindGameObjectWithTag("EnderchestPageCounter").GetComponent<TMP_Text>();
-    }
+    public TMP_Text pageCounter;
 
     private void Update()
     {

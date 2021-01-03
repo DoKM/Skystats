@@ -24,7 +24,6 @@ public class Module
 
 public class ModuleHandler : MonoBehaviour
 {
-	public bool round;
 	public bool loadSavedPosition;
 	public RectTransform currentModule;
 

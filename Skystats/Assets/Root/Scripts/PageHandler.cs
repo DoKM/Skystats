@@ -21,12 +21,23 @@ public class PageHandler : MonoBehaviour
     #endregion
 
     public TMP_Text pageNumber;
-    public RectTransform activePage;
     public List<RectTransform> pages;
-
-    public int activePageIndex = 0;
-    public RectTransform page;
     public List<Button> buttonsDisableSinglePage;
+
+    public bool snapping;
+    public float gridSize = 10; // Future feature, not useful right now
+
+    private int activePageIndex = 0;
+    [HideInInspector] public RectTransform page, activePage;
+
+    public void ToggleSnapping (Button button)
+	{
+        snapping = !snapping;
+
+        var newColors = button.colors;
+        newColors.normalColor = snapping == true ? Color.white : new Color(1, 1, 1, 0);
+        button.colors = newColors;
+    }
 
 	private void Awake()
 	{

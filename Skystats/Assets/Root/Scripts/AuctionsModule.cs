@@ -46,8 +46,8 @@ public class AuctionsModule : MonoBehaviour
             }
         }
 
-        Global.UpdateCanvasElement((RectTransform)objParent);
-        Global.UpdateScrollView();
+		for (int i = 0; i < 6; i++)
+            Global.UpdateCanvasElement((RectTransform)objParent);
 
         if (!wasInactive)
             objParent.gameObject.SetActive(false);

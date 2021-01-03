@@ -588,7 +588,6 @@ public class Main : MonoBehaviour
                 ErrorHandler.Instance.Push(new Error { ErrorCode = 506, ErrorHeader = "No profile found", ErrorMessage = $"Profile \"{profileID}\" has no profile data." });
         }
 
-        load.SetTrigger("Stop Load");
         Debug.Log("Done: IE_ReloadData");
     }
 
@@ -597,17 +596,15 @@ public class Main : MonoBehaviour
         var statusWWW = UnityWebRequest.Get($"https://api.hypixel.net/status?key={Credentials.key}&uuid={uuid}");
         yield return statusWWW.SendWebRequest();
 
-        var isOnline = false;
-        if (!statusWWW.isNetworkError && !statusWWW.isHttpError)
-            isOnline = JSON.Parse(statusWWW.downloadHandler.text)["session"]["online"].AsBool;
+        var isOnline = !statusWWW.isNetworkError && !statusWWW.isHttpError && JSON.Parse(statusWWW.downloadHandler.text)["session"]["online"].AsBool;
 
         if (data["profile"]["members"].HasKey(uuid))
         {
-            if (SkillManager.Instance != null)
-                SkillManager.Instance.skills.Clear();
+            SkillManager.Instance.skills.Clear();
             currentProfileData = data;
             var profileData = currentProfileData["profile"]["members"][uuid];
             var lastOnline = Global.UnixTimeStampToDateTime(profileData["last_save"]);
+
             yield return null;
             currentProfile = new Profile
             {
@@ -621,8 +618,9 @@ public class Main : MonoBehaviour
             };
 
             yield return StartCoroutine(FillProfile(currentProfile, profileData));
-            if (Stats.Instance != null)
-                Stats.Instance.currentProfile = currentProfile;
+            Stats.Instance.currentProfile = currentProfile;
+
+            load.SetTrigger("Stop Load");
             OnLoadProfile?.Invoke(this, new OnLoadProfileEventArgs { profile = currentProfile });
             TalismanOptimizer.Instance.accessories = currentProfile.AccessoryData;
         }
@@ -674,309 +672,248 @@ public class Main : MonoBehaviour
     }
 
     public Profile GetInventoryData(Profile originalProfile, JSONNode profileData)
-    {
-        var newProfile = originalProfile;
-        if (profileData.HasKey("inv_contents"))
-        {
-            NbtCompound invCompoundTag = Parsing.DecodeGzippedBase64(profileData["inv_contents"]["data"].Value.ToString(), "invData.nbt");
+	{
+		if (!profileData.HasKey("inv_contents")) return originalProfile;
+       
+		NbtCompound invCompoundTag = Parsing.DecodeGzippedBase64(profileData["inv_contents"]["data"].Value.ToString(), "invData.nbt");
 
-            var inventoryData = new List<Item>();
-            var invContents = invCompoundTag.Get<NbtList>("i");
+		var inventoryData = new List<Item>();
+		Items.GetCompoundData(originalProfile, inventoryData, invCompoundTag.Get<NbtList>("i"));
 
-            Items.GetCompoundData(newProfile, inventoryData, invContents);
+		// Sort inventory
+		for (int i = 0; i < 9; i++)
+		{
+			var _ = inventoryData[0];
+            inventoryData.Remove(_);
+			inventoryData.Add(_);
+		}
 
-            // Sort inventory
-            for (int i = 0; i < 9; i++)
-            {
-                var _ = inventoryData[0];
+        originalProfile.InventoryData = inventoryData;
+		return originalProfile;
+	}
 
-                inventoryData.Remove(_);
-                inventoryData.Add(_);
-            }
+	public Profile GetVaultData(Profile originalProfile, JSONNode profileData)
+	{
+		if (!profileData.HasKey("personal_vault_contents")) return originalProfile;
 
-            newProfile.InventoryData = inventoryData;
-        }
+		NbtCompound vaultTag = Parsing.DecodeGzippedBase64(profileData["personal_vault_contents"]["data"].Value.ToString(), "vaultData.nbt");
 
-        return newProfile;
-    }
+		var vaultData = new List<Item>();
+		var vaultContents = vaultTag.Get<NbtList>("i");
 
-    public Profile GetVaultData(Profile originalProfile, JSONNode profileData)
-    {
-        var newProfile = originalProfile;
-        if (profileData.HasKey("personal_vault_contents"))
-        {
-            NbtCompound vaultTag = Parsing.DecodeGzippedBase64(profileData["personal_vault_contents"]["data"].Value.ToString(), "vaultData.nbt");
+		Items.GetCompoundData((Profile)originalProfile, vaultData, vaultContents);
 
-            var vaultData = new List<Item>();
-            var vaultContents = vaultTag.Get<NbtList>("i");
+		originalProfile.VaultData = vaultData;
 
-            Items.GetCompoundData(newProfile, vaultData, vaultContents);
+		return originalProfile;
+	}
 
-            newProfile.VaultData = vaultData;
-        }
+	public Profile GetAccesoryData(Profile originalProfile, JSONNode profileData)
+	{
+		if (!profileData.HasKey("talisman_bag")) return originalProfile;
 
-        return newProfile;
-    }
+		NbtCompound talismanBag = Parsing.DecodeGzippedBase64(profileData["talisman_bag"]["data"].Value.ToString(), "talismanBagData.nbt");
 
-    public Profile GetAccesoryData(Profile originalProfile, JSONNode profileData)
-    {
-        var newProfile = originalProfile;
-        if (profileData.HasKey("talisman_bag"))
-        {
-            NbtCompound talismanBag = Parsing.DecodeGzippedBase64(profileData["talisman_bag"]["data"].Value.ToString(), "talismanBagData.nbt");
+		var talismanBagData = originalProfile.AccessoryData;
+		var talismanBagContents = talismanBag.Get<NbtList>("i");
 
-            var talismanBagData = originalProfile.AccessoryData;
-            var talismanBagContents = talismanBag.Get<NbtList>("i");
+		foreach (NbtCompound talismanCompound in talismanBagContents)
+		{
+			if (talismanCompound.TryGet<NbtCompound>("tag", out var tag))
+			{
+				Item talisman = Items.GetItemObject(talismanCompound, tag, originalProfile);
+				talismanBagData.Add(talisman);
+			}
+		}
 
-            foreach (NbtCompound talismanCompound in talismanBagContents)
-            {
-                if (talismanCompound.TryGet<NbtCompound>("tag", out var tag))
-                {
-                    Item talisman = Items.GetItemObject(talismanCompound, tag, originalProfile);
-                    talismanBagData.Add(talisman);
-                }
-            }
+		originalProfile.AccessoryData = talismanBagData;
 
-            newProfile.AccessoryData = talismanBagData;
-        }
-        return newProfile;
-    }
+		return originalProfile;
+	}
 
-    public Profile GetWardrobeData(Profile originalProfile, JSONNode profileData)
-    {
-        Profile newProfile = originalProfile;
-        if (profileData.HasKey("wardrobe_contents"))
-        {
-            NbtCompound wardrobe = Parsing.DecodeGzippedBase64(profileData["wardrobe_contents"]["data"].Value.ToString(), "wardrobeData.nbt");
-#if UNITY_EDITOR
-            File.WriteAllText(Application.dataPath + "/wardrobeData.txt", wardrobe.ToString());
-#endif
-            var wardrobeData = new List<WardrobeSlots>();
-            var wardrobeContents = wardrobe.Get<NbtList>("i");
+	public Profile GetWardrobeData(Profile originalProfile, JSONNode profileData)
+	{
+		if (!profileData.HasKey("wardrobe_contents")) return originalProfile;
 
-            var wardrobePage = 0;
-            // 48 slots in the api / 4 = 12 wardrobe slots
-            for (int j = 0; j < wardrobeContents.Count / 4; j++)
-            {
-                var wardrobeSlot = new WardrobeSlots { SlotIndex = j };
+		NbtCompound wardrobe = Parsing.DecodeGzippedBase64(profileData["wardrobe_contents"]["data"].Value.ToString(), "wardrobeData.nbt");
 
-                // If we reach a new page, we need to add an offset
-                // of 36 to the index.
-                if ((j % 9) == 0 && j != 0)
-                    wardrobePage++;
+		var wardrobeData = new List<WardrobeSlots>();
+		var wardrobeContents = wardrobe.Get<NbtList>("i");
 
-                for (int i = 0; i < 4; i++)
-                {
-                    var firstPageIndex = j + (9 * i);
-                    var pageOffset = wardrobePage * 27;
+		var wardrobePage = 0;
+		// 48 slots in the api / 4 = 12 wardrobe slots
+		for (int j = 0; j < wardrobeContents.Count / 4; j++)
+		{
+			var wardrobeSlot = new WardrobeSlots { SlotIndex = j };
 
-                    var finalPieceIndex = firstPageIndex + pageOffset;
+			// If we reach a new page, we need to add an offset
+			// of 36 to the index.
+			if ((j % 9) == 0 && j != 0)
+				wardrobePage++;
 
-                    if (finalPieceIndex < wardrobeContents.Count)
+			for (int i = 0; i < 4; i++)
+			{
+				var firstPageIndex = j + (9 * i);
+				var pageOffset = wardrobePage * 27;
+
+				var finalPieceIndex = firstPageIndex + pageOffset;
+
+				if (finalPieceIndex < wardrobeContents.Count)
+				{
+					NbtCompound armorCompound = wardrobeContents.Get<NbtCompound>(finalPieceIndex);
+					if (armorCompound.TryGet<NbtCompound>("tag", out var tag))
+					{
+						Item armorPiece = Items.GetItemObject(armorCompound, tag, originalProfile);
+						wardrobeSlot.ArmorPieces.Add(armorPiece);
+					}
+					else
+						wardrobeSlot.ArmorPieces.Add(new Item());
+				}
+			}
+
+			wardrobeData.Add(wardrobeSlot);
+		}
+
+		originalProfile.WardrobeData = wardrobeData;
+
+		return originalProfile;
+	}
+
+	public Profile GetEquippedArmorData(Profile originalProfile, JSONNode profileData)
+	{
+		if (!profileData.HasKey("inv_armor")) return originalProfile;
+
+		NbtCompound armor = Parsing.DecodeGzippedBase64(profileData["inv_armor"]["data"].Value.ToString(), "armorData.nbt");
+		var armorContents = armor.Get<NbtList>("i");
+
+		// Index from api begins at 1 (why?????)
+		var selectedWardrobeSlot = profileData["wardrobe_equipped_slot"].AsInt;
+		if (selectedWardrobeSlot > 0)
+			selectedWardrobeSlot--;
+
+		WardrobeSlots slot = new WardrobeSlots { SlotIndex = selectedWardrobeSlot };
+
+		foreach (NbtCompound armorCompound in armorContents)
+		{
+			if (armorCompound.TryGet<NbtCompound>("tag", out var tag))
+			{
+				Item armorPiece = Items.GetItemObject(armorCompound, tag, originalProfile);
+				slot.ArmorPieces.Add(armorPiece);
+			}
+			else
+				slot.ArmorPieces.Add(new Item());
+		}
+
+		slot.ArmorPieces.Reverse();
+		originalProfile.EquippedArmorData = slot;
+
+		return originalProfile;
+	}
+
+	public Profile MergeWardrobeEquippedArmor(Profile originalProfile)
+	{
+		if (originalProfile == null || originalProfile.WardrobeData == null || originalProfile.EquippedArmorData == null) return originalProfile;
+        WardrobeSlots equippedArmor = originalProfile.EquippedArmorData;
+
+        if (equippedArmor.SlotIndex != -1 && equippedArmor != null && equippedArmor != new WardrobeSlots())
+				if (originalProfile.WardrobeData != null && originalProfile.WardrobeData != new List<WardrobeSlots>())
+					if (equippedArmor.ArmorPieces.Count > 0 && currentProfile.WardrobeData.Count > 0)
+						if (equippedArmor.SlotIndex <= originalProfile.WardrobeData.Count - 1)
+							originalProfile.WardrobeData[equippedArmor.SlotIndex].ArmorPieces = equippedArmor.ArmorPieces;
+						else
+							originalProfile.WardrobeData.Add(equippedArmor);
+
+		return originalProfile;
+	}
+
+	public Profile GetEnderchestData(Profile originalProfile, JSONNode profileData)
+	{
+		if (!profileData.HasKey("ender_chest_contents")) return originalProfile;
+
+		NbtCompound enderchest = Parsing.DecodeGzippedBase64(profileData["ender_chest_contents"]["data"].Value.ToString(), "enderchestData.nbt");
+
+		var enderchestData = new List<Item>();
+        var weapons = originalProfile.Weapons != null ? originalProfile.Weapons : new List<Item>();
+		var pets = originalProfile.PetData != null ? originalProfile.PetData : new List<Pet>();
+		var enderchestContents = enderchest.Get<NbtList>("i");
+
+		foreach (NbtCompound itemCompound in enderchestContents)
+		{
+			if (itemCompound.TryGet<NbtCompound>("tag", out var tag))
+			{
+				Item item = Items.GetItemObject(itemCompound, tag, originalProfile);
+				enderchestData.Add(item);
+
+				if (item != null && item.ItemDescription != null)
+				{
+                    if (item.ItemDescription.Count > 1)
                     {
-                        NbtCompound armorCompound = wardrobeContents.Get<NbtCompound>(finalPieceIndex);
-                        if (armorCompound.TryGet<NbtCompound>("tag", out var tag))
-                        {
-                            Item armorPiece = Items.GetItemObject(armorCompound, tag, originalProfile);
-                            wardrobeSlot.ArmorPieces.Add(armorPiece);
-                        }
-                        else
-                            wardrobeSlot.ArmorPieces.Add(new Item());
+                        string lastDescriptionLine = item.ItemDescription[item.ItemDescription.Count - 1];
+                        if (lastDescriptionLine.Contains("SWORD") || lastDescriptionLine.Contains("BOW") || lastDescriptionLine.Contains("WEAPON"))
+                            if (!weapons.Exists((x) => x.ItemDescription == item.ItemDescription))
+                                weapons.Add(item);
+                    }
+
+                    if (item.Name.Count() > 0 && item.Name.Contains("Lvl"))
+                    {
+                        var petInfoString = itemCompound.Get<NbtCompound>("tag").Get<NbtCompound>("ExtraAttributes").Get<NbtString>("petInfo").Value.ToString();
+                        petInfoString = Regex.Replace(petInfoString, "\\s", "");
+
+                        var petInfoNode = JSON.Parse(petInfoString);
+                        var pet = Pets.GetPetFromContainer(petInfoNode, item);
+                        pets.Add(pet);
                     }
                 }
 
-                wardrobeData.Add(wardrobeSlot);
-            }
+			}
+			else
+				enderchestData.Add(new Item());
+		}
 
-            newProfile.WardrobeData = wardrobeData;
-        }
+		originalProfile.PetData = pets;
+		originalProfile.Weapons = weapons;
+		originalProfile.EnderchestData = enderchestData;
 
-        return newProfile;
-    }
+		return originalProfile;
+	}
 
-    public Profile GetEquippedArmorData(Profile originalProfile, JSONNode profileData)
+	public Profile GetPetData(Profile originalProfile, JSONNode profileData)
+	{
+		if (!profileData.HasKey("pets")) return originalProfile;
+
+		var petData = originalProfile.PetData != null ? originalProfile.PetData : new List<Pet>();
+		var petsContents = profileData["pets"].Values;
+
+		foreach (var petNode in petsContents)
+			petData.Add(Pets.GetPet(petNode));
+
+		originalProfile.PetData = petData;
+
+		return originalProfile;
+	}
+
+	public Profile GetDungeonSkillData(Profile profile, JSONNode profileData)
     {
-        Profile newProfile = originalProfile;
+        if (!profileData.HasKey("dungeons")) return profile;
 
-        if (profileData.HasKey("inv_armor"))
-        {
-            NbtCompound armor = Parsing.DecodeGzippedBase64(profileData["inv_armor"]["data"].Value.ToString(), "armorData.nbt");
-#if UNITY_EDITOR
-            File.WriteAllText(Application.dataPath + "/armorData.txt", armor.ToString());
-#endif
-            var armorData = new List<WardrobeSlots>();
-            var armorContents = armor.Get<NbtList>("i");
-
-            // Index from api begins at 1 (why?????)
-            var selectedWardrobeSlot = profileData["wardrobe_equipped_slot"].AsInt;
-            if (selectedWardrobeSlot > 0)
-                selectedWardrobeSlot--;
-
-            WardrobeSlots slot = new WardrobeSlots { SlotIndex = selectedWardrobeSlot };
-
-            foreach (NbtCompound armorCompound in armorContents)
-            {
-                if (armorCompound.TryGet<NbtCompound>("tag", out var tag))
-                {
-                    Item armorPiece = Items.GetItemObject(armorCompound, tag, originalProfile);
-                    slot.ArmorPieces.Add(armorPiece);
-                }
-                else
-                    slot.ArmorPieces.Add(new Item());
-            }
-            slot.ArmorPieces.Reverse();
-            newProfile.EquippedArmorData = slot;
-        }
-
-        return newProfile;
-    }
-
-    public Profile MergeWardrobeEquippedArmor(Profile originalProfile)
-    {
-        Profile newProfile = originalProfile;
-
-        WardrobeSlots equippedArmor = newProfile.EquippedArmorData;
-        if (newProfile != null && newProfile.WardrobeData != null && equippedArmor != null)
-        {
-            if (equippedArmor.SlotIndex != -1)
-                if (equippedArmor != null && equippedArmor != new WardrobeSlots())
-                    if (newProfile.WardrobeData != null && newProfile.WardrobeData != new List<WardrobeSlots>())
-                        if (equippedArmor.ArmorPieces.Count > 0 && currentProfile.WardrobeData.Count > 0)
-                            if (equippedArmor.SlotIndex <= newProfile.WardrobeData.Count - 1)
-                            {
-                                newProfile.WardrobeData[equippedArmor.SlotIndex].ArmorPieces = equippedArmor.ArmorPieces;
-                            }
-                            else
-                            {
-                                newProfile.WardrobeData.Add(equippedArmor);
-                            }
-        }
-
-
-
-        return newProfile;
-    }
-
-    public Profile GetEnderchestData(Profile originalProfile, JSONNode profileData)
-    {
-        Profile newProfile = originalProfile;
-
-        if (profileData.HasKey("ender_chest_contents"))
-        {
-            NbtCompound enderchest = Parsing.DecodeGzippedBase64(profileData["ender_chest_contents"]["data"].Value.ToString(), "enderchestData.nbt");
-
-            var enderchestData = new List<Item>();
-            var weapons = new List<Item>();
-            if (newProfile.Weapons != null)
-                weapons = newProfile.Weapons;
-
-            var pets = new List<Pet>();
-            if (newProfile.PetData != null)
-                pets = newProfile.PetData;
-
-            var enderchestContents = enderchest.Get<NbtList>("i");
-
-            foreach (NbtCompound itemCompound in enderchestContents)
-            {
-                if (itemCompound.TryGet<NbtCompound>("tag", out var tag))
-                {
-                    Item item = Items.GetItemObject(itemCompound, tag, originalProfile);
-                    enderchestData.Add(item);
-                    if (item != null)
-                    {
-                        if (item.ItemDescription != null)
-                        {
-                            if (item.ItemDescription.Count > 1)
-                            {
-                                string lastDescriptionLine = item.ItemDescription[item.ItemDescription.Count - 1];
-                                if (lastDescriptionLine.Contains("SWORD") || lastDescriptionLine.Contains("BOW") || lastDescriptionLine.Contains("WEAPON"))
-                                    if (!weapons.Exists((x) => x.ItemDescription == item.ItemDescription))
-                                        weapons.Add(item);
-                            }
-
-                            if (item.Name.Count() > 0)
-                                if (item.Name.Contains("Lvl"))
-                                {
-                                    var petInfoString = itemCompound.Get<NbtCompound>("tag").Get<NbtCompound>("ExtraAttributes").Get<NbtString>("petInfo").Value.ToString();
-                                    petInfoString = Regex.Replace(petInfoString, "\\s", "");
-
-                                    var petInfoNode = JSON.Parse(petInfoString);
-                                    var pet = Pets.GetPetFromContainer(petInfoNode, item);
-                                    pets.Add(pet);
-                                }
-                        }
-                    }
-
-                }
-                else
-                {
-                    enderchestData.Add(new Item());
-                }
-            }
-
-            newProfile.PetData = pets;
-            newProfile.Weapons = weapons;
-            newProfile.EnderchestData = enderchestData;
-        }
-
-        return newProfile;
-    }
-
-    public Profile GetPetData(Profile originalProfile, JSONNode profileData)
-    {
-        var newProfile = originalProfile;
-
-        if (profileData.HasKey("pets"))
-        {
-            var petData = new List<Pet>();
-            if (newProfile.PetData != null)
-                petData = newProfile.PetData;
-
-            var petsContents = profileData["pets"].Values;
-
-            foreach (var petNode in petsContents)
-            {
-                Pet pet = Pets.GetPet(petNode);
-                petData.Add(pet);
-
-                newProfile.PetData = petData;
-            }
-        }
-
-        return newProfile;
-    }
-
-    public Profile GetDungeonSkillData(Profile profile, JSONNode profileData)
-    {
-        var newProfile = profile;
         var skills = new Dictionary<SKILL, Skill>();
 
-        if (profileData.HasKey("dungeons"))
+        foreach (var skillNode in profileData["dungeons"]["player_classes"])
         {
-            foreach (var skillNode in profileData["dungeons"]["player_classes"])
-            {
-                var skill = Skills.GetSkill(skillNode.Value["experience"], skillNode.Key.ToLower());
-                skills.Add(skill.SkillName, skill);
-            }
-
-            var catacombs = Skills.GetSkill(profileData["dungeons"]["dungeon_types"]["catacombs"]["experience"], "catacombs");
-            skills.Add(catacombs.SkillName, catacombs);
-        }
-        else
-        {
-            dungeonsParent.gameObject.SetActive(false);
+            var skill = Skills.GetSkill(skillNode.Value["experience"], skillNode.Key.ToLower());
+            skills.Add(skill.SkillName, skill);
         }
 
-        newProfile.SkillData = skills;
-        return newProfile;
+        var catacombs = Skills.GetSkill(profileData["dungeons"]["dungeon_types"]["catacombs"]["experience"], "catacombs");
+        skills.Add(catacombs.SkillName, catacombs);
+
+        profile.SkillData = skills;
+        return profile;
     }
 
     public Profile GetSkillData(Profile profile, JSONNode profileData)
     {
-        Profile newProfile = profile;
-        var skills = new Dictionary<SKILL, Skill>();
-        if (profile.SkillData != null)
-            skills = profile.SkillData;
+        var skills = profile.SkillData != null ? profile.SkillData : new Dictionary<SKILL, Skill>();
 
         foreach (var item in profileData)
         {
@@ -988,65 +925,60 @@ public class Main : MonoBehaviour
             }
         }
 
-        var averageProgression = Skills.GetAverageSkillLevel(skills, true);
-        var average = Skills.GetAverageSkillLevel(skills, false);
+        profile.AverageSkilLevelProgression = Skills.GetAverageSkillLevel(skills, true);
+        profile.AverageSkilLevel = Skills.GetAverageSkillLevel(skills, false);
+        profile.SkillData = skills;
 
-        newProfile.AverageSkilLevel = average;
-        newProfile.AverageSkilLevelProgression = averageProgression;
-        newProfile.SkillData = skills;
-        return newProfile;
+        return profile;
     }
 
     public Profile GetSlayerData(Profile profile, JSONNode profileData)
     {
-        var newProfile = profile;
+        if (!profileData.HasKey("slayer_bosses")) return profile;
+
         var slayers = new List<Slayer>();
-
-        if (profileData.HasKey("slayer_bosses"))
+        foreach (var item in profileData["slayer_bosses"])
         {
-            foreach (var item in profileData["slayer_bosses"])
+            string slayerName = Global.ToTitleCase(item.Key);
+            var level = 0;
+            for (int i = 0; i < item.Value["claimed_levels"].Count; i++)
+                level++;
+
+            int xp = item.Value["xp"].AsInt;
+            var slayerType = (SLAYERTYPE)Enum.Parse(typeof(SLAYERTYPE), slayerName);
+
+            Dictionary<STAT, Stat> slayerStats = PlayerStats.GetSlayerStats(slayerType, level);
+            var kills = GetSlayerKills(item.Value, slayerType);
+
+            var slayerData = JSON.Parse(Resources.Load<TextAsset>("JSON Data/Slayer XP Ladders").text);
+            var jsonLadder = slayerData["XPLadders"][slayerName.ToUpper()].AsArray;
+            int[] intLadder = new int[jsonLadder.Count];
+
+            for (int i = 0; i < jsonLadder.Count; i++)
+                intLadder[i] = jsonLadder[i].AsInt;
+
+            var slayerXp = Global.GetSlayerXP(xp, intLadder, 0);
+            var isMax = level == intLadder.Length;
+
+            var icon = Resources.Load<Sprite>($"Slayers/{slayerName}");
+
+            var slayer = new Slayer
             {
-                string slayerName = Global.ToTitleCase(item.Key);
-                var level = 0;
-                for (int i = 0; i < item.Value["claimed_levels"].Count; i++)
-                    level++;
+                Name = Global.GetSlayerName(slayerName),
+                Level = level,
+                Icon = icon,
+                IsMaxLevel = isMax,
+                ProgressXP = slayerXp,
+                BonusStats = slayerStats,
+                Type = slayerType,
+                Kills = kills
+            };
 
-                int xp = item.Value["xp"].AsInt;
-                var slayerType = (SLAYERTYPE)Enum.Parse(typeof(SLAYERTYPE), slayerName);
-
-                Dictionary<STAT, Stat> slayerStats = PlayerStats.GetSlayerStats(slayerType, level);
-                var kills = GetSlayerKills(item.Value, slayerType);
-
-                var slayerData = JSON.Parse(Resources.Load<TextAsset>("JSON Data/Slayer XP Ladders").text);
-                var jsonLadder = slayerData["XPLadders"][slayerName.ToUpper()].AsArray;
-                int[] intLadder = new int[jsonLadder.Count];
-
-                for (int i = 0; i < jsonLadder.Count; i++)
-                    intLadder[i] = jsonLadder[i].AsInt;
-
-                var slayerXp = Global.GetSlayerXP(xp, intLadder, 0);
-                var isMax = level == intLadder.Length;
-
-                var icon = Resources.Load<Sprite>($"Slayers/{slayerName}");
-
-                var slayer = new Slayer
-                {
-                    Name = Global.GetSlayerName(slayerName),
-                    Level = level,
-                    Icon = icon,
-                    IsMaxLevel = isMax,
-                    ProgressXP = slayerXp,
-                    BonusStats = slayerStats,
-                    Type = slayerType,
-                    Kills = kills
-                };
-
-                slayers.Add(slayer);
-            }
+            slayers.Add(slayer);
         }
 
-        newProfile.Slayers = slayers;
-        return newProfile;
+        profile.Slayers = slayers;
+        return profile;
     }
 
     public List<SlayerKill> GetSlayerKills(JSONNode jsonData, SLAYERTYPE type)

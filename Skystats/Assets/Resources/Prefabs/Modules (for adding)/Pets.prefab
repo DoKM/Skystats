@@ -743,7 +743,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7006562008725263296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861f16e469a494f44bfb89d97fbd2a0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 854a4361ac7470e4da3e7f444e400c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   windowToDrag: {fileID: 7006562007616389823}
@@ -751,7 +751,7 @@ MonoBehaviour:
   componentDisableOnMinimize: []
   clampInsideParentRect: 1
   isMinimized: 0
-  originalHeight: 222
+  originalHeight: 0
   mh: {fileID: 0}
   minimize: {fileID: 7853260279573682555}
   remove: {fileID: 7282033198083982810}

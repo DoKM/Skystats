@@ -52,10 +52,7 @@ public class ModuleAdding : ModuleDragger
 		var drag = Global.FindObjectsOfTypeInTranform<ModuleDragger>(dragObj.transform)[0];
 
 		drag.mh = activePageMh;
-		drag.originalHeight = originalHeight;
 		drag.windowToDrag = dragObj.transform as RectTransform;
-		drag.componentDisableOnMinimize = componentDisableOnMinimize;
-		drag.objectDisableOnMinimize = objectDisableOnMinimize;
 
 		latestSpawn = drag;
 		drag.OnBeginDrag(eventData);

@@ -91,8 +91,8 @@ public class Skill
     public XP SkillXP { get; set; }
     public bool IsMaxLevel { get; set; }
     public bool IncludeInAverage { get; set; }
-    public STAT StatToIncrease { get; set; }
-    public float StatBonus { get; set; }
+    public STAT[] StatsToIncrease { get; set; }
+    public float[] StatBonus { get; set; }
 }
 
 [Serializable]

@@ -157,6 +157,7 @@ namespace Helper
             var usedPetCandy = petInfo["candyUsed"].AsInt;
 
             var petTier = Global.GetRarity(petInfo["tier"]);
+            var originalPetTier = petTier;
             if (heldItem != "")
                 if (petLib["held_items"][heldItem].HasKey("boost_tier"))
                     petTier--;
@@ -181,6 +182,7 @@ namespace Helper
                 PetXP = Global.GetXP(exp, GetPetXPLadder(petTier), 1),
                 PetJSONData = petLib["pets"][petType],
                 PetRarityTier = petTier,
+                OriginalPetRarityTier = originalPetTier,
                 UsedPetCandy = usedPetCandy,
                 SkinLink = skinLink,
                 SkinName = skinName,
@@ -222,6 +224,7 @@ namespace Helper
 
 
             var petTier = Global.GetRarity(petNode["tier"]);
+            var originalPetTier = petTier;
             if (heldItem != "")
                 if (petLib["held_items"][heldItem].HasKey("boost_tier"))
                     petTier--;
@@ -233,6 +236,7 @@ namespace Helper
                 PetXP = Global.GetXP(petNode["exp"], GetPetXPLadder(petTier), 1),
                 PetJSONData = petLib["pets"][petName],
                 PetRarityTier = petTier,
+                OriginalPetRarityTier = originalPetTier,
                 UsedPetCandy = usedPetCandy,
                 SkinLink = skinLink,
                 SkinName = skinName,
@@ -296,6 +300,7 @@ namespace Helper
                     ItemDescription = pet.Description,
                     TextureLink = textureLink,
                     RarityTier = pet.PetRarityTier,
+                    OriginalRarityTier = pet.OriginalPetRarityTier,
                     BonusStats = pet.BonusStats,
                     PetXP = pet.PetXP,
                     StackAmount = 1
@@ -1526,8 +1531,16 @@ namespace Helper
                 };
 
                 item.RarityTier = GetItemRarity(item);
-                if (isRarityUpgraded)
+                var originalRarity = item.RarityTier;
+
+                if (internalItemID.Contains("STARRED"))
+                    originalRarity++;
+
+               if (isRarityUpgraded)
+				{
+                    originalRarity++;
                     stringDescription.Insert(stringDescription.Count - 1, "<color=#555555>(Recombobulated)</color>");
+                }
 
                 if (item.Modifier.ToLower().Contains("renowned"))
                     if (Stats.Instance != null)
@@ -1537,6 +1550,7 @@ namespace Helper
                 List<string> formattedDescription = Formatting.FormatColorsStringList(stringDescription);
 
                 item.BonusStats = Global.GetStatList(stringDescription);
+                item.OriginalRarityTier = originalRarity;
                 item.ItemDescription = formattedDescription;
 
                 return item;
@@ -1841,12 +1855,6 @@ namespace Helper
             {
                 var activePet = profile.ActivePet.BonusStats;
                 newStats = GetItemStats(activePet, originalStats);
-                if (profile.ActivePet.Name != null && profile.ActivePet.Name.ToLower().Contains("ender_dragon"))
-                {
-                    Match regex = Regex.Match(Global.ListToString(profile.ActivePet.Description), @"<color=#AAAAAA><\/color><color=#AAAAAA>Increases all stats by <\/color><color=#55FF55>((\d+|\d+\.\d+),(\d+|\d+\.\d+)|(\d+|\d+\.\d+))%<\/color>");
-                    if (float.TryParse(regex.Groups[1].Value, out var statBoost))
-                        Stats.Instance.totalStatBoost *= statBoost / 100 + 1;
-                }
             }
 
             return newStats;
@@ -1981,7 +1989,7 @@ namespace Helper
                 SkillXP = xp,
                 IsMaxLevel = maxLevel,
                 IncludeInAverage = IncludeInAverage(skillType),
-                StatToIncrease = GetSkillStatMatch(skillType),
+                StatsToIncrease = GetSkillStatMatch(skillType),
                 StatBonus = GetSkillBonus(skillType, xp.Level)
             };
 
@@ -2033,28 +2041,31 @@ namespace Helper
             }
         }
 
-        public static STAT GetSkillStatMatch(SKILL skill)
+        public static STAT[] GetSkillStatMatch(SKILL skill)
         {
-            switch (skill)
-            {
-                case SKILL.combat:
-                    return STAT.CritChance;
-                case SKILL.foraging:
-                    return STAT.Strength;
-                case SKILL.mining:
-                    return STAT.Defense;
-                case SKILL.farming:
-                    return STAT.Health;
-                case SKILL.fishing:
-                    return STAT.Health;
-                case SKILL.taming:
-                    return STAT.PetLuck;
-                default:
-                    return STAT.Intelligence;
-            }
-        }
+			switch (skill)
+			{
+				case SKILL.combat:
+					return new STAT[1] { STAT.CritChance };
+				case SKILL.foraging:
+					return new STAT[1] { STAT.Strength };
+				case SKILL.mining:
+					return new STAT[1] { STAT.Defense };
+				case SKILL.farming:
+					return new STAT[1] { STAT.Health };
+				case SKILL.fishing:
+					return new STAT[1] { STAT.Health };
+				case SKILL.taming:
+					return new STAT[1] { STAT.PetLuck };
+				case SKILL.alchemy:
+                    return new STAT[1] { STAT.Intelligence };
+				case SKILL.enchanting:
+                    return new STAT[2] { STAT.Intelligence, STAT.AbilityDamage };
+                default: return null;
+			}
+		}
 
-        public static float GetSkillBonus(SKILL skillType, int level)
+		public static float[] GetSkillBonus(SKILL skillType, int level)
         {
             if (Stats.Instance != null)
 			{
@@ -2062,22 +2073,23 @@ namespace Helper
                 {
                     case SKILL.taming:
                     case SKILL.combat:
-                        return Stats.Instance.Calculate1SkillStat(level, 0.5f);
+                        return new float[1] { Stats.Instance.Calculate1SkillStat(level, 0.5f) };
                     case SKILL.enchanting:
+                        return new float[2] { Stats.Instance.Calculate122SkillStat(level), Stats.Instance.Calculate1SkillStat(level, 0.5f) };
                     case SKILL.alchemy:
                     case SKILL.foraging:
                     case SKILL.mining:
-                        return Stats.Instance.Calculate122SkillStat(level);
+                        return new float[1] { Stats.Instance.Calculate122SkillStat(level) };
                     case SKILL.farming:
                     case SKILL.fishing:
-                        return Stats.Instance.Calculate2345SkillStat(level);
+                        return new float[1] { Stats.Instance.Calculate2345SkillStat(level) };
 
                     default:
-                        return Stats.Instance.Calculate1SkillStat(level, 1);
+                        return new float[1] { Stats.Instance.Calculate1SkillStat(level, 1) };
                 }
             } else
             {
-                return 0;
+                return null;
             }
 
         }
@@ -2117,7 +2129,7 @@ namespace Helper
 
             return intLadder;
         }
-    }
+	}
 
 }
 

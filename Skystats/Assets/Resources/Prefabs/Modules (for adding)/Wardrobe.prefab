@@ -426,7 +426,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4601615603067519873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861f16e469a494f44bfb89d97fbd2a0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 854a4361ac7470e4da3e7f444e400c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   windowToDrag: {fileID: 4601615602701095470}
@@ -434,7 +434,7 @@ MonoBehaviour:
   componentDisableOnMinimize: []
   clampInsideParentRect: 1
   isMinimized: 0
-  originalHeight: 445
+  originalHeight: 0
   mh: {fileID: 0}
   minimize: {fileID: 2409257877660637441}
   remove: {fileID: 5377174061390212946}
@@ -473,7 +473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 189.77802, y: 0}
   m_SizeDelta: {x: 0, y: 532.06995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4601615603086364191

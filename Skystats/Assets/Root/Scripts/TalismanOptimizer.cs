@@ -4,7 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using NaughtyAttributes;
 using UnityEngine.UI;
 using TMPro;
 using Helper;
@@ -99,7 +98,6 @@ public class TalismanOptimizer : MonoBehaviour
         Global.UpdateCanvasElement(accessoryViewParent as RectTransform);
     }
 
-    [Button]
     public void StartOptimize()
     {
         if (!string.IsNullOrEmpty(Main.Instance.uuid))
@@ -122,8 +120,8 @@ public class TalismanOptimizer : MonoBehaviour
         foreach (var accessory in newAccessories)
         {
             var reforgeObj = Instantiate(optimizedAccessoryPrefab, accessoryViewParent);
-            var tierText = reforgeObj.transform.FindChild("Tier").GetChild(0).GetComponent<TMP_Text>();
-            var reforgeText = reforgeObj.transform.FindChild("Reforge").GetChild(0).GetComponent<TMP_Text>();
+            var tierText = reforgeObj.transform.Find("Tier").GetChild(0).GetComponent<TMP_Text>();
+            var reforgeText = reforgeObj.transform.Find("Reforge").GetChild(0).GetComponent<TMP_Text>();
 
             var rarityColor = Global.GetRarityHexColor(accessory.Rarity);
             var rarityName = Global.ToTitleCase(accessory.Rarity.ToString());

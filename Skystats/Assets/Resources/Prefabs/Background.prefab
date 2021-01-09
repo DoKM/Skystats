@@ -86,10 +86,10 @@ GameObject:
   - component: {fileID: 868728208237120090}
   - component: {fileID: 2074187373966326272}
   - component: {fileID: 2887243486692283621}
-  - component: {fileID: 4592041684359435416}
   - component: {fileID: 5190964637966320420}
   - component: {fileID: 3541367239962388701}
   - component: {fileID: 9188454484288525787}
+  - component: {fileID: 3264497636779441056}
   m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
@@ -167,25 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
---- !u!114 &4592041684359435416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4888532231972135233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 622edbf92a6878a49949888bfa8e293b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bg:
-    Name: 
-    image: {fileID: 0}
-    defaultTheme:
-      ThemeName: 
-      ThemeColors: []
-  icon: {fileID: 8975176576449690993}
 --- !u!114 &5190964637966320420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +210,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4592041684359435416}
+      - m_Target: {fileID: 3264497636779441056}
         m_MethodName: UpdateBackground
         m_Mode: 1
         m_Arguments:
@@ -278,3 +259,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3264497636779441056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4888532231972135233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955eaf3dc035b294086ed29ad428c9eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bg:
+    Name: 
+    image: {fileID: 0}
+    defaultTheme:
+      ThemeName: 
+      ThemeColors: []
+  icon: {fileID: 8975176576449690993}

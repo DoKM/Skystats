@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 4048636721841753235}
   - component: {fileID: 4048636721841753234}
   - component: {fileID: 4048636721841753233}
-  - component: {fileID: 4610454123105756919}
+  - component: {fileID: 974075928689390981}
   m_Layer: 11
   m_Name: Drag
   m_TagString: Untagged
@@ -693,7 +693,7 @@ MonoBehaviour:
       m_NumAlphaKeys: 2
     Type: 0
   currGrad: {fileID: 0}
---- !u!114 &4610454123105756919
+--- !u!114 &974075928689390981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4048636721841753262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861f16e469a494f44bfb89d97fbd2a0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 854a4361ac7470e4da3e7f444e400c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   windowToDrag: {fileID: 4048636722343868621}
@@ -710,7 +710,7 @@ MonoBehaviour:
   componentDisableOnMinimize: []
   clampInsideParentRect: 1
   isMinimized: 0
-  originalHeight: 229.5078
+  originalHeight: 0
   mh: {fileID: 0}
   minimize: {fileID: 4048636721480126864}
   remove: {fileID: 7447401408363380297}

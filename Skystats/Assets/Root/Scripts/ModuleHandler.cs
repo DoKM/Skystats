@@ -1,4 +1,4 @@
-﻿using NaughtyAttributes;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,7 +41,6 @@ public class ModuleHandler : MonoBehaviour
 		LoadModules();
 	}
 
-	[Button]
 	public void RemoveEntry ()
 	{
 		if (modules.Contains(entryTransform))
@@ -52,7 +51,6 @@ public class ModuleHandler : MonoBehaviour
 		}
 	}
 
-	[Button]
 	public void AddEntry ()
 	{
 		CreateModule(entryModule);
@@ -92,7 +90,6 @@ public class ModuleHandler : MonoBehaviour
 				Global.UpdateCanvasElement(module);
 	}
 
-	[Button]
 	public void UpdatePositions ()
 	{
 		var count = -300 * modules.Count;
@@ -143,7 +140,6 @@ public class ModuleHandler : MonoBehaviour
 		}
 	}
 
-	[Button]
 	public void SaveModules()
 	{
 		var moduleData = JsonConvert.SerializeObject(moduleList);

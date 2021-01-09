@@ -1,5 +1,4 @@
 ﻿using Helper;
-using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -84,7 +83,6 @@ public class PageHandler : MonoBehaviour
         icon.color = new Color(icon.color.r, icon.color.g, icon.color.b, newIconAlpha);
     }
 
-	[Button]
     public void DeletePage ()
 	{
         if (pages.Contains(page))
@@ -102,7 +100,6 @@ public class PageHandler : MonoBehaviour
         PreviousPage();
     }
 
-    [Button]
     public void AddPage()
     {
         var newPage = Instantiate(Resources.Load<GameObject>("Prefabs/Page"), transform);
@@ -137,7 +134,6 @@ public class PageHandler : MonoBehaviour
         newPage.name = pageName;
     }
 
-    [Button]
     public void NextPage ()
 	{
         if (pages.Count >= activePageIndex + 2)
@@ -146,7 +142,6 @@ public class PageHandler : MonoBehaviour
             SwitchPage(0);
     }
 
-    [Button]
     public void PreviousPage ()
 	{
         if (activePageIndex - 1 >= 0)

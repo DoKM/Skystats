@@ -7,7 +7,6 @@ using System.IO;
 using SimpleJSON;
 using Newtonsoft.Json;
 using System.Text;
-using NaughtyAttributes;
 using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization;
 

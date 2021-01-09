@@ -1,5 +1,4 @@
 using JetBrains.Annotations;
-using LeTai.Asset.TranslucentImage;
 using System;
 using System.Collections;
 using System.Collections.Generic;

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using JetBrains.Annotations;
-using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -69,6 +68,7 @@ public class DamagePrediction : MonoBehaviour
     }
     #endregion
 
+    public bool updateDamage, updateDps;
     public bool soulEater;
     public float extraStr, extraCd, expectedNormalDamage, expectedCritDamage, aps, dps;
     [Space]
@@ -82,7 +82,24 @@ public class DamagePrediction : MonoBehaviour
     [HideInInspector] public REFORGE weaponReforge;
     [HideInInspector] public bool hasWeapon, reset, updateText;
 
-    private void Start()
+	private void Update()
+	{
+        if (updateDamage)
+        {
+            GetDamage();
+            Debug.Log("Done!");
+            updateDamage = false;
+        }
+
+        if (updateDps)
+        {
+            GetDps();
+            Debug.Log("Done!");
+            updateDps = false;
+        }
+    }
+
+	private void Start()
     {
         Main.Instance.OnLoadProfile += CalculateDamageOnProfileLoad;
     }
@@ -93,8 +110,8 @@ public class DamagePrediction : MonoBehaviour
         Invoke("GetDps", 0.2f);
     }
 
-    [Button] public void GetDamage() { StartDamageCalculation(true); }
-    [Button] public void GetDps() { CalculateCurrentDPS(expectedCritDamage, attackSpeed, ferocity); }
+    public void GetDamage() { StartDamageCalculation(true); }
+    public void GetDps() { CalculateCurrentDPS(expectedCritDamage, attackSpeed, ferocity); }
 
     public void ResetDamage() { reset = true; }
 

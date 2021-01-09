@@ -305,9 +305,9 @@ RectTransform:
   m_Father: {fileID: 8681032355822315770}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -26.737442}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 200, y: 0}
   m_SizeDelta: {x: 0, y: 53.474884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8681032354081959841
@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 8681032355822315767}
   - component: {fileID: 8681032355822315764}
   - component: {fileID: 8681032355822315765}
-  - component: {fileID: 6182458922096154601}
+  - component: {fileID: 4157447518201976001}
   m_Layer: 11
   m_Name: Contents
   m_TagString: Untagged
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   _gradientType: 0
   _blendMode: 2
   _offset: 0
---- !u!114 &6182458922096154601
+--- !u!114 &4157447518201976001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8681032355822315771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861f16e469a494f44bfb89d97fbd2a0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 854a4361ac7470e4da3e7f444e400c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   windowToDrag: {fileID: 8681032354468907078}
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   componentDisableOnMinimize: []
   clampInsideParentRect: 1
   isMinimized: 0
-  originalHeight: 499.7626
+  originalHeight: 0
   mh: {fileID: 0}
   minimize: {fileID: 8681032355158276660}
   remove: {fileID: 2932005797983230222}

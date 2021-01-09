@@ -424,7 +424,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4574872988647666920}
+      - m_Target: {fileID: 3810160265737207318}
         m_MethodName: RemoveModule
         m_Mode: 1
         m_Arguments:
@@ -1049,7 +1049,7 @@ GameObject:
   - component: {fileID: 4601615602701095469}
   - component: {fileID: 4601615602701095468}
   - component: {fileID: 4601615602701095471}
-  - component: {fileID: 4601615602701095475}
+  - component: {fileID: 5355242923765393274}
   m_Layer: 11
   m_Name: Wardrobe
   m_TagString: Untagged
@@ -1153,7 +1153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 1
---- !u!114 &4601615602701095475
+--- !u!114 &5355242923765393274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4601615602701095465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d6d871f60913814a8c94428ac044fbf, type: 3}
+  m_Script: {fileID: 11500000, guid: 67c60129668a81146ab973198dd466a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   parentObj: {fileID: 7538779216811353659}
@@ -1203,7 +1203,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -20}
+  m_AnchoredPosition: {x: 150, y: -35}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6212339999314205926
@@ -1226,6 +1226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1515166a178bdce4683cd4e2193c6d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  group: {fileID: 0}
 --- !u!114 &2415990439452037051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,7 +1522,7 @@ GameObject:
   - component: {fileID: 697895493996291634}
   - component: {fileID: 3976083032131376381}
   - component: {fileID: 7285046475781982859}
-  - component: {fileID: 4574872988647666920}
+  - component: {fileID: 3810160265737207318}
   m_Layer: 9
   m_Name: Drag
   m_TagString: Untagged
@@ -1575,8 +1576,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a881bce04d2414a42b6686a0db23877a, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b325a13e94f3bac4199e75b91fa98449, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1676,7 +1677,7 @@ MonoBehaviour:
       m_NumAlphaKeys: 2
     Type: 0
   currGrad: {fileID: 0}
---- !u!114 &4574872988647666920
+--- !u!114 &3810160265737207318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1685,13 +1686,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6487712541005133888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b67a97dd7a95f40a1269ecd0744800, type: 3}
+  m_Script: {fileID: 11500000, guid: fbb04ca23068b7b419ac436fbe78bf57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   windowToDrag: {fileID: 4601615602701095470}
   objectDisableOnMinimize:
-  - {fileID: 103967089867020153}
-  componentDisableOnMinimize: []
+  - {fileID: 4805288880813065693}
+  componentDisableOnMinimize:
+  - {fileID: 4601615602701095471}
   clampInsideParentRect: 1
   isMinimized: 0
   originalHeight: 445
@@ -1918,7 +1920,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4574872988647666920}
+      - m_Target: {fileID: 3810160265737207318}
         m_MethodName: Minimize
         m_Mode: 6
         m_Arguments:

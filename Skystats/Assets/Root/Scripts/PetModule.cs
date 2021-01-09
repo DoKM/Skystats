@@ -22,22 +22,8 @@ public class PetModule : MonoBehaviour
 
     public void InstantiateModule(object sender, OnLoadProfileEventArgs e)
     {
-        activePet = new Pet();
-        if (e.profile.PetData != null)
-        {
-            foreach (var pet in e.profile.PetData)
-                if (pet.IsActive)
-                {
-                    e.profile.PetData.Remove(activePet);
-                    activePet = pet;
-                    break;
-                }
-        }
-
-        activePetItem = Pets.PetToItem(activePet);
-
-        activePet.BonusStats = activePetItem.BonusStats;
-        e.profile.ActivePet = activePet;
+        activePet = e.profile.ActivePet;
+        activePetItem = Pets.PetToItem(e.profile.ActivePet);
 
         InstantiatePets(e.profile);
         Invoke("InstantiateActivePet", 0.1f);

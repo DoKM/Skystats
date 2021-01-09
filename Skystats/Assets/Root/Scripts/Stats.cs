@@ -5,7 +5,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-using LeTai.Asset.TranslucentImage;
 using TMPro;
 using System.Linq.Expressions;
 using System.Data;
@@ -64,22 +63,7 @@ public class Stats : MonoBehaviour
 
     public void GetStats()
     {
-        ResetStats(false);
-
-        if (godPotion)
-            stats = GetGodPotionStats(stats);
-        if (cakeBuff)
-            stats = GetCakeBuffStats(stats);
-        if (cookieBuff)
-            stats[STAT.MagicFind].BonusAmount += 15;
-
-        stats = GetBaseStats(stats);
-        stats = GetSkills(stats, currentProfile);
-        stats = GetSlayer(stats, currentProfile);
-        stats = GetFairyBonus(stats, currentProfile);
-        stats = AddBonusStats(stats);
-        stats = MultiplyTotalBoost(stats);
-        stats = AddActivePetAbility(stats, Main.Instance.currentProfile.ActivePet);
+        GetStatDictionary();
     }
 
     public Dictionary<STAT, Stat> GetStatDictionary()
@@ -98,8 +82,8 @@ public class Stats : MonoBehaviour
         stats = GetSlayer(stats, currentProfile);
         stats = GetFairyBonus(stats, currentProfile);
         stats = AddBonusStats(stats);
-        stats = MultiplyTotalBoost(stats);
         stats = AddActivePetAbility(stats, Main.Instance.currentProfile.ActivePet);
+        stats = MultiplyTotalBoost(stats);
 
         return stats;
     }
@@ -107,7 +91,6 @@ public class Stats : MonoBehaviour
     public Dictionary<STAT, Stat> AddActivePetAbility(Dictionary<STAT, Stat> prevStats, Pet pet)
     {
         var newStats = prevStats;
-
         if (pet != null && !string.IsNullOrEmpty(pet.Name))
 		{
             switch (pet.Name.ToLower())
@@ -159,6 +142,13 @@ public class Stats : MonoBehaviour
                     var eleStompVal = 0.2f * pet.PetXP.Level;
                     var eleStomp = newStats[STAT.Speed].BonusAmount / 100 * eleStompVal;
                     newStats[STAT.Defense].BonusAmount += eleStomp;
+                    break;
+                case "ender_dragon":
+                    if (pet.PetRarityTier == RARITY.LEGENDARY)
+					{
+                        var statBoost = pet.PetXP.Level * 0.1f;
+                        totalStatBoost *= statBoost / 100 + 1;
+                    }
                     break;
                 default:
                     break;
@@ -232,7 +222,9 @@ public class Stats : MonoBehaviour
             foreach (var item in profile.SkillData)
             {
                 if (profile.SkillData.TryGetValue(item.Key, out var skillData))
-                    newStats[item.Value.StatToIncrease] = GetSkillStat(newStats[item.Value.StatToIncrease], item.Value.StatBonus);
+                    if (skillData.StatsToIncrease != null)
+					    for (int i = 0; i < skillData.StatsToIncrease.Length; i++)
+                            newStats[skillData.StatsToIncrease[i]] = GetSkillStat(newStats[skillData.StatsToIncrease[i]], item.Value.StatBonus[i]);
             }
         }
 

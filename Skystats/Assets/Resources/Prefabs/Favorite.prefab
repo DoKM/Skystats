@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196bb08d6c2d3c9499c04e1281fd4ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 96c5704d0681e35408630c488fc0c234, type: 2}
+  m_Material: {fileID: 2100000, guid: 1fcb5a0509edacd44b6785a50f206e93, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
@@ -232,9 +232,9 @@ MonoBehaviour:
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 40
   source: {fileID: 0}
-  vibrancy: 2
+  vibrancy: 1
   brightness: 0
-  flatten: 0.1
+  flatten: 0
   spriteBlending: 0.3
 --- !u!114 &2378659634131025781
 MonoBehaviour:

@@ -1,5 +1,4 @@
-﻿using NaughtyAttributes;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -43,14 +42,12 @@ public class GradientManager : MonoBehaviour
         currentTheme = newTheme;
 	}
 
-    [Button]
     public void SaveMainTheme()
     {
         var themeJson = JsonUtility.ToJson(currentTheme);
         File.WriteAllText($"{Application.persistentDataPath}{savePath}/mainTheme.json", themeJson);
     }
 
-    [Button]
     public void SaveDefaultTheme()
     {
         string path = null;
@@ -70,7 +67,6 @@ public class GradientManager : MonoBehaviour
 #endif
     }
 
-    [Button]
     public void ReadMainTheme()
     {
         ReadTheme("mainTheme");

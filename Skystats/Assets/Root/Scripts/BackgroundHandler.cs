@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
-using NaughtyAttributes;
 using Helper;
 using System.IO;
 
@@ -39,7 +38,6 @@ public class BackgroundHandler : MonoBehaviour
     [Space]
     public string BackgroundName;
 
-    [Button]
     public void SaveBackgrounds ()
 	{
 		foreach (var background in availableBackgrounds)

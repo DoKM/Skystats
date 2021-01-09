@@ -1,8 +1,5 @@
 ﻿using fNbt;
 using JetBrains.Annotations;
-using LeTai.Asset.TranslucentImage;
-using NaughtyAttributes;
-using NaughtyAttributes.Test;
 using SimpleJSON;
 using System;
 using System.Collections;
@@ -27,6 +24,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using UnityEngine.UI.Michsky.UI.ModernUIPack;
 using Helper;
+using LeTai.Asset.TranslucentImage;
 
 public enum SKINVERSION
 {
@@ -110,7 +108,6 @@ public class Main : MonoBehaviour
     private void GetParents()
     {
         dungeonsParent = GameObject.FindGameObjectWithTag("Dungeons").transform;
-        weaponParent = GameObject.FindGameObjectWithTag("Weapons").transform;
         profileHolder = GameObject.FindGameObjectWithTag("Profile Holder");
         favoriteParent = GameObject.FindGameObjectWithTag("FavoriteParent").transform;
         input = GameObject.FindGameObjectWithTag("Input");
@@ -391,7 +388,7 @@ public class Main : MonoBehaviour
                 var textureWWW = UnityWebRequestTexture.GetTexture($"https://api.allorigins.win/raw?url={textureURL}");
                 yield return textureWWW.SendWebRequest();
 
-                if (textureWWW.isHttpError && textureWWW.isNetworkError)
+                if (textureWWW.isHttpError || textureWWW.isNetworkError)
                 {
                     hasError(true);
                     ErrorHandler.Instance.Push(new Error { ErrorCode = 507, ErrorHeader = "Unable to get user skin texture", ErrorMessage = $"User \"{username}\" is invalid, please try another user." });
@@ -784,7 +781,10 @@ public class Main : MonoBehaviour
 		if (!profileData.HasKey("inv_armor")) return originalProfile;
 
 		NbtCompound armor = Parsing.DecodeGzippedBase64(profileData["inv_armor"]["data"].Value.ToString(), "armorData.nbt");
-		var armorContents = armor.Get<NbtList>("i");
+#if UNITY_EDITOR
+        File.WriteAllText(Application.dataPath + "/armor.txt", armor.ToString());
+#endif
+        var armorContents = armor.Get<NbtList>("i");
 
 		// Index from api begins at 1 (why?????)
 		var selectedWardrobeSlot = profileData["wardrobe_equipped_slot"].AsInt;
@@ -887,9 +887,25 @@ public class Main : MonoBehaviour
 		foreach (var petNode in petsContents)
 			petData.Add(Pets.GetPet(petNode));
 
-		originalProfile.PetData = petData;
+        var activePet = new Pet();
+        if (petData != null)
+        {
+            foreach (var pet in petData)
+                if (pet.IsActive)
+                {
+                    activePet = pet;
+                    petData.Remove(activePet);
+                    break;
+                }
+        }
 
-		return originalProfile;
+        var activePetItem = Pets.PetToItem(activePet);
+        activePet.BonusStats = activePetItem.BonusStats;
+
+        originalProfile.PetData = petData;
+        originalProfile.ActivePet = activePet;
+
+        return originalProfile;
 	}
 
 	public Profile GetDungeonSkillData(Profile profile, JSONNode profileData)
@@ -1107,11 +1123,11 @@ public class Main : MonoBehaviour
     #region Instantiate Modules
     public IEnumerator InstantiateProfile(Profile profile, JSONNode profileData)
     {
-        InstantiatePetModule(profile);
+        //InstantiatePetModule(profile);
         InstantiateWeapons(profile);
         SelectBestWeapon(profile);
-        InstantiatePets(profile);
-        InstantiateSlayers(profile, slayerParent);
+        //InstantiatePets(profile);
+        //InstantiateSlayers(profile, slayerParent);
 
         yield return null;
     }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8692425922789475427}
   - component: {fileID: 8692425922789475426}
   - component: {fileID: 8692425922789475429}
-  - component: {fileID: 8692425922789475428}
+  - component: {fileID: 4075274259220268651}
   m_Layer: 11
   m_Name: Page
   m_TagString: Untagged
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8692425922789475428
+--- !u!114 &4075274259220268651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,16 +108,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 8692425922789475430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca7bb766a71a29479aafea3796c1767, type: 3}
+  m_Script: {fileID: 11500000, guid: eea9316ed4e5e8c4ba71bd314e18599d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  round: 0
   loadSavedPosition: 1
   currentModule: {fileID: 0}
   modules: []
   entryTransform: {fileID: 0}
   entryModule:
-    Name: Info
+    Name: 
     Index: 0
     IsMinimized: 0
     SavedPosition: {x: 0, y: 0, z: 0}

@@ -57,6 +57,7 @@ public class Pet
     public HeldItem HeldItem { get; set; }
     public List<Stat> BonusStats { get; set; }
     public RARITY PetRarityTier { get; set; }
+    public RARITY OriginalPetRarityTier { get; set; }
     public JSONNode PetJSONData { get; set; }
     public XP PetXP { get; set; }
 }
@@ -92,6 +93,7 @@ public class Item
     public List<Stat> BonusStats { get; set; }
     public List<Enchantment> Enchantments { get; set; }
     public Backpack Backpack { get; set; }
+    public RARITY OriginalRarityTier { get; set; }
     public RARITY RarityTier { get; set; } = RARITY.UNKNOWN;
     public Color LeatherArmorColor { get; set; }
     public Slot ParentSlot { get; set; }

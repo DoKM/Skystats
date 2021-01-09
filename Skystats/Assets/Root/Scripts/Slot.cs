@@ -25,7 +25,7 @@ public class Slot : MonoBehaviour
 {
     public GameObject imageParent;
     public TMP_Text stackText;
-    public Image rarityTierImage;
+    public Image rarityTierImage, originalRarityTierImage;
     public Item currentHoldingItem;
     public List<Item> backpackContents;
 
@@ -74,6 +74,7 @@ public class Slot : MonoBehaviour
         {
             UpdateStackAmountText(currentHoldingItem.StackAmount);
             UpdateRarity(currentHoldingItem.RarityTier);
+            UpdateOriginalRarity(currentHoldingItem.OriginalRarityTier);
 
             if (currentHoldingItem.IsLeather)
                 InstantiateLeatherArmor();
@@ -99,6 +100,8 @@ public class Slot : MonoBehaviour
 
         UpdateStackAmountText(1);
         UpdateRarity(RARITY.UNKNOWN);
+
+        originalRarityTierImage.color = Color.clear;
     }
 
     private void InstantiateItem()
@@ -150,6 +153,19 @@ public class Slot : MonoBehaviour
             finalColor.a = 0.3f;
 
         rarityTierImage.color = finalColor;
+    }
+
+    private void UpdateOriginalRarity(RARITY rarityTier)
+    {
+        string hexColor = "#" + GetRarityHexColor(rarityTier);
+        ColorUtility.TryParseHtmlString(hexColor, out var finalColor);
+
+        if (rarityTier == RARITY.VERY_SPECIAL || currentHoldingItem == null || currentHoldingItem == new Item())
+            originalRarityTierImage.color = Color.clear;
+        else
+            originalRarityTierImage.color = currentHoldingItem.RarityTier != currentHoldingItem.OriginalRarityTier
+                                            ? finalColor
+                                            : originalRarityTierImage.color = Color.clear;
     }
 
     private string GetRarityHexColor(RARITY tier)

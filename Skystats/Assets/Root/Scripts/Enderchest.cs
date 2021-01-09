@@ -1,5 +1,4 @@
-﻿using NaughtyAttributes;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -39,7 +38,6 @@ public class Enderchest : MonoBehaviour
         }
     }
 
-    [Button]
     public void NextPage()
     {
         selectedPage++;
@@ -47,7 +45,6 @@ public class Enderchest : MonoBehaviour
         Global.UpdateInfoList();
     }
 
-    [Button]
     public void PreviousPage()
     {
         selectedPage--;

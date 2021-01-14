@@ -1,4 +1,4 @@
-﻿using Helper;
+using Helper;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +26,7 @@ public class StatModule : MonoBehaviour
     public void Refresh ()
 	{
         InstantiateModule(Main.Instance.gameObject, new OnLoadProfileEventArgs { profile = Main.Instance.currentProfile });
-	}
+    }
 
     public void InstantiateModule(object sender, OnLoadProfileEventArgs e)
     {

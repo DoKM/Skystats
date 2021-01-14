@@ -35,6 +35,10 @@ public class Profile
     public Item ActiveWeapon { get; set; }
     public Pet ActivePet { get; set; }
     public Dictionary<SKILL, Skill> SkillData { get; set; }
+    public List<Experiment> Experiments { get; set; }
+    public int AvailableResets { get; set; }
+    public long ResetTimestamp { get; set; }
+    public Dungeons Dungeons { get; set; }
     public List<Slayer> Slayers { get; set; }
     public List<Stat> ProfileStats { get; set; }
     public List<Item> InventoryData { get; set; }
@@ -49,6 +53,45 @@ public class Profile
     public List<Auction> PlayerAuctions { get; set; }
     public List<WardrobeSlots> WardrobeData { get; set; }
     public List<Item> Weapons { get; set; }
+}
+
+[Serializable]
+public class Dungeons
+{
+    public int Secrets { get; set; }
+    public string SelectedClass { get; set; }
+    public List<Journal> Journals { get; set; }
+    public int MaxJournals { get; set; }
+    public int CollectedJournals { get; set; }
+}
+
+[Serializable]
+public class Journal
+{
+    public string Name { get; set; }
+    public int AmountCollected { get; set; }
+    public int MaxAmount { get; set; }
+}
+
+
+[Serializable]
+public class Experiment
+{
+    public string Name { get; set; }
+    public long LastAttempt { get; set; }
+    public long LastClaimed { get; set; }
+    public int BonusClicks { get; set; }
+    public List<Stake> Stakes { get; set; }
+}
+
+
+[Serializable]
+public class Stake
+{
+    public string Name { get; set; }
+    public int BestScore { get; set; }
+    public int Claims { get; set; }
+    public int Attempts { get; set; }
 }
 
 [Serializable]

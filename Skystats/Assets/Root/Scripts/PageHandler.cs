@@ -173,6 +173,7 @@ public class PageHandler : MonoBehaviour
 	{
         var pages = new List<string>();
         var drInfo = new DirectoryInfo($"{Application.persistentDataPath}/modules");
+        if (!drInfo.Exists) drInfo.Create();
         var dirs = drInfo.GetDirectories();
 
         for (int i = 0; i < dirs.Length; i++)

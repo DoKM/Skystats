@@ -69,6 +69,7 @@ public class Stats : MonoBehaviour
     public Dictionary<STAT, Stat> GetStatDictionary()
     {
         ResetStats(false);
+        ResetStats(false);
 
         if (godPotion)
             stats = GetGodPotionStats(stats);

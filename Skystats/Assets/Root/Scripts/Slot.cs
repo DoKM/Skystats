@@ -70,7 +70,7 @@ public class Slot : MonoBehaviour
     public void InstantiateModel(Shader shader)
     {
         // Item has a 3d model with texture
-        if (currentHoldingItem != null && currentHoldingItem != new Item())
+        if (currentHoldingItem != null && currentHoldingItem.Name != null)
         {
             UpdateStackAmountText(currentHoldingItem.StackAmount);
             UpdateRarity(currentHoldingItem.RarityTier);
@@ -278,6 +278,7 @@ public class Slot : MonoBehaviour
         tempMat.SetTexture("_MainTex", texture);
 
         var itemGameobject = Instantiate(textureImagePrefab, imageParent.transform);
+        itemGameobject.name = currentHoldingItem.InternalItemIDString;
         var meshRenderers = itemGameobject.GetComponentsInChildren<Renderer>(true);
         foreach (var mesh in meshRenderers)
             mesh.material = tempMat;
@@ -289,6 +290,7 @@ public class Slot : MonoBehaviour
         tempMat.mainTexture = new Texture2D(1, 1);
 
         var itemGameobject = Instantiate(textureImagePrefab, imageParent.transform);
+        itemGameobject.name = currentHoldingItem.InternalItemIDString;
         var meshRenderers = itemGameobject.GetComponentsInChildren<Renderer>(true);
         foreach (var mesh in meshRenderers)
             mesh.material = tempMat;
@@ -300,6 +302,7 @@ public class Slot : MonoBehaviour
     {
         ClearChildren(imageParent.transform);
         var itemGameobject = Instantiate(prefab, imageParent.transform);
+        itemGameobject.name = currentHoldingItem.InternalItemIDString;
 
         if (sprite != null)
             itemGameobject.GetComponent<Image>().sprite = sprite;
@@ -312,6 +315,7 @@ public class Slot : MonoBehaviour
         if (prefab != null)
         {
             var itemGameobject = Instantiate(prefab, imageParent.transform);
+            itemGameobject.name = currentHoldingItem.InternalItemIDString;
             ColorArmorPiece(itemGameobject.transform, armorColor);
         }
     }

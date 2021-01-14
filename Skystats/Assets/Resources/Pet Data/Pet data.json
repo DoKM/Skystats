@@ -675,6 +675,12 @@
 					"§6Jerry", 
 					"§7§7Actually adds §c$10$ damage §7to", 
 					"§7the Aspect of the Jerry"
+				],
+
+				"stage4": [
+					"§6Jerry",
+					"§7§7Tiny chance to find Jerry", 
+					"§7Candies when killing mobs"
 				]
 			}
 		},
@@ -1880,6 +1886,15 @@
 				"§c§7by §a30 §7and §f✦ Speed", 
 				"§f§7by §a20."
 			]
+		},
+		"PET_ITEM_TOY_JERRY": {
+			"boost_tier": true,
+			"lore": [
+				"§6Held Item: §6Jerry 3D Glasses", 
+				"§7§7Upgrades a Jerry pet from", 
+				"§7§6Legendary §7to §dMythic§7", 
+				"§7and granting it a new perk!"
+			]
 		}
 	},
 	"skins":{
@@ -1994,6 +2009,10 @@
 		"JERRY_GREEN_ELF":{
 			"texture":"http://textures.minecraft.net/texture/4ec5455f43426ca1874b5c7b4a492ec3722a502f8b9599e758e133fed8b3c1e4",
 			"name": "Green Elf"
+		},
+		"MONKEY_GOLDEN": {
+			"texture": "http://textures.minecraft.net/texture/e9281c4d87d68526b0749d4361e6ef786c8a35717aa053da704b1d53410d37a6",
+			"name": "Golden Monkey"
 		}
 	}
 }

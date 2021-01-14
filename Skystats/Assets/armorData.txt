@@ -1,8 +1,0 @@
-TAG_Compound: 1 entries {
-  TAG_List("i"): 4 entries {
-    TAG_Compound: 0 entries {}
-    TAG_Compound: 0 entries {}
-    TAG_Compound: 0 entries {}
-    TAG_Compound: 0 entries {}
-  }
-}

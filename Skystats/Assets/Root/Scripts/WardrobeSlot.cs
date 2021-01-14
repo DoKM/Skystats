@@ -9,9 +9,7 @@ public class WardrobeSlot : Slot
         ClearChildren(imageParent.transform);
         currentHoldingItem = newItem;
 
-        if (!gameObject.activeSelf) gameObject.SetActive(true);
-        if (flatItemImagePrefab == null)
-            flatItemImagePrefab = Resources.Load<GameObject>("Prefabs/Slot/2D");
+        if (flatItemImagePrefab == null) flatItemImagePrefab = Resources.Load<GameObject>("Prefabs/Slot/2D");
         InstantiateModel(Shader.Find("Custom/StencilObject"));
     }
 }

@@ -73,6 +73,7 @@ public class TalismanOptimizer : MonoBehaviour
     public float ferocity, attackSpeed, previousDps, dps, previousDamage, newDamage;
     [Space]
     public ReforgeList reforgeData;
+    public CanvasGroup cgToHide;
 
     [HideInInspector] public List<AccessoryGroup> finalReforges = new List<AccessoryGroup>();
     [HideInInspector] public List<Reforge> newReforges;
@@ -111,6 +112,7 @@ public class TalismanOptimizer : MonoBehaviour
 
     public void RenderOptimizedTalismans(List<AccessoryGroup> accessories)
     {
+        cgToHide.alpha = 1;
         Main.Instance.ClearChildren(accessoryViewParent);
 
         var rarityOrder = new List<RARITY> { RARITY.VERY_SPECIAL, RARITY.SPECIAl, RARITY.SUPREME, RARITY.MYTHIC, RARITY.LEGENDARY,

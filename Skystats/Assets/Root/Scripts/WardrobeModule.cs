@@ -34,7 +34,6 @@ public class WardrobeModule : MonoBehaviour
                         if (currentSlot.ArmorPieces.Count >= i && currentSlot.ArmorPieces[i] != null && armorSlot != null)
                         {
                             currentSlot.ArmorPieces[i].ParentSlot = armorSlot;
-
                             if (currentSlot.ArmorPieces.Count - 1 >= i)
                                 armorSlot.FillItem(currentSlot.ArmorPieces[i]);
                             else

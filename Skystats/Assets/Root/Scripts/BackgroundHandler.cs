@@ -37,8 +37,18 @@ public class BackgroundHandler : MonoBehaviour
     public Theme @default;
     [Space]
     public string BackgroundName;
+    public bool save;
 
-    public void SaveBackgrounds ()
+	private void FixedUpdate()
+	{
+		if (save)
+		{
+            save = false;
+            SaveBackgrounds();
+		}
+	}
+
+	public void SaveBackgrounds ()
 	{
 		foreach (var background in availableBackgrounds)
 		{

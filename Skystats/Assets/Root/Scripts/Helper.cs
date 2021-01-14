@@ -869,6 +869,97 @@ namespace Helper
 
     public static class Global
     {
+        public static int GetMaxJournalAmount (string name)
+		{
+			switch (name)
+			{
+                case "karylles_diary": return 10;
+                case "the_study": return 8;
+                case "the_expedition_volume_1": return 4;
+                case "uncanny_remains": return 7;
+                case "the_expedition_volume_2": return 5;
+                case "grim_adversity": return 9;
+                case "the_expedition_volume_3": return 10;
+                case "the_expedition_volume_4": return 11;
+                case "the_walls": return 24;
+                case "the_eye": return 8;
+                case "aftermath": return 5;
+                case "the_apprentice": return 6;
+                case "the_follower": return 14;
+                case "the_apprentice_2": return 14;
+                case "necrons_magic_scroll": return 0;
+                default: return 0;
+            };
+		}
+
+        public static Sprite GetExperimentIcon(string type)
+        {
+            switch (type)
+            {
+                case "HIGH":
+                    return Resources.Load<Sprite>($"Block Images/Textures/351-10");
+                case "GRAND":
+                    return Resources.Load<Sprite>($"Block Images/Textures/351-11");
+                case "SUPREME":
+                    return Resources.Load<Sprite>($"Block Images/Textures/351-14");
+                case "TRANSCENDENT":
+                    return Resources.Load<Sprite>($"Block Images/Textures/351-1");
+                case "METAPHYSICAL":
+                    return Resources.Load<Sprite>($"Block Images/Textures/351-13");
+                default:
+                    return Resources.Load<Sprite>($"Block Images/Textures/351-12");
+            }
+        }
+
+        public static string GetExperimentName(string name)
+        {
+            switch (name.ToLower())
+            {
+                case "simon": return "Chronomatron";
+                case "pairings" : return "Superpairs";
+                case "numbers" : return "Ultrasequencer";
+                default: return "";
+            };
+        }
+
+        public static string GetStakeName (int tier, string experiment)
+		{
+            if (experiment == "Chronomatron")
+			{
+                switch (tier)
+                {
+                    case 0: return "HIGH";
+                    case 1: return "GRAND";
+                    case 2: return "SUPREME";
+                    case 3: return "TRANSCENDENT";
+                    case 5: return "METAPHYSICAL";
+                    default: return "";
+                };
+            } else if (experiment == "Ultrasequencer")
+            {
+                switch (tier)
+                {
+                    case 1: return "SUPREME";
+                    case 2: return "TRANSCENDENT";
+                    case 3: return "METAPHYSICAL";
+                    default: return "";
+                };
+            } else
+            {
+                switch (tier)
+                {
+                    case 0: return "BEGINNER";
+                    case 1: return "HIGH";
+                    case 2: return "GRAND";
+                    case 3: return "SUPREME";
+                    case 4: return "TRANSCENDENT";
+                    case 5: return "METAPHYSICAL";
+                    default: return "";
+                };
+            }
+
+        }
+
         public static string GetArmorName (string originalName)
 		{
             if (Regex.IsMatch(originalName, "(HELMET|FEDORA|HAT)")) return "HELMET";

@@ -107,11 +107,9 @@ public class Main : MonoBehaviour
 
     private void GetParents()
     {
-        dungeonsParent = GameObject.FindGameObjectWithTag("Dungeons").transform;
         profileHolder = GameObject.FindGameObjectWithTag("Profile Holder");
         favoriteParent = GameObject.FindGameObjectWithTag("FavoriteParent").transform;
         input = GameObject.FindGameObjectWithTag("Input");
-        //openBpPreviewHolder = GameObject.FindGameObjectWithTag("OpenBackpackPreview").transform;
 
         load = GameObject.FindGameObjectWithTag("Load").GetComponent<Animator>();
     }
@@ -194,12 +192,8 @@ public class Main : MonoBehaviour
 
 
         if (favoriteUsernames != null && favoriteUsernames.Count > 0)
-        {
             foreach (var favoriteUsername in favoriteUsernames)
-            {
                 StartCoroutine(InstantiateFavorite(favoriteUsername, dirs.First(x => x.Name == favoriteUsername), false));
-            }
-        }
 
         Global.UpdateCanvasElement(favoriteParent as RectTransform);
         Global.UpdateCanvasElement(favoriteParent.parent as RectTransform);
@@ -219,6 +213,7 @@ public class Main : MonoBehaviour
     {
         var favoriteObject = Instantiate(Resources.Load<GameObject>("Prefabs/Favorite"), favoriteParent);
         favoriteObject.name = Global.ToTitleCase(username);
+
         var uuid = path != null ? Global.ReadFileFromPath(path, "uuid") : this.uuid;
         var favoriteDisplay = favoriteObject.GetComponent<FavoriteDisplay>();
         var favorite = new Favorite
@@ -227,6 +222,7 @@ public class Main : MonoBehaviour
             UUID = uuid,
             DirString = $"{Application.persistentDataPath}/favorites/" + username
         };
+
         favoriteDisplay.favorite = favorite;
 
         yield return favoriteDisplay.StartCoroutine(favoriteDisplay.GetHead(uuid));
@@ -253,9 +249,7 @@ public class Main : MonoBehaviour
     public void ChangeUser(string selectedField)
     {
         if (string.IsNullOrEmpty(Credentials.key))
-        {
             ErrorHandler.Instance.Push(new Error { ErrorCode = 513, ErrorHeader = "No API key found", ErrorMessage = "Please enter your API key in the Settings menu." });
-        }
         else
         {
             string field = selectedField;
@@ -281,9 +275,7 @@ public class Main : MonoBehaviour
     public IEnumerator IE_LoadProfiles()
     {
         if (string.IsNullOrEmpty(Credentials.key))
-        {
             ErrorHandler.Instance.Push(new Error { ErrorCode = 513, ErrorHeader = "No API key found", ErrorMessage = "Please enter your API key in the Settings menu." });
-        }
         else
         {
             bool hasError = false;
@@ -629,19 +621,21 @@ public class Main : MonoBehaviour
 
     public IEnumerator FillProfile(Profile profile, JSONNode profileData)
     {
-        profile = GetBankingData(profile, profileData);
-        profile = GetInventoryData(profile, profileData);
-        profile = GetWardrobeData(profile, profileData);
-        profile = GetEquippedArmorData(profile, profileData);
-        profile = MergeWardrobeEquippedArmor(profile);
-        profile = GetAccesoryData(profile, profileData);
-        profile = GetEnderchestData(profile, profileData);
-        profile = GetPetData(profile, profileData);
-        profile = GetDungeonSkillData(profile, profileData);
-        profile = GetSkillData(profile, profileData);
-        profile = GetSlayerData(profile, profileData);
-        profile = GetFairyData(profile, profileData);
-        profile = GetVaultData(profile, profileData);
+        GetBankingData(profile, profileData);
+        GetInventoryData(profile, profileData);
+        GetWardrobeData(profile, profileData);
+        GetEquippedArmorData(profile, profileData);
+        MergeWardrobeEquippedArmor(profile);
+        GetAccesoryData(profile, profileData);
+        GetEnderchestData(profile, profileData);
+        GetPetData(profile, profileData);
+        GetDungeonSkillData(profile, profileData);
+        GetSkillData(profile, profileData);
+        GetSlayerData(profile, profileData);
+        GetFairyData(profile, profileData);
+        GetVaultData(profile, profileData);
+        GetExperiments(profile, profileData);
+        GetDungeons(profile, profileData);
 
         profile.QuiverData = Items.GetDataModule(profile, profileData, "quiver");
         profile.PotionData = Items.GetDataModule(profile, profileData, "potion_bag");
@@ -652,6 +646,81 @@ public class Main : MonoBehaviour
 
         PlayerStats.ProcessStats(profile);
         profile = GetBestWeapon(profile);
+    }
+
+    public Profile GetDungeons(Profile originalProfile, JSONNode profileData)
+	{
+        if (!profileData.HasKey("dungeons")) return originalProfile;
+
+        originalProfile.Dungeons = new Dungeons
+        {
+            SelectedClass = profileData["dungeons"]["selected_dungeon_class"].Value,
+            Journals = new List<Journal>(),
+            MaxJournals = 0,
+            CollectedJournals = 0
+        };
+
+		foreach (var journalNode in profileData["dungeons"]["dungeon_journal"]["journal_entries"])
+        {
+            var journal = new Journal
+            {
+                Name = journalNode.Key,
+                AmountCollected = journalNode.Value.Count,
+                MaxAmount = Global.GetMaxJournalAmount(journalNode.Key.ToLower())
+            };
+
+            originalProfile.Dungeons.CollectedJournals += journal.AmountCollected;
+            if (journal.AmountCollected == journal.MaxAmount)
+                originalProfile.Dungeons.MaxJournals++;
+
+            originalProfile.Dungeons.Journals.Add(journal);
+		}
+
+        return originalProfile;
+    }
+
+    public Profile GetExperiments (Profile originalProfile, JSONNode profileData)
+	{
+        if (!profileData.HasKey("experimentation")) return originalProfile;
+        originalProfile.Experiments = new List<Experiment>();
+
+		foreach (var node in profileData["experimentation"])
+		{
+            if (node.Key == "claims_resets") originalProfile.AvailableResets = node.Value.AsInt;
+            else if (node.Key == "claims_resets_timestamp") originalProfile.ResetTimestamp = node.Value.AsLong;
+            else
+			{
+				var experiment = new Experiment
+				{
+                    Name = Global.GetExperimentName(node.Key),
+                    Stakes = new List<Stake>()
+				};
+
+                if (node.Value.HasKey("last_attempt")) experiment.LastAttempt = node.Value["last_attempt"].AsLong;
+                if (node.Value.HasKey("last_claimed")) experiment.LastClaimed = node.Value["last_claimed"].AsLong;
+                if (node.Value.HasKey("bonus_clicks")) experiment.BonusClicks = node.Value["bonus_clicks"].AsInt;
+
+				for (int i = 0; i < 7; i++)
+				{
+                    if (node.Value.HasKey($"claims_{i}"))
+					{
+                        var stake = new Stake
+                        {
+                            Name = Global.GetStakeName(i, experiment.Name),
+                            Attempts = node.Value[$"attempts_{i}"].AsInt,
+                            BestScore = node.Value[$"best_score_{i}"].AsInt,
+                            Claims = node.Value[$"claims_{i}"].AsInt
+                        };
+
+                        experiment.Stakes.Add(stake);
+					}
+				}
+
+                originalProfile.Experiments.Add(experiment);
+            }
+        }
+
+        return originalProfile;
     }
 
     public Profile GetBankingData(Profile originalProfile, JSONNode profileData)
@@ -724,7 +793,6 @@ public class Main : MonoBehaviour
 		}
 
 		originalProfile.AccessoryData = talismanBagData;
-
 		return originalProfile;
 	}
 
@@ -772,7 +840,6 @@ public class Main : MonoBehaviour
 		}
 
 		originalProfile.WardrobeData = wardrobeData;
-
 		return originalProfile;
 	}
 
@@ -1123,11 +1190,8 @@ public class Main : MonoBehaviour
     #region Instantiate Modules
     public IEnumerator InstantiateProfile(Profile profile, JSONNode profileData)
     {
-        //InstantiatePetModule(profile);
         InstantiateWeapons(profile);
         SelectBestWeapon(profile);
-        //InstantiatePets(profile);
-        //InstantiateSlayers(profile, slayerParent);
 
         yield return null;
     }

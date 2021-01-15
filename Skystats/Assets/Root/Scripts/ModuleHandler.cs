@@ -121,22 +121,27 @@ public class ModuleHandler : MonoBehaviour
 	{
 		var text = File.Exists($"{Application.persistentDataPath}/modules/{name.ToLower()}/modules.txt")
 				   ? File.ReadAllText($"{Application.persistentDataPath}/modules/{name.ToLower()}/modules.txt")
-				   : Resources.Load<TextAsset>($"Defaults/{name.ToLower()}/modules") != null 
+				   : Resources.Load<TextAsset>($"Defaults/{name.ToLower()}/modules") != null
 							? Resources.Load<TextAsset>($"Defaults/{name.ToLower()}/modules").text
-							: Resources.Load<TextAsset>("Defaults/modules").text;
-		moduleList = JsonConvert.DeserializeObject<ModuleList>(text);
+							: null;
+		moduleList.Modules = new List<Module>();
 
-		if (moduleList.Modules != null)
+		if (text != null)
 		{
-			var indexes = new Dictionary<RectTransform, int>();
+			moduleList = JsonConvert.DeserializeObject<ModuleList>(text);
 
-			foreach (var module in moduleList.Modules)
-				indexes.Add(CreateModule(module).transform as RectTransform, module.Index);
+			if (moduleList.Modules != null)
+			{
+				var indexes = new Dictionary<RectTransform, int>();
 
-			foreach (var item in indexes)
-				SetIndex(item.Key, item.Value);
+				foreach (var module in moduleList.Modules)
+					indexes.Add(CreateModule(module).transform as RectTransform, module.Index);
 
-			UpdatePositions();
+				foreach (var item in indexes)
+					SetIndex(item.Key, item.Value);
+
+				UpdatePositions();
+			}
 		}
 	}
 

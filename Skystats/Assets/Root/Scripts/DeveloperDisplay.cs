@@ -24,6 +24,11 @@ public class DeveloperDisplay : MonoBehaviour
     public TMP_Text txt;
     public Developer dev;
 
+    public void Refresh()
+    {
+        StartCoroutine(InstantiateDev());
+    }
+
     public void Start()
     {
         StartCoroutine(InstantiateDev());

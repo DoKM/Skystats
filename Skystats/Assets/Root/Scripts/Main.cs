@@ -93,6 +93,7 @@ public class Main : MonoBehaviour
 
     private void Awake()
     {
+        //PlayerPrefs.DeleteKey("m_k");
         Credentials.key = LoadKey();
         GameObject.FindGameObjectWithTag("KeyInput").GetComponent<TMP_InputField>().text = Credentials.key;
 
@@ -100,6 +101,7 @@ public class Main : MonoBehaviour
         GetParents();
 
         var tempInputs = GameObject.FindGameObjectsWithTag("Input");
+        usernameInput.Clear();
         for (int i = 0; i < tempInputs.Length; i++)
             usernameInput.Add(tempInputs[i].name, tempInputs[i].GetComponent<TMP_InputField>());
 
@@ -156,6 +158,7 @@ public class Main : MonoBehaviour
     public void UpdateKeyInputField(TMP_InputField field)
     {
         UpdateKey(field.text);
+        RefreshCurrentFavorites();
     }
 
     public void UpdateKey(string newKey)
@@ -174,12 +177,28 @@ public class Main : MonoBehaviour
     private string LoadKey()
     {
         var aes = new AES();
-        var decryptedKey = aes.Decrypt(PlayerPrefs.GetString("m_k", ""));
-        return decryptedKey;
+        var key = PlayerPrefs.GetString("m_k", "");
+        key = key != "" ? aes.Decrypt(key) : null;
+
+        return key;
     }
     #endregion
 
     #region Favorites
+
+    public void RefreshCurrentFavorites ()
+	{
+		for (int i = 0; i < favoriteParent.childCount; i++)
+		{
+            var fav = favoriteParent.GetChild(i);
+
+            if (fav.GetComponent<FavoriteDisplay>())
+                fav.GetComponent<FavoriteDisplay>().Refresh();
+            else if (fav.GetComponent<DeveloperDisplay>())
+                fav.GetComponent<DeveloperDisplay>().Refresh();
+        }
+	}
+
     public IEnumerator UpdateFavorites()
     {
         var drInfo = new DirectoryInfo($"{Application.persistentDataPath}/favorites");
@@ -191,7 +210,7 @@ public class Main : MonoBehaviour
                 favoriteUsernames.Add(dirs[i].Name);
         }
 
-
+        ClearChildren(favoriteParent);
         if (favoriteUsernames != null && favoriteUsernames.Count > 0)
             foreach (var favoriteUsername in favoriteUsernames)
                 StartCoroutine(InstantiateFavorite(favoriteUsername, dirs.First(x => x.Name == favoriteUsername), false));
@@ -530,6 +549,10 @@ public class Main : MonoBehaviour
         Global.SelectProfiles(selectedProfile, profiles, selectedProfileGradient);
         yield return StartCoroutine(IE_ReloadData(profileID));
         load.SetTrigger("Stop Load");
+
+        foreach (var field in usernameInput)
+            if (field.Value != null)
+                field.Value.SetTextWithoutNotify(username);
     }
 
     public void Refresh(string profile)
@@ -1191,7 +1214,6 @@ public class Main : MonoBehaviour
     #region Instantiate Modules
     public IEnumerator InstantiateProfile(Profile profile, JSONNode profileData)
     {
-        InstantiateWeapons(profile);
         SelectBestWeapon(profile);
 
         yield return null;
@@ -1207,204 +1229,6 @@ public class Main : MonoBehaviour
                 weaponSlot.ToggleActive();
         }
 
-    }
-
-    public void InstantiateSlayers(Profile profile, Transform parent)
-    {
-        parent.gameObject.SetActive(true);
-        ClearChildren(parent);
-
-        if (profile.Slayers != null)
-        {
-            foreach (var slayer in profile.Slayers)
-            {
-                var slayerInstance = Instantiate(Resources.Load<GameObject>("Prefabs/Slayer"), parent).transform;
-                var titleText = slayerInstance.Find("Title Background").GetChild(1).GetComponent<TMP_Text>();
-                var titleIcon = slayerInstance.Find("Title Background").GetChild(0).GetComponent<Image>();
-                var progressBar = slayerInstance.Find("Progress bar background").GetComponent<RectTransform>();
-                var killText = slayerInstance.Find("Kills").GetChild(1).GetComponent<TMP_Text>();
-
-                titleIcon.sprite = slayer.Icon;
-
-                if (slayer.Level > 0 && slayer.ProgressXP.XPLadder.Length >= slayer.Level - 1)
-                {
-                    var remainingXP = slayer.ProgressXP.RemainingXP;
-                    var nextLevelXP = Mathf.Clamp(slayer.ProgressXP.NextLevelXP, 1, Mathf.Infinity);
-                    var progressToNextLevel = Mathf.Round(Mathf.Clamp(remainingXP / nextLevelXP * 100, 1, 100));
-
-                    var nextLevelText = "";
-                    if (nextLevelXP != 0 && nextLevelXP != 1)
-                        nextLevelText = $" / {Global.FormatAndRoundAmount(nextLevelXP)}";
-
-                    remainingXP += slayer.ProgressXP.XPLadder[slayer.Level - 1];
-                    progressBar.GetComponentInChildren<TMP_Text>().text = $"{Global.FormatAndRoundAmount(remainingXP)}{nextLevelText}";
-                    titleText.text = $"{Global.ToTitleCase(slayer.Name)} {slayer.Level}";
-
-                    var progressBarWidth = Mathf.Clamp(progressToNextLevel / 100 * progressBar.rect.width, progressBar.rect.width / 5, progressBar.rect.width);
-                    progressBar.GetChild(1).GetComponent<RectTransform>().sizeDelta = new Vector2(progressBarWidth, progressBar.rect.height);
-                }
-                else
-                {
-                    titleText.text = $"{Global.ToTitleCase(slayer.Name)}";
-                    progressBar.gameObject.SetActive(false);
-                }
-
-                Global.UpdateCanvasElement(titleIcon.transform.parent as RectTransform);
-
-                var newGradientString = slayer.IsMaxLevel ? "maxColor" : "normalColor";
-                Skills.UpdateGradient((GradientType)Enum.Parse(typeof(GradientType), newGradientString), null, progressBar.GetComponentsInChildren<StaticGradient>());
-
-                string killString = "";
-                if (slayer.Kills.Count > 0)
-                    foreach (var kill in slayer.Kills)
-                        killString += $"TIER {Global.ToRoman(kill.Tier)}: <color=#CCCCCC>{kill.Amount}</color>\n";
-                else
-                {
-                    killString = "has not defeated this slayer.";
-                    killText.transform.parent.Find("Title").GetComponent<TMP_Text>().text = $"\"{username}\"";
-                }
-
-                killText.text = killString;
-            }
-        }
-
-    }
-
-    public void InstantiateActivePet(Item activePet, Pet originalPet)
-    {
-        if (!activePetParent.gameObject.activeInHierarchy)
-            activePetParent.gameObject.SetActive(true);
-
-        var petSlot = activePetParent.Find("Pet slot").GetComponent<PetSlot>();
-        petSlot.FillItem(activePet);
-
-        var petNameText = activePetParent.Find("PetName").GetComponent<TMP_Text>();
-        var petName = Pets.GetFormattedPetName(originalPet, false);
-
-        var petTier = Regex.Replace(originalPet.PetRarityTier.ToString(), "_", " ");
-        if (activePet != null && activePet.ItemDescription != null)
-            petTier = $"<color=#{Global.GetRarityHexColor(originalPet.PetRarityTier)}>{Global.ToTitleCase(petTier)}</color> ";
-        else
-            petTier = $"<color=#999999>None</color>";
-
-        var petSkin = "";
-        if (originalPet.SkinName != "")
-            petSkin = $"<color=#{Global.GetRarityHexColor(originalPet.PetRarityTier)}>{originalPet.SkinName}</color> ";
-
-        petNameText.text = petTier + petSkin + petName;
-
-        var petLevelText = activePetParent.Find("PetLevel").GetComponent<TMP_Text>();
-        if (originalPet.PetXP != null)
-            petLevelText.text = $"Level {originalPet.PetXP.Level}";
-        else
-            petLevelText.text = "No level";
-
-        Global.UpdateCanvasElement(activePetParent as RectTransform);
-    }
-
-    public void InstantiateWeapons(Profile profile)
-    {
-        if (!weaponParent.gameObject.activeSelf) weaponParent.gameObject.SetActive(true);
-        ClearChildren(weaponParent);
-
-        List<Item> sortedWeapons = Items.SortItems(profile.Weapons);
-        GameObject slotObject = Resources.Load<GameObject>("Prefabs/Slot/Weapon (0)");
-
-        if (sortedWeapons != null)
-        {
-            for (int i = 0; i < sortedWeapons.Count; i++)
-            {
-                Slot itemSlot = Instantiate(slotObject, weaponParent).GetComponent<Slot>();
-
-                var item = sortedWeapons[i];
-                item.ParentSlot = itemSlot;
-                itemSlot.FillItem(item);
-            }
-        }
-        else
-        {
-            for (int i = 0; i < 12; i++)
-            {
-                Slot itemSlot = Instantiate(slotObject, weaponParent).GetComponent<Slot>();
-                itemSlot.FillItem(new Item());
-            }
-        }
-
-        Global.UpdateCanvasElement(weaponParent as RectTransform);
-        Global.UpdateCanvasElement(weaponParent.parent as RectTransform);
-        Global.UpdateScrollView();
-    }
-
-    public void InstantiatePets(Profile profile)
-    {
-        if (!petParent.gameObject.activeSelf) petParent.gameObject.SetActive(true);
-        ClearChildren(petParent);
-
-        GameObject slotObject = Resources.Load<GameObject>("Prefabs/Slot/Pet (0)");
-
-        if (profile.PetData != null)
-        {
-            var sortedPets = Pets.SortPets(profile.PetData);
-            List<Item> sortedPetItems = Pets.PetsToItemList(sortedPets);
-
-            if (sortedPetItems != null)
-            {
-                for (int i = 0; i < sortedPetItems.Count; i++)
-                {
-                    PetSlot itemSlot = Instantiate(slotObject, petParent).GetComponent<PetSlot>();
-                    var item = sortedPetItems[i];
-                    item.ParentSlot = itemSlot;
-
-                    if (!petParent.gameObject.activeSelf) petParent.gameObject.SetActive(true);
-                    if (!itemSlot.gameObject.activeSelf) itemSlot.gameObject.SetActive(true);
-                    itemSlot.FillItem(item);
-                }
-            }
-            else
-            {
-                for (int i = 0; i < 24; i++)
-                {
-                    PetSlot itemSlot = Instantiate(slotObject, petParent).GetComponent<PetSlot>();
-                    itemSlot.FillItem(new Item());
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < 24; i++)
-            {
-                PetSlot itemSlot = Instantiate(slotObject, petParent).GetComponent<PetSlot>();
-                itemSlot.FillItem(new Item());
-            }
-        }
-
-
-        Global.UpdateCanvasElement(petParent as RectTransform);
-        Global.UpdateCanvasElement(petParent.parent as RectTransform);
-        Global.UpdateScrollView();
-    }
-
-    public void InstantiatePetModule(Profile profile)
-    {
-        var activePet = new Pet();
-
-        if (profile.PetData != null)
-        {
-            foreach (var pet in profile.PetData)
-                if (pet.IsActive)
-                {
-                    activePet = pet;
-                    profile.PetData.Remove(activePet);
-                    break;
-                }
-        }
-
-        var activePetItem = Pets.PetToItem(activePet);
-
-        activePet.BonusStats = activePetItem.BonusStats;
-        profile.ActivePet = activePet;
-
-        InstantiateActivePet(activePetItem, activePet);
     }
 
     public void ClearChildren(Transform parent)

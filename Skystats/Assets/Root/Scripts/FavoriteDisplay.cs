@@ -27,6 +27,11 @@ public class FavoriteDisplay : MonoBehaviour
     public TMP_Text txt;
     public Favorite favorite;
 
+    public void Refresh ()
+	{
+        StartCoroutine(InstantiateFavorite());
+	}
+
     public IEnumerator InstantiateFavorite()
     {
         LoadFavorite();

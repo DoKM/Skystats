@@ -68,6 +68,7 @@ public class Main : MonoBehaviour
     public event EventHandler<OnLoadProfileEventArgs> OnLoadProfile;
     public Shader transparentCutout;
     public Shader transparentCutoutMask;
+    public bool helpTooltips { get; set; }
     public Profile currentProfile;
 
     private Dictionary<string, TMP_InputField> usernameInput = new Dictionary<string, TMP_InputField>();

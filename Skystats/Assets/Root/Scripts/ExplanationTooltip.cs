@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using NaughtyAttributes;
 
 public class ExplanationTooltip : MonoBehaviour
 {
+    [ResizableTextArea]
     public string tooltipText;
 
     private GameObject tooltip, tooltipHolder, backpackHolder;
@@ -18,13 +20,17 @@ public class ExplanationTooltip : MonoBehaviour
 
     public void OnMouseEnter()
     {
-        ClearTooltip();
-        ActivateTooltip(true);
+        if (Main.Instance.helpTooltips)
+		{
+            ClearTooltip();
+            ActivateTooltip(true);
+        }
     }
 
     public void OnMouseExit()
     {
-        ActivateTooltip(false);
+        if (Main.Instance.helpTooltips)
+            ActivateTooltip(false);
     }
 
     public virtual void ActivateTooltip(bool active)

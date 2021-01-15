@@ -18,8 +18,8 @@ public class StatModule : MonoBehaviour
 
 	private void Update()
 	{
-        if (savedStats.ContainsKey(STAT.Health))
-            if (savedStats[STAT.Health].BonusAmount != Stats.Instance.stats[STAT.Health].BonusAmount)
+        if (savedStats.ContainsKey(STAT.Strength))
+            if (savedStats[STAT.Strength].BonusAmount != Stats.Instance.stats[STAT.Strength].BonusAmount)
                 Refresh();
 	}
 

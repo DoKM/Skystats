@@ -36,7 +36,7 @@ public class Stats : MonoBehaviour
     [HideInInspector] public int cakeBagBonus, defusedTraps, melodyBonus, petMFBonus, fairySoulExchanges;
     public float totalStatBoost = 1;
 
-    public bool godPotion, cookieBuff, cakeBuff;
+    public bool godPotion, cookieBuff, cakeBuff, jerryCandyBuff;
     [HideInInspector] public Dictionary<STAT, Color> statColors = new Dictionary<STAT, Color>();
     [HideInInspector] public Profile currentProfile;
 
@@ -77,6 +77,8 @@ public class Stats : MonoBehaviour
             stats = GetCakeBuffStats(stats);
         if (cookieBuff)
             stats[STAT.MagicFind].BonusAmount += 15;
+        if (jerryCandyBuff)
+            stats = GetJerryBuff(stats);
 
         stats = GetBaseStats(stats);
         stats = GetSkills(stats, currentProfile);
@@ -86,12 +88,15 @@ public class Stats : MonoBehaviour
         stats = AddActivePetAbility(stats, Main.Instance.currentProfile.ActivePet);
         stats = MultiplyTotalBoost(stats);
 
+        DamagePrediction.Instance.CalculateDamageOnProfileLoad(null, null);
+
         return stats;
     }
 
     public Dictionary<STAT, Stat> AddActivePetAbility(Dictionary<STAT, Stat> prevStats, Pet pet)
     {
         var newStats = prevStats;
+        totalStatBoost = 1f;
         if (pet != null && !string.IsNullOrEmpty(pet.Name))
 		{
             switch (pet.Name.ToLower())
@@ -181,6 +186,18 @@ public class Stats : MonoBehaviour
         newStats[STAT.CritChance].BonusAmount += 25;
         newStats[STAT.MagicFind].BonusAmount += 85;
         newStats[STAT.PetLuck].BonusAmount += 20;
+
+        return newStats;
+    }
+    public Dictionary<STAT, Stat> GetJerryBuff(Dictionary<STAT, Stat> prevStats)
+    {
+        var newStats = prevStats;
+
+        newStats[STAT.Health].BonusAmount += 100;
+        newStats[STAT.Strength].BonusAmount += 20;
+        newStats[STAT.Ferocity].BonusAmount += 2;
+        newStats[STAT.Intelligence].BonusAmount += 100;
+        newStats[STAT.MagicFind].BonusAmount += 3;
 
         return newStats;
     }
@@ -336,16 +353,24 @@ public class Stats : MonoBehaviour
     public void ToggleGodPotion(bool on)
     {
         godPotion = on;
+        GetStats();
     }
 
 
     public void ToggleCookie(bool on)
     {
         cookieBuff = on;
+        GetStats();
     }
     public void ToggleCakes(bool on)
     {
         cakeBuff = on;
+        GetStats();
+    }
+    public void ToggleJerry(bool on)
+    {
+        jerryCandyBuff = on;
+        GetStats();
     }
 
     public int Calculate2345SkillStat(int statLevel)

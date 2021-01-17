@@ -6,7 +6,7 @@ using UnityEngine;
 public class InfoModule : MonoBehaviour
 {
     public Transform inventoryParent, quiverParent, potionsParent, fishParent, vaultParent, candyParent,
-                     accessoryParent, enderchestParent;
+                     accessoryParent, enderchestParent, backpack;
     public InformationList infolist;
 
     private void Start()

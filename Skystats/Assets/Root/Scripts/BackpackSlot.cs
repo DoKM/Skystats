@@ -9,11 +9,10 @@ using UnityEngine.UI;
 
 public class BackpackSlot : Slot
 {
-    Transform openBpPreviewHolder;
-    private void Start()
-    {
-        openBpPreviewHolder = Main.Instance.openBpPreviewHolder;
-    }
+    private Transform openBpPreviewHolder;
+
+    private void Start() { }
+
     public override void ActivateTooltip(bool active)
     {
         if (currentHoldingItem.Backpack != null && currentHoldingItem.Backpack.BackpackContents != null)
@@ -34,6 +33,8 @@ public class BackpackSlot : Slot
             for (int i = 0; i < backpackHolder.transform.childCount; i++)
             {
                 var slot = backpackHolder.transform.GetChild(i).GetComponent<Slot>();
+                slot.stackText.GetComponent<Canvas>().sortingLayerName = "Blur";
+                slot.stackText.GetComponent<Canvas>().sortingOrder = 4;
                 slot.FillItem(backpack.BackpackContents[i]);
             }
         }
@@ -45,6 +46,8 @@ public class BackpackSlot : Slot
             for (int i = 0; i < backpack.BackpackSize; i++)
             {
                 var newSlot = Instantiate(slotObj, backpackHolder.transform).GetComponent<Slot>();
+                newSlot.stackText.GetComponent<Canvas>().sortingLayerName = "Blur";
+                newSlot.stackText.GetComponent<Canvas>().sortingOrder = 4;
                 newSlot.FillItem(backpack.BackpackContents[i]);
             }
         }
@@ -53,6 +56,8 @@ public class BackpackSlot : Slot
 
     public void OnClick()
     {
+        var infoModule = Global.FindParentWithComponent<InfoModule>(tooltip.GetComponent<Tooltip>().currentDisplayingSlot.transform);
+        openBpPreviewHolder = infoModule.backpack;
         ClearChildren(openBpPreviewHolder);
 
         if (backpackHolder != null && backpackHolder.transform.childCount > 0)
@@ -65,12 +70,20 @@ public class BackpackSlot : Slot
             {
                 var cloneObj = Instantiate(clone, openBpPreviewHolder);
                 cloneObj.transform.localScale = Vector3.one;
-                cloneObj.GetComponent<Slot>().FillItem(clone.GetComponent<Slot>().currentHoldingItem);
+                var cloneSlot = cloneObj.GetComponent<Slot>();
+                cloneSlot.FillItem(clone.GetComponent<Slot>().currentHoldingItem);
+
+                cloneSlot.stackText.GetComponent<Canvas>().sortingLayerName = "Default";
+                cloneSlot.stackText.GetComponent<Canvas>().sortingOrder = 1;
             }
 
-            var infoList = Global.FindParentWithComponent<InformationList>(transform);
+            var infoList = infoModule.infolist;
             infoList.ActivateMenu(MenuType.Backpack);
+            for (int i = 0; i < 3; i++)
+                Global.UpdateCanvasElement(infoList.transform as RectTransform);
         }
+
+        ActivateTooltip(false);
     }
 
 }

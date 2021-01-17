@@ -1016,23 +1016,31 @@ namespace Helper
             return results;
 		}
 
-        public static bool IsOnline (DateTime time)
-		{
-            var timeSpan = GetDifference(time);
-            return timeSpan.TotalSeconds <= 600;
-        }
 
-        public static string CompareToNow (DateTime time)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="time"></param>
+        /// <returns></returns>
+        public static string GetFormattedDateTime (DateTime time)
 		{
-            var delay = GetDifference(time);
+            TimeSpan diff = DateTime.Now.Subtract(time);
 
-            if (delay.Days >= 366) return $"{Mathf.FloorToInt((float)delay.TotalDays / 365f)} {CheckSingleTime("year", Mathf.FloorToInt((float)delay.TotalDays / 365f))} ago";
-            else if (delay.Days >= 31 && delay.Days < 366) return $"{Mathf.FloorToInt((float)delay.TotalDays / 30f)} {CheckSingleTime("month", Mathf.FloorToInt((float)delay.TotalDays / 30f))} ago";
-            else if (delay.Days >= 7 && delay.Days < 31) return $"{Mathf.FloorToInt((float)delay.TotalDays / 7f)} {CheckSingleTime("week", Mathf.FloorToInt((float)delay.TotalDays / 7f))} ago";
-            else if (delay.Days > 0 && delay.Days < 8) return $"{Mathf.FloorToInt((float)delay.TotalDays)} {CheckSingleTime("day", Mathf.FloorToInt((float)delay.TotalDays))} ago";
-            else if (delay.Hours > 0) return $"{delay.Hours} {CheckSingleTime("hour", delay.Hours)} ago";
-            else if (delay.Minutes > 0) return $"{delay.Minutes} {CheckSingleTime("minute", delay.Minutes)} ago";
-            else return $"{delay.Seconds} {CheckSingleTime("second", delay.Seconds)} ago";
+            if (diff.TotalSeconds >= 0)
+            {
+                if (diff.Days >= 366)
+                    return $"{Mathf.FloorToInt((float)diff.TotalDays / 365f)} {CheckSingleTime("year", Mathf.FloorToInt((float)diff.TotalDays / 365f))} ago";
+                else if (diff.Days >= 31 && diff.Days < 366) return $"{Mathf.FloorToInt((float)diff.TotalDays / 30f)} {CheckSingleTime("month", Mathf.FloorToInt((float)diff.TotalDays / 30f))} ago";
+                else if (diff.Days >= 7 && diff.Days < 31) return $"{Mathf.FloorToInt((float)diff.TotalDays / 7f)} {CheckSingleTime("week", Mathf.FloorToInt((float)diff.TotalDays / 7f))} ago";
+                else if (diff.Days > 0 && diff.Days < 8) return $"{Mathf.FloorToInt((float)diff.TotalDays)} {CheckSingleTime("day", Mathf.FloorToInt((float)diff.TotalDays))} ago";
+                else if (diff.Hours > 0)
+                    return diff.Hours == 1 ? "1 hour ago" : $"{diff.Hours} hours ago";
+                else if (diff.Minutes > 0) 
+                    return diff.Minutes == 1 ? "1 minute ago" : $"{diff.Minutes} minutes ago";
+                else return $"{diff.Seconds} {CheckSingleTime("second", diff.Seconds)} ago";
+            }
+            else
+                throw new NotSupportedException($"DateTime in \"CompareToNow\" has to be in the past. Current difference (in seconds): {diff.TotalSeconds}");
         }
 
         public static string CheckSingleTime (string original, int amount)
@@ -1040,19 +1048,12 @@ namespace Helper
             return amount == 1 ? original : original + "s";
 		}
 
-        public static TimeSpan GetDifference (DateTime time)
-		{
-            var now = DateTime.Now;
-            return now.Subtract(time);
-        }
-
         public static Texture2D ScalePointTexture(Texture2D tex)
         {
             // Scale the texture to correct size
             if (tex.height != 64)
                 tex = ScaleTexture(tex, 64, 64);
 
-            // Cache the texture 
             tex.filterMode = FilterMode.Point;
             return tex;
         }
@@ -1558,9 +1559,15 @@ namespace Helper
             {
                 var display = tag.Get<NbtCompound>("display");
                 var nbtDescription = display.Get<NbtList>("Lore");
+                var internalItemID = "";
+
+                if (extraAttributes.TryGet<NbtString>("id", out var internalItemIDTag))
+                    internalItemID = internalItemIDTag.StringValue;
 
                 List<string> stringDescription = NbtToStringList(nbtDescription);
                 string itemName = display.Get<NbtString>("Name").StringValue;
+                if (internalItemID.Contains("STARRED")) 
+                    itemName = itemName.Insert(2, "↑ ");
                 itemName = Formatting.FormatColorString(itemName);
 
                 var itemIDString = "";
@@ -1570,10 +1577,7 @@ namespace Helper
                 var backpack = new Backpack();
                 var textureLink = "";
                 var minecraftItemID = "";
-                var internalItemID = "";
-
-                if (extraAttributes.TryGet<NbtString>("id", out var internalItemIDTag))
-                    internalItemID = internalItemIDTag.StringValue;
+                
 
                 // Get texture link/id 
                 if (tag.TryGet<NbtCompound>("SkullOwner", out var skullOwner))
@@ -1624,7 +1628,7 @@ namespace Helper
                 item.RarityTier = GetItemRarity(item);
                 var originalRarity = item.RarityTier;
 
-                if (internalItemID.Contains("STARRED"))
+                if (internalItemID.Contains("STARRED") && internalItemID.Contains("SHADOW_ASSASSIN"))
                     originalRarity++;
 
                if (isRarityUpgraded)

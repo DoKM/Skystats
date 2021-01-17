@@ -25,9 +25,9 @@ public class ExperimentItem : MonoBehaviour
 		if (e.BonusClicks != 0)
 			desc += $"Bonus Clicks:<color=#AAAAAA> {e.BonusClicks}</color>\n";
 		if (e.LastAttempt != 0)
-			desc += $"Last Attempted:<color=#AAAAAA> {Global.CompareToNow(Global.UnixTimeStampToDateTime(e.LastAttempt))}</color>\n";
+			desc += $"Last Attempted:<color=#AAAAAA> {Global.GetFormattedDateTime(Global.UnixTimeStampToDateTime(e.LastAttempt))}</color>\n";
 		if (e.LastClaimed != 0)
-			desc += $"Last Claimed:<color=#AAAAAA> {Global.CompareToNow(Global.UnixTimeStampToDateTime(e.LastClaimed))}</color>";
+			desc += $"Last Claimed:<color=#AAAAAA> {Global.GetFormattedDateTime(Global.UnixTimeStampToDateTime(e.LastClaimed))}</color>";
 
 		descText.text = desc;
 

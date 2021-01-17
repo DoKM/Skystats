@@ -45,7 +45,7 @@ public class FavoriteDisplay : MonoBehaviour
     public void UpdateDisplay()
     {
         headIcon.texture = favorite.Head;
-        txt.text = $"{favorite.Username}\n<size=16><color=#CCCCCC>Last Online:</color> {Global.CompareToNow(favorite.LastOnlineDate)}</size>";
+        txt.text = $"{favorite.Username}\n<size=16><color=#CCCCCC>Last Online:</color> {Global.GetFormattedDateTime(favorite.LastOnlineDate)}</size>";
         LayoutRebuilder.ForceRebuildLayoutImmediate(transform as RectTransform);
     }
 

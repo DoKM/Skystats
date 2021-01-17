@@ -25,7 +25,7 @@ public class Slot : MonoBehaviour
 {
     public GameObject imageParent;
     public TMP_Text stackText;
-    public Image rarityTierImage, originalRarityTierImage;
+    public Image rarityTierImage, originalRarityTierImage, stackBackground;
     public Item currentHoldingItem;
     public List<Item> backpackContents;
 
@@ -126,9 +126,8 @@ public class Slot : MonoBehaviour
 
     private void UpdateStackAmountText(byte count)
     {
-        if (count > 1)
-            stackText.text = count.ToString();
-        else stackText.text = "";
+        stackText.text = count > 1 ? count.ToString() : "";
+        stackBackground.enabled = count > 1;
     }
 
     private void ColorArmorPiece(Transform armorPieceParent, Color newColor)
@@ -342,6 +341,8 @@ public class Slot : MonoBehaviour
 
     public virtual void ActivateTooltip(bool active)
     {
+        var tt = tooltip.GetComponent<Tooltip>();
+
         if (active)
         {
             var newObj = Instantiate(Resources.Load<GameObject>("Description line"), tooltipHolder.transform);
@@ -349,13 +350,17 @@ public class Slot : MonoBehaviour
             newObj.transform.SetAsFirstSibling();
 
             newObj.GetComponent<Text>().text = finalDescription;
-            tooltip.GetComponent<Tooltip>().update = true;
+            tt.update = true;
             if (currentHoldingItem.Backpack == new Backpack() || currentHoldingItem.Backpack == null || currentHoldingItem.Backpack.BackpackSize <= 0)
                 ClearBackpack();
             tooltipHolder.SetActive(true);
+            tt.currentDisplayingSlot = this;
         }
         else
+		{
+            tt.currentDisplayingSlot = null;
             tooltipHolder.SetActive(false);
+        }
 
     }
 

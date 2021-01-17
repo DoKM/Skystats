@@ -247,8 +247,7 @@ public class Main : MonoBehaviour
 
         yield return favoriteDisplay.StartCoroutine(favoriteDisplay.GetHead(uuid));
         yield return favoriteDisplay.StartCoroutine(favoriteDisplay.InstantiateFavorite());
-        if (save)
-            favoriteDisplay.SaveFavorite();
+        if (save) favoriteDisplay.SaveFavorite();
 
         var favButton = favoriteObject.GetComponent<Button>();
         favButton.onClick.RemoveAllListeners();

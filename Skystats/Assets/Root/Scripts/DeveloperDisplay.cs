@@ -52,7 +52,7 @@ public class DeveloperDisplay : MonoBehaviour
     public void UpdateDisplay()
     {
         headIcon.texture = dev.Head;
-        txt.text = $"{dev.Username}\n<size=16><color=#CCCCCC>Last Online:</color> {Global.CompareToNow(dev.LastOnlineDate)}</size>";
+        txt.text = $"{dev.Username}\n<size=16><color=#CCCCCC>Last Online:</color> {Global.GetFormattedDateTime(dev.LastOnlineDate)}</size>";
         LayoutRebuilder.ForceRebuildLayoutImmediate(transform as RectTransform);
     }
 

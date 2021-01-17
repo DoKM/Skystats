@@ -23,7 +23,7 @@ public class StatusModule : MonoBehaviour
 		if (e.profile.IsOnline) onlineText.text = "<color=#55FF55>ONLINE</color>";
 		else onlineText.text = "<color=#FF5555>OFFLINE</color>";
 
-		var otherString = $"Last updated: <color=#AAAAAA>{Global.CompareToNow(e.profile.LastSaveDateTime)}</color>";
+		var otherString = $"Last updated: <color=#AAAAAA>{Global.GetFormattedDateTime(e.profile.LastSaveDateTime)}</color>";
 		otherString += $"\nFirst login: <color=#AAAAAA>{e.profile.FirstSaveDateTime:ddd, dd MMM yyy HH:mm:ss}</color>";
 		otherText.text = otherString;
 

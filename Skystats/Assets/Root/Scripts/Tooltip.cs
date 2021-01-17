@@ -15,10 +15,11 @@ public class Tooltip : MonoBehaviour
     [Space]
     public Camera camera;
 
+    public Slot currentDisplayingSlot;
     public bool update;
-
     public bool resetOffset = true, scrolling = true;
     [HideInInspector] public RectTransform rct, backpackPreview, holder;
+    
 
     public void ToggleOffset (bool on)
 	{

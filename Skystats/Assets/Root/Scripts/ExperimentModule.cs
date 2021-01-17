@@ -19,11 +19,12 @@ public class ExperimentModule : MonoBehaviour
     // Update is called once per frame
     public void InstantiateModule(object sender, OnLoadProfileEventArgs e)
     {
+        if (e.profile.Experiments == null) return;
+
         Main.Instance.ClearChildren(parent);
+
 		foreach (var experiment in e.profile.Experiments)
-		{
             Instantiate(experimentPrefab, parent).GetComponent<ExperimentItem>().currentExperiment = experiment;
-        }
 
 		for (int i = 0; i < 6; i++)
 		    Global.UpdateCanvasElement(parent as RectTransform);

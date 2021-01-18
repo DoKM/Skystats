@@ -94,7 +94,7 @@ public class Main : MonoBehaviour
     private void Awake()
     {
         //PlayerPrefs.DeleteKey("m_k");
-        Credentials.key = LoadKey();
+        Credentials.key = Credentials.LoadKey();
         GameObject.FindGameObjectWithTag("KeyInput").GetComponent<TMP_InputField>().text = Credentials.key;
 
         CreateDirs();
@@ -144,30 +144,8 @@ public class Main : MonoBehaviour
     #region Key
     public void UpdateKeyInputField(TMP_InputField field)
     {
-        UpdateKey(field.text);
+        Credentials.UpdateKey(field.text);
         RefreshCurrentFavorites();
-    }
-
-    public void UpdateKey(string newKey)
-    {
-        Credentials.key = newKey;
-        SaveKey(newKey);
-    }
-
-    private void SaveKey(string key)
-    {
-        var aes = new AES();
-        var encryptedKey = aes.Encrypt(key);
-        PlayerPrefs.SetString("m_k", encryptedKey);
-    }
-
-    private string LoadKey()
-    {
-        var aes = new AES();
-        var key = PlayerPrefs.GetString("m_k", "");
-        key = key != "" ? aes.Decrypt(key) : null;
-
-        return key;
     }
     #endregion
 

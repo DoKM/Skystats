@@ -138,20 +138,7 @@ public class Main : MonoBehaviour
 
         Global.UpdateScrollView();
         Global.UpdateCanvasElement(favoriteParent as RectTransform);
-        StartCoroutine(Test());
     }
-
-    private IEnumerator Test()
-    {
-        var req = UnityWebRequest.Get($"http://team-revelation.com/fullApiData.json");
-        yield return req.SendWebRequest();
-
-        if (!req.isNetworkError && !req.isHttpError)
-        {
-            Debug.Log(req.downloadHandler.text);
-        }
-    }
-
     #endregion
 
     #region Key

@@ -16,4 +16,27 @@ public static class Credentials
             m_key = value; 
         } 
     }
+
+    public static void UpdateKey(string newKey)
+    {
+        key = newKey;
+        SaveKey(newKey);
+    }
+
+    public static void SaveKey(string key)
+    {
+        var aes = new AES();
+        var encryptedKey = aes.Encrypt(key);
+        PlayerPrefs.SetString("m_k", encryptedKey);
+    }
+
+    public static string LoadKey()
+    {
+        var aes = new AES();
+        var key = PlayerPrefs.GetString("m_k", "");
+        key = key != "" ? aes.Decrypt(key) : null;
+
+        return key;
+    }
+
 }

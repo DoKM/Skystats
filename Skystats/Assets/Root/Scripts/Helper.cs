@@ -1548,11 +1548,29 @@ namespace Helper
 
             if (originalList != null && originalList != new NbtList())
                 for (int i = 0; i < originalList.Count; i++)
-                    newList.Add(originalList[i].StringValue);
+                    newList.Add(ReplaceNonWorkingChars(originalList[i].StringValue));
 
             return newList;
         }
 
+        public static string ReplaceNonWorkingChars(string original)
+        {
+            for (int i = 0; i < original.Length; i++)
+            {
+                switch (original[i])
+                {
+                    case '☘':
+                        original = original.Remove(i, 1).Insert(i, "Ʊ");
+                        break;
+                    case '⸕':
+                        original = original.Remove(i, 1).Insert(i, "↑");
+                        break;
+                }
+            }
+
+            return original;
+        }
+        
         public static Item GetItemObject(NbtCompound itemCompound, NbtCompound tag, Profile currentProfile)
         {
             if (tag.TryGet<NbtCompound>("ExtraAttributes", out var extraAttributes))
@@ -2062,14 +2080,9 @@ namespace Helper
             for (int j = 0; j < staticGr.Length; j++)
                 staticGr[j].enabledGradient = gradientName;
 
-            if (icon != null && icon.parent.GetComponent<UIGradient>())
-            {
-                var iconGradient = icon.parent.GetComponent<UIGradient>();
-                if (gradientName == GradientType.maxColor)
-                    iconGradient.Offset = 1;
-                else
-                    iconGradient.Offset = 0;
-            }
+            if (icon != null && icon.parent.TryGetComponent<UIGradient>(out var iconGradient))
+                iconGradient.Offset = gradientName == GradientType.maxColor ? 1 : 0;
+            
         }
 
         public static Skill GetSkill(JSONNode skillNode, string skillName)
@@ -2192,9 +2205,23 @@ namespace Helper
         public static XP GetSkillXP(JSONNode skillNode, SKILL skillType)
         {
             var skillXP = Global.GetXP(skillNode.AsFloat, GetSkillXPLadder(skillType), 0);
-            return skillXP;
+            return AddSkillOffset(skillXP, skillType);
         }
 
+        public static XP AddSkillOffset(XP originalXP, SKILL skill)
+        {
+            switch (skill)
+            {
+                case SKILL.enchanting:
+                case SKILL.taming:
+                    if (originalXP.Level < originalXP.XPLadder.Length)
+                        originalXP.Level++;
+                    return originalXP;
+                default:
+                    return originalXP;
+            }
+        }
+        
         public static int[] GetSkillXPLadder(SKILL skillType)
         {
             var skillLaddersTextAsset = Resources.Load<TextAsset>("JSON Data/Skill XP Ladders");
@@ -2203,6 +2230,11 @@ namespace Helper
             var jsonLadder = skillLadders["NORMAL"];
             switch (skillType)
             {
+                case SKILL.enchanting:
+                case SKILL.farming:
+                case SKILL.mining:
+                    jsonLadder = skillLadders["SIXTY"];
+                    break;
                 case SKILL.runecrafting:
                     jsonLadder = skillLadders["RUNECRAFTING"];
                     break;

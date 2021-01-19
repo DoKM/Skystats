@@ -42,6 +42,14 @@ public class WeaponsModule : MonoBehaviour
             }
         }
 
+        if (e.profile != null && e.profile.ActiveWeapon != null)
+        {
+            Slot weaponSlot = e.profile.ActiveWeapon.ParentSlot;
+
+            if (weaponSlot != null)
+                weaponSlot.ToggleActive();
+        }
+        
 		for (int i = 0; i < 3; i++)
 		    Global.UpdateCanvasElement(objParent as RectTransform);
     }

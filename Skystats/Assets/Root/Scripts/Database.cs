@@ -21,16 +21,12 @@ public class Database : MonoBehaviour
 	}
 	#endregion
 
-	MongoClient client = new MongoClient("mongodb+srv://Admin:1kBeNp3T3R@clusterzero.j1n5f.mongodb.net/auction_house?retryWrites=true&w=majority");
+	MongoClient client = new MongoClient("mongodb+srv://Admin:Admin73!@clusterzero.kl1fJ.mongodb.net/auction_house?retryWrites=true&w=majority");
 	IMongoDatabase database;
 	IMongoCollection<BsonDocument> collection;
 
 	private void Start()
 	{
-		database = client.GetDatabase("auction_house");
-		collection = database.GetCollection<BsonDocument>("test_data");
-		
-		GetData();
 	}
 
 	public async void SaveJSON(string path, string jsonData)

@@ -17,7 +17,7 @@ public class ArmorModule : MonoBehaviour
 
     public void InstantiateModule (object sender, OnLoadProfileEventArgs e)
 	{
-        bool off = objParent != null && !objParent.gameObject.activeSelf;
+        var off = objParent != null && !objParent.gameObject.activeSelf;
         if (off)
             objParent.gameObject.SetActive(true);
 
@@ -28,21 +28,17 @@ public class ArmorModule : MonoBehaviour
             for (int i = 0; i < 4; i++)
             {
                 var armorSlot = objParent.GetChild(i).GetComponent<Slot>();
+                var item = new Item();
                 if (equippedArmor.ArmorPieces.Count >= i)
                 {
                     if (equippedArmor.ArmorPieces[i] != null && armorSlot != null)
                     {
                         equippedArmor.ArmorPieces[i].ParentSlot = armorSlot;
-                        if (equippedArmor.ArmorPieces.Count - 1 >= i)
-                            armorSlot.FillItem(equippedArmor.ArmorPieces[i]);
-                        else
-                            armorSlot.FillItem(new Item());
+                        item = equippedArmor.ArmorPieces.Count - 1 >= i ? equippedArmor.ArmorPieces[i] : new Item();
                     }
-                    else
-                        armorSlot.FillItem(new Item());
                 }
-                else
-                    armorSlot.FillItem(new Item());
+                
+                armorSlot.FillItem(item);
             }
         }
 

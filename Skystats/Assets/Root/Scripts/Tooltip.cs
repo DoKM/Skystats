@@ -18,6 +18,7 @@ public class Tooltip : MonoBehaviour
     public Slot currentDisplayingSlot;
     public bool update;
     public bool resetOffset = true, scrolling = true;
+    public Canvas mainCanvas;
     [HideInInspector] public RectTransform rct, backpackPreview, holder;
     
 
@@ -44,7 +45,8 @@ public class Tooltip : MonoBehaviour
     {
         UpdateTooltipPos();
 
-        if (!EventSystem.current.IsPointerOverGameObject()) holder.gameObject.SetActive(false);
+        if (!EventSystem.current.IsPointerOverGameObject()) 
+            holder.gameObject.SetActive(false);
     }
 
     public void UpdateTooltipRect ()

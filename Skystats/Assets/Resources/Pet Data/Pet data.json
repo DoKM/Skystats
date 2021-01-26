@@ -2041,7 +2041,11 @@
 		},
 		"MONKEY_GOLDEN": {
 			"texture": "http://textures.minecraft.net/texture/e9281c4d87d68526b0749d4361e6ef786c8a35717aa053da704b1d53410d37a6",
-			"name": "Golden Monkey"
+			"name": "Golden"
+		},
+		"SILVERFISH_FOSSILIZED": {
+			"texture": "http://textures.minecraft.net/texture/ca3a363368ed1e06cee3900717f062e02ec39aee1747675392255b48f7f83600",
+			"name": "Fossilized"
 		}
 	}
 }

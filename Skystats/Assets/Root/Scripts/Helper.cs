@@ -39,10 +39,10 @@ namespace Helper
             if (playerData.HasKey("rankPlusColor"))
                 plusColor = GetColorFromName(playerData["rankPlusColor"].Value);
 
-            var plusPlusColor = "§f";
+            var plusPlusColor = "§6";
             if (playerData.HasKey("monthlyRankColor"))
                 plusPlusColor = GetColorFromName(playerData["monthlyRankColor"].Value);
-
+            
             if (rankName == "")
                 rankName = GetRankPrefix(packageName, plusColor, plusPlusColor);
 
@@ -66,6 +66,8 @@ namespace Helper
                     return "§4";
                 case "DARK_PURPLE":
                     return "§5";
+                case "LIGHT_PURPLE":
+                    return "§d";
                 case "GOLD":
                     return "§6";
                 case "GRAY":
@@ -869,6 +871,23 @@ namespace Helper
 
     public static class Global
     {
+        public static string RoundToLetter(float num)
+        {
+            // Ensure number has max 3 significant digits (no rounding up can happen)
+            var i = (long)Math.Pow(10, (int)Math.Max(0, Math.Log10(num) - 2));
+            num = num / i * i;
+
+            if (num >= 1000000000)
+                return (num / 1000000000D).ToString("0.##") + "B";
+            if (num >= 1000000)
+                return (num / 1000000D).ToString("0.##") + "M";
+            if (num >= 1000)
+                return (num / 1000D).ToString("0.##") + "K";
+
+            return num.ToString("#,0");
+        }
+        
+        
         public static int GetMaxJournalAmount (string name)
 		{
 			switch (name)
@@ -1214,7 +1233,7 @@ namespace Helper
 
         public static void UpdateScrollView()
         {
-            LayoutRebuilder.ForceRebuildLayoutImmediate(GameObject.FindGameObjectWithTag("Content").GetComponent<RectTransform>());
+            LayoutRebuilder.ForceRebuildLayoutImmediate(GameObject.FindGameObjectWithTag("Content").transform as RectTransform);
         }
 
         public static void UpdateCanvasElement(RectTransform element)
@@ -1230,20 +1249,22 @@ namespace Helper
             {
                 var profile = Main.Instance.profileHolder.transform.Find(profiles.ElementAt(i).Key).gameObject;
                 profile.SetActive(true);
+                
+                var translucantImage = profile.GetComponent<TranslucentImage>();
+                var gradient = profile.GetComponent<UIGradient>();
 
                 if (profiles.ElementAt(i).Key == objName)
                 {
-                    profile.GetComponent<TranslucentImage>().color = Color.white;
-                    profile.GetComponent<UIGradient>().enabled = true;
-                    profile.GetComponent<UIGradient>().EffectGradient = selectedProfileGradient;
-                    profile.GetComponent<TranslucentImage>().spriteBlending = 0.9f;
+                    translucantImage.color = Color.white;
+                    translucantImage.spriteBlending = 0.9f;
+                    gradient.enabled = true;
+                    gradient.EffectGradient = selectedProfileGradient;
                 }
                 else
                 {
-                    var tempColor = Color.black;
-                    profile.GetComponent<UIGradient>().enabled = false;
-                    profile.GetComponent<TranslucentImage>().color = tempColor;
-                    profile.GetComponent<TranslucentImage>().spriteBlending = 0.3f;
+                    translucantImage.color = Color.black;
+                    translucantImage.spriteBlending = 0.3f;
+                    gradient.enabled = false;
                 }
             }
         }
@@ -1358,6 +1379,8 @@ namespace Helper
             if (str != null)
             {
                 var newStr = str.ToLower();
+                
+                // Why?
                 newStr = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(newStr);
 
                 return newStr;
@@ -1454,7 +1477,6 @@ namespace Helper
         {
             var activeAccessories = new List<Item>();
             var weapons = new List<Item>();
-            var pets = new List<Pet>();
 
             if (newProfile.AccessoryData != null) activeAccessories = newProfile.AccessoryData;
             if (newProfile.Weapons != null) weapons = newProfile.Weapons;
@@ -1465,25 +1487,24 @@ namespace Helper
                 {
                     Item item = GetItemObject(itemCompound, tag, newProfile);
                     data.Add(item);
+                    
                     if (item != null && item.ItemDescription != null)
                     {
                         if (item.ItemDescription.Count > 1)
                         {
-                            string lastDescriptionLine = item.ItemDescription[item.ItemDescription.Count - 1];
-
-                            if (lastDescriptionLine.Contains("CCESSORY"))
+                            if (item.ItemDescription.Find(x => x.Contains("CCESSORY")) != null)
                                 activeAccessories.Add(item);
 
-                            if (lastDescriptionLine.Contains("SWORD") || lastDescriptionLine.Contains("BOW") || lastDescriptionLine.Contains("WEAPON"))
+                            if (item.ItemDescription.Find(x => x.Contains("SWORD")) != null 
+                                || item.ItemDescription.Find(x => x.Contains("BOW")) != null 
+                                || item.ItemDescription.Find(x => x.Contains("WEAPON")) != null)
                                 if (!weapons.Exists((x) => x.ItemDescription == item.ItemDescription))
                                     weapons.Add(item);
                         }
                     }
                 }
                 else
-                {
                     data.Add(new Item());
-                }
             }
 
             newProfile.Weapons = weapons;
@@ -1519,7 +1540,7 @@ namespace Helper
             var sortedAccessories = itemsToSort;
 
             if (itemsToSort != null && itemsToSort.Count > 0)
-                sortedAccessories = itemsToSort.OrderBy((x) => (int)x.RarityTier).ToList();
+                sortedAccessories = itemsToSort.OrderBy(x => (int)x.RarityTier).ToList();
 
             return sortedAccessories;
         }
@@ -1529,17 +1550,15 @@ namespace Helper
             string base64TextureLink = skullOwner.Get<NbtCompound>("Properties").Get<NbtList>("textures").Get<NbtCompound>(0).Get<NbtString>("Value").Value;
             JSONNode textureLinkNode = Parsing.Base64ToJSON(base64TextureLink);
 
-            string textureLink = textureLinkNode["textures"]["SKIN"]["url"].Value;
-            return textureLink;
+            return textureLinkNode["textures"]["SKIN"]["url"].Value;
         }
 
         public static string GetItemID(NbtCompound itemTag)
         {
             var id = itemTag.Get<NbtShort>("id").Value.ToString();
             var damage = itemTag.Get<NbtShort>("Damage").Value.ToString();
-
-            string itemID = id + "-" + damage;
-            return itemID;
+            
+            return id + "-" + damage;
         }
 
         public static List<string> NbtToStringList(NbtList originalList)
@@ -1596,6 +1615,11 @@ namespace Helper
                 var textureLink = "";
                 var minecraftItemID = "";
                 
+                DateTime obtainedDate = new DateTime();
+                if (extraAttributes != null)
+                    if (extraAttributes.TryGet<NbtString>("timestamp", out var obtainedString))
+                        if (DateTime.TryParse(obtainedString.Value, out var date))
+                            obtainedDate = date;
 
                 // Get texture link/id 
                 if (tag.TryGet<NbtCompound>("SkullOwner", out var skullOwner))
@@ -1625,6 +1649,14 @@ namespace Helper
                     armorColor = Formatting.DecimalToColor(color.IntValue);
                 }
 
+                var dungeonFloor = 0;
+                if (extraAttributes.TryGet<NbtInt>("item_tier", out var tier))
+                    dungeonFloor = tier.Value;
+                
+                int quality = -1;
+                if (extraAttributes.TryGet<NbtInt>("baseStatBoostPercentage", out var q))
+                    quality = q.Value;
+
                 var isRarityUpgraded = extraAttributes.TryGet("rarity_upgrades", out var _);
 
                 var item = new Item
@@ -1636,6 +1668,9 @@ namespace Helper
                     IsLeather = leather,
                     IsRarityUpgraded = isRarityUpgraded,
                     Modifier = modifier,
+                    DateObtained = obtainedDate,
+                    ItemTier = dungeonFloor,
+                    ItemQuality = quality,
                     Enchantments = Enchantments.GetItemEnchantments(extraAttributes),
                     StackAmount = stackAmount,
                     ItemDescription = stringDescription,
@@ -1649,30 +1684,47 @@ namespace Helper
                 if (internalItemID.Contains("STARRED") && internalItemID.Contains("SHADOW_ASSASSIN"))
                     originalRarity++;
 
-               if (isRarityUpgraded)
+                if (isRarityUpgraded)
 				{
                     originalRarity++;
                     stringDescription.Insert(stringDescription.Count - 1, "<color=#555555>(Recombobulated)</color>");
                 }
 
                 if (item.Modifier.ToLower().Contains("renowned"))
-                    if (Stats.Instance != null)
-                        Stats.Instance.totalStatBoost *= 1.01f;
+                    Stats.Instance.totalStatBoost *= 1.01f;
 
                 stringDescription = Enchantments.FormatEnchantments(item);
+                item.BonusStats = Global.GetStatList(stringDescription);
+                
+                if (item.DateObtained != new DateTime())
+                {
+                    stringDescription.Add("");
+                    stringDescription.Add($"Obtained: <color=#AAAAAA>{item.DateObtained:dd MMM yyyy}</color>");
+                }
+                
+                if (item.ItemTier != 0)
+                {
+                    stringDescription.Add("");
+                    stringDescription.Add($"From: <color=#FF5555>Floor {item.ItemTier}</color>");
+                }
+                
+                if (item.ItemQuality != -1)
+                {
+                    if (!stringDescription[stringDescription.Count - 1].StartsWith("Obtained: ") &&
+                        !stringDescription[stringDescription.Count - 1].StartsWith("From: "))
+                        stringDescription.Add("");
+                    
+                    stringDescription.Add($"Item quality: <color=#FFAA00>{item.ItemQuality}/50%</color>");
+                }
                 List<string> formattedDescription = Formatting.FormatColorsStringList(stringDescription);
 
-                item.BonusStats = Global.GetStatList(stringDescription);
                 item.OriginalRarityTier = originalRarity;
                 item.ItemDescription = formattedDescription;
 
                 return item;
             }
             else
-            {
-                var item = new Item();
-                return item;
-            }
+                return new Item();
 
         }
 
@@ -1704,8 +1756,9 @@ namespace Helper
                         {
                             if (item.ItemDescription.Count > 1)
                             {
-                                string lastDescriptionLine = item.ItemDescription[item.ItemDescription.Count - 1];
-                                if (lastDescriptionLine.Contains("SWORD") || lastDescriptionLine.Contains("BOW") || lastDescriptionLine.Contains("WEAPON"))
+                                if (item.ItemDescription.Find(x => x.Contains("SWORD")) != null 
+                                    || item.ItemDescription.Find(x => x.Contains("BOW")) != null 
+                                    || item.ItemDescription.Find(x => x.Contains("WEAPON")) != null)
                                     if (!weapons.Exists((x) => x.ItemDescription == item.ItemDescription))
                                         weapons.Add(item);
                             }
@@ -1731,12 +1784,33 @@ namespace Helper
 
         public static RARITY GetItemRarity(Item item)
         {
+            
+            
             if (item != null)
             {
                 if (item.ItemDescription != null && item.ItemDescription.Count > 0)
                 {
-                    string indicatorString = item.ItemDescription[item.ItemDescription.Count - 1];
-                    return Global.GetRarity(indicatorString);
+                    foreach (var str in item.ItemDescription)
+                    {
+                        if (str.Contains("UNCOMMON"))
+                            return RARITY.UNCOMMON;
+                        else if (str.Contains("COMMON"))
+                            return RARITY.COMMON;
+                        else if (str.Contains("RARE"))
+                            return RARITY.RARE;
+                        else if (str.Contains("EPIC"))
+                            return RARITY.EPIC;
+                        else if (str.Contains("LEGENDARY"))
+                            return RARITY.LEGENDARY;
+                        else if (str.Contains("MYTHIC"))
+                            return RARITY.MYTHIC;
+                        else if (str.Contains("SUPREME"))
+                            return RARITY.SUPREME;
+                        else if (str.Contains("VERY SPECIAL"))
+                            return RARITY.VERY_SPECIAL;
+                        else if (str.Contains("SPECIAL"))
+                            return RARITY.SPECIAl;
+                    }
                 }
             }
 

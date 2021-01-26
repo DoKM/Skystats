@@ -8,13 +8,26 @@ public class InfoModule : MonoBehaviour
     public Transform inventoryParent, quiverParent, potionsParent, fishParent, vaultParent, candyParent,
                      accessoryParent, enderchestParent, backpack;
     public InformationList infolist;
-
+    public GameObject apiOff;
+    
     private void Start()
     {
         Main.Instance.OnLoadProfile += InstantiateModule;
+        Main.Instance.OnInventoryAPIOff += ToggleAPI;
 
         if (Main.Instance.currentProfile != null && !string.IsNullOrEmpty(Main.Instance.currentProfile.FormattedUsername))
             InstantiateModule(Main.Instance, new OnLoadProfileEventArgs { profile = Main.Instance.currentProfile });
+    }
+    
+    public void ToggleAPI(object sender, OnInventoryAPIOffArgs e)
+    {
+        apiOff.SetActive(false);
+    }
+    
+    public void APIOff(bool on)
+    {
+        Global.FindObjectsOfTypeInTranform<ModuleDragger>(transform)[0].DisableObjects(!on);
+        apiOff.SetActive(on);
     }
 
     public void InstantiateModule(object sender, OnLoadProfileEventArgs e)

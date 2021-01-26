@@ -59,16 +59,36 @@ public class SkillObject : MonoBehaviour
         ResetText();
     }
 
-    public void UpdateText()
+    public void OnHover()
     {
         var remainingXP = skillData.SkillXP.RemainingXP;
         var nextLevelXP = Mathf.Clamp(skillData.SkillXP.NextLevelXP, 1, Mathf.Infinity);
+        
+        var text = $"{Global.RoundToLetter(remainingXP)} / {Global.RoundToLetter(nextLevelXP)}";
+        if (nextLevelXP == 1)
+            text = $"{Global.RoundToLetter(remainingXP)}";
 
+        skillXpText.text = text;
+    }
+
+    public void OnExit()
+    {
+        var remainingXP = skillData.SkillXP.RemainingXP;
+        var nextLevelXP = Mathf.Clamp(skillData.SkillXP.NextLevelXP, 1, Mathf.Infinity);
         var progressToNextLevel = remainingXP / nextLevelXP * 100;
         progressToNextLevel = Mathf.Clamp(progressToNextLevel, 1, 100);
         progressToNextLevel = Mathf.Round(progressToNextLevel);
 
         skillXpText.text = progressToNextLevel.ToString() + "%";
+    }
+
+    public void UpdateText()
+    {
+        var remainingXP = skillData.SkillXP.RemainingXP;
+        var nextLevelXP = Mathf.Clamp(skillData.SkillXP.NextLevelXP, 1, Mathf.Infinity);
+
+        OnExit();
+        
         levelText.text = Global.ToTitleCase(selectedSkill.ToString().ToLower()) + " <color=#CCCCCC>" + skillData.SkillXP.Level.ToString() + "</color>";
 
         var progressBarWidth = Mathf.Clamp(remainingXP / nextLevelXP * maxWidth, maxWidth / 5, maxWidth);

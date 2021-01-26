@@ -11,7 +11,8 @@ public class ModuleDragger : UIBehaviour, IDragHandler, IBeginDragHandler, IEndD
     public List<Behaviour> componentDisableOnMinimize;
     public bool clampInsideParentRect = true, isMinimized = false;
     public float originalHeight;
-
+    
+    
     private Vector2 currentPos, lastPos;
     public ModuleHandler mh = null;
 
@@ -36,6 +37,12 @@ public class ModuleDragger : UIBehaviour, IDragHandler, IBeginDragHandler, IEndD
         mh.SaveModules();
 	}
 
+    public void DisableObjects(bool on)
+    {
+        foreach (var obj in objectDisableOnMinimize)
+            obj.SetActive(on);
+    }
+    
     public void Minimize (bool save)
 	{
         if (isMinimized == true)

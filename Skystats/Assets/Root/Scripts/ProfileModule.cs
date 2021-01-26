@@ -10,6 +10,8 @@ public class ProfileModule : MonoBehaviour
 	public Transform title;
     public TMP_Text userInfoText;
 
+    public Profile currentProfile;
+
 	private void Start()
 	{
 		Main.Instance.OnLoadProfile += InstantiateModule;
@@ -30,8 +32,17 @@ public class ProfileModule : MonoBehaviour
 		Global.UpdateCanvasElement(userInfoText.transform.parent as RectTransform);
 		Global.UpdateCanvasElement(title as RectTransform);
 
-		for (int i = 0; i < 15; i++)
+		for (int i = 0; i < 5; i++)
 			Global.UpdateCanvasElement(transform as RectTransform);
+
+		currentProfile = e.profile;
+		StartCoroutine(Refresh());
+	}
+
+	public IEnumerator Refresh()
+	{
+		yield return new WaitForSeconds(300);
+		InstantiateModule(null, new OnLoadProfileEventArgs(){ profile = currentProfile });
 	}
 
 }

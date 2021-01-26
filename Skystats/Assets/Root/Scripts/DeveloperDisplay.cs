@@ -37,6 +37,8 @@ public class DeveloperDisplay : MonoBehaviour
     public IEnumerator InstantiateDev()
     {
         UpdateDisplay();
+        headIcon.texture = dev.Head;
+        txt.text = $"{dev.Username}\n<size=16><color=#CCCCCC>Last Online:</color> Loading...</size>";
 
         yield return StartCoroutine(GetLastUpdatedProfile(dev.UUID));
         dev.LastOnlineDate = GetLastOnlineDateTime();

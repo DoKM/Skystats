@@ -78,7 +78,7 @@ public class DamagePrediction : MonoBehaviour
 
     private List<Enchantment> weaponEnchantments = new List<Enchantment>(); // Name, level
 
-    [HideInInspector] public float health, strength, critDamage, combatLevel, weaponDamage, attackSpeed, ferocity;
+    public float health, strength, critDamage, combatLevel, weaponDamage, attackSpeed, ferocity;
     [HideInInspector] public REFORGE weaponReforge;
     [HideInInspector] public bool hasWeapon, reset, updateText;
 
@@ -175,9 +175,9 @@ public class DamagePrediction : MonoBehaviour
         if (Main.Instance.currentProfile.ActiveWeapon != null)
             weaponEnchantments = Main.Instance.currentProfile.ActiveWeapon.Enchantments;
 
-        if (SkillManager.Instance.skills.ContainsKey(SKILL.combat))
+        if (Main.Instance.currentProfile.SkillData.ContainsKey(SKILL.combat))
         {
-            var combatSkill = SkillManager.Instance.skills[SKILL.combat];
+            var combatSkill = Main.Instance.currentProfile.SkillData[SKILL.combat];
             combatLevel = combatSkill.SkillXP.Level;
         }
 

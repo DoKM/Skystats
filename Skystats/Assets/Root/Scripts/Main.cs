@@ -25,6 +25,8 @@ using UnityEngine.UI;
 using UnityEngine.UI.Michsky.UI.ModernUIPack;
 using Helper;
 using LeTai.Asset.TranslucentImage;
+using Newtonsoft.Json;
+using Formatting = Helper.Formatting;
 
 public enum SKINVERSION
 {
@@ -52,6 +54,16 @@ public class OnLoadProfileEventArgs : EventArgs
     public Profile profile;
 }
 
+public class OnInventoryAPIOffArgs : EventArgs
+{
+    public bool state;
+}
+
+public class OnSkillAPIOffArgs : EventArgs
+{
+    public bool state;
+}
+
 public class Main : MonoBehaviour
 {
     #region Singleton
@@ -66,9 +78,12 @@ public class Main : MonoBehaviour
 
     #region Variables
     public event EventHandler<OnLoadProfileEventArgs> OnLoadProfile;
-    public Shader transparentCutout;
-    public Shader transparentCutoutMask;
+    public event EventHandler<OnInventoryAPIOffArgs> OnInventoryAPIOff;
+    public event EventHandler<OnSkillAPIOffArgs> OnSkillAPIOff;
+    
+    public Shader transparentCutout, transparentCutoutMask;
     public bool helpTooltips { get; set; }
+    public bool showCurrentViewingProfile { get; set; }
     public Profile currentProfile;
 
     private Dictionary<string, TMP_InputField> usernameInput = new Dictionary<string, TMP_InputField>();
@@ -87,13 +102,16 @@ public class Main : MonoBehaviour
     [HideInInspector] public Transform openBpPreviewHolder;
     [HideInInspector] public string username, formattedUsername, profileID, uuid;
 
+    public string startTime;
+    public DateTime startDateTime;
     #endregion
 
     #region Initialization
 
     private void Awake()
     {
-        //PlayerPrefs.DeleteKey("m_k");
+        startDateTime = DateTime.Now;
+        startTime = $"{DateTime.Now:T}";
         Credentials.key = Credentials.LoadKey();
         GameObject.FindGameObjectWithTag("KeyInput").GetComponent<TMP_InputField>().text = Credentials.key;
 
@@ -134,10 +152,12 @@ public class Main : MonoBehaviour
 
     private void Start()
     {
+        DiscordHandler.Instance.UpdateActivity($"Since {startTime}", $"Idle");
         selectedProfileGradient = GradientManager.Instance.GetCurrentThemeColor(GradientType.maxColor).Color;
 
         Global.UpdateScrollView();
         Global.UpdateCanvasElement(favoriteParent as RectTransform);
+        InvokeRepeating(nameof(RefreshCurrentFavorites), 600, 600);
     }
     #endregion
 
@@ -192,6 +212,12 @@ public class Main : MonoBehaviour
             favoriteUsernames.Add(username);
             StartCoroutine(InstantiateFavorite(username, null, true));
         }
+    }
+
+    public void RemoveFavorite(string favorite)
+    {
+        if (favoriteUsernames.Any(x => x.ToLower() == favorite.ToLower()))
+            favoriteParent.Find(Global.ToTitleCase(favorite.ToLower())).GetComponent<FavoriteDisplay>().DeleteFavorite();
     }
 
     private IEnumerator InstantiateFavorite(string username, DirectoryInfo path, bool save)
@@ -265,6 +291,7 @@ public class Main : MonoBehaviour
             bool hasError = false;
             load.SetTrigger("Load");
             yield return StartCoroutine(IE_GetUUID((x) => uuid = x, (y) => hasError = y));
+            Debug.Log(uuid);
             if (!hasError)
             {
                 Debug.Log("Starting skin change...");
@@ -280,29 +307,38 @@ public class Main : MonoBehaviour
                         {
                             yield return StartCoroutine(IE_InstantiateProfiles(profiles));
                             yield return StartCoroutine(IE_StartReload(lastUpdatedProfile.Key));
+
+                            string rpcDetails = "On someone's profile";
+                            if (showCurrentViewingProfile)
+                                rpcDetails = $"On {username}'s profile";
+                            DiscordHandler.Instance.UpdateActivity(DiscordHandler.Instance.currentActivity.State, rpcDetails);
                         }
                         else
                         {
                             ErrorHandler.Instance.Push(new Error { ErrorCode = 517, ErrorHeader = "Error loading profile", ErrorMessage = "Please try another profile." });
                             load.SetTrigger("Stop Load");
+                            DiscordHandler.Instance.UpdateActivity($"Since {startTime}", $"Idle");
                         }
                     }
                     else
                     {
                         ErrorHandler.Instance.Push(new Error { ErrorCode = 517, ErrorHeader = "Error loading profile", ErrorMessage = "Please try another profile." });
+                        DiscordHandler.Instance.UpdateActivity($"Since {startTime}", $"Idle");
                         load.SetTrigger("Stop Load");
                     }
                 }
                 else
                 {
                     ErrorHandler.Instance.Push(new Error { ErrorCode = 518, ErrorHeader = "Error getting player skin", ErrorMessage = "Please try another profile." });
+                    DiscordHandler.Instance.UpdateActivity($"Since {startTime}", $"Idle");
                     load.SetTrigger("Stop Load");
                 }
             }
             else
             {
                 ErrorHandler.Instance.Push(new Error { ErrorCode = 519, ErrorHeader = "Error getting player UUID", ErrorMessage = "Please try another user." });
-                load.SetTrigger("Stop Load");
+                DiscordHandler.Instance.UpdateActivity($"Since {startTime}", $"Idle");
+                load.SetTrigger("Stop Load"); ;
             }
 
         }
@@ -427,6 +463,7 @@ public class Main : MonoBehaviour
             hasError(true);
             ErrorHandler.Instance.Push(new Error { ErrorCode = 503, ErrorHeader = "No Skyblock profiles found", ErrorMessage = $"User \"{username}\" has no valid Skyblock profiles, please select a valid user." });
             load.SetTrigger("Stop Load");
+            Debug.Log(PlayerPrefs.GetString("m_k", "") == "");
         }
         
         Debug.Log("Done: IE_GetProfiles");
@@ -653,13 +690,24 @@ public class Main : MonoBehaviour
             // Instantiate every module by invoking event
             OnLoadProfile?.Invoke(this, new OnLoadProfileEventArgs { profile = currentProfile });
             TalismanOptimizer.Instance.accessories = currentProfile.AccessoryData;
+
+            CheckAPIState();
         }
         else
             ErrorHandler.Instance.Push(new Error { ErrorCode = 507, ErrorHeader = "User is not in selected profile", ErrorMessage = $"User \"{username}\" is not linked with profile {profileID}." });
-
-        Global.UpdateInfoList();
     }
 
+    public void CheckAPIState()
+    {
+        var invAPIOff = currentProfile.InventoryData == null || currentProfile.InventoryData.TrueForAll(x => x == new Item()) &&
+            currentProfile.EnderchestData.TrueForAll(x => x == new Item());
+
+        OnInventoryAPIOff?.Invoke(this, new OnInventoryAPIOffArgs() { state = invAPIOff });
+
+        var skillAPIOff = currentProfile.SkillData.Values.ToList().TrueForAll(x => x.SkillXP.Level == 0);
+        OnSkillAPIOff?.Invoke(this, new OnSkillAPIOffArgs() { state = invAPIOff });
+    }
+    
     /// <summary>
     /// Retrieve and fill the profile object with the correct JSON data
     /// </summary>

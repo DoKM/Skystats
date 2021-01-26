@@ -233,7 +233,7 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 40
   source: {fileID: 0}
   vibrancy: 1
-  brightness: 0
+  brightness: -0.05
   flatten: 0
   spriteBlending: 0.3
 --- !u!114 &2378659634131025781

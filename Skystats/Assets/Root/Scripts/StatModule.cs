@@ -7,13 +7,26 @@ using UnityEngine;
 public class StatModule : MonoBehaviour
 {
     private Dictionary<STAT, Stat> savedStats = new Dictionary<STAT, Stat>();
-
+    public GameObject apiOff;
+    
     private void Start()
     {
         Main.Instance.OnLoadProfile += InstantiateModule;
+        Main.Instance.OnInventoryAPIOff += ToggleAPI;
 
         if (Main.Instance.currentProfile != null && !string.IsNullOrEmpty(Main.Instance.currentProfile.FormattedUsername))
             Invoke("Refresh", 0.1f);
+    }
+    
+    public void ToggleAPI(object sender, OnInventoryAPIOffArgs e)
+    {
+        APIOff(e.state);
+    }
+    
+    public void APIOff(bool on)
+    {
+        Global.FindObjectsOfTypeInTranform<ModuleDragger>(transform)[0].DisableObjects(!on);
+        apiOff.SetActive(on);
     }
 
 	private void Update()

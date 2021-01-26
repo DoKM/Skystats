@@ -87,6 +87,9 @@ public class Item
     public string InternalItemIDString { get; set; }
     public bool IsLeather { get; set; }
     public bool IsRarityUpgraded { get; set; }
+    public DateTime DateObtained { get; set; }
+    public int ItemTier { get; set; } // Dungeon floor for obtained item
+    public int ItemQuality { get; set; }
     public string Modifier { get; set; } // Internal name, in-game name is Reforge
     public byte StackAmount { get; set; }
     public List<string> ItemDescription { get; set; }

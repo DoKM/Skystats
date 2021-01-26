@@ -25,7 +25,6 @@
       <Path>.vs</Path>
       <Path>.vscode</Path>
       <Path>Logs</Path>
-      <Path>Temp</Path>
       <Path>UserSettings</Path>
       <Path>WebGL</Path>
       <Path>obj</Path>

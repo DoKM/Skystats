@@ -35,10 +35,15 @@ public class FavoriteDisplay : MonoBehaviour
     public IEnumerator InstantiateFavorite()
     {
         LoadFavorite();
-        UpdateDisplay();
+
+        headIcon.texture = favorite.Head;
+        txt.text = $"{favorite.Username}\n<size=16><color=#CCCCCC>Last Online:</color> Loading...</size>";
+        LayoutRebuilder.ForceRebuildLayoutImmediate(transform as RectTransform);
 
         yield return StartCoroutine(GetLastUpdatedProfile(favorite.Username));
         favorite.LastOnlineDate = GetLastOnlineDateTime();
+        UpdateDisplay();
+        yield return StartCoroutine(GetHead(favorite.UUID));
         UpdateDisplay();
     }
 
@@ -55,7 +60,7 @@ public class FavoriteDisplay : MonoBehaviour
 
         if (!favDir.Exists)
             favDir.Create();
-
+        
         File.WriteAllBytes($"{favorite.DirString}/headTexture.png", favorite.Head.EncodeToPNG());
         File.WriteAllText($"{favorite.DirString}/uuid.txt", favorite.UUID);
         File.WriteAllText($"{favorite.DirString}/username.txt", favorite.Username);
@@ -70,7 +75,10 @@ public class FavoriteDisplay : MonoBehaviour
             yield return null;
 
         if (!headWWW.isHttpError && !headWWW.isNetworkError)
-            favorite.Head = ((DownloadHandlerTexture)headWWW.downloadHandler).texture;
+        {
+            favorite.Head = ((DownloadHandlerTexture) headWWW.downloadHandler).texture;
+            SaveFavorite();
+        }
     }
 
     public void LoadFavorite()

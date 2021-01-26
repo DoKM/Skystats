@@ -4,15 +4,15 @@
 		"formattedName": "Bane of Arthropods"
 	},
 	"cleave":{
-		"maxLevel": 5,
+		"maxLevel": 6,
 		"formattedName": "Cleave"
 	},
 	"critical":{
-		"maxLevel": 6,
+		"maxLevel": 7,
 		"formattedName": "Critical"
 	},
 	"cubism":{
-		"maxLevel": 5,
+		"maxLevel": 6,
 		"formattedName": "Cubism"
 	},
 	"dragon_hunter":{
@@ -20,11 +20,11 @@
 		"formattedName": "Dragon Hunter"
 	},
 	"ender_slayer":{
-		"maxLevel": 6,
+		"maxLevel": 7,
 		"formattedName": "Ender Slayer"
 	},
 	"execute":{
-		"maxLevel": 5,
+		"maxLevel": 6,
 		"formattedName": "Execute"
 	},
 	"experience":{
@@ -32,7 +32,7 @@
 		"formattedName": "Experience"
 	},
 	"first_strike":{
-		"maxLevel": 4,
+		"maxLevel": 5,
 		"formattedName": "First Strike"
 	},
 	"giant_killer":{
@@ -52,11 +52,11 @@
 		"formattedName": "Lethality"
 	},
 	"life_steal":{
-		"maxLevel": 4,
+		"maxLevel": 5,
 		"formattedName": "Life Steal"
 	},
 	"looting":{
-		"maxLevel": 4,
+		"maxLevel": 5,
 		"formattedName": "Looting"
 	},
 	"luck":{
@@ -88,7 +88,7 @@
 		"formattedName": "Vampirism"
 	},
 	"venomous":{
-		"maxLevel": 5,
+		"maxLevel": 6,
 		"formattedName": "Venomous"
 	},
 	"fire_aspect":{
@@ -124,7 +124,7 @@
 		"formattedName": "Punch"
 	},
 	"snipe":{
-		"maxLevel": 3,
+		"maxLevel": 4,
 		"formattedName": "Snipe"
 	},
 	"aqua_affinity":{
@@ -132,7 +132,7 @@
 		"formattedName": "Aqua Affinity"
 	},
 	"blast_protection":{
-		"maxLevel": 5,
+		"maxLevel": 7,
 		"formattedName": "Blast Protection"
 	},
 	"depth_strider":{
@@ -144,7 +144,7 @@
 		"formattedName": "Feather Falling"
 	},
 	"fire_protection":{
-		"maxLevel": 5,
+		"maxLevel": 7,
 		"formattedName": "Fire Protection"
 	},
 	"frost_walker":{
@@ -156,7 +156,7 @@
 		"formattedName": "Growth"
 	},
 	"projectile_protection":{
-		"maxLevel": 5,
+		"maxLevel": 7,
 		"formattedName": "Projectile Protection"
 	},
 	"protection":{
@@ -299,8 +299,32 @@
 		"maxLevel": 5,
 		"formattedName": "Turbo-Cacti"
 	},
-	"turbo_warts":{
+	"respite":{
 		"maxLevel": 5,
-		"formattedName": "Turbo-Warts"
+		"formattedName": "Respite"
+	},
+	"syphon":{
+		"maxLevel": 5,
+		"formattedName": "Syphon"
+	},
+	"triple_strike":{
+		"maxLevel": 5,
+		"formattedName": "Triple-Strike"
+	},
+	"titan_killer":{
+		"maxLevel": 7,
+		"formattedName": "Titan Killer"
+	},
+	"thunderbolt":{
+		"maxLevel": 6,
+		"formattedName": "Thunderbolt"
+	},
+	"prosecute":{
+		"maxLevel": 6,
+		"formattedName": "Prosecute"
+	},
+	"chance":{
+		"maxLevel": 5,
+		"formattedName": "Chance"
 	}
 }
